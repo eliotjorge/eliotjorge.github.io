@@ -1,0 +1,55 @@
+---
+title: Title here
+image: image_name.png
+date: 2023-09-09
+categories: [homelabbing]
+tags: [ansible,semaphore,automation]
+pin: false
+comments: false
+---
+
+Type a couple sentences here in a paragraph format to highlight the upcoming document. A thesis statement basically..
+
+## Introduction
+
+Talk about what the actual thing is.
+
+## Setup
+
+Talk about setup.
+
+Here are examples of post formatting:
+
+Some code.
+
+```bash
+code example here
+```
+
+An image.
+
+![bookstack gui](bookstack-gui.png){: w="840" h="400" }
+
+A youtube video.
+
+{% include embed/youtube.html id='Lj5qHBjSfMo' %}
+
+Highlight blocks.
+
+> this is an info prompt. others are tip, warning, and danger.
+{: .prompt-info }
+
+
+linking another post
+
+If you need help setting up Docker see my guide here: [A deep dive on Docker]({% post_url 2023-09-02-docker %})
+
+Table here
+
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+
+
+
