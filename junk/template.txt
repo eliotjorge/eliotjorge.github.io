@@ -42,7 +42,7 @@ Highlight blocks.
 
 linking another post
 
-If you need help setting up Docker see my guide here: [A deep dive on Docker]({% post_url 2023-09-02-docker %})
+If you need help setting up Docker see my guide here: [A deep dive on Docker]({% post_url 2023-11-14-jekyll %})
 
 Table here
 
