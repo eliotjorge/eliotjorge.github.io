@@ -1,5 +1,8 @@
 ---
-layout:page
+title: listado coches pass
+layout: page
+permalink: /listado/
+
 ---
 
-#pass
+# Hola listado coches pass
