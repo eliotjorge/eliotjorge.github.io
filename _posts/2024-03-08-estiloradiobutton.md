@@ -1,7 +1,5 @@
 ---
 title: Estilo radio button como botones
-image: radio-button-formidable-form-style-min.webp
-img_path: /images/
 date: 2024-03-08
 categories: [css]
 tags: [css,formulario,estilos,radiobutton]
