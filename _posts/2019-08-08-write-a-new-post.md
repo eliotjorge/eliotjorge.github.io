@@ -317,7 +317,7 @@ image:
 ---
 ```
 
-> You can observe LQIP in the preview image of post [_Text and Typography_]().
+> You can observe LQIP in the preview image of post.
 
 For normal images:
 
