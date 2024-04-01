@@ -16,7 +16,7 @@ toc: false
 En la página de Gemma Álvaro hay una galeíra que he tenido que hacer con bloque de imagnen individual en vez de emplear el de galería de esa manera se puede usar el lightbox de la imagen.
 Lo que pasa es que saca cada imagen en el tamaño que tiene y la cuadrícula se descuadra.
 
-![img-description](/images/destacada-cuadrado.jpg)
+![img-description](/destacada-cuadrado.jpg)
 _Captura de imagen del resultado_
 
 Hay que añadir un CSS para que recorte las miniaturas en cuadrado, pero no afecta a la imagen en el lightbox.
