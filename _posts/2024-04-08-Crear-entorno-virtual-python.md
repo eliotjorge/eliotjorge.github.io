@@ -29,7 +29,7 @@ python -m venv venv
 Activamos el entorno virtual y trabajamos.
 
 ```
-.venv/Scritps/activate 
+./venv/Scripts/activate
 ```
 
 Cuando terminemos de programar ese día es recomendable desactivarlo.
@@ -51,7 +51,7 @@ python -m venv venv
 ```
 
 ```
-.venv/Scritps/activate 
+./venv/Scripts/activate
 ```
 
 ```
