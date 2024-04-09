@@ -46,10 +46,14 @@
     {% endfor %}
 
     <!-- mio -->
-    <li class="sidebar-nav-item">
-      <i class="fa-fw fas fa-microchip"></i>
-      <a href="{{ site.baseurl }}/listado/">listado</a>
-    </li>
+  <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
+        <a href="{{ site.baseurl }}/listado/" class="nav-link">
+          <i class="fa-fw fas fa-microchip"></i>
+          {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
+
+          <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
+        </a>
+      </li>
     <!-- mio -->
   </ul>
   <!-- ul.nav.flex-column -->
