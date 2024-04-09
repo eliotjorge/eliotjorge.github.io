@@ -6,3 +6,5 @@ permalink: /listado/
 ---
 
 # Hola listado cochess
+
+{% include prueba.html %}
