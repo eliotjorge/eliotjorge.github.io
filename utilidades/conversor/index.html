@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Conversor de datos</title>
+  <meta name="author" content="Shan Carter">
+  <!-- Date: 2010-08-26 -->
+  <link rel="stylesheet" href="css/converter.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/CSVParser.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/DataGridRenderer.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/converter.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/Controller.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+  <div id='base'>
+    <div id='header'>
+      <div id="description">
+        <h1>Conversor de datos</h1>
+        <p>Convertirá los datos de Excel en alguno de los formatos amigables con la web como HTML, JSON y XML.</p>
+      </div>
+      <div id='settings'>
+        <h3>Ajustes</h3>
+        <form id='settingsForm'>
+           <p>Delimitador de campos: <br/>
+
+             <label><input class="settingsElement" type="radio" name="delimiter" id='delimiterAuto'   value="auto" checked/> Auto</label>
+             <label><input class="settingsElement" type="radio" name="delimiter" id='delimiterComma'  value="comma" /> Coma</label>
+             <label><input class="settingsElement" type="radio" name="delimiter" id='delimiterTab'    value="tab" /> Tabulador</label>
+            </p></br>
+          <p>Signo decimal:
+
+             <label><input class="settingsElement" type="radio" name="decimal" id='decimalDot'   value="dot" checked/> Punto</label>
+             <label><input class="settingsElement" type="radio" name="decimal" id='decimalComma'  value="comma" /> Coma</label>
+            </p> <br/>
+          <p><label><input class="settingsElement" type="checkbox" name="" value="" id="headersProvidedCB" checked /> Primera fila en la cabecera</label></p>
+          <div class="settingsGroup">
+            <p>Transformar: <br/><label><input class="settingsElement" type="radio" name="headerModifications" value="downcase" id='headersDowncase' /> minúsculas</label>
+            <label><input class="settingsElement" type="radio" name="headerModifications" id='headersUpcase' value="upcase" /> mayúsculas</label>
+            <label><input class="settingsElement" type="radio" name="headerModifications" id='headersNoTransform' value="none" checked /> ninguno</label></p>
+          </div>
+          <br/>
+
+          <p><label><input class="settingsElement" type="checkbox" name="some_name" value="" id="includeWhiteSpaceCB" checked /> Incluir espacio en blanco a la salida</label></p>
+          <div class="settingsGroup">
+            <p>Indentar con: <label><input class="settingsElement" type="radio" name="indentType" value="tabs" id='includeWhiteSpaceTabs'/> tabuladores</label> <label><input class="settingsElement" type="radio" name="indentType" value="spaces" id='includeWhiteSpaceSpaces' checked/> espacios</label></p>
+          </div>
+
+
+        </form>
+<center><img id="logo" src="https://www.jorgerosa.dev/img/logo.png" alt="logo" width="100"/></center>
+
+      </div>
+
+    </div>
+
+
+
+    <div id='converter' class=''>
+
+    </div>
+
+  </div>
+
+
+</body>
+</html>
