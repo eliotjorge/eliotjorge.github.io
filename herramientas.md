@@ -5,5 +5,4 @@ permalink: /herramientas/
 
 ---
 
-
-<a href="generador.html">Generador @media</a>
+[eliotjorge.github.io/generador.html](https://eliotjorge.github.io/generador.html)
