@@ -6,4 +6,4 @@ permalink: /herramientas/
 ---
 
 
-{% include generadormedia.html %}
+<a href="generador.html">Generador @media</a>
