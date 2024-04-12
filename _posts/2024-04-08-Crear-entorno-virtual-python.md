@@ -34,7 +34,7 @@ Activamos el entorno virtual y trabajamos.
 Instalamos flet la primera vez que iniciemos el entrono virtuial
 
 ```
-pip flet install
+pip install flet
 ```
 
 Cuando terminemos de programar ese día es recomendable desactivarlo.
@@ -60,7 +60,7 @@ python -m venv venv
 ```
 
 ```
-pip flet install
+pip install flet
 ```
 
 ```
