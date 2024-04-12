@@ -31,7 +31,7 @@ Activamos el entorno virtual y trabajamos.
 ```
 ./venv/Scripts/activate
 ```
-Instalamos flet la primera vez que iniciemos el entrono virtual
+Instalamos flet la primera vez que iniciemos el entrono virtuallll
 
 ```
 pip install flet
