@@ -4,10 +4,6 @@ source "https://rubygems.org"
 
 gemspec
 
-group :jekyll_plugins do
-  gem 'jekyll-pwa-plugin'
-end
-
 group :test do
   gem "html-proofer", "~> 4.4"
 end
