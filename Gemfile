@@ -2,13 +2,11 @@
 
 source "https://rubygems.org"
 
-gem 'jekyll'
+gemspec
 
 group :jekyll_plugins do
   gem 'jekyll-pwa-plugin'
 end
-
-gemspec
 
 group :test do
   gem "html-proofer", "~> 4.4"
