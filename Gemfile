@@ -5,7 +5,7 @@ source "https://rubygems.org"
 gem 'jekyll'
 
 group :jekyll_plugins do
-  gem 'jekyll-pwa-plugin'
+  gem 'jekyll-pwa-plugin', "= 2.2.3"
 end
 
 gemspec
