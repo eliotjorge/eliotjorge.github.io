@@ -4,6 +4,8 @@ source "https://rubygems.org"
 
 gemspec
 
+gem 'jekyll-pwa-workbox', '~> 5.1', '>= 5.1.41'
+
 group :test do
   gem "html-proofer", "~> 4.4"
 end
