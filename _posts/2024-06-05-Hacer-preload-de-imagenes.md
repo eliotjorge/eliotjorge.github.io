@@ -14,7 +14,7 @@ La soluciíon es precargar las fotos de los logos cuando la página ha terminado
 
 Hay dos formas, un preload en el `<head>` del la página o en el `CSS`
 
-# 1 HTML
+# 1 - HTML
 
 En la cabecera de la página añadimos una etiqueta `<link>` con el `rel="preload"`
 
@@ -22,7 +22,7 @@ En la cabecera de la página añadimos una etiqueta `<link>` con el `rel="preloa
 <link rel="preload" href="https://sitedomain.com/your-image.jpg" as="image">
 ```
 
-# 2 CSS
+# 2 - CSS
 
 En el `css` hacemos que el elemento que tiene las imágenes sea de ancho y alto 0, esté oculto y tenga un z-index que -1 (nos aseguramos MUY BIEN de que no se vea...) y le ponemos como contenido todas las imágenes que nos interesen
 
