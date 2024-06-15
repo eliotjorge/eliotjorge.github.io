@@ -39,6 +39,7 @@ html[data-mode=dark] {
 /* Editing some light mode mixin variables */
 
 html[data-mode=light] {
+    --sidebar-muted-color: red;
     /*--heading-color: blue;
     --label-color: #c0c0c0;
     --site-title-color: #c0c0c0;
@@ -62,7 +63,6 @@ html[data-mode=light] {
     --prompt-danger-icon-color: #cd0202;
     --tag-border: #585858;
   */
-    --sidebar-muted-color:red;
     color-scheme: light;
 }
 
