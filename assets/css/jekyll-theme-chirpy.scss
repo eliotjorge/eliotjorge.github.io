@@ -39,7 +39,7 @@ html[data-mode=dark] {
 /* Editing some dark mode mixin variables */
 
 html[data-mode=light] {
-    --heading-color: red;
+    /*--heading-color: red;*/
     --label-color: #c0c0c0;
     --site-title-color: #c0c0c0;
     --site-subtitle-color: #868686;
@@ -61,7 +61,7 @@ html[data-mode=light] {
     --prompt-danger-bg: rgb(86, 28, 8, 0.8);
     --prompt-danger-icon-color: #cd0202;
     --tag-border: #585858;
-    color-scheme: dark;
+    color-scheme: light;
 }
 
 
