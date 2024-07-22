@@ -1,5 +1,5 @@
 ---
-title: Validar DNI (NIF), CIF, NIE con PHP
+title: Función para validar DNI (NIF), CIF, NIE con PHP
 date: 22-07-2024
 categories: [web,programacion,codigo,php,formulario,donaciones,olvidados,woocommerce,wordpress]
 tags: [web,programacion,codigo,php,formulario,donaciones,olvidados,woocommerce,wordpress]
