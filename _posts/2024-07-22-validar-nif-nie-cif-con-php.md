@@ -2,7 +2,7 @@
 title: Validar DNI (NIF), CIF, NIE con PHP
 date: 22-07-2024
 categories: [web,programacion,codigo,php,formulario,donaciones,olvidados,woocommerce,wordpress]
-tags: [web,programacion,codigo,js,javascript,html,css]
+tags: [web,programacion,codigo,php,formulario,donaciones,olvidados,woocommerce,wordpress]
 pin: false
 comments: false
 render_with_liquid: false
