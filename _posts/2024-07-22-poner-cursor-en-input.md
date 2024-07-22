@@ -20,7 +20,7 @@ document.getElementById(frmObj.id).select();
 ```
 
 jQuery
-```jquery
+```
 $("#textboxID").focus();
 ```
 
