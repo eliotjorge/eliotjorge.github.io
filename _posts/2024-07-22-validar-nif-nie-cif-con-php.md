@@ -10,7 +10,7 @@ render_with_liquid: false
 
 Ésta función sirve para validar DNI (NIF), CIF, NIE.
 
-Devuelve un booleano, 'true' si es válido y 'false' si no cumple las condiciones.
+Devuelve un booleano, `true` si es válido y `false` si no cumple las condiciones.
 
 ```php
 /**
