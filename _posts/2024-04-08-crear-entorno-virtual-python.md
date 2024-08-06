@@ -20,7 +20,7 @@ cd app-flutter
 code .
 ```
 
-Una vez dentro creamos el entorno virtual. Nos crea una carpeta con todo los archivos del entrono virtual (aquí se instalará todo lo que haga falta) 
+Una vez dentro creamos el entorno virtual. Nos crea una carpeta con todo los archivos del entrono virtual (aquí se instalará todo lo que haga falta).
 
 ```
 python -m venv venv
@@ -31,7 +31,7 @@ Activamos el entorno virtual y trabajamos.
 ```
 ./venv/Scripts/activate
 ```
-Instalamos flet la primera vez que iniciemos el entrono virtuallll
+Instalamos flet la primera vez que iniciemos el entorno virtual.
 
 ```
 pip install flet
