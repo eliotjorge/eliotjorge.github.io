@@ -9,8 +9,9 @@ render_with_liquid: false
 ---
 
 Cuando programamos en Python es mejor hacerlo en un entorno virtual, de esa manera todas las dependencias que usemos
-en ese proyecto estarándentro del archivo de ese proyecto, no en la máquina en la que programemos.
-Haciendo esto si nos llevamos el proyecto a otro ordenador, ya sea en pincho o usando Git, ya estará todo instalado en ese entrono virtual.
+en ese proyecto estarán dentro del archivo de ese proyecto, no en la máquina en la que programemos.
+Haciendo esto si nos llevamos el proyecto a otro ordenador, ya sea en pincho o usando Git, ya estará todo instalado 
+en ese entrono virtual y no tendríamos conflictos con el resto de dependencias que puedan haber en ese ordenador.
 
 Para hacerlo después de crear el directorio acedemos y abrimos en code.
 
