@@ -5,4 +5,4 @@ permalink: /recursos/
 
 ---
 
-[Automate the boring stuff with Python](https://eliotjorge.github.io/dir-recursos/libro-python)
+[Automate the boring stuff with Python](https://eliotjorge.github.io/dir-recursos/libro-python){:target="_blank"}
