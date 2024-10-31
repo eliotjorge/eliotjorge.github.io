@@ -1,8 +1,8 @@
 ---
 title: Cómo empezar a programar Apps con Python Usando Kivy
 date: 31-10-2024
-categories: [python,consola,apps,Kivy]
-tags: [python,consola,apps,Kivy]
+categories: [python,consola,apps,kivy]
+tags: [python,consola,apps,kivy]
 pin: false
 comments: false
 render_with_liquid: false
