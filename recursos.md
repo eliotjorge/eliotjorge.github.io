@@ -5,4 +5,4 @@ permalink: /recursos/
 
 ---
 
-[Automate the boring stuff with Python](https://www.google.com)
+[Automate the boring stuff with Python](https://eliotjorge.github.io/recursos/pdf-python)
