@@ -2,7 +2,7 @@
 title: Cómo compilar tu aplicación Kivy para Android
 date: 31-10-2024
 categories: [python,consola,apps,kivy,android]
-tags: [python,consola,apps,kivi,android]
+tags: [python,consola,apps,kivy,android]
 pin: false
 comments: false
 render_with_liquid: false
