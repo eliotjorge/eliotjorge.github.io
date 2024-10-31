@@ -1,8 +1,8 @@
 ---
 title: Cómo empezar a programar Apps con Python Usando Kivy
 date: 31-10-2024
-categories: [python,consola,apps,Kivi]
-tags: [python,consola,apps,Kivi]
+categories: [python,consola,apps,Kivy]
+tags: [python,consola,apps,Kivy]
 pin: false
 comments: false
 render_with_liquid: false
@@ -16,7 +16,7 @@ Primero, necesitas instalar Kivy. Puedes hacerlo utilizando `pip`. Abre tu termi
 pip install kivy
 ```
 
-## 2. Configuración del Entorno
+## 2. Configuración del entorno
 
 Asegúrate de tener un entorno virtual para evitar conflictos entre dependencias. Puedes crear uno con:
 
@@ -26,7 +26,7 @@ source myenv/bin/activate  # En Linux/Mac
 myenv\Scripts\activate  # En Windows
 ```
 
-## 3. Estructura Básica de un Proyecto Kivy
+## 3. Estructura básica de un proyecto Kivy
 
 Crea un archivo Python, por ejemplo, `main.py`, y escribe el siguiente código básico:
 
@@ -42,7 +42,7 @@ if __name__ == '__main__':
     MyApp().run()
 ```
 
-## 4. Ejecutar la Aplicación
+## 4. Ejecutar la aplicación
 
 Ejecuta tu aplicación con:
 
@@ -50,7 +50,7 @@ Ejecuta tu aplicación con:
 python main.py
 ```
 
-## 5. Aprender sobre Widgets
+## 5. Aprender sobre widgets
 
 Kivy tiene una variedad de widgets. Investiga sobre algunos de los más comunes:
 
@@ -88,7 +88,7 @@ if __name__ == '__main__':
     MyApp().run()
 ```
 
-## 7. Aprender sobre Kivy Language (KV)
+## 7. Aprender sobre Kivy language (KV)
 
 Kivy permite definir la interfaz de usuario en un archivo separado usando Kivy Language. Esto ayuda a separar la lógica del diseño. Crea un archivo `myapp.kv`:
 
@@ -117,15 +117,15 @@ if __name__ == '__main__':
     MyApp().run()
 ```
 
-## 8. Documentación y Recursos
+## 8. Documentación y recursos
 
 Consulta la [documentación oficial de Kivy](https://kivy.org/doc/stable/) para obtener más detalles y ejemplos. También hay tutoriales en línea y comunidades donde puedes aprender más.
 
-## 9. Proyectos Prácticos
+## 9. Proyectos prácticos
 
 Empieza a crear proyectos pequeños. Esto te ayudará a consolidar lo que has aprendido. Considera hacer una calculadora, una lista de tareas o un juego sencillo.
 
-## 10. Explorar Avanzado
+## 10. Explorar avanzado
 
 Una vez que te sientas cómodo con lo básico, puedes explorar temas más avanzados como animaciones, gráficos, y bases de datos.
 
