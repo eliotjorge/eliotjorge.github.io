@@ -129,4 +129,4 @@ Empieza a crear proyectos pequeños. Esto te ayudará a consolidar lo que has ap
 
 Una vez que te sientas cómodo con lo básico, puedes explorar temas más avanzados como animaciones, gráficos, y bases de datos.
 
-¡Buena suerte programando tus aplicaciones con Kivy! Si tienes preguntas específicas, no dudes en preguntar.
+¡Buena suerte programando tus aplicaciones con Kivy!
