@@ -1,5 +1,5 @@
 ---
-title: ¿Cómo poner el cursor en un input con JavaScript
+title: ¿Cómo poner el cursor en un input con JavaScript?
 date: 22-07-2024
 categories: [web,programacion,codigo,js,javascript,html,css,formulario,donaciones,olvidados,woocommerce,wordpress]
 tags: [web,programacion,codigo,js,javascript,html,css]
