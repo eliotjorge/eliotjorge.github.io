@@ -1,8 +1,8 @@
 ---
-title: Desarrollar una web con Python y alojarla de manera gratuita
-date: 02-11-2024
-categories: [python,consola,apps,web,flask,django,heroku]
-tags: [python,consola,apps,web,flask,django,heroku]
+title: Crear entorno virtual en Python
+date: 08-04-2024
+categories: [python,consola,apps,flutter]
+tags: [python,consola,apps,flutter]
 pin: false
 comments: false
 render_with_liquid: false
