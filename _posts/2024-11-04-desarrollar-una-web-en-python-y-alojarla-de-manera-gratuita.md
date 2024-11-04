@@ -8,4 +8,4 @@ comments: false
 render_with_liquid: false
 ---
 
-Desarrollar una web con Python y alojarla de manera gratuita es totalmente posible. Aquí te dejo un paso a paso:
+Desarrollar una web con Python y alojarla de manera gratuita es totalmente posible. Aquí te dejo un paso a paso::::
