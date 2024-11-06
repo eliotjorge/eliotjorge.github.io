@@ -39,7 +39,7 @@ order: 4
                 <div class=" bg-orange-300 rounded-full w-52 h-52 md:w-72 md:h-72 animate__animated animate__pulse animate__slow animate__repeat-3"></div>
 
 
-                <img class="absolute bottom-0 w-52 md:w-72 animate__animated animate__fadeIn animate__faster" src="https://thdevstudio.com/uploads/config/normal/08012024-1704716672.png" alt="Tedy Hidayat - Fullstack Web Developer">
+                <img class="absolute bottom-0 w-52 md:w-72 animate__animated animate__fadeIn animate__faster" src="https://thde.com/uploads/config/normal/.png" alt="Tedy Hidayat - Fullstack Web Developer">
 
 
                 <hr class="border-gray-100 h-1 bg-slate-200 rounded w-full md:w-96 absolute bottom-0 animate__animated animate__rubberBand dark:border-slate-800 dark:bg-slate-700">
