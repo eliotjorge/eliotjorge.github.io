@@ -1,6 +1,6 @@
 ---
 # the default layout is 'page'
-title: Sobre mi
-icon: fas fa-bag
+title: TEST
+icon: fas fa-suitcase
 order: 5
 ---
