@@ -1,6 +1,6 @@
 ---
 # the default layout is 'page'
-title: Herramientas
+title: Utilidades
 icon: fas fa-microchip
 order: 5
 ---
