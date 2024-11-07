@@ -105,4 +105,26 @@ html[data-mode=light] {
     color: #585858;
 }
 
+/* vvvvvvvvvvvv Empieza lo mio vvvvvvvvvvvv */
+.container-about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-about {
+  flex-grow: 1;  /* Las dos columnas ocuparán el mismo espacio */
+  margin: 0 10px; /* Espaciado entre las columnas (opcional) */
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .container-about {
+    flex-direction: column;  /* Cambiar a una columna en móviles */
+  }
+
+  .item-about {
+    margin: 10px 0; /* Espaciado vertical entre los divs */
+  }
+}
+
 
