@@ -33,16 +33,9 @@ order: 4
 
 8. DevOps: Conocimientos básicos de CI/CD, contenedores (Docker), y plataformas de nube (AWS, Azure, Google Cloud).
 
-<div style="border:1px solid red;">
-  <div style="border:1px solid blue;">
-    <h1>
-      Columna 1
-    </h1>
-  </div>
-  <div style="border:1px solid green;">
-      <h1>
-      Columna 2
-    </h1>
-  </div>
+<div class="container-about">
+  <div class="item-about">Contenido 1</div>
+  <div class="item-about">Contenido 2</div>
 </div>
+
 {: .prompt-tip }
