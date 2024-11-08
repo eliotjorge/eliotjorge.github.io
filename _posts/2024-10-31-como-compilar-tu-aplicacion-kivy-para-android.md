@@ -1,5 +1,6 @@
 ---
 title: Cómo compilar tu aplicación Kivy para Android
+image: https://github.com/user-attachments/assets/f82936ba-f8b3-4cf8-aabf-2b8a36648af9
 date: 31-10-2024
 categories: [python,consola,apps,kivy,android]
 tags: [python,consola,apps,kivy,android]
