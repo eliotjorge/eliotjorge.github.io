@@ -92,7 +92,7 @@ html[data-mode=light] {
 /* Change link colors to green hover and purple underline across all pages */
 #page-category a:hover, #page-tag a:hover, .post-tags .post-tag:hover, .post-tail-wrapper .license-wrapper>a:hover, #search-results a:hover, #topbar #breadcrumb a:hover, .content a:not(.img-link):hover, .post-meta a:not([class]):hover, #access-lastmod a:hover, footer a:hover {
     /*color: #c0c0c0 !important;*/
-  color: #000000 !important;
+    color: #000000 !important;
     border-bottom: 1px solid #585858;
 }
 
