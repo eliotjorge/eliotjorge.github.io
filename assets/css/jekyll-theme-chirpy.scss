@@ -81,7 +81,7 @@ html[data-mode=light] {
 /* Change side panel only tag border to purple and text to green */
 .post-tag {
     border: 1px solid #585858;
-    color: #c0c0c0;
+    color: black;
 }
 
 /* Change tag hover color on side panel only to purple */
@@ -91,8 +91,7 @@ html[data-mode=light] {
 
 /* Change link colors to green hover and purple underline across all pages */
 #page-category a:hover, #page-tag a:hover, .post-tags .post-tag:hover, .post-tail-wrapper .license-wrapper>a:hover, #search-results a:hover, #topbar #breadcrumb a:hover, .content a:not(.img-link):hover, .post-meta a:not([class]):hover, #access-lastmod a:hover, footer a:hover {
-    /*color: #c0c0c0 !important;*/
-    color: #000000 !important;
+    color: black !important;
     border-bottom: 1px solid #585858;
 }
 
@@ -107,6 +106,7 @@ html[data-mode=light] {
 }
 
 /* vvvvvvvvvvvv Empieza lo mio vvvvvvvvvvvv */
+
 .container-about {
   display: flex;
   justify-content: space-between;
