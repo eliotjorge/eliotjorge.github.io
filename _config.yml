@@ -18,15 +18,15 @@ timezone: Europe/Madrid
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: _Blog Jorge Rosa
+title: Blog Jorge Rosa
 
-tagline: 
+tagline: Blog creado por el desarrollador Jorge Rosa dedicado a la administración de sistemas, la tecnología y el registro de soluciones a los problemas que se encuentran cada día programando.
 
 description: >- # used by seo meta and the atom feed
-  A website dedicated to System Administration, Homelabbing, and Technology
+  Blog de un desarollador web y multiplataforma
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "https://eliotjorge.github.io"
+url: "https://jorgerosa.dev"
 
 github:
   username: eliotjorge # change to your github username
@@ -47,7 +47,7 @@ social:
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification: # fill in to your verification string
+google_site_verification: google-site-verification=sgu8bsjfhI0UUXfIhb05KHVXUH8QuaHsTH8-acde7aw # fill in to your verification string
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
@@ -193,6 +193,3 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-
-plugins:
-  - jekyll-seo-tag
