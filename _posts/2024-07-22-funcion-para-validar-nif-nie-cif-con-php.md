@@ -80,5 +80,3 @@ function validDniCifNie($dni){
     return false;
   }
 ```
-
-[Link página referencia](https://todoseaprende.com/2020/08/24/validar-dni-nif-cif-nie/)
