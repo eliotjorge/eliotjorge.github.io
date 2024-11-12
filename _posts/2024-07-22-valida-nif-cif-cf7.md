@@ -32,6 +32,6 @@ Una vez dentro, en el `if` ponemos el campo que hemos puesto en el formulario de
 en otro caso he puesto en el formulario otro campo `[cif]`, por lo que le tendría que pasar `cif`. Ésta función de `wpcf7_validate_text` cuando le pasmos el campo
 es **case sensitive**.
 
-Después le pasamos el valor que ha introducido el usuario mediante `$_POST['DNI']` a la función `validDniCifNie`, que podemos ver en el post [Función para validar DNI (NIF), CIF, NIE con PHP](https://jorgerosa.dev/posts/validar-nif-nie-cif-con-php/)
+Después le pasamos el valor que ha introducido el usuario mediante `$_POST['DNI']` a la función `validDniCifNie`, que podemos ver en el post [Función para validar DNI (NIF), CIF, NIE con PHP](https://jorgerosa.dev/posts/funcion-para-validar-nif-nie-cif-con-php/)
 
 Para terminar a `$result` le asignamos el error que aparecerá debajo del campo.
