@@ -18,7 +18,7 @@ timezone: Europe/Madrid
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: _Blog Jorge
+title: _Blog Jorge Rosa
 
 tagline: 
 
@@ -193,3 +193,6 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+plugins:
+  - jekyll-seo-tag
