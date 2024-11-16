@@ -1,0 +1,1 @@
+<object data="[./libro-python.pdf](https://github.com/user-attachments/files/17784596/MANUAL%2Bconductor%2B850-1000.pdf)" type='application/pdf'></object>
