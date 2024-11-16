@@ -3,9 +3,11 @@ layout: page
 ---
 
 # MINI
-- [Mini](https://jorgerosa.dev/taller/mini)
+- [Mini](https://jorgerosa.dev/taller/mini.html)
+- [Mini 2](https://jorgerosa.dev/taller/mini2.html)
 
 
 # Vitara
+- [Vitara](https://jorgerosa.dev/taller/suzuki.html)
 
 # Honda
