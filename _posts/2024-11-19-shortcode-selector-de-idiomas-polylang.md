@@ -1,6 +1,6 @@
 ---
 title: Crear shortcode de selector de idioma en Wordpress usando Polylang para la traducción
-image: https://translatepress.com/wp-content/uploads/2021/03/polylang-woocommerce-alternative.png.webp
+image: https://images.unsplash.com/photo-1617975609658-2de247badd36
 date: 19-11-2024
 categories: [web,programacion,wordpress,shorcode,polylang,idiomas]
 tags: [web,programacion,wordpress,shorcode,polylang,idiomas]
