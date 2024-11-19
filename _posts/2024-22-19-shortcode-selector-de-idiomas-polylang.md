@@ -84,3 +84,13 @@ padding: 0 0 23px 0;
 list-style: none;
 }
 ```
+
+Si queremos que sagan los nombres o las banderas en línea una al lado de la otra pondremos en CSS:
+
+```css
+.polylang_langswitcher{
+display:inline;
+padding-left:5px;
+list-style:none;
+}
+```
