@@ -29,6 +29,6 @@ Así es como puedes implementar favicons específicos para el modo utilizando so
 ```
 
 ## Explicación
-1. Favicon por defecto: Asegura que los navegadores que no soportan consultas de medios en las etiquetas <link> aún muestren un favicon.
+1. Favicon por defecto: Asegura que los navegadores que no soportan consultas de medios en las etiquetas `<link>` aún muestren un favicon.
 2. Favicon para el modo claro: Se especifica utilizando el atributo media con (prefers-color-scheme: light). Este favicon se utilizará cuando el sistema del usuario esté configurado en modo claro.
 3. Favicon para el modo oscuro: Usamos (prefers-color-scheme: dark), y se usará cuando el sistema del usuario esté configurado en modo oscuro.
