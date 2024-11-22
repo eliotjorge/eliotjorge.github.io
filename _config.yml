@@ -1,5 +1,8 @@
 # The Site Configuration
 
+# Habilitar publicaciones futuras
+future: true
+
 # Import the theme
 theme: jekyll-theme-chirpy
 
@@ -143,6 +146,7 @@ defaults:
       # DO NOT modify the following parameter unless you are confident enough
       # to update the code of all other post links in this project.
       permalink: /posts/:title/
+      cache: false
   - scope:
       path: _drafts
     values:
