@@ -1,5 +1,5 @@
 ---
-title: Añadir opción en el menú de producrto en Woocommerce para generar automáticamente un enlace de añadir al carrito
+title: Añadir opción en producto de Woocommerce para generar automáticamente un enlace de añadir al carrito
 date: 22-11-2024
 image: https://images.unsplash.com/photo-1528399783831-8318d62d10e5
 categories: [web,programacion,woocommerce,wordpress]
