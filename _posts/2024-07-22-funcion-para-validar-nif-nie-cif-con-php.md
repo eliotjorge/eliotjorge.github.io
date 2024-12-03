@@ -12,8 +12,6 @@ En este post, exploraremos una función en PHP diseñada para validar los princi
 
 Devuelve un booleano, `true` si es válido y `false` si no cumple las condiciones. 
 
-[Explicación del código](#explicacion)
-
 ```php
 /**
  * Validar DNI (NIF), CIF, NIE
