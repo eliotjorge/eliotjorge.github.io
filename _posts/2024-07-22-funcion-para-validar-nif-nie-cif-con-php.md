@@ -10,7 +10,9 @@ render_with_liquid: false
 
 En este post, exploraremos una función en PHP diseñada para validar los principales formatos de identificación utilizados en España: **DNI (NIF)**, **CIF**, y **NIE**. Estos números son fundamentales para identificar tanto a personas físicas como jurídicas en procedimientos oficiales.
 
-Devuelve un booleano, `true` si es válido y `false` si no cumple las condiciones. 
+Devuelve un booleano, `true` si es válido y `false` si no cumple las condiciones.
+
+[💡 Explicación del código](#explicacion)
 
 ```php
 /**
@@ -77,7 +79,7 @@ function validDniCifNie($dni) {
 }
 ```
 
-## ¿Qué hace esta función?
+## ¿Qué hace esta función? {#explicacion}
 
 La función `validDniCifNie` recibe como entrada un número de identificación y valida si este corresponde a un formato válido de DNI, CIF o NIE. Además, comprueba la validez del número de control (letra o dígito, dependiendo del caso) que forma parte de estos documentos.
 
