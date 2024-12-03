@@ -79,7 +79,6 @@ function validDniCifNie($dni) {
 }
 ```
 
-<a id="explicacion"></a>
 ## ¿Qué hace esta función?
 
 La función `validDniCifNie` recibe como entrada un número de identificación y valida si este corresponde a un formato válido de DNI, CIF o NIE. Además, comprueba la validez del número de control (letra o dígito, dependiendo del caso) que forma parte de estos documentos.
