@@ -31,7 +31,7 @@ Esto desactiva la funcionalidad de caché a nivel de WordPress.
 
 Accede a la carpeta `wp-content/plugins` y elimina el directorio `w3-total-cache` completo. Esto desinstalará el plugin.
 
-3. Eliminar archivos generados por el plugin
+4. Eliminar archivos generados por el plugin
 
 Dentro de la carpeta `wp-content`, elimina los siguientes archivos si existen:
 
@@ -54,7 +54,6 @@ Si tu servidor utiliza Apache, es probable que W3 Total Cache haya modificado el
 ... (configuraciones del plugin)
 # END W3TC
 ```
-
 Elimina esas líneas para asegurarte de que no quedan rastros del plugin en la configuración del servidor.
 
 > Para hacer una **desactivación temporal** del plugin y ver si los errores que te esta dando Wordpress vienen porducidos por el plugin en vez de borrar añade al final de cada directorio y archivo `-desact` por ejemplo y el `.htacess` no hace falta que lo edites.
