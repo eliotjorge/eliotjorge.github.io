@@ -11,7 +11,7 @@ render_with_liquid: false
 
 Si necesitas desactivar por completo el plugin W3 Total Cache en tu instalación de WordPress, sigue estos pasos detallados:
 
-1. Editar el archivo `wp-config.php`
+1. Editar el archivo wp-config.php
 
 Localiza el archivo `wp-config.php` en la raíz de tu instalación de WordPress y busca la siguiente línea de código:
 
@@ -31,7 +31,7 @@ Esto desactiva la funcionalidad de caché a nivel de WordPress.
 
 Accede a la carpeta `wp-content/plugins` y elimina el directorio `w3-total-cache` completo. Esto desinstalará el plugin.
 
-4. Eliminar archivos generados por el plugin
+3. Eliminar archivos generados por el plugin
 
 Dentro de la carpeta `wp-content`, elimina los siguientes archivos si existen:
 
