@@ -44,6 +44,11 @@ function custom_polylang_langswitcher() {
 add_shortcode( 'polylang_langswitcher', 'custom_polylang_langswitcher' );
 ```
 
+El shortcode que debemos incluir en nuestra página es:
+```
+[polylang_langswitcher]
+```
+
 Si nos fijamos en el array de argumentos, se pueden configurar algunos parámetros como mostrar las banderas, los nombres,
 ocultar el idioma actual... Tenemos un listado de todos los agumentos
 
