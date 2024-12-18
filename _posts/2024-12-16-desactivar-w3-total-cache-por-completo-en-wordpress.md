@@ -56,4 +56,4 @@ Si tu servidor utiliza Apache, es probable que W3 Total Cache haya modificado el
 ```
 Elimina esas líneas para asegurarte de que no quedan rastros del plugin en la configuración del servidor.
 
-> Para hacer una **desactivación temporal** del plugin y ver si los errores que te esta dando Wordpress vienen porducidos por el plugin en vez de borrar añade al final de cada directorio y archivo `-desact` por ejemplo y el `.htacess` no hace falta que lo edites.
+✅ Para hacer una **desactivación temporal** del plugin y ver si los errores que te esta dando Wordpress vienen porducidos por el plugin, en vez de borrar los archivos añade al final de cada directorio y archivo `-desact` por ejemplo y el `.htacess` no hace falta que lo edites.
