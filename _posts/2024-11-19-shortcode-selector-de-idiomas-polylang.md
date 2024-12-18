@@ -9,8 +9,6 @@ comments: false
 render_with_liquid: false
 ---
 
-# Crear shortcode en Wordpress, para incluir selector de idiomas con Polylang
-
 Si queremos añadir un selector de idiomas con en una web que estemos traduciendo con el plugin [Polylang](https://polylang.pro/)
 es fácil hacerlo en el menú, pero si lo queremos añadir en la cabecera que contiene un bloque de texto, podemos emplear
 un shortcode, pero el plugin no lo proporciona por defecto.
@@ -81,7 +79,7 @@ Por defecto el shortcode nos devolverá un `ul` por lo que tendrá bullets
 
 ![101773340-8f88e500-3ae4-11eb-875c-29a81384e04d](https://github.com/user-attachments/assets/7c6dc3cf-6a2b-4bd8-a9d1-99e61f6b0a35)
 
-Para solucionarlo lo único que debemos hacer es añadir este CSS a nuestro tema.
+Para solucionarlo lo único que debemos hacer es añadir este CSS a nuestro tema:
 
 ```css
 .polylang_langswitcher{
@@ -90,7 +88,7 @@ list-style: none;
 }
 ```
 
-Si queremos que sagan los nombres o las banderas en línea una al lado de la otra pondremos en CSS:
+Si queremos que salgan los nombres o las banderas en línea una al lado de la otra pondremos:
 
 ```css
 .polylang_langswitcher{
