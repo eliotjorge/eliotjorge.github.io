@@ -8,8 +8,6 @@ comments: false
 render_with_liquid: false
 ---
 
-# Cómo Especificar Diferentes Favicons para los Modos Claro y Oscuro
-
 En la era de las preferencias de modo oscuro, adaptar el favicon de tu sitio web para que coincida con el esquema de colores elegido por el usuario puede mejorar significativamente la experiencia. Aunque muchas soluciones dependen de JavaScript, hay un enfoque más simple, basado únicamente en HTML, para proporcionar favicons diferentes para los modos claro y oscuro. Este método aprovecha el atributo `media` de la etiqueta `<link>`, permitiendo especificar diferentes recursos según la preferencia de esquema de color del usuario.
 
 ## La Solución solo con HTML
