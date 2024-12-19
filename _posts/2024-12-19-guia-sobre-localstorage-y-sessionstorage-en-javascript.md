@@ -9,7 +9,7 @@ comments: false
 render_with_liquid: false
 ---
 
-## ¿Qué son `localStorage` y `sessionStorage`?
+## ✨ ¿Qué son `localStorage` y `sessionStorage`?
 
 En JavaScript, tanto `localStorage` como `sessionStorage` son interfaces para almacenar datos clave-valor en el navegador. Ambas ofrecen una forma sencilla de guardar información, pero tienen diferencias clave en su funcionamiento.
 
@@ -31,12 +31,12 @@ En JavaScript, tanto `localStorage` como `sessionStorage` son interfaces para al
 
 ### API
 - **Ambos:** Igual para ambos (`setItem`, `getItem`, etc.).
-  
+
 ---
 
-## Cómo Usarlos
+## 🔄 Cómo Usarlos
 
-### Uso de `localStorage`
+### 🔒 Uso de `localStorage`
 
 ```javascript
 // Guardar un valor
@@ -53,7 +53,7 @@ localStorage.removeItem('nombre');
 localStorage.clear();
 ```
 
-### Uso de `sessionStorage`
+### 🔒 Uso de `sessionStorage`
 
 ```javascript
 // Guardar un valor
@@ -72,11 +72,11 @@ sessionStorage.clear();
 
 ---
 
-## Ejemplo Práctico: Guardar Preferencias de Usuario
+## 🔨 Ejemplo Práctico: Guardar Preferencias de Usuario
 
 Supongamos que quieres guardar el tema oscuro como preferencia del usuario:
 
-### Con `localStorage`
+### 🔒 Con `localStorage`
 
 ```javascript
 // Guardar preferencia
@@ -87,7 +87,7 @@ const tema = localStorage.getItem('tema');
 document.body.classList.add(tema);
 ```
 
-### Con `sessionStorage`
+### 🔒 Con `sessionStorage`
 
 ```javascript
 // Guardar preferencia
@@ -100,7 +100,7 @@ document.body.classList.add(tema);
 
 ---
 
-## Cuándo Usar Cada Uno
+## 🔧 Cuándo Usar Cada Uno
 
 - Usa `localStorage` para datos que deben persistir más allá de la sesión del navegador, como configuraciones de usuario o tokens de autenticación.
 - Usa `sessionStorage` para datos temporales que solo necesitan estar disponibles durante la sesión actual, como identificadores de sesión o datos específicos de una pestaña.
