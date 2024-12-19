@@ -15,15 +15,23 @@ En JavaScript, tanto `localStorage` como `sessionStorage` son interfaces para al
 
 ---
 
-## Diferencias Principales: Tabla Comparativa
+## 🔎 Diferencias Principales: Tabla Comparativa (Vertical)
 
-| Característica           | `localStorage`                           | `sessionStorage`                        |
-|--------------------------|------------------------------------------|-----------------------------------------|
-| **Persistencia**         | Los datos persisten incluso después de cerrar el navegador o reiniciar el dispositivo. | Los datos se eliminan cuando se cierra la pestaña o ventana del navegador. |
-| **Capacidad**            | Generalmente hasta 5MB por dominio.      | Generalmente hasta 5MB por dominio.     |
-| **Acceso entre pestañas**| Compartido entre todas las pestañas del mismo dominio. | Único para cada pestaña o ventana.     |
-| **API**                  | Igual para ambos (`setItem`, `getItem`, etc.). | Igual para ambos.                       |
+### Persistencia
+- **`localStorage`:** Los datos persisten incluso después de cerrar el navegador o reiniciar el dispositivo.
+- **`sessionStorage`:** Los datos se eliminan cuando se cierra la pestaña o ventana del navegador.
 
+### Capacidad
+- **`localStorage`:** Generalmente hasta 5MB por dominio.
+- **`sessionStorage`:** Generalmente hasta 5MB por dominio.
+
+### Acceso entre pestañas
+- **`localStorage`:** Compartido entre todas las pestañas del mismo dominio.
+- **`sessionStorage`:** Único para cada pestaña o ventana.
+
+### API
+- **Ambos:** Igual para ambos (`setItem`, `getItem`, etc.).
+  
 ---
 
 ## Cómo Usarlos
