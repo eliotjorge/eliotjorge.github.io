@@ -4,7 +4,7 @@ image: https://github.com/user-attachments/assets/48375fdf-328e-4a4c-b9c4-edbc96
 date: 19-12-2024
 categories: [ia,gpt,openai,inteligencia artificial,cahtgpt]
 tags: [ia,gpt,openai,inteligencia artificial,cahtgpt]
-pin: false
+pin: true
 comments: false
 render_with_liquid: false
 ---
