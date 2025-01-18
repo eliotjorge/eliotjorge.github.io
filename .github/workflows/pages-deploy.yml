@@ -38,11 +38,16 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
+        
+# Es importante el orden en el que se ejecutan los comandos. Uno de los errores que había era porque primero hacía "Install dependencies"
+# y luego el "Setup Ruby" por lo que al instalr las dependencias no estaba Ruby contemplado
 
-          # Limpiar el caché de Bundler
+      # Limpiar el caché de Bundler
       - name: Clean Bundler cache
         run: rm -rf vendor/bundle
 
+      # No estaba especificada la versión de Ruby a configurar. Tiene que coincidir con la del archivo Gemfile.
+      # Hay una nueva que es la 3.4.1, pero la más estable hasta la fecha es la 3.0.0 Importante ponerlo entre comillas.
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
