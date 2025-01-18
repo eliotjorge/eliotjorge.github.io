@@ -2,7 +2,7 @@
 
 gem 'csv', require: 'csv'
 
-ruby '3.4.0'
+ruby '3.4.1'
 
 source "https://rubygems.org"
 
