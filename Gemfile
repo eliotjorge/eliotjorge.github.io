@@ -2,7 +2,7 @@
 
 gem 'csv', require: 'csv'
 
-ruby '3.4.1'
+# ruby '3.4.1'
 
 gem 'jekyll', '~> 4.3'
 
