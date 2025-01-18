@@ -2,6 +2,8 @@
 
 gem 'csv', require: 'csv'
 
+ruby '3.4.0'
+
 source "https://rubygems.org"
 
 gemspec
