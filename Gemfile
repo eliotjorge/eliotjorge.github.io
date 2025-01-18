@@ -5,11 +5,12 @@ source "https://rubygems.org"
 
 gemspec
 
-gem 'csv', require: 'csv'
-
 ruby '3.4.1'
 
+gem 'csv', require: 'csv'
 gem 'jekyll', '~> 4.3'
+gem 'base64'
+gem 'logger'
 
 group :test do
   gem "html-proofer", "~> 4.4"
