@@ -129,8 +129,6 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
-  rouge:
-    theme: solarized-dark # Puedes elegir entre 'monokai', 'solarized-light', etc.
 
 collections:
   tabs:
