@@ -130,7 +130,7 @@ kramdown:
       line_numbers: true
       start_line: 1
   rouge:
-    theme: monokai # Puedes elegir entre 'monokai', 'solarized-light', etc.
+    theme: solarized-dark # Puedes elegir entre 'monokai', 'solarized-light', etc.
 
 collections:
   tabs:
