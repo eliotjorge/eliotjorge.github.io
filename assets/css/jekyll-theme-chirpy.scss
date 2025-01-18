@@ -128,4 +128,23 @@ html[data-mode=light] {
   }
 }
 
+/* Estilo para los bloques de código resaltados */
+.highlight pre {
+  font-family: "Courier New", monospace;
+  background-color: #f4f4f4; /* Fondo gris claro */
+  color: #333; /* Texto oscuro */
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+/* Para resaltar los números de línea si están habilitados */
+.highlight pre .line {
+  display: inline-block;
+  width: 40px;
+  text-align: right;
+  color: #888;
+}
+
+
 
