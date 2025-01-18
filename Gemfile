@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+gem 'csv', require: 'csv'
+
 source "https://rubygems.org"
 
 gemspec
