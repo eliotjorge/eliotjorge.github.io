@@ -1,14 +1,15 @@
 # frozen_string_literal: true
 
-gem 'csv', require: 'csv'
-
-# ruby '3.4.1'
-
-gem 'jekyll', '~> 4.3'
 
 source "https://rubygems.org"
 
 gemspec
+
+gem 'csv', require: 'csv'
+
+ruby '3.4.1'
+
+gem 'jekyll', '~> 4.3'
 
 group :test do
   gem "html-proofer", "~> 4.4"
