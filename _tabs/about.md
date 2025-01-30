@@ -38,29 +38,5 @@ order: 4
   <div class="item-about">Contenido 2</div>
 </div>
 
-<section class="about">
-    <div class="container">
-        <div class="profile">
-            <img src="/assets/images/profile.jpg" alt="Tu Foto" class="profile-img">
-            <div class="bio">
-                <h1>Sobre Mí</h1>
-                <p>Hola, soy [Tu Nombre], apasionado por [tu área de interés]. Me encanta compartir conocimientos sobre [temas que cubres en tu blog].</p>
-                <p>En este blog encontrarás artículos sobre [temas principales], con ejemplos prácticos y consejos útiles.</p>
-            </div>
-        </div>
-        <div class="extra-info">
-            <div class="box">
-                <h2>Experiencia</h2>
-                <p>[Breve descripción de tu experiencia]</p>
-            </div>
-            <div class="box">
-                <h2>Proyectos</h2>
-                <p>[Menciones algunos proyectos destacados]</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
 
 {: .prompt-tip }
