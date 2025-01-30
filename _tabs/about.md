@@ -61,44 +61,6 @@ order: 4
     </div>
 </section>
 
-<style>
-    .about {
-        font-family: Arial, sans-serif;
-        padding: 40px 20px;
-        max-width: 800px;
-        margin: auto;
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .profile {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-    .profile-img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-    .bio {
-        flex: 1;
-    }
-    .extra-info {
-        display: flex;
-        justify-content: space-between;
-    }
-    .box {
-        background: #f5f5f5;
-        padding: 15px;
-        border-radius: 8px;
-        flex: 1;
-    }
-</style>
-
 
 
 {: .prompt-tip }
