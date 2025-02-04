@@ -72,6 +72,9 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: "_site"
+          
+      - name: List files in the _site directory
+        run: ls -l _site
 
   deploy:
     environment:
