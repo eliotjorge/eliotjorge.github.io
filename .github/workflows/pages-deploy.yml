@@ -89,6 +89,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
-        with:
-          # Asegúrate de especificar el directorio donde están los archivos generados
-          folder: _site  # Aquí se define la carpeta donde se encuentra el sitio generado
