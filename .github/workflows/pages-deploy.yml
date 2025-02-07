@@ -79,6 +79,12 @@ jobs:
       - name: List files in the _site directory
         run: ls -l _site
 
+      - name: Upload coverage report artifact
+        id: upload-artifact
+        uses: actions/upload-pages-artifact@main
+        with:
+          name: github-pages
+
   deploy:
     environment:
       name: github-pages
