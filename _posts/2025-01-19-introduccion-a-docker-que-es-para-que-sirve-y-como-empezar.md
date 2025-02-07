@@ -1,5 +1,5 @@
 ---
-title: "Introducción a Docker: Qué es, para qué sirve y cómo empezar"
+title: "🐳 Introducción a Docker: Qué es, para qué sirve y cómo empezar"
 image: https://github.com/user-attachments/assets/e3feebf6-7f3f-4413-b602-2536c854a9c2
 date: 19-01-2025
 categories: [docker]
@@ -9,7 +9,6 @@ comments: false
 render_with_liquid: false
 ---
 
-# 🐳 Introducción a Docker: Qué es, para qué sirve y cómo empezar
 
 ## 🤔 ¿Qué es Docker?
 
