@@ -74,16 +74,11 @@ jobs:
       - name: upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "_site"
+          path: ./_site
           
       - name: List files in the _site directory
         run: ls -l _site
-
-      - name: Upload coverage report artifact
-        id: upload-artifact
-        uses: actions/upload-pages-artifact@main
-        with:
-          name: github-pages
+          
 
   deploy:
     environment:
