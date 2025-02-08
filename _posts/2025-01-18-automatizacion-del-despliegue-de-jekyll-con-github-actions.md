@@ -50,47 +50,101 @@ Ahora que tu proyecto Jekyll está listo, vamos a configurar **GitHub Actions** 
 2. Crea un archivo dentro de `.github/workflows` llamado `deploy.yml` para definir el flujo de trabajo. El archivo debe tener este contenido:
 
    ```yaml
-   name: Jekyll CI/CD Pipeline
+   name: "Build and Deploy"
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths-ignore:
+      - .gitignore
+      - README.md
+      - LICENSE
 
-   on:
-     push:
-       branches:
-         - main  # Se ejecutará cuando haya un push a la rama `main`
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
-   jobs:
-     build:
-       runs-on: ubuntu-latest
-       
-       steps:
-       - name: Check out code
-         uses: actions/checkout@v2
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
-       - name: Setup Pages
-         id: pages
-         uses: actions/configure-pages@v4
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
-       - name: Clean Bundler cache
-         run: rm -rf vendor/bundle
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-       - name: Setup Ruby
-         uses: ruby/setup-ruby@v1
-         with:
-           ruby-version: '3.0.0'
-           bundler-cache: true
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          # submodules: true
+          # If using the 'assets' git submodule from Chirpy Starter, uncomment above
+          # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
         
-       - name: Install dependencies
-         run: bundle install
+# Es importante el orden en el que se ejecutan los comandos. Uno de los errores que había era porque primero hacía "Install dependencies"
+# y luego el "Setup Ruby" por lo que al instalr las dependencias no estaba Ruby contemplado
 
-       - name: Build the Jekyll site
-         run: |
-           bundle exec jekyll build
+      # Limpiar el caché de Bundler
+      - name: Clean Bundler cache
+        run: rm -rf vendor/bundle
 
-       - name: Deploy to GitHub Pages
-         uses: peaceiris/actions-gh-pages@v3
-         with:
-           github_token: ${{ secrets.GITHUB_TOKEN }}
-           publish_dir: ./_site  # Directorio de salida de Jekyll
-           publish_branch: gh-pages  # Rama donde se publicará el sitio
+      # No estaba especificada la versión de Ruby a configurar. Tiene que coincidir con la del archivo Gemfile.
+      # Hay una nueva que es la 3.4.1, pero la más estable hasta la fecha es la 3.0.0 Importante ponerlo entre comillas.
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0.0'
+          bundler-cache: true
+        
+      - name: Install dependencies
+        run: bundle install
+        
+      - name: Remove old _site folder (if exists)
+        run: rm -rf _site
+
+      - name: Build site
+        run: bundle exec jekyll b -d "_site"
+        env:
+          JEKYLL_ENV: "production"
+
+      - name: Test site
+        run: |
+          bundle exec htmlproofer _site \
+            \-\-disable-external=true \
+            \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+
+      - name: upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+          
+      - name: List files in the _site directory
+        run: ls -l _site
+          
+
+  deploy:
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
    ```
 
 ### Explicación del flujo de trabajo 📝
