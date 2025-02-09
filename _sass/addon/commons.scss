@@ -29,7 +29,8 @@ html {
 }
 
 body {
-  background: var(--main-bg);
+  background: red;
+  /*background: var(--main-bg);*/
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
     env(safe-area-inset-bottom) env(safe-area-inset-left);
   color: var(--text-color);
