@@ -924,7 +924,8 @@ $btn-mb: 0.5rem;
 
 #topbar-wrapper {
   height: $topbar-height;
-  background-color: var(--topbar-bg);
+  /*background-color: var(--topbar-bg);*/
+  background-color:transparent;
 }
 
 #topbar {
