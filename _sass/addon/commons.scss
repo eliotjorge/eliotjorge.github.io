@@ -29,7 +29,11 @@ html {
 }
 
 body {
-  background: var(--main-bg);
+  background-color: #e0e0e0;
+opacity: 1;
+background-size: 10px 10px;
+background-image: repeating-linear-gradient(45deg, #e3e3e3 0, #e3e3e3 1px, #e0e0e0 0, #e0e0e0 50%);
+  /*background: var(--main-bg);*/
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
     env(safe-area-inset-bottom) env(safe-area-inset-left);
   color: var(--text-color);
