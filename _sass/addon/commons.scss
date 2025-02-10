@@ -29,9 +29,9 @@ html {
 }
 
 body {
-  background-color: #e0e0e0;
+  background-color: #f2f2f2;
 opacity: 1;
-background-image: radial-gradient(#d7d7d7 0.9px, #e0e0e0 0.9px);
+background-image: radial-gradient(#e7e7e7 0.9px, #f2f2f2 0.9px);
 background-size: 18px 18px;
   /*background: var(--main-bg);*/
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
@@ -178,7 +178,8 @@ kbd {
 
 footer {
   font-size: 0.8rem;
-  background-color: var(--main-bg);
+  background-color: transparent;
+  /*background-color: var(--main-bg);*/
   height: $footer-height;
   border-top: 1px solid var(--main-border-color);
 
@@ -925,7 +926,7 @@ $btn-mb: 0.5rem;
 #topbar-wrapper {
   height: $topbar-height;
   /*background-color: var(--topbar-bg);*/
-  background-color:transparent;
+  background-color: transparent;
 }
 
 #topbar {
