@@ -121,7 +121,7 @@ paginate: 15
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
-  syntax_highlighter: pygments
+  syntax_highlighter: rouge
   syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
     css_class: highlight
     # default_lang: console
@@ -130,6 +130,7 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
+    theme: monokai
 
 collections:
   tabs:
