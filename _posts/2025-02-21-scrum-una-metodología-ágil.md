@@ -12,7 +12,7 @@ render_with_liquid: false
 
 La metodología Scrum ha ganado popularidad en los últimos años debido a su capacidad para mejorar la eficiencia y la comunicación dentro de los equipos de trabajo. Es un marco de trabajo ágil que se utiliza principalmente en el desarrollo de software, pero sus principios pueden aplicarse a cualquier tipo de proyecto. Si eres nuevo en Scrum o buscas entender cómo implementarlo en tu equipo, aquí te explicamos los aspectos clave para empezar. 🤓
 
-<iframe src="https://giphy.com/embed/1hXY6iNdTFpTW4je85" width="361" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<div stile="width:100%; display:flex; justify-content: center;"><iframe src="https://giphy.com/embed/1hXY6iNdTFpTW4je85" width="361" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 
 ### ¿Qué es Scrum? 🤔
 
