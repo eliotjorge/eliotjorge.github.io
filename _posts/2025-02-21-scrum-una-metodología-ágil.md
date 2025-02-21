@@ -1,6 +1,6 @@
 ---
 title: "🚀 Scrum: Una metodología ágil para equipos productivo"
-image: https://github.com/user-attachments/assets/e3feebf6-7f3f-4413-b602-2536c854a9c2
+image: https://github.com/user-attachments/assets/372a1662-6bce-4e2f-9bca-b5c4c81e2bd1
 date: 21-02-2025
 categories: [scrum,metodologías,trabajo]
 tags: [scrum,metodologías,trabajo]
@@ -9,17 +9,10 @@ comments: false
 render_with_liquid: false
 ---
 
-¡Claro! Incluir GIFs puede hacer que el post sea más divertido y visualmente atractivo. Como no puedo integrar directamente GIFs de Giphy, te puedo sugerir algunos GIFs que puedes agregar en puntos clave del post. Solo tienes que buscar estos GIFs en [Giphy](https://giphy.com/) y colocarlos en el lugar adecuado de tu artículo.
-
-Aquí te dejo la versión con indicaciones para los GIFs:
-
----
-
-**Introducción a la Metodología Scrum: Una guía para equipos ágiles 🚀**
 
 La metodología Scrum ha ganado popularidad en los últimos años debido a su capacidad para mejorar la eficiencia y la comunicación dentro de los equipos de trabajo. Es un marco de trabajo ágil que se utiliza principalmente en el desarrollo de software, pero sus principios pueden aplicarse a cualquier tipo de proyecto. Si eres nuevo en Scrum o buscas entender cómo implementarlo en tu equipo, aquí te explicamos los aspectos clave para empezar. 🤓
 
-<div style="width:100%;height:0;padding-bottom:133%;position:relative;"><iframe src="https://giphy.com/embed/1hXY6iNdTFpTW4je85" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/hamlet-reading-learning-osmosis-1hXY6iNdTFpTW4je85">via GIPHY</a></p>
+<div style="width:20%;height:0;padding-bottom:133%;position:relative;"><iframe src="https://giphy.com/embed/1hXY6iNdTFpTW4je85" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/hamlet-reading-learning-osmosis-1hXY6iNdTFpTW4je85">via GIPHY</a></p>
 
 ### ¿Qué es Scrum? 🤔
 
