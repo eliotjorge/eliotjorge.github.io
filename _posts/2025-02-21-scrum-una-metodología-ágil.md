@@ -12,7 +12,7 @@ render_with_liquid: false
 
 La metodología Scrum ha ganado popularidad en los últimos años debido a su capacidad para mejorar la eficiencia y la comunicación dentro de los equipos de trabajo. Es un marco de trabajo ágil que se utiliza principalmente en el desarrollo de software, pero sus principios pueden aplicarse a cualquier tipo de proyecto. Si eres nuevo en Scrum o buscas entender cómo implementarlo en tu equipo, aquí te explicamos los aspectos clave para empezar. 🤓
 
-(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDkxbmpqa2NjMDhyZXJydm9xcmdjN3RvZmw1MXl4dHhwcW56ZHU3aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1hXY6iNdTFpTW4je85/giphy.gif)
+![Desktop View](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDkxbmpqa2NjMDhyZXJydm9xcmdjN3RvZmw1MXl4dHhwcW56ZHU3aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1hXY6iNdTFpTW4je85/giphy.gif)
 
 ### ¿Qué es Scrum? 🤔
 
@@ -20,7 +20,7 @@ Scrum es una metodología ágil que se centra en la entrega de valor a través d
 
 El marco Scrum divide el trabajo en iteraciones llamadas *sprints*, que generalmente duran entre dos y cuatro semanas. Al final de cada sprint, el equipo debe entregar un producto funcional o una parte significativa del proyecto. 🛠️
 
-*Puedes agregar un GIF aquí de "trabajo en equipo" o algo relacionado con la idea de progreso en un proyecto (Ejemplo: "https://giphy.com/gifs/teamwork-26Ahz2Ikg8tE66smI")*
+![Desktop View](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjhxYXl4a3g3dmhrZzh5Mzg0dTJrOTF0dXFubzcxY2tjbWZzbjFwZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WYyvz9PIhjLHgiyvR2/giphy.gif)
 
 ### Principales Roles en Scrum 👥
 
@@ -32,7 +32,7 @@ Uno de los elementos fundamentales de Scrum son los roles definidos dentro del e
 
 3. **Development Team (Equipo de Desarrollo) 👩‍💻👨‍💻**: Este grupo está compuesto por profesionales que trabajan juntos para desarrollar el producto. Cada miembro tiene habilidades técnicas y colabora estrechamente con los demás para lograr los objetivos del sprint.
 
-*Puedes incluir un GIF aquí de alguien facilitando una reunión o mostrando liderazgo (Ejemplo: "https://giphy.com/gifs/leader-26ufw8d4dP6GXYqD6")*
+![Desktop View](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTVmcG1tdjY3cW4yYjBteHcyNjdpaWZwdDIyZ2wxbTZ2aDRhaWIxcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5etWclPMB7yDtTdP4U/giphy.gif)
 
 ### Elementos Clave de Scrum 🔑
 
@@ -44,13 +44,13 @@ Uno de los elementos fundamentales de Scrum son los roles definidos dentro del e
 
 4. **Daily Standups (Reuniones Diarias) ⏱️**: Estas son reuniones rápidas de unos 15 minutos en las que cada miembro del equipo responde a tres preguntas clave: ¿Qué hice ayer? ¿Qué haré hoy? ¿Hay algo que me esté bloqueando? El objetivo es coordinar el trabajo y detectar posibles problemas de manera temprana.
 
-*Puedes agregar un GIF relacionado con reuniones diarias o algo con "comunicación en equipo" (Ejemplo: "https://giphy.com/gifs/work-meeting-5Tg4coPAaWvBEdwSgs")*
+![Desktop View](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG9ocHIzdXluaGp3anl0dTBjdXliMXRtN2p6NDFtY3k0YjhuNmF4eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DrO4Bm325pjhc0BRM0/giphy.gif)
 
 5. **Sprint Review (Revisión del Sprint) 🔍**: Al final de cada Sprint, el equipo presenta lo que ha completado y recibe retroalimentación. Esta revisión ayuda a identificar si el proyecto avanza según lo esperado o si es necesario hacer ajustes.
 
 6. **Sprint Retrospective (Retrospectiva del Sprint) 🧐**: Después de cada Sprint, el equipo reflexiona sobre lo que funcionó bien y lo que se puede mejorar. Este es un momento clave para aprender y aplicar mejoras al siguiente Sprint.
 
-*Aquí podrías usar un GIF de reflexión o de mejorar algo (Ejemplo: "https://giphy.com/gifs/thinking-reflection-Q6UwYbqaqIqIc")*
+![Desktop View](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3pxOWcwcGl3dnJjZXRkNGJwMW5pbXN0N2Q4c2kycW0yNjBlMW1pNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lKXEBR8m1jWso/giphy.gif)
 
 ### Beneficios de Scrum 💡
 
@@ -59,7 +59,7 @@ Uno de los elementos fundamentales de Scrum son los roles definidos dentro del e
 - **Mejor calidad 🏆**: La retroalimentación constante y la mejora continua aseguran que el producto final cumpla con los estándares de calidad esperados.
 - **Foco en el cliente 💬**: Al priorizar tareas en función de su valor para el negocio, Scrum asegura que el trabajo siempre esté alineado con las necesidades del cliente.
 
-*Un GIF relacionado con éxito o logro sería perfecto aquí (Ejemplo: "https://giphy.com/gifs/success-win-26uf6O09lZ5v5zGo4")*
+![Desktop View](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExejFybmh3cXQzMjgycWN5OXV3aTkxY2xseHliNWoyOG5qNWZuOG0xdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/111ebonMs90YLu/giphy.gif)
 
 ### Conclusión 🎯
 
@@ -67,8 +67,4 @@ La metodología Scrum es una excelente opción para equipos que buscan mayor efi
 
 Si estás comenzando a trabajar con Scrum, recuerda que la clave del éxito radica en la disciplina y el compromiso de todos los miembros del equipo. ¡Empieza a practicar y verás cómo Scrum puede transformar la forma en que trabajas! 🚀
 
-*Aquí puedes usar un GIF que inspire acción o motivación (Ejemplo: "https://giphy.com/gifs/lets-go-fun-26FwfA3GSOofSgTt6")*
-
----
-
-De esta manera, puedes agregar GIFs de Giphy en cada sección relevante del artículo. ¡Eso hará que el post sea aún más interactivo y entretenido! 😊
+![Desktop View](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGE3cTJsYjh3bWVxbzJ1N2NycG0zZTVlcXk0azNqaDZieXFhYzQ1NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nvdbzDm3JYyn9qqjmj/giphy.gif)
