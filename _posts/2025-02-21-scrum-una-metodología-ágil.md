@@ -14,7 +14,9 @@ La metodología Scrum ha ganado popularidad en los últimos años debido a su ca
 
 <div style="width:100%; display:flex; justify-content: center;"><iframe src="https://giphy.com/embed/1hXY6iNdTFpTW4je85" width="361" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 
-{% giphy welcome %}
+![giphy](https://github.com/user-attachments/assets/65c40c17-0bb8-46a0-a142-30336170eaba)
+
+![giphy](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHJmMWg5em54d3NwaGpzcmVlb2R4ZmUydnEzZGg4b2J0bzRoaHFieiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Rng7sDG4dkmyWev2qx/giphy.gif)
 
 ### ¿Qué es Scrum? 🤔
 
