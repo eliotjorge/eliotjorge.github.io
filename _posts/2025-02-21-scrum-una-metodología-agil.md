@@ -14,7 +14,7 @@ La metodología Scrum ha ganado popularidad en los últimos años debido a su ca
 
 ![Desktop View](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDkxbmpqa2NjMDhyZXJydm9xcmdjN3RvZmw1MXl4dHhwcW56ZHU3aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1hXY6iNdTFpTW4je85/giphy.gif)
 
-### ¿Qué es Scrum? 🤔
+## ¿Qué es Scrum? 🤔
 
 Scrum es una metodología ágil que se centra en la entrega de valor a través de ciclos de trabajo cortos y colaborativos. Su principal objetivo es gestionar proyectos de manera flexible, permitiendo adaptarse rápidamente a cambios en los requisitos, nuevas ideas o desafíos inesperados.
 
@@ -22,7 +22,7 @@ El marco Scrum divide el trabajo en iteraciones llamadas *sprints*, que generalm
 
 ![Desktop View](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjhxYXl4a3g3dmhrZzh5Mzg0dTJrOTF0dXFubzcxY2tjbWZzbjFwZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WYyvz9PIhjLHgiyvR2/giphy.gif)
 
-### Principales Roles en Scrum 👥
+## Principales Roles en Scrum 👥
 
 Uno de los elementos fundamentales de Scrum son los roles definidos dentro del equipo:
 
@@ -34,7 +34,7 @@ Uno de los elementos fundamentales de Scrum son los roles definidos dentro del e
 
 ![Desktop View](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTVmcG1tdjY3cW4yYjBteHcyNjdpaWZwdDIyZ2wxbTZ2aDRhaWIxcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5etWclPMB7yDtTdP4U/giphy.gif)
 
-### Elementos Clave de Scrum 🔑
+## Elementos Clave de Scrum 🔑
 
 1. **Sprints 🏃‍♂️**: Los Sprints son ciclos de trabajo que duran entre dos y cuatro semanas. Al final de cada Sprint, se entrega un incremento del producto que puede ser evaluado y ajustado si es necesario. Esto permite que el proyecto evolucione de forma iterativa.
 
@@ -52,7 +52,7 @@ Uno de los elementos fundamentales de Scrum son los roles definidos dentro del e
 
 ![Desktop View](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3pxOWcwcGl3dnJjZXRkNGJwMW5pbXN0N2Q4c2kycW0yNjBlMW1pNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lKXEBR8m1jWso/giphy.gif)
 
-### Beneficios de Scrum 💡
+## Beneficios de Scrum 💡
 
 - **Adaptabilidad 🔄**: Scrum permite a los equipos adaptarse a cambios rápidamente, lo que es esencial en proyectos donde los requisitos pueden evolucionar a medida que se avanza.
 - **Mayor visibilidad 👀**: Gracias a las reuniones diarias, las revisiones y las retrospectivas, todos los miembros del equipo tienen visibilidad sobre el estado del proyecto y los obstáculos que pueden surgir.
@@ -61,7 +61,7 @@ Uno de los elementos fundamentales de Scrum son los roles definidos dentro del e
 
 ![Desktop View](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExejFybmh3cXQzMjgycWN5OXV3aTkxY2xseHliNWoyOG5qNWZuOG0xdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/111ebonMs90YLu/giphy.gif)
 
-### Conclusión 🎯
+## Conclusión 🎯
 
 La metodología Scrum es una excelente opción para equipos que buscan mayor eficiencia, colaboración y adaptabilidad en el desarrollo de sus proyectos. Aunque implementar Scrum requiere tiempo y compromiso, los beneficios de esta metodología son claros: permite entregar productos de alta calidad, mejorar la comunicación dentro del equipo y responder rápidamente a los cambios.
 
