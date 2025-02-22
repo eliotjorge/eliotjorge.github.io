@@ -14,7 +14,7 @@ render_with_liquid: false
 
 Docker es una plataforma de código abierto que permite automatizar el despliegue de aplicaciones dentro de contenedores. Los contenedores son entornos ligeros y aislados que agrupan todo lo necesario para ejecutar una aplicación, como el código, las bibliotecas y las configuraciones del sistema. Esta tecnología hace que las aplicaciones sean más fáciles de desplegar y ejecutar en diferentes entornos sin preocuparse por las dependencias o configuraciones del sistema subyacente.
 
-### 🚀 ¿Para qué sirve Docker?
+## 🚀 ¿Para qué sirve Docker?
 
 Docker es ideal para desarrolladores y equipos de TI que necesitan ejecutar aplicaciones en entornos de prueba, desarrollo y producción de manera consistente. Sus principales ventajas incluyen:
 
