@@ -3,7 +3,7 @@ title: Consideraciones a la hora de escribir mails en HTML
 image: https://images.unsplash.com/photo-1708961462805-9949475ea462
 date: 11-11-2024
 categories: [web,programacion,codigo,html,css,mail]
-tags: [python,consola,apps,kivy,android]
+tags: [web,programacion,codigo,html,css,mail]
 pin: false
 comments: false
 render_with_liquid: false
