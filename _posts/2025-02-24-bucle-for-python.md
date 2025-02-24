@@ -1,6 +1,7 @@
 ---
-title: Bucle for en python
-date: 04-11-2026
+title: "🐍 Python: Bucle FOR"
+image: https://github.com/user-attachments/assets/2ebf3ff1-2dd0-4b0c-9142-69bd6d5b91c0
+date: 24-02-2025
 categories: [python]
 tags: [python]
 pin: false
@@ -8,11 +9,11 @@ comments: false
 render_with_liquid: false
 ---
 
-### **Bucles `for` en Python**
+## **Bucles `for` en Python**
 
 Un bucle `for` en Python se usa para iterar sobre una secuencia (como una lista, tupla, cadena de texto, etc.) y ejecutar un bloque de código para cada elemento de esa secuencia.
 
-#### **Sintaxis básica:**
+### **Sintaxis básica:**
 ```python
 for elemento in secuencia:
     # Código a ejecutar para cada elemento
@@ -22,9 +23,9 @@ for elemento in secuencia:
 
 ---
 
-### **Ejemplos de bucles `for`**
+## **Ejemplos de bucles `for`**
 
-#### 1. **Recorrer una lista**
+### 1. **Recorrer una lista**
 ```python
 frutas = ["manzana", "banana", "cereza"]
 
@@ -38,7 +39,7 @@ banana
 cereza
 ```
 
-#### 2. **Recorrer una cadena de texto**
+### 2. **Recorrer una cadena de texto**
 ```python
 mensaje = "Hola"
 
@@ -53,7 +54,7 @@ l
 a
 ```
 
-#### 3. **Recorrer un rango de números (`range`)**
+### 3. **Recorrer un rango de números (`range`)**
 ```python
 for i in range(5):
     print(i)
@@ -68,7 +69,7 @@ for i in range(5):
 ```
 - `range(5)` genera los números del 0 al 4. El valor final del rango no está incluido.
 
-#### 4. **Uso de `range` con inicio y fin**
+### 4. **Uso de `range` con inicio y fin**
 ```python
 for i in range(2, 8):
     print(i)
@@ -84,7 +85,7 @@ for i in range(2, 8):
 ```
 - `range(2, 8)` genera los números del 2 al 7 (el número 8 no se incluye).
 
-#### 5. **Recorrer con `range` y paso**
+### 5. **Recorrer con `range` y paso**
 ```python
 for i in range(0, 10, 2):
     print(i)
@@ -101,9 +102,9 @@ for i in range(0, 10, 2):
 
 ---
 
-### **Operaciones comunes dentro de un bucle `for`**
+## **Operaciones comunes dentro de un bucle `for`**
 
-#### 1. **Sumar elementos de una lista**
+### 1. **Sumar elementos de una lista**
 ```python
 numeros = [1, 2, 3, 4]
 suma = 0
@@ -118,7 +119,7 @@ print(suma)
 10
 ```
 
-#### 2. **Contar elementos en una lista (cuenta de ocurrencias)**
+### 2. **Contar elementos en una lista (cuenta de ocurrencias)**
 ```python
 colores = ["rojo", "azul", "rojo", "verde"]
 contador = 0
@@ -134,7 +135,7 @@ print(contador)
 2
 ```
 
-#### 3. **Modificar los elementos de una lista dentro de un `for`**
+### 3. **Modificar los elementos de una lista dentro de un `for`**
 ```python
 numeros = [1, 2, 3, 4]
 
@@ -150,7 +151,7 @@ print(numeros)
 
 ---
 
-### **Bucles `for` con `enumerate()`**
+## **Bucles `for` con `enumerate()`**
 
 `enumerate()` es una función muy útil cuando necesitas tanto el **índice** como el **valor** del elemento al recorrer una secuencia.
 
@@ -171,7 +172,7 @@ for indice, fruta in enumerate(frutas):
 
 ---
 
-### **Bucles `for` con listas de listas**
+## **Bucles `for` con listas de listas**
 
 Puedes usar un bucle `for` dentro de otro para recorrer listas que contienen otras listas.
 
@@ -197,7 +198,7 @@ for fila in matriz:
 
 ---
 
-### **List Comprehension** con `for`
+## **List Comprehension** con `for`
 
 **List Comprehension** es una forma compacta y eficiente de crear listas usando un bucle `for`.
 
@@ -213,12 +214,12 @@ print(cuadrados)
 
 ---
 
-### **`break` y `continue` dentro de un bucle `for`**
+## **`break` y `continue` dentro de un bucle `for`**
 
 - **`break`**: Sale del bucle inmediatamente.
 - **`continue`**: Omite el resto del código dentro del bucle y pasa a la siguiente iteración.
 
-#### Ejemplo con `break`:
+### Ejemplo con `break`:
 ```python
 for i in range(10):
     if i == 5:
@@ -234,7 +235,7 @@ for i in range(10):
 4
 ```
 
-#### Ejemplo con `continue`:
+### Ejemplo con `continue`:
 ```python
 for i in range(5):
     if i == 2:
