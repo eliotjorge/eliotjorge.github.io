@@ -1,6 +1,6 @@
 ---
 title: "🐍 Python cheatsheet"
-image: https://github.com/user-attachments/assets/c08b3a98-8f92-46b7-9568-87b227a6fe64
+image: https://github.com/user-attachments/assets/b0112fe6-ed9f-4ba6-83a1-d87aadcb9bee
 date: 24-02-2025
 categories: [python,cheatsheet]
 tags: [python,cheatsheet]
