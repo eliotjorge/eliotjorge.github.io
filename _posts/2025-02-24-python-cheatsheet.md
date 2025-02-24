@@ -1,14 +1,15 @@
 ---
-title: python cheatsheet
-date: 04-11-2024
-categories: [python]
-tags: [python]
+title: "🐍 Python cheatsheet"
+date: 24-02-2025
+categories: [python,cheatsheet]
+tags: [python,cheatsheet]
 pin: false
 comments: false
 render_with_liquid: false
 ---
 
-### 1. **Sintaxis básica**
+
+## 1. 📝 **Sintaxis básica**
 
 - **Comentarios**:
   ```python
@@ -27,7 +28,7 @@ render_with_liquid: false
   print("Hola, mundo!")
   ```
 
-### 2. **Variables y tipos de datos**
+## 2. 🎭 **Variables y tipos de datos**
 
 - **Asignación de variables**:
   ```python
@@ -37,47 +38,47 @@ render_with_liquid: false
 
 - **Tipos de datos comunes**:
   ```python
-  entero = 5          # Integer
-  flotante = 3.14     # Float
-  texto = "Hola"      # String
-  booleano = True     # Boolean
-  lista = [1, 2, 3]   # List
-  tupla = (1, 2, 3)   # Tuple
-  conjunto = {1, 2}   # Set
-  diccionario = {"clave": "valor"}  # Dictionary
+  entero = 5          # 🔢 Integer
+  flotante = 3.14     # 🔢 Float
+  texto = "Hola"      # 📝 String
+  booleano = True     # ✅ Boolean
+  lista = [1, 2, 3]   # 📜 List
+  tupla = (1, 2, 3)   # 🎭 Tuple
+  conjunto = {1, 2}   # 🧩 Set
+  diccionario = {"clave": "valor"}  # 📖 Dictionary
   ```
 
-### 3. **Operadores**
+## 3. ➕ **Operadores**
 
 - **Aritméticos**:
   ```python
-  +  # Suma
-  -  # Resta
-  *  # Multiplicación
-  /  # División (siempre retorna un float)
-  // # División entera (sin decimales)
-  %  # Módulo (resto de la división)
-  ** # Exponentes
+  +  # ➕ Suma
+  -  # ➖ Resta
+  *  # ✖ Multiplicación
+  /  # ➗ División (siempre retorna un float)
+  // # 🔢 División entera (sin decimales)
+  %  # ♻ Módulo (resto de la división)
+  ** # 🔥 Exponentes
   ```
 
 - **Relacionales**:
   ```python
-  ==  # Igual a
-  !=  # Diferente de
-  <   # Menor que
-  >   # Mayor que
-  <=  # Menor o igual que
-  >=  # Mayor o igual que
+  ==  # 🤝 Igual a
+  !=  # ❌ Diferente de
+  <   # ⬅ Menor que
+  >   # ➡ Mayor que
+  <=  # 🔽 Menor o igual que
+  >=  # 🔼 Mayor o igual que
   ```
 
 - **Lógicos**:
   ```python
-  and  # Y
-  or   # O
-  not  # Negación
+  and  # 🔗 Y
+  or   # 🔀 O
+  not  # 🚫 Negación
   ```
 
-### 4. **Estructuras de control**
+### 4. 🔄 **Estructuras de control**
 
 - **Condicionales (if, elif, else)**:
   ```python
@@ -104,7 +105,7 @@ render_with_liquid: false
         contador += 1
     ```
 
-### 5. **Funciones**
+## 5. 📌 **Funciones**
 
 - **Definir una función**:
   ```python
@@ -125,7 +126,7 @@ render_with_liquid: false
   print(resultado)
   ```
 
-### 6. **Listas y colecciones**
+## 6. 📜 **Listas y colecciones**
 
 - **Crear una lista**:
   ```python
@@ -150,7 +151,7 @@ render_with_liquid: false
       print(item)
   ```
 
-### 7. **Diccionarios**
+## 7. 📖 **Diccionarios**
 
 - **Crear un diccionario**:
   ```python
@@ -173,7 +174,7 @@ render_with_liquid: false
       print(clave, valor)
   ```
 
-### 8. **Manejo de errores (excepciones)**
+## 8. ⚠ **Manejo de errores (excepciones)**
 
 - **Bloques `try` y `except`**:
   ```python
@@ -183,7 +184,7 @@ render_with_liquid: false
       print("No puedes dividir entre cero")
   ```
 
-### 9. **Importar módulos**
+## 9. 📦 **Importar módulos**
 
 - **Importar un módulo**:
   ```python
@@ -197,7 +198,7 @@ render_with_liquid: false
   print(sqrt(16))
   ```
 
-### 10. **Otros conceptos útiles**
+## 10. 🚀 **Otros conceptos útiles**
 
 - **List Comprehension** (para crear listas de manera compacta):
   ```python
@@ -218,7 +219,7 @@ render_with_liquid: false
       print(i, valor)
   ```
 
-### 11. **Métodos comunes de las listas**
+## 11. 🛠 **Métodos comunes de las listas**
 
 - **`append()`**: Agregar un elemento al final de la lista
   ```python
