@@ -18,7 +18,7 @@ render_with_liquid: false
 - **No uses Javascript**: Nuevamente, no se soporta muy bien.
 - **Asegúrate de que tu correo sea legible sin imágenes**: El usuario puede no cargarlas.
 - **Proporciona una versión online y enlázala**: Esto permite que los usuarios vean el contenido tal como se pretende, incluso si su cliente de correo es terrible.
-- **Prueba, prueba, prueba**: Solo porque funcione en un cliente de correo no significa que funcione en otros. Un gran "problema" es Outlook 2007, que usa Word para renderizar el HTML (sigh).
+- **Prueba, prueba, prueba**: Solo porque funcione en un cliente de correo no significa que funcione en otros. Un gran "problema" es Outlook 2007, que usa Word para renderizar el HTML 😤.
 
 Esta lista está lejos de ser exhaustiva, pero debería encaminar a la mayoría de las personas por el buen camino.
 
