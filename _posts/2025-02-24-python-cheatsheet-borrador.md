@@ -12,7 +12,7 @@ render_with_liquid: false
 
 ## 1. 📝 **Sintaxis básica**
 
-### **Comentarios**:
+#### **Comentarios**:
   ```python
   # Esto es un comentario de una sola línea
   ```
@@ -24,7 +24,7 @@ render_with_liquid: false
   """
   ```
 
-### **Impresión en consola**:
+#### **Impresión en consola**:
   ```python
   print("Hola, mundo!")
   ```
