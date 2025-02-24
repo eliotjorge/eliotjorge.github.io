@@ -21,3 +21,5 @@ render_with_liquid: false
 - **Prueba, prueba, prueba**: Solo porque funcione en un cliente de correo no significa que funcione en otros. Un gran "problema" es Outlook 2007, que usa Word para renderizar el HTML (sigh).
 
 Esta lista está lejos de ser exhaustiva, pero debería encaminar a la mayoría de las personas por el buen camino.
+
+![Desktop view](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjVsaHY4MWN2dW9tN3c0aHYwaDc0MDJlb2MzeXVnZnlhdGlrenlidCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT5LMDjUD70GVSqShq/giphy.gif)
