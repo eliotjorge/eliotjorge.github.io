@@ -9,8 +9,6 @@ comments: false
 render_with_liquid: false
 ---
 
-# Consideraciones a la hora de escribir mails en HTML
-
 - **Usa CSS en línea**: No siempre se soportan los estilos.
 - **Usa diseños con tablas**: Lo sé, pero los diseños con divs dependen de CSS y muchos clientes de correo no pueden manejarlos.
 - **No uses rowspan**: Esto causa problemas extraños de espaciado.
