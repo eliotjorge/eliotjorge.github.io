@@ -52,15 +52,17 @@ render_with_liquid: false
 ## 3. ➕ **Operadores**
 
 - **Aritméticos**:
+  {% raw %}
   ```python
-  \+   # ➕ Suma
-  \-   # ➖ Resta
-  \*   # ✖ Multiplicación
+  +   # ➕ Suma
+  -   # ➖ Resta
+  *   # ✖ Multiplicación
   /  # ➗ División (siempre retorna un float)
   //  # 🔢 División entera (sin decimales)
   %   # ♻ Módulo (resto de la división)
   **  # 🔥 Exponentes
   ```
+  {% endraw %}
 
 - **Relacionales**:
   ```python
