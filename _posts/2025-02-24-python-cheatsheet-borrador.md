@@ -79,7 +79,7 @@ render_with_liquid: false
   not  # 🚫 Negación
   ```
 
-### 4. 🔄 **Estructuras de control**
+## 4. 🔄 **Estructuras de control**
 
 - **Condicionales (if, elif, else)**:
   ```python
