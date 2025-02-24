@@ -54,7 +54,7 @@ render_with_liquid: false
 - **Aritméticos**:
   
   ```python
-  '+'   # ➕ Suma
+  +   # Suma
   '-'   # ➖ Resta
   '*'   # ✖ Multiplicación
   /  # ➗ División (siempre retorna un float)
