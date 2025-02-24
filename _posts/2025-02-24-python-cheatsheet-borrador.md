@@ -56,7 +56,7 @@ render_with_liquid: false
   +   # ➕ Suma
   -   # ➖ Resta
   *   # ✖ Multiplicación
-  /   # ➗ División (siempre retorna un float)
+     # ➗ División (siempre retorna un float)
   //  # 🔢 División entera (sin decimales)
   %   # ♻ Módulo (resto de la división)
   **  # 🔥 Exponentes
