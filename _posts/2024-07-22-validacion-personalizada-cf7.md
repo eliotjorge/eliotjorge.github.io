@@ -8,8 +8,7 @@ comments: false
 render_with_liquid: false
 ---
 
-En Contact Form 7 no hay la posibilidad de validar los campos, sólo deja hacerlos obligatorios o no. Pero en el `functions.php` podemos hace unas condiciones que se activan
-con la función de validación del propio CF7.
+En Contact Form 7 no hay la posibilidad de validar los campos, sólo deja hacerlos obligatorios o no. Pero en el `functions.php` podemos programar unas condiciones que se activan con la función de validación del propio CF7 (Contact Form 7).
 
 Por ejemplo pongamos que tenemos éste formulario, 
 ```
@@ -17,7 +16,7 @@ Correo electrónico:              [email* your-email]
 Confirmar el correo electrónico: [email* your-email-confirm]
 ```
 
-Que queremos verificar que el correo electrónico es correcto pidiéndole al usuario que lo intriduzca dos veces, pero tenemos que comprobarlo viendo que los dos campos contienen el mismo correo.
+Que queremos verificar que el correo electrónico es correcto pidiéndole al usuario que lo introduzca dos veces, pero tenemos que comprobarlo viendo que los dos campos contienen el mismo correo.
 
 Para ello en el `functions.php` escribiremos el fragmento de código a continuación muestra un código que verifica si los dos campos tienen valores idénticos.
 
