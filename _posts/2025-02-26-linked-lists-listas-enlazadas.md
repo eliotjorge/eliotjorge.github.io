@@ -25,6 +25,11 @@ Ejemplo visual de una lista enlazada simple:
 ```
 [10 | *] --> [20 | *] --> [30 | None]
 ```
+graph LR
+    A[10] --> B[20]
+    B[20] --> C[30]
+    C[30] --> D[None]
+
 Cada nodo tiene un valor y una referencia al siguiente nodo.
 
 ---
