@@ -29,8 +29,6 @@ Input: ransomNote = "aa", magazine = "aab"
 Output: True
 ```
 
-![Frustración al faltar letras](https://media.giphy.com/media/l2JHRhAtnJSDNJ2py/giphy.gif)  
-
 ## 🚀 Mi solución en Python  
 
 Para resolver el problema, seguimos un enfoque directo: recorremos cada letra de `ransomNote` y verificamos si está en `magazine`. Si está, la eliminamos (para evitar repetirla). Si no, retornamos `False`.  
@@ -53,7 +51,6 @@ def canConstruct(ransomNote: str, magazine: str) -> bool:
    - ❌ Si no está, retornamos `False`.  
 3️⃣ Si logramos recorrer todo `ransomNote`, retornamos `True` porque logramos formar la palabra.  
 
-![Éxito absoluto](https://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif)   
 
 ## ⏳ Complejidad  
 
@@ -79,6 +76,4 @@ def canConstruct(ransomNote: str, magazine: str) -> bool:
 
 ### 🎯 Ventajas de esta versión:  
 ✅ **Más eficiente:** Su complejidad es **O(n + m)**, ya que construimos los contadores en **O(n) y O(m)** y luego los recorremos en **O(n)**.  
-✅ **Código más claro** y fácil de leer.  
-
-![Victoria](https://media.giphy.com/media/3oKIPCSX4UHmuMYM3q/giphy.gif)  
+✅ **Código más claro** y fácil de leer. 
