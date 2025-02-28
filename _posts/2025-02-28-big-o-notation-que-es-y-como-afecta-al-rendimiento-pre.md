@@ -1,6 +1,6 @@
 ---
 title: "Big O Notation: Qué es y cómo afecta el rendimiento de tu código"
-image: https://github.com/user-attachments/assets/7e9cbd99-a1eb-47a5-a196-b92189cc4ff4
+image:
 date: 28-02-2025
 categories: [programacion,desarrollo,algoritmos,rendimiento]
 tags: [programacion,desarrollo,algoritmos,rendimiento]
@@ -16,7 +16,6 @@ La notación **Big O** 📈 se usa para describir el **rendimiento de un algorit
 
 Nos ayuda a entender cómo se comporta un algoritmo cuando la entrada **crece mucho** 📊.  
 
----
 
 ## 🧐 **¿Qué significa O(n)?**  
 La notación **O(f(n))** describe **cómo aumenta el número de operaciones** cuando la entrada crece.  
@@ -40,8 +39,6 @@ def imprimir_elementos(lista):
 
 🟢 **Este algoritmo es eficiente porque solo recorre la lista una vez.**  
 
----
-
 ## 📊 **Tipos comunes de Big O y su significado**  
 
 | Notación Big O | Complejidad | Ejemplo |
@@ -52,44 +49,7 @@ def imprimir_elementos(lista):
 | **O(log n)** | Logarítmica | Búsqueda binaria |
 | **O(n log n)** | Quasilineal | Algoritmos de ordenamiento eficientes como mergesort |
 
-<style>
-  .chart-container { display: flex; gap: 20px; }
-  .chart { width: 100px; text-align: center; font-family: sans-serif; }
-  .bar { background: #3498db; width: 20px; display: inline-block; margin-top: 5px; }
-  .o1 .bar { height: 20px; }
-  .on .bar:nth-child(1) { height: 10px; } .on .bar:nth-child(2) { height: 30px; } 
-  .on .bar:nth-child(3) { height: 50px; } .on .bar:nth-child(4) { height: 70px; } 
-  .on2 .bar:nth-child(1) { height: 10px; } .on2 .bar:nth-child(2) { height: 40px; } 
-  .on2 .bar:nth-child(3) { height: 90px; } .on2 .bar:nth-child(4) { height: 160px; } 
-</style>
-
-<div class="chart-container">
-  <div class="chart o1">
-    <strong>O(1)</strong>
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-  </div>
-  <div class="chart on">
-    <strong>O(n)</strong>
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-  </div>
-  <div class="chart on2">
-    <strong>O(n²)</strong>
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-  </div>
-</div>
-
-
 👉 Cuanto más baja la complejidad, **más rápido y eficiente** es el algoritmo.  
-
----
 
 ## 🤯 **Ejemplo de complejidad O(n × m)**  
 Si tienes dos listas y las comparas con **dos bucles anidados**, la complejidad es **O(n × m)** porque **cada elemento de una lista se compara con todos los elementos de la otra**.  
@@ -106,12 +66,8 @@ def comparar_listas(lista1, lista2):
 
 🛑 **Si ambas listas son grandes, este algoritmo puede ser lento** 🐢, ya que crece proporcionalmente a \( n \times m \).  
 
----
-
 ### 🎯 **Resumen rápido**  
 ✅ **Big O describe cómo escala un algoritmo** cuando la entrada crece.  
 ✅ **O(n) significa que el tiempo crece linealmente con la entrada**.  
 ✅ **O(n × m) significa que depende de dos factores (ejemplo: dos listas)**.  
-✅ Cuanto menor sea la complejidad, **más rápido es el algoritmo** 🚀.  
-
-Si tienes un código en **LeetCode** y quieres analizar su complejidad, pásamelo y lo vemos juntos 🔍💡.
+✅ Cuanto menor sea la complejidad, **más rápido es el algoritmo** 🚀.
