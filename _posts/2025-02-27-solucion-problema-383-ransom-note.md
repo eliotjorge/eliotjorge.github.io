@@ -48,7 +48,8 @@ def canConstruct(ransomNote: str, magazine: str) -> bool:
 1️⃣ **Recorremos** cada letra `letraR` en `ransomNote`.  
 2️⃣ **Comprobamos** si está en `magazine`.  
    - ✅ Si está, la eliminamos con `replace(letraR, "", 1)`.  
-   - ❌ Si no está, retornamos `False`.  
+   - ❌ Si no está, retornamos `False`.
+     
 3️⃣ Si logramos recorrer todo `ransomNote`, retornamos `True` porque logramos formar la palabra.  
 
 
