@@ -165,6 +165,13 @@ render_with_liquid: false
       print(item)
   ```
 
+#### **Ordenar una lista**
+  ```python
+  lista = [4, 12, 0, 1]
+  lista.sort()
+  print(lista)   # [0, 1, 4, 12]
+  ```
+
 ## 7. 📖 **Diccionarios**
 
 #### **Crear un diccionario**
