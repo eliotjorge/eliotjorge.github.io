@@ -29,6 +29,18 @@ render_with_liquid: false
   print("Hola, mundo!")
   ```
 
+  ```python
+  x = "mundo"
+  print(f"Hola, {x}")
+  ```
+
+  ```python
+  x = "Hola"
+  y = "mundo"
+  
+  print(f"{x}, {y}")
+  ```
+
 ## 2. 🎭 **Variables y tipos de datos**
 
 #### **Asignación de variables**
