@@ -254,3 +254,61 @@ render_with_liquid: false
   ```python
   lista.sort()  # Ordena de menor a mayor
   ```
+
+## 12. 🪛 **Métodos útiles**
+
+
+
+#### `max()` 📈
+
+La función `max()` en Python se utiliza para encontrar el **valor máximo** de un conjunto de elementos. Puede tomar uno o más argumentos, y devuelve el elemento más grande. 🏆 Si se le pasa una lista, tupla o cualquier tipo de iterable, devuelve el elemento con el valor más alto. ¡Es como encontrar el campeón de una competencia! 🥇
+
+##### Sintaxis:
+
+```python
+max(iterable, *[, key, default])
+```
+
+- **iterable**: Es la colección de elementos de la que queremos obtener el valor máximo (puede ser una lista, tupla, conjunto, etc.) 🔢.
+- **key**: (Opcional) Una función que se utiliza para extraer una clave de comparación de cada elemento. 🔍
+- **default**: (Opcional) Un valor a devolver si el iterable está vacío. ❌
+
+##### Ejemplos:
+
+1. **Uso básico** 🧑‍💻:
+
+```python
+numbers = [1, 5, 3, 9, 2]
+print(max(numbers))  # Salida: 9
+```
+
+En este caso, la función devuelve **9**, que es el valor más grande de la lista. 🚀
+
+2. **Con varios argumentos**:
+
+```python
+print(max(1, 5, 3, 9, 2))  # Salida: 9
+```
+
+¡También puedes pasarle varios números directamente! 🎉
+
+3. **Uso con el parámetro `key`** 🔑:
+
+Si tenemos una lista de tuplas y queremos obtener la tupla con el número más alto en la **segunda** posición:
+
+```python
+pairs = [(1, 2), (3, 4), (5, 1)]
+print(max(pairs, key=lambda x: x[1]))  # Salida: (3, 4)
+```
+
+En este caso, `max()` encuentra la tupla `(3, 4)` porque **4** es el valor más alto en la segunda posición. 🎯
+
+4. **Uso con el parámetro `default`** ⚠️:
+
+Si el iterable está vacío, podemos especificar un valor por defecto para evitar errores:
+
+```python
+print(max([], default="No hay elementos"))  # Salida: No hay elementos
+```
+
+¡Sin miedo a los errores! Si la lista está vacía, devuelve un valor por defecto. 😅
