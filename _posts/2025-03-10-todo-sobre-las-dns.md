@@ -1,6 +1,6 @@
 ---
 title: "🌐 Todo sobre las DNS: Qué son y cómo funcionan"
-image: https://github.com/user-attachments/assets/0ab84538-6c3f-43cd-ba65-822acc7e9fda
+image: https://github.com/user-attachments/assets/b8da8aac-99e6-4a9c-820b-6b93332e9134
 date: 2025-03-10
 categories: [DNS, servidores, dominios, registros DNS]
 tags: [DNS, servidores, dominios, registros DNS]
