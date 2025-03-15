@@ -6,7 +6,7 @@ source "https://rubygems.org"
 
 gemspec
 
-ruby '3.2.2'
+ruby '3.0.0'
 
 gem 'csv', require: 'csv'
 gem 'jekyll', '~> 4.3'
