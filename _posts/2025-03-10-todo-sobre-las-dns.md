@@ -11,7 +11,7 @@ render_with_liquid: false
 
 Cuando escribes una dirección en tu navegador, como `example.com`, algo mágico ocurre en el fondo: las **DNS** entran en acción. Pero, ¿qué son exactamente? 🤔
 
-## ✨ Qué es el DNS
+## ✨ Qué es DNS
 
 El **Sistema de Nombres de Dominio** (DNS, por sus siglas en inglés) es como la agenda telefónica de Internet. Su función es traducir nombres de dominio legibles por humanos (como `google.com`) en direcciones IP que los ordenadores entienden (como `142.250.184.206`).
 
