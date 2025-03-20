@@ -1,6 +1,6 @@
 ---
 title: "🛡️ ¿Qué es DMARC y por qué es importante para proteger tu dominio? 📧"
-image: https://github.com/user-attachments/assets/5737e73a-a155-4952-b1dc-027bd87e629e
+image: https://github.com/user-attachments/assets/5d989b97-3a19-4f89-a6cc-b1b3fd917635
 date: 06-03-2025
 categories: [Seguridad, Email]
 tags: [Seguridad, Email]
