@@ -19,4 +19,6 @@ order: 6
 
 [XML Sitemaps](https://www.xml-sitemaps.com/){:target="_blank"}
 
+[Compresor de imágenes](https://small.im/){:target="_blank"}
+
 [Developer roadmaps](https://roadmap.sh/){:target="_blank"}
