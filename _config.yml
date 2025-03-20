@@ -19,6 +19,22 @@ lang: es-ES
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone: Europe/Madrid
 
+# Sitemap
+# ↓ --------------------------
+url: "https://jorgerosa.dev"  # Reemplaza con tu dominio real
+plugins:
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: "taller"
+    values:
+      sitemap: false
+
+# ↑ --------------------------
+# FIN Sitemap
+
+
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
