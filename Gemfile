@@ -12,7 +12,6 @@ gem 'csv', require: 'csv'
 gem 'jekyll', '~> 4.3'
 gem 'base64'
 gem 'logger'
-gem 'jekyll-sitemap'
 
 group :test do
   gem "html-proofer", "~> 4.4"
