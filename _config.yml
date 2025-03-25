@@ -59,7 +59,7 @@ google_site_verification: google-site-verification=sgu8bsjfhI0UUXfIhb05KHVXUH8Qu
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: G-MFNK6J4GHL # fill in your Google Analytics ID
+  id: #pegado código de GA en includes/head.html # fill in your Google Analytics ID
 
 # Prefer color scheme setting.
 #
