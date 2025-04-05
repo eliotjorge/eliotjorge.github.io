@@ -1,5 +1,6 @@
 ---
 layout: page
+noindex: true
 ---
 
 ### MINI
