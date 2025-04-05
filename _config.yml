@@ -120,10 +120,6 @@ pwa:
 
 paginate: 15
 
-{% if page.noindex %}
-  <meta name="robots" content="noindex">
-{% endif %}
-
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
