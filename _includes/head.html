@@ -10,6 +10,10 @@
       name="viewport"
       content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
     >
+
+    {% if page.noindex %}
+    <meta name="robots" content="noindex">
+    {% endif %}
   
     {% capture seo_tags %}
       {% seo title=false %}
