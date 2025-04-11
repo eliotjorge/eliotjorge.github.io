@@ -1,190 +1,23 @@
+---
+---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://jorgerosa.dev/posts/write-a-new-post/</loc>
-<lastmod>2023-11-12T07:10:00+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/estilo-radiobutton/</loc>
-<lastmod>2024-03-08T19:51:35+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/landing-centrar-elemento-en-pagina/</loc>
-<lastmod>2024-03-14T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/galeria-imagenes-cuadradas-wordpress/</loc>
-<lastmod>2024-04-01T17:33:07+02:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/crear-entorno-virtual-python/</loc>
-<lastmod>2024-10-31T12:07:47+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/hacer-preload-de-imagenes/</loc>
-<lastmod>2024-06-05T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/no-funciona-eventos-de-js-en-imagenes-con-DIVI/</loc>
-<lastmod>2024-12-03T15:42:05+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/funcion-para-validar-nif-nie-cif-con-php/</loc>
-<lastmod>2024-12-03T15:48:34+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/poner-cursor-en-input/</loc>
-<lastmod>2024-11-02T21:03:34+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/redirecciona-cf7-a-otra-pagina-despues-de-envio-satisfactorio/</loc>
-<lastmod>2024-07-22T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/valida-nif-cif-cf7/</loc>
-<lastmod>2024-11-13T00:49:07+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/validacion-personalizada-cf7/</loc>
-<lastmod>2025-02-26T22:09:27+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/como-compilar-tu-aplicacion-kivy-para-android/</loc>
-<lastmod>2024-11-08T22:01:43+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/como-empezar-a-programar-apps-con-python-usando-kivy/</loc>
-<lastmod>2024-11-08T22:03:38+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/desarrollar-una-web-en-python-y-alojarla-de-manera-gratuita/</loc>
-<lastmod>2024-11-07T21:55:42+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/consideraciones-a-la-hora-de-escribir-mails-html/</loc>
-<lastmod>2025-02-24T16:26:42+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/shortcode-selector-de-idiomas-polylang/</loc>
-<lastmod>2024-12-18T15:26:42+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/especificar-diferentes-favicons-para-temas-claro-y-oscuro/</loc>
-<lastmod>2024-12-18T15:22:27+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/a%C3%B1adir-opcion-en-producto-de-woocommerce-para-generar-enlace-de-a%C3%B1adir-al-carrito/</loc>
-<lastmod>2024-11-22T13:27:57+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/ocultar-opcion-de-checkbox-en-cf7-una-vez-alcanzado-un-numero/</loc>
-<lastmod>2024-12-16T11:49:42+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/desactivar-w3-total-cache-por-completo-en-wordpress/</loc>
-<lastmod>2024-12-18T15:24:18+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/crear-custom-gpt-en-openai/</loc>
-<lastmod>2024-12-17T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/guia-sobre-localstorage-y-sessionstorage-en-javascript/</loc>
-<lastmod>2025-01-18T11:49:21+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/automatizacion-del-despliegue-de-jekyll-con-github-actions/</loc>
-<lastmod>2025-02-08T22:00:52+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/introduccion-a-docker-que-es-para-que-sirve-y-como-empezar/</loc>
-<lastmod>2025-02-22T11:36:39+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/scrum-una-metodolog%C3%ADa-agil/</loc>
-<lastmod>2025-02-21T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/python-cheatsheet/</loc>
-<lastmod>2025-03-01T22:15:42+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/bucle-for-python/</loc>
-<lastmod>2025-02-25T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/linked-lists-listas-enlazadas/</loc>
-<lastmod>2025-02-26T13:28:34+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/solucion-problema-383-ransom-note/</loc>
-<lastmod>2025-02-28T10:30:31+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/big-o-notation-que-es-y-como-afecta-al-rendimiento/</loc>
-<lastmod>2025-02-28T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/que-es-dmark-y-por-que-es-imortante-para-proteger-tu-dominio/</loc>
-<lastmod>2025-03-17T15:47:35+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/posts/todo-sobre-las-dns/</loc>
-<lastmod>2025-03-16T20:43:02+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/categories/</loc>
-<lastmod>2025-03-20T13:56:18+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/tags/</loc>
-<lastmod>2025-03-20T13:56:18+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/archives/</loc>
-<lastmod>2025-03-20T13:56:18+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/about/</loc>
-<lastmod>2025-03-20T13:56:18+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/herramientas/</loc>
-<lastmod>2025-03-20T13:56:18+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/</loc>
-</url>
-<url>
-<loc>https://jorgerosa.dev/recursos/automate-the-boring-stuff-with-python/</loc>
-<lastmod>2025-03-20T13:56:11+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/recursos/automate-the-boring-stuff-with-python/libro-python.pdf</loc>
-<lastmod>2025-03-20T13:56:11+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/recursos/python-cheat-sheets/</loc>
-<lastmod>2025-03-20T13:56:11+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/recursos/python-cheat-sheets/python-cheat-sheets.pdf</loc>
-<lastmod>2025-03-20T13:56:11+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/utilidades/comparador/</loc>
-<lastmod>2025-03-20T13:56:11+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/utilidades/conversor/</loc>
-<lastmod>2025-03-20T13:56:11+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/utilidades/encoder-decoder/</loc>
-<lastmod>2025-03-20T13:56:11+01:00</lastmod>
-</url>
-<url>
-<loc>https://jorgerosa.dev/utilidades/generadormedia/</loc>
-<lastmod>2025-03-20T22:00:11+01:00</lastmod>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for post in site.posts %}
+    <url>
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  {% endfor %}
+  {% for page in site.pages %}
+    {% unless page.url contains "sitemap.xml" %}
+      <url>
+        <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+    {% endunless %}
+  {% endfor %}
 </urlset>
