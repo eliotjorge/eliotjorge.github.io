@@ -109,4 +109,41 @@
     {% include metadata-hook.html %}
 
   <script src="https://consent.cookiefirst.com/sites/jorgerosa.dev-c32cfb04-ab1f-4623-99c2-4413d83931fd/consent.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page.url | relative_url }}"
+    },
+    "headline": "{{ page.title }}",
+    "description": "{{ page.excerpt | strip_html | truncatewords: 50 }}",
+    "image": {
+      "@type": "ImageObject",
+      "url": "{{ page.image }}",
+      "width": 1200,
+      "height": 630
+    },
+    "author": {
+      "@type": "Person",
+      "name": "{{ site.author.name }}",
+      "url": "{{ site.author.url }}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ site.title }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.logo }}",
+        "width": 500,
+        "height": 500
+      }
+    },
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.date | date_to_xmlschema }}"
+  }
+  </script>
+
   </head>
