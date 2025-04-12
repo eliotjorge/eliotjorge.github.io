@@ -1,6 +1,5 @@
 ---
 title: Writing a New Post
-author: cotes
 date: 2023-11-12 14:10:00 +0800
 categories: [Blogging, Tutorial]
 tags: [writing]
