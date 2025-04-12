@@ -6,7 +6,7 @@
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
       <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      <changefreq>monthly</changefreq>
+      <changefreq>daily</changefreq>
       <priority>0.5</priority>
     </url>
   {% endfor %}
@@ -16,7 +16,7 @@
         <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
       </url>
     {% endunless %}
   {% endfor %}
