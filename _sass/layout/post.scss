@@ -14,7 +14,7 @@
   width: 50%;
   position: relative;
   border-color: var(--btn-border-color);
-  background-color: white
+  background-color: var(--card-bg)
 }
 
 @mixin dot($pl: 0.25rem, $pr: 0.25rem) {
