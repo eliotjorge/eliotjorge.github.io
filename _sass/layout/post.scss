@@ -166,6 +166,7 @@ h1 + .post-meta {
 .post-navigation {
   .btn {
     @extend %btn-post-nav;
+    background-color: red;
 
     &:not(:hover) {
       color: var(--link-color);
