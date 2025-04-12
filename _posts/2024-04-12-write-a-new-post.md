@@ -1,6 +1,6 @@
 ---
 title: Writing a New Post
-date: 2023-11-12 14:10:00 +0800
+date: 2024-04-12
 categories: [Blogging, Tutorial]
 tags: [writing]
 render_with_liquid: false
