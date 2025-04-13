@@ -1,6 +1,6 @@
 ---
 title: "📊 Ejemplo de resumen OLS válido para el análisis"
-image: https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmV3dnFtd2phNTcxOTE3cWxnOGNheXQ0MjQ2NWQxanh4dXowNW1yOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0IylOPCNkiqOgMyA/giphy.gif
+image:
 date: 2025-04-13 19:40:00
 categories: [data science, ols, estadística]
 tags: [data science, ols, estadística]
