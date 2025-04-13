@@ -176,6 +176,8 @@ Kurtosis:                      13.195   Cond. No.                         811.
 
 ---
 
+# 🖼️ Representación gráfica
+
 ![regresion_lineal_ols](https://github.com/user-attachments/assets/376a6c9e-82b7-4ad2-8752-f0c206dd3aeb)
 
 
