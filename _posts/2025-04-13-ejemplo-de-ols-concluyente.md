@@ -1,6 +1,6 @@
 ---
 title: "📊 Ejemplo de resumen OLS válido para el análisis"
-date: 2025-04-13
+date: 2025-04-13 +8000
 categories: [data science, ols, estadística]
 tags: [data science, ols, estadística]
 render_with_liquid: false
