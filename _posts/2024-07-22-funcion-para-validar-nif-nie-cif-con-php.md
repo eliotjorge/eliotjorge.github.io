@@ -3,12 +3,19 @@ title: Función para validar DNI (NIF), CIF, NIE con PHP
 date: 22-07-2024
 categories: [web,programacion,codigo,php,formulario,donaciones,olvidados,woocommerce,wordpress]
 tags: [web,programacion,codigo,php,formulario,donaciones,olvidados,woocommerce,wordpress]
-pin: false
 comments: false
 render_with_liquid: false
 ---
 
 En este post, exploraremos una función en PHP diseñada para validar los principales formatos de identificación utilizados en España: **DNI (NIF)**, **CIF**, y **NIE**. Estos números son fundamentales para identificar tanto a personas físicas como jurídicas en procedimientos oficiales.
+
+## **Sintaxis**
+
+validDniCifNie(_dni_);
+
+| Parámetro | Descripción |
+| --------  | ----------- |
+|  dni  | Requerido. Esepcifica el DNI, CIF o NIE que se quiere validar.  |
 
 Devuelve un booleano, `true` si es válido y `false` si no cumple las condiciones.
 
