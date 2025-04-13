@@ -1,12 +1,10 @@
 ---
 title: "📊 ¿Qué es OLS (Mínimos Cuadrados Ordinarios)?"
-image: 
 date: 2025-04-13
 categories: [data science, ols, estadística]
 tags: [data science, ols, estadística]
 render_with_liquid: false
 ---
-
 
 OLS significa **Ordinary Least Squares** en inglés, o **Mínimos Cuadrados Ordinarios** en español.
 
