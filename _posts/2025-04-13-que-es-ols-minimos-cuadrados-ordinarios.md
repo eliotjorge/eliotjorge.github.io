@@ -181,13 +181,13 @@ Kurtosis:                      13.195   Cond. No.                         811.
 ![regresion_lineal_ols](https://github.com/user-attachments/assets/376a6c9e-82b7-4ad2-8752-f0c206dd3aeb)
 
 
-Cruces amarillas: son los datos reales de personas: su pulso promedio y calorías quemadas.
+**Cruces amarillas:** son los datos reales de personas: su pulso promedio y calorías quemadas.
 
-Línea roja: es la línea que OLS ha intentado ajustar. Como puedes ver, está casi horizontal porque no hay relación clara entre los datos.
+**Línea roja:** es la línea que OLS ha intentado ajustar. Como puedes ver, está casi horizontal porque no hay relación clara entre los datos.
 
 Es como si el modelo dijera:
 
-"Da igual el pulso, la cantidad de calorías quemadas no cambia mucho."
+> "Da igual el pulso, la cantidad de calorías quemadas no cambia mucho."
 
 Por eso el R-squared era cercano a 0.
 
