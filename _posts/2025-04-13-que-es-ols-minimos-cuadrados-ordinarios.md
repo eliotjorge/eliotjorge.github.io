@@ -23,7 +23,7 @@ Para hacerlo, **mide qué tan lejos están los puntos de la línea**, y encuentr
 
 ---
 
-# 🐍 Ejemplo en Python paso a paso
+## 🐍 Ejemplo en Python paso a paso
 
 ```python
 import pandas as pd
@@ -44,7 +44,7 @@ print(results.summary())
 
 ---
 
-# 🧠 Explicación del código
+## 🧠 Explicación del código
 
 ### `import pandas as pd`
 Importa la librería **pandas**, que se usa para leer y trabajar con datos en forma de tabla (como Excel).
@@ -69,7 +69,7 @@ Muestra el **resumen del modelo** con todos los detalles y estadísticas.
 
 ---
 
-# 🧾 ¿Qué dice el resumen?
+## 🧾 ¿Qué dice el resumen?
 
 Aquí está lo que verás al imprimir `results.summary()`:
 
@@ -101,9 +101,9 @@ Kurtosis:                      13.195   Cond. No.                         811.
 
 ---
 
-## 🧾 Salida completa de `results.summary()` (Explicación en 3 bloques)
+### 🧾 Salida completa de `results.summary()` (Explicación en 3 bloques)
 
-### 🔹 **Bloque 1: Información general del modelo**
+####🔹 **Bloque 1: Información general del modelo**
 ```text
                             OLS Regression Results
 ==============================================================================
@@ -130,7 +130,7 @@ Covariance Type:            nonrobust
 
 ---
 
-### 🔹 **Bloque 2: Tabla de coeficientes (la ecuación del modelo)**
+#### 🔹 **Bloque 2: Tabla de coeficientes (la ecuación del modelo)**
 ```text
 =================================================================================
                     coef    std err          t      P>|t|      [0.025      0.975]
@@ -156,7 +156,7 @@ Pero:
 
 ---
 
-### 🔹 **Bloque 3: Diagnóstico del modelo (calidad de los residuos)**
+#### 🔹 **Bloque 3: Diagnóstico del modelo (calidad de los residuos)**
 ```text
 Omnibus:                      124.542   Durbin-Watson:                   1.620
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):              938.541
@@ -174,7 +174,7 @@ Kurtosis:                      13.195   Cond. No.                         811.
 
 ---
 
-# 🖼️ Representación gráfica
+## 🖼️ Representación gráfica
 
 ![regresion_lineal_ols](https://github.com/user-attachments/assets/376a6c9e-82b7-4ad2-8752-f0c206dd3aeb)
 
@@ -191,7 +191,7 @@ Por eso el R-squared era cercano a 0.
 
 ---
 
-# 🧃 ¿En resumen sencillo?
+## 🧃 ¿En resumen sencillo?
 
 - **OLS** es una técnica que dibuja la **mejor línea recta** entre dos cosas (por ejemplo, pulso y calorías).
 - En tu código, OLS intentó encontrar esa línea.
