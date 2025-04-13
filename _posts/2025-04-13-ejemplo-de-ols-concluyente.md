@@ -1,5 +1,6 @@
 ---
 title: "📊 Ejemplo de resumen OLS válido para el análisis"
+image: https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmV3dnFtd2phNTcxOTE3cWxnOGNheXQ0MjQ2NWQxanh4dXowNW1yOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0IylOPCNkiqOgMyA/giphy.gif
 date: 2025-04-13 19:40:00
 categories: [data science, ols, estadística]
 tags: [data science, ols, estadística]
@@ -62,7 +63,7 @@ Kurtosis:                       3.977   Cond. No.                     1.07e+03
 ### 🔢 **Bloque 2: Coeficientes**
 - **Intercept (38.88):** el valor base si el pulso fuera 0 (no muy relevante aquí).
 - **Coef. de Average_Pulse = 4.63** → Esto quiere decir que **por cada aumento de 1 en el pulso promedio, se queman 4.63 calorías más**.
-- **P>|t| para Average_Pulse es 0.000**, lo mas bajo → ¡muy significativo! si es menor de 0.05, es importante.
+- **`P>|t|` para Average_Pulse es 0.000**, lo mas bajo → ¡muy significativo! si es menor de 0.05, es importante.
 
 ---
 
