@@ -61,11 +61,8 @@ Kurtosis:                       3.977   Cond. No.                     1.07e+03
 
 ### 🔢 **Bloque 2: Coeficientes**
 - **Intercept (38.88):** el valor base si el pulso fuera 0 (no muy relevante aquí).
-- **Coef. de Average_Pulse = 4.63**, p = 0.000 → ¡muy significativo!
-
-  🔍 Esto quiere decir que **por cada aumento de 1 en el pulso promedio, se queman 4.63 calorías más**.
-
-- **P>|t| para Average_Pulse es 0.000**, lo mas bajo → si es menor de 0.05, es importante.
+- **Coef. de Average_Pulse = 4.63** → Esto quiere decir que **por cada aumento de 1 en el pulso promedio, se queman 4.63 calorías más**.
+- **P>|t| para Average_Pulse es 0.000**, lo mas bajo → ¡muy significativo! si es menor de 0.05, es importante.
 
 ---
 
