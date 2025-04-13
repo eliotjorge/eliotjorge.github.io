@@ -68,7 +68,8 @@ html[data-mode=light] {
 
 /* Change text for tags page only to green */
 #search-results a, #search-hints .post-tag, a {
-    color: #c0c0c0;
+    //color: #c0c0c0;
+  color: var(--toc-highlight)
 }
 
 /* Change panel hover only text color to green and border hover to purple */
