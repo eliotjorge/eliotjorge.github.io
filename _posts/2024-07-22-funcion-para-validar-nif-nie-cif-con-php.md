@@ -13,10 +13,6 @@ En este post, exploraremos una función en PHP diseñada para validar los princi
 
 validDniCifNie(_dni_);
 
-| Parámetro | Descripción |
-| --------  | ----------- |
-|  dni  | Requerido. Esepcifica el DNI, CIF o NIE que se quiere validar.  |
-
 Devuelve un booleano, `true` si es válido y `false` si no cumple las condiciones.
 
 ## 💡 [Explicación del código](#explicacion)
@@ -117,7 +113,6 @@ Antes de realizar cualquier validación, el código convierte el identificador a
 
 ### 2. **Validar formato general**
 ```php
-Copiar código
 if (!preg_match('/^[A-Z0-9]{9}$/', $dni)) {
     return false;
 }
