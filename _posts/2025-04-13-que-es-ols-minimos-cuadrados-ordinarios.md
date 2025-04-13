@@ -176,7 +176,6 @@ Kurtosis:                      13.195   Cond. No.                         811.
 
 ---
 
-
 ![regresion_lineal_ols](https://github.com/user-attachments/assets/376a6c9e-82b7-4ad2-8752-f0c206dd3aeb)
 
 
@@ -189,7 +188,6 @@ Es como si el modelo dijera:
 "Da igual el pulso, la cantidad de calorías quemadas no cambia mucho."
 
 Por eso el R-squared era cercano a 0.
-
 
 ---
 
