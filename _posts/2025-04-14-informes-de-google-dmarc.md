@@ -155,3 +155,12 @@ Estos informes permiten:
   <img src="https://media.giphy.com/media/xVpUhR49z4F14vWJZ5/giphy.gif" alt="Protección activada" width="300" />
 </div>
 
+--
+
+Sólo hay que preocuparse si en el informe aparece algo como:
+
+- **spf:** fail
+- **dkim:** fail
+- **disposition:** quarantine o reject.
+- IPs sospechosas que no reconoces.
+- Muchos intentos fallidos.
