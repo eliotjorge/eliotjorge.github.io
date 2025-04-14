@@ -1,5 +1,6 @@
 ---
 title: "📩 Informe de DMARC de Google"
+image: https://images.unsplash.com/photo-1603899122634-f086ca5f5ddd?q=80&w=1974
 date: 14-04-2025
 categories: [Seguridad, Email]
 tags: [Seguridad, Email]
@@ -81,7 +82,7 @@ Este es un ejemplo de contenido `.xml` recibido tras configurar DMARC para `tudo
   </policy_published>
   <record>
     <row>
-      <source_ip>82.98.171.206</source_ip>
+      <source_ip>80.98.171.206</source_ip>
       <count>1</count>
       <policy_evaluated>
         <disposition>none</disposition>
@@ -111,7 +112,7 @@ Este es un ejemplo de contenido `.xml` recibido tras configurar DMARC para `tudo
 
 ## 🔍 ¿Qué significa este informe?
 
-- ✉️ **1 correo** fue enviado desde la IP `82.98.171.206` (perteneciente a Dinahosting)
+- ✉️ **1 correo** fue enviado desde la IP `80.98.171.206`
 - ✅ **SPF y DKIM pasaron correctamente**
 - 📥 **DMARC se aplicó** pero el correo fue considerado legítimo (`disposition: none`)
 - 📄 Se usó la configuración DKIM `default` y SPF desde el dominio `tudominio.es`
