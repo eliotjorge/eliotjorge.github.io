@@ -42,9 +42,6 @@ layout: default
 {% capture content %}
   {% for post in posts %}
     {% if post.categories contains "img" %}
-      <article class="card-wrapper">
-      <a href="https://google.com" class="card post-preview flex-md-row-reverse">
-        {% if post.image %}
           {% if post.image.lqip %}
             {% capture lqip %}lqip="{{ post.image.lqip }}"{% endcapture %}
           {% endif %}
@@ -57,10 +54,7 @@ layout: default
           {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
 
           <img src="{{ src }}" w="100%" h="10" alt="{{ alt }}" {{ lqip }}>
-        {% endif %}
         <!-- .card-body -->
-      </a>
-      </article>
     {% else %}
       <article class="card-wrapper">
         <a href="{{ post.url | relative_url }}" class="card post-preview flex-md-row-reverse">
