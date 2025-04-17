@@ -41,7 +41,7 @@ layout: default
 
 {% capture content %}
   {% for post in posts %}
-    {% if post.category contains "img" %}
+    {% if post.categories contains "img" %}
       <article class="card-wrapper">
       <a href="https://google.com" class="card post-preview flex-md-row-reverse">
         {% if post.image %}
