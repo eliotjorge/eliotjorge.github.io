@@ -42,17 +42,14 @@ layout: default
 {% capture content %}
   {% for post in posts %}
     {% if post.categories contains "img" %}
-          <article class="card-wrapper">
+      <article class="card-wrapper">
           {% if post.image %}
-            {% if post.image.lqip %}
-              {% capture lqip %}lqip="{{ post.image.lqip }}"{% endcapture %}
-            {% endif %}
   
             {% assign src = post.image.path | default: post.image %}
             {% unless src contains '//' %}
               {% assign src = post.img_path | append: '/' | append: src | replace: '//', '/' %}
             {% endunless %}
-            <img src="{{ src }}" w="17" h="10" alt="{{ alt }}" {{ lqip }}>
+            <img src="{{ src }}" alt="{{ alt }}" {{ lqip }}>
           {% endif %}
           <!-- .card-body -->
       </article>
