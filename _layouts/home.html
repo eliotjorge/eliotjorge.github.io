@@ -42,17 +42,16 @@ layout: default
 {% capture content %}
   {% for post in posts %}
     {% if post.categories contains "img" %}
-      <article class="card-wrapper">
 
-  
-            {% assign src = post.image.path | default: post.image %}
-            {% unless src contains '//' %}
-              {% assign src = post.img_path | append: '/' | append: src | replace: '//', '/' %}
-            {% endunless %}
-            <img src="{{ src }}" alt="{{ alt }}" {{ lqip }}>
-
-          <!-- .card-body -->
+      <article class="card-wrapper" style="text-align: center; width: 100%;">
+        {% assign src = post.image.path | default: post.image %}
+        {% unless src contains '//' %}
+          {% assign src = post.img_path | append: '/' | append: src | replace: '//', '/' %}
+        {% endunless %}
+        {% assign alt = post.image.alt | default: post.title | xml_escape %}
+        <img src="{{ src }}" alt="{{ alt }}" style="width: 100%; height: auto; display: block; margin: 0 auto;" {{ post.image.lqip | default: '' }}>
       </article>
+
     {% else %}
       <article class="card-wrapper">
         <a href="{{ post.url | relative_url }}" class="card post-preview flex-md-row-reverse">
