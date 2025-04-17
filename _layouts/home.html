@@ -43,14 +43,14 @@ layout: default
   {% for post in posts %}
     {% if post.categories contains "img" %}
       <article class="card-wrapper">
-          {% if post.image %}
+
   
             {% assign src = post.image.path | default: post.image %}
             {% unless src contains '//' %}
               {% assign src = post.img_path | append: '/' | append: src | replace: '//', '/' %}
             {% endunless %}
             <img src="{{ src }}" alt="{{ alt }}" {{ lqip }}>
-          {% endif %}
+
           <!-- .card-body -->
       </article>
     {% else %}
