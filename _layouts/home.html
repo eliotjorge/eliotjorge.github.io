@@ -42,19 +42,23 @@ layout: default
 {% capture content %}
   {% for post in posts %}
     {% if post.categories contains "img" %}
-          {% if post.image.lqip %}
-            {% capture lqip %}lqip="{{ post.image.lqip }}"{% endcapture %}
+          <article class="card-wrapper">
+          {% if post.image %}
+            {% if post.image.lqip %}
+              {% capture lqip %}lqip="{{ post.image.lqip }}"{% endcapture %}
+            {% endif %}
+  
+            {% assign src = post.image.path | default: post.image %}
+            {% unless src contains '//' %}
+              {% assign src = post.img_path | append: '/' | append: src | replace: '//', '/' %}
+            {% endunless %}
+  
+            {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
+  
+            <img src="{{ src }}" w="17" h="10" alt="{{ alt }}" {{ lqip }}>
           {% endif %}
-
-          {% assign src = post.image.path | default: post.image %}
-          {% unless src contains '//' %}
-            {% assign src = post.img_path | append: '/' | append: src | replace: '//', '/' %}
-          {% endunless %}
-
-          {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
-
-          <img src="{{ src }}" w="100%" h="10" alt="{{ alt }}" {{ lqip }}>
-        <!-- .card-body -->
+          <!-- .card-body -->
+      </article>
     {% else %}
       <article class="card-wrapper">
         <a href="{{ post.url | relative_url }}" class="card post-preview flex-md-row-reverse">
