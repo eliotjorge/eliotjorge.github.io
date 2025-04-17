@@ -52,9 +52,6 @@ layout: default
             {% unless src contains '//' %}
               {% assign src = post.img_path | append: '/' | append: src | replace: '//', '/' %}
             {% endunless %}
-  
-            {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
-  
             <img src="{{ src }}" w="17" h="10" alt="{{ alt }}" {{ lqip }}>
           {% endif %}
           <!-- .card-body -->
