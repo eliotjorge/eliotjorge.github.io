@@ -41,7 +41,7 @@ layout: default
 
 {% capture content %}
   {% for post in posts %}
-    {% if post.categories contains "imgs" %}
+    {% if post.categories contains "img" %}
 
       {% assign src = post.image.path | default: post.image %}
         {% unless src contains '//' %}
