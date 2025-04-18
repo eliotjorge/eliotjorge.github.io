@@ -34,7 +34,7 @@ tail_includes:
     </span> -->
       <!-- ENDI HITS -->
     
-    {% unless post.categories contains "img" %}
+    {% unless post.categories contains "img" %} <!-- si el post no contiene la categoría 'img' que salga la foto destacada -->
       {% if page.image %}
         {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
         {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
