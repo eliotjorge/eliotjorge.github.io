@@ -48,10 +48,10 @@ layout: default
         {% assign src = post.img_path | append: '/' | append: src | replace: '//', '/' %}
       {% endunless %}
   
-      <article class="card-wrapper" style="background-image: url('{{ src }}');">
-        <a href="{{ post.url | relative_url }}" class="card post-preview flex-md-row-reverse" style="height:240px; background: linear-gradient(0deg,rgba(255, 255, 255, 0.8) 40%, rgba(237, 221, 83, 0) 74%);">
+      <article class="card-wrapper" style="background-image: url('{{ src }}'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <a href="{{ post.url | relative_url }}" class="card post-preview flex-md-row-reverse" style="height:260px; background: linear-gradient(0deg,rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0.2) 80%);">
           <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0" style="text-align:center;">{{ post.title }}</h1>
+            <h1 class="card-title my-2 mt-md-0" style="text-align:center; bottom: 49px; position: absolute;">{{ post.title }}</h1>
   
             <div class="post-meta flex-grow-1 d-flex align-items-end">
               <div class="me-auto">
