@@ -35,7 +35,7 @@ tail_includes:
       <!-- ENDI HITS -->
     
     
-    {% if page.image %} <!-- si el post no contiene la categoría 'img' que salga la foto destacada -->
+    {% if page.image %} 
       {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
       {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
       {% capture alt %}alt="{{ page.image.alt | xml_escape | default: "Preview Image" }}"{% endcapture %}
@@ -46,12 +46,13 @@ tail_includes:
         {% endif %}
       {% endcapture %}
 
-      {% if page.categories contains "img" == false %}
+      {% if page.categories contains "img" == false %} <!-- si el post no contiene la categoría 'img' que salga la foto destacada -->
         <div class="mt-3 mb-3">
           <img {{ src }} {{ class }} {{ alt }} w="1200" h="630" {{ lqip | strip }}>
           {%- if page.image.alt -%}
             <figcaption class="text-center pt-2 pb-2">{{ page.image.alt }}</figcaption>
           {%- endif -%}
+          <!-- Hola -->
         </div>
       {% endif %}
     {% endif %}
