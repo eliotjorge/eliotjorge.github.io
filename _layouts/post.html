@@ -35,7 +35,10 @@ tail_includes:
       <!-- ENDI HITS -->
     
     {% if page.image %} 
-      {% if page.categories contains "img" == false %}
+      {% if page.categories contains "img" %}
+        <!-- Post con categoría img: no mostrar imagen destacada -->
+        <p>Categories: {{ page.categories | join: ", " }}</p>
+      {% else %}
         {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
         {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
         {% capture alt %}alt="{{ page.image.alt | xml_escape | default: "Preview Image" }}"{% endcapture %}
@@ -54,7 +57,7 @@ tail_includes:
         </div>
       {% endif %}
     {% endif %}
-            <p>Categories: {{ page.categories | join: ", " }}</p>
+            
     
     <div class="d-flex justify-content-between">
       <!-- author(s) -->
