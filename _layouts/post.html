@@ -37,7 +37,6 @@ tail_includes:
     {% if page.image %} 
       {% if page.categories contains "img" %}
         <!-- Post con categoría img: no mostrar imagen destacada -->
-        <p>Categories: {{ page.categories | join: ", " }}</p>
       {% else %}
         {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
         {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
@@ -61,6 +60,8 @@ tail_includes:
     
     <div class="d-flex justify-content-between">
       <!-- author(s) -->
+      <!-- ocultar autor -->
+      <!--
       <span>
         {% if page.author %}
           {% assign authors = page.author %}
@@ -81,9 +82,15 @@ tail_includes:
           {% endif %}
         </em>
       </span>
+      
+      -->
 
       <!-- read time -->
-      {% include read-time.html content=content prompt=true lang=lang %}
+      {% if page.categories contains "img" %}
+        <!-- Post con categoría img: no mostrar tiempo de lectura -->
+      {% else %}
+        {% include read-time.html content=content prompt=true lang=lang %}
+      {% endif %}
     </div>
     <!-- .d-flex -->
   </div>
