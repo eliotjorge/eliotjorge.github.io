@@ -34,7 +34,7 @@ tail_includes:
     </span> -->
       <!-- ENDI HITS -->
     
-    
+            <p>Categories: {{ page.categories | join: ", " }}</p>
     {% if page.image and page.categories contains "img" == false %} 
       {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
       {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
@@ -51,7 +51,6 @@ tail_includes:
         {%- if page.image.alt -%}
           <figcaption class="text-center pt-2 pb-2">{{ page.image.alt }}</figcaption>
         {%- endif -%}
-        <p>Categories: {{ page.categories | join: ", " }}</p>
       </div>
 
     {% endif %}
