@@ -52,7 +52,7 @@ tail_includes:
           {%- if page.image.alt -%}
             <figcaption class="text-center pt-2 pb-2">{{ page.image.alt }}</figcaption>
           {%- endif -%}
-          <!-- Hola -->
+          <p>Categories: {{ page.categories | join: ", " }}</p>
         </div>
       {% endif %}
     {% endif %}
