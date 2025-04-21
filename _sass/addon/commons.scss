@@ -29,10 +29,7 @@ html {
 }
 
 body {
-  /*background-color: #f2f2f2;
-opacity: 1;
-background-image: radial-gradient(#e7e7e7 0.9px, #f2f2f2 0.9px);
-background-size: 18px 18px;*/
+  
   background: var(--main-bg);
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
     env(safe-area-inset-bottom) env(safe-area-inset-left);
