@@ -1,9 +1,10 @@
 ---
 title: "📩 Informe de DMARC de Google"
 image: https://images.unsplash.com/photo-1603899122634-f086ca5f5ddd?q=80&w=1974
+description: "Aprende a interpretar los informes DMARC de Google, descubre por qué los recibes y cómo usarlos para mejorar la seguridad del correo electrónico en tu dominio."
 date: 2025-04-14
-categories: [Seguridad, Email]
-tags: [Seguridad, Email]
+categories: [seguridad, Email, dmarc, google, autenticacion, correo-electronico, proteccion-de-dominio]
+tags: [seguridad, Email, dmarc, google, autenticacion, correo-electronico, proteccion-de-dominio]
 comments: false
 render_with_liquid: false
 ---
