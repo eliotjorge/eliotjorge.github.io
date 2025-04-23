@@ -12,15 +12,15 @@ render_with_liquid: false
 
 ---
 
-### 🧱 ¿Qué es un "stack" en desarrollo web?
+## 🧱 ¿Qué es un "stack" en desarrollo web?
 
 Un *stack tecnológico* es el conjunto de tecnologías que usas para construir una aplicación web, desde la base de datos hasta la interfaz de usuario. La idea es combinar herramientas que funcionen bien juntas y permitan crear proyectos de forma rápida, segura y escalable.
 
 ---
 
-### 🚀 Stacks más populares
+## 🚀 Stacks más populares
 
-#### 1. **MERN**  
+### 1. **MERN**  
 - **M**ongoDB  
 - **E**xpress.js  
 - **R**eact  
@@ -41,7 +41,7 @@ Un *stack tecnológico* es el conjunto de tecnologías que usas para construir u
 
 ---
 
-#### 2. **MEAN**
+### 2. **MEAN**
 - **M**ongoDB  
 - **E**xpress.js  
 - **A**ngular  
@@ -57,7 +57,7 @@ Un *stack tecnológico* es el conjunto de tecnologías que usas para construir u
 
 ---
 
-#### 3. **Django + React**  
+### 3. **Django + React**  
 - Backend con Django (Python)  
 - Frontend con React  
 
@@ -71,7 +71,7 @@ Un *stack tecnológico* es el conjunto de tecnologías que usas para construir u
 
 ---
 
-#### 4. **Next.js + MongoDB (MEN)**  
+### 4. **Next.js + MongoDB (MEN)**  
 - Framework React con SSR y SSG.
 - API routes incluidas.  
 - Ideal para SEO y carga rápida.
@@ -90,7 +90,7 @@ Un *stack tecnológico* es el conjunto de tecnologías que usas para construir u
 
 ---
 
-#### 5. **T3 Stack**  
+### 5. **T3 Stack**  
 - **Next.js** + **tRPC** + **TypeScript** + **Tailwind CSS** + **Prisma**  
 
 ✅ **Ventajas**:
@@ -103,7 +103,7 @@ Un *stack tecnológico* es el conjunto de tecnologías que usas para construir u
 
 ---
 
-### 📊 Comparativa rápida
+## 📊 Comparativa rápida
 
 | Stack        | Frontend  | Backend       | Base de datos | Lenguaje principal | Ideal para...                  |
 |--------------|-----------|---------------|----------------|--------------------|--------------------------------|
@@ -115,7 +115,7 @@ Un *stack tecnológico* es el conjunto de tecnologías que usas para construir u
 
 ---
 
-### 💡 ¿Cuál elegir?
+## 💡 ¿Cuál elegir?
 
 - 🧪 **¿Estás aprendiendo?**  
   MERN o Next.js con MongoDB son excelentes para empezar si ya manejas algo de JavaScript.
@@ -131,7 +131,7 @@ Un *stack tecnológico* es el conjunto de tecnologías que usas para construir u
 
 ---
 
-### 🎯 Conclusión
+## 🎯 Conclusión
 
 Elegir el stack adecuado depende de tu experiencia, el tipo de proyecto y tus objetivos. Lo más importante es que entiendas cómo se comunican las partes entre sí, y que poco a poco vayas experimentando con diferentes tecnologías.
 
