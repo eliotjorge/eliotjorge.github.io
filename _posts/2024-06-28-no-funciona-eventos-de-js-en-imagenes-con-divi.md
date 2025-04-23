@@ -1,6 +1,6 @@
 ---
 title: No funcionan los eventos de ratón con JS en DIVI(Wordpress) - RESUELTO
-date: 28-06-2024
+date: 2024-06-28
 categories: [web,programacion,codigo,wordpress,divi,js,javascript,html,css,solucion]
 tags: [web,programacion,codigo,wordpress,divi,js,javascript,html,css,solucion]
 render_with_liquid: false
