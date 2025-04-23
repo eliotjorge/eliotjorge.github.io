@@ -1,6 +1,7 @@
 ---
 title: "🌐 Los stacks más comunes en desarrollo web: ¿Cuál elegir?"
 image: https://images.unsplash.com/photo-1521824243451-25d32715584a?q=80&w=1974
+description: "Descubre los stacks más usados en desarrollo web, como MERN, LAMP y JAMstack, y aprende cuál se adapta mejor a tu próximo proyecto."
 date: 2025-04-21
 categories: [Desarrollo Web,Stacks de Tecnología,Frontend,Backend,JavaScript,React,Full Stack,Guías,Comparativas]
 tags: [Desarrollo Web,Stacks de Tecnología,Frontend,Backend,JavaScript,React,Full Stack,Guías,Comparativas]
