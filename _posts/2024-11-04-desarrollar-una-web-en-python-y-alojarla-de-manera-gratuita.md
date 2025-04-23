@@ -1,6 +1,6 @@
 ---
 title: Desarrollar una web con Python y alojarla de manera gratuita
-date: 04-11-2024
+date: 2024-11-04
 categories: [python,consola,apps,web,flask,django,heroku]
 tags: [python,consola,apps,web,flask,django,heroku]
 pin: false
