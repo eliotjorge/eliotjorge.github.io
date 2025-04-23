@@ -1,6 +1,6 @@
 ---
 title: Crear entorno virtual en Python
-date: 08-04-2024
+date: 2024-04-08
 categories: [python,consola,apps,flutter]
 tags: [python,consola,apps,flutter]
 pin: false
