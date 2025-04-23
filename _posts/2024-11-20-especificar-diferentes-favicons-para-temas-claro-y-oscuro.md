@@ -1,6 +1,6 @@
 ---
 title: Cómo Especificar Diferentes Favicons para los Modos Claro y Oscuro
-date: 20-11-2024
+date: 2024-11-20
 categories: [web,programacion,favicon]
 tags: [web,programacion,favicon]
 pin: false
