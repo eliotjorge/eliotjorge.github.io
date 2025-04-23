@@ -1,7 +1,7 @@
 ---
 title: "🐍 Python: Linked Lists (listas enlazadas)"
 image: https://github.com/user-attachments/assets/2ebf3ff1-2dd0-4b0c-9142-69bd6d5b91c0
-date: 26-02-2025
+date: 2025-02-26
 categories: [python]
 tags: [python]
 pin: false
