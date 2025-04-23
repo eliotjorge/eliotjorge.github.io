@@ -1,6 +1,6 @@
 ---
 title: Ocultar opción de checkbox en Contact Form 7 una vez alcanzado un número CF7 en Wordpress.
-date: 26-11-2024
+date: 2024-11-26
 image: https://www.bubuku.com/wp-content/uploads/2023/01/formularios-contact-form-7_th.png
 categories: [web,programacion,codigo,php,formulario,wordpress,cf7]
 tags: [web,programacion,codigo,php,formulario,wordpress,cf7]
