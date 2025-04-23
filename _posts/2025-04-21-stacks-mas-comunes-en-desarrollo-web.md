@@ -9,7 +9,7 @@ comments: false
 render_with_liquid: false
 ---
 
-> En este artículo vamos a repasar los stacks más utilizados actualmente en desarrollo web. Si estás aprendiendo React o te interesa crear proyectos completos (frontend + backend), este post te ayudará a entender las opciones más populares, sus ventajas y cuándo elegir cada una.
+En este artículo vamos a repasar los stacks más utilizados actualmente en desarrollo web. Si estás aprendiendo React o te interesa crear proyectos completos (frontend + backend), este post te ayudará a entender las opciones más populares, sus ventajas y cuándo elegir cada una.
 
 ---
 
