@@ -1,7 +1,7 @@
 ---
 title: Crear un GPT presonalizado (Custom GPT) en OpenAI
 image: https://myexeed.com/wp-content/uploads/2023/10/11.webp
-date: 17-12-2024
+date: 2024-12-17
 categories: [ia,gpt,openai,inteligencia artificial,cahtgpt]
 tags: [ia,gpt,openai,inteligencia artificial,cahtgpt]
 pin: false
