@@ -1,7 +1,7 @@
 ---
 title: Automatización del Despliegue de Jekyll con GitHub Actions
 image: https://github.com/user-attachments/assets/f714f62e-1bda-4502-8290-ddb5e72cfe5e
-date: 18-01-2025
+date: 2025-01-18
 categories: [github,github actions,jekyll,github pages,gemfile]
 tags: [github,github actions,jekyll,github pages,gemfile]
 pin: false
