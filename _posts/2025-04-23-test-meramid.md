@@ -5,6 +5,7 @@ categories: [Desarrollo Web,Stacks de Tecnología,Frontend,Backend,JavaScript,Re
 tags: [Desarrollo Web,Stacks de Tecnología,Frontend,Backend,JavaScript,React,Full Stack,Guías,Comparativas]
 comments: false
 render_with_liquid: false
+mermaid: true
 ---
 ¡Perfecto! Te dejo una **checklist paso a paso** para tu proyecto MERN de mantenimientos de coches, y luego un **diagrama en formato Flowchart (compatible con Mermaid)** que puedes usar directamente en Jekyll si tienes habilitado MermaidJS (por ejemplo con el plugin de GitHub Pages o en Markdown renderizado por algún generador moderno).
 
