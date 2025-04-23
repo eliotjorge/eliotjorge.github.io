@@ -3,9 +3,7 @@ title: "test"
 date: 23-04-2025
 categories: [test]
 ---
-¡Perfecto! Te dejo una **checklist paso a paso** para tu proyecto MERN de mantenimientos de coches, y luego un **diagrama en formato Flowchart (compatible con Mermaid)** que puedes usar directamente en Jekyll si tienes habilitado MermaidJS (por ejemplo con el plugin de GitHub Pages o en Markdown renderizado por algún generador moderno).
 
----
 
 ## ✅ Checklist para app MERN (mantenimientos de coches)
 
