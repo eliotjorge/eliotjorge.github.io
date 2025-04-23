@@ -1,7 +1,7 @@
 ---
 title: Cómo empezar a programar Apps con Python Usando Kivy
 image: https://github.com/user-attachments/assets/2b4b489a-8e7a-4e1d-90f1-49b962c00835
-date: 31-10-2024
+date: 2024-10-31
 categories: [python,consola,apps,kivy]
 tags: [python,consola,apps,kivy]
 pin: false
