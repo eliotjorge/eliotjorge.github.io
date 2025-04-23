@@ -1,7 +1,7 @@
 ---
 title: "📩 Informe de DMARC de Google"
 image: https://images.unsplash.com/photo-1603899122634-f086ca5f5ddd?q=80&w=1974
-date: 14-04-2025
+date: 2025-04-14
 categories: [Seguridad, Email]
 tags: [Seguridad, Email]
 comments: false
