@@ -1,6 +1,6 @@
 ---
 title: Hacer preload de imagenes o de fuentes
-date: 05-06-2024
+date: 2024-06-05
 categories: [web,programacion,codigo,seo,velocidad,html,css]
 tags: [web,programacion,codigo,seo,velocidad,html,css]
 pin: false
