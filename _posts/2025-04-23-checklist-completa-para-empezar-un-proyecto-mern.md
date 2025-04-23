@@ -77,5 +77,3 @@ _**(¡Los elementos marcados no se guardan entre sesiones!)**_
 ---
 
 Con esta checklist puedes iniciar cualquier tipo de proyecto full-stack con el stack MERN, desde paneles administrativos hasta plataformas de contenido o e-commerce. Si estás comenzando, sigue los pasos uno a uno y verás cómo tu aplicación cobra vida de forma estructurada y escalable.
-
-¿Estás listo para lanzar tu próxima app con MERN?
