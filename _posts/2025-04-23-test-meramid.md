@@ -3,8 +3,6 @@ title: "test mermaid"
 date: 23-04-2025
 categories: [Desarrollo Web,Stacks de Tecnología,Frontend,Backend,JavaScript,React,Full Stack,Guías,Comparativas]
 tags: [Desarrollo Web,Stacks de Tecnología,Frontend,Backend,JavaScript,React,Full Stack,Guías,Comparativas]
-comments: false
-render_with_liquid: false
 mermaid: true
 ---
 
@@ -14,16 +12,16 @@ mermaid: true
 ```mermaid
 flowchart TD
   subgraph Frontend (React)
-    R1[React Component<br/>Lista de Coches]
-    R2[Formulario<br/>Nuevo Coche]
-    R3[Axios / Fetch]
+    R1[React Component: Lista de Coches]
+    R2[Formulario Nuevo Coche]
+    R3[Axios o Fetch]
   end
 
   subgraph Backend (Express + Node.js)
-    E1[Express Route<br/>GET /api/cars]
-    E2[Express Route<br/>POST /api/cars]
+    E1[Route GET /api/cars]
+    E2[Route POST /api/cars]
     C[Controller logic]
-    M[Modelo Mongoose<br/>Car]
+    M[Modelo Mongoose: Car]
   end
 
   subgraph MongoDB
