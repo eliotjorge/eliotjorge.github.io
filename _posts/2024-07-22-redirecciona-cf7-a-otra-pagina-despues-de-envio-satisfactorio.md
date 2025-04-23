@@ -1,6 +1,6 @@
 ---
 title: Redirecciona a página de agradecimiento después de envió satisfactorio de CF7 con functions.php
-date: 22-07-2024
+date: 2024-07-22
 categories: [web,programacion,codigo,php,formulario,donaciones,olvidados,woocommerce,wordpress,cf7]
 tags: [web,programacion,codigo,php,formulario,donaciones,olvidados,woocommerce,wordpress,cf7]
 pin: false
