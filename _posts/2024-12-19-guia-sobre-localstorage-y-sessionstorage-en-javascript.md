@@ -1,7 +1,7 @@
 ---
 title: Guía sobre localStorage y sessionStorage en JavaScript
 image: https://github.com/user-attachments/assets/48375fdf-328e-4a4c-b9c4-edbc96ac0007
-date: 19-12-2024
+date: 2024-12-19
 categories: [ia,gpt,openai,inteligencia artificial,cahtgpt]
 tags: [ia,gpt,openai,inteligencia artificial,cahtgpt]
 pin: false
