@@ -8,8 +8,8 @@ categories: [test]
 ## ✅ Checklist para app MERN (mantenimientos de coches)
 
 ### 📁 Estructura inicial
-<input type="checkbox"> Crear carpeta principal del proyecto (ej. `coches-app/`)
-<input type="radiobutton"> Dentro, crear dos subcarpetas: `backend/` y `frontend/`
+<input type="radio"> Crear carpeta principal del proyecto (ej. `coches-app/`)
+<input type="radio"> Dentro, crear dos subcarpetas: `backend/` y `frontend/`
 
 ### 🚀 Backend (Node.js + Express + MongoDB)
 - [ ] `npm init -y` en `/backend`
