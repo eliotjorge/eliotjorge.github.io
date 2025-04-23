@@ -1,7 +1,7 @@
 ---
 title: Desactivar W3 Total Cache por completo en Wordpress
 image: https://www.wpkube.com/wp-content/uploads/2022/08/w3-total-cache-free-plugin.png
-date: 16-12-2024
+date: 2024-12-16
 categories: [web,programacion,codigo,php,wordpress,cache,w3total,plugin]
 tags: [web,programacion,codigo,php,wordpress,cache,w3total,plugin]
 pin: false
