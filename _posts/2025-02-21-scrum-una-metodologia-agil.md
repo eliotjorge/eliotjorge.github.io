@@ -1,7 +1,7 @@
 ---
 title: "🚀 Scrum: Una metodología ágil para equipos productivo"
 image: https://github.com/user-attachments/assets/372a1662-6bce-4e2f-9bca-b5c4c81e2bd1
-date: 21-02-2025
+date: 2025-02-21
 categories: [scrum,metodologías,trabajo]
 tags: [scrum,metodologías,trabajo]
 pin: false
