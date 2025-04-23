@@ -53,16 +53,16 @@ mermaid: true
 ```mermaid
 flowchart TD
   subgraph Frontend (React)
-    R1[React Component<br> (Lista de Coches)]
-    R2[Formulario<br>Nuevo Coche]
+    R1[React Component<br/>Lista de Coches]
+    R2[Formulario<br/>Nuevo Coche]
     R3[Axios / Fetch]
   end
 
   subgraph Backend (Express + Node.js)
-    E1[Express Route<br>GET /api/cars]
-    E2[Express Route<br>POST /api/cars]
+    E1[Express Route<br/>GET /api/cars]
+    E2[Express Route<br/>POST /api/cars]
     C[Controller logic]
-    M[Modelo Mongoose<br>(Car)]
+    M[Modelo Mongoose<br/>Car]
   end
 
   subgraph MongoDB
