@@ -11,6 +11,10 @@ El stack **MERN** (MongoDB, Express, React y Node.js) es una de las combinacione
 
 A continuación, te presento una **checklist práctica y detallada** para ayudarte a comenzar un nuevo proyecto MERN desde cero, con buenas prácticas y pasos organizados.
 
+<div style="text-align: center;">
+  <img src="https://media.giphy.com/media/HZrx8kjIA7lyeTqXVM/giphy.gif" alt="Todo bien" width="300" />
+</div>
+
 _**(¡Los elementos marcados no se guardan entre sesiones!)**_
 
 ---
@@ -111,3 +115,8 @@ mi-app-mern/
 ---
 
 Con esta checklist puedes iniciar cualquier tipo de proyecto full-stack con el stack MERN, desde paneles administrativos hasta plataformas de contenido o e-commerce. Si estás comenzando, sigue los pasos uno a uno y verás cómo tu aplicación cobra vida de forma estructurada y escalable.
+
+
+<div style="text-align: center;">
+  <img src="https://media.giphy.com/media/3ZALZoBtI1KJa/giphy.gif" alt="Todo bien" width="300" />
+</div>
