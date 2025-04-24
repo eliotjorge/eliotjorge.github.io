@@ -78,9 +78,36 @@ _**(¡Los elementos marcados no se guardan entre sesiones!)**_
 
 Al final la estructura de carpetas del tu proyecto tuene que ser esta:
 
-```
-mi-app-mern/ ├── backend/ │ ├── models/ │ │ └── Model.js │ ├── routes/ │ │ └── apiRoutes.js │ ├── .env │ ├── server.js │ └── package.json │ ├── frontend/ │ ├── public/ │ │ └── index.html │ ├── src/ │ │ ├── components/ │ │ │ └── ExampleComponent.jsx │ │ ├── pages/ │ │ │ └── Home.jsx │ │ ├── services/ │ │ │ └── api.js │ │ ├── App.jsx │ │ ├── main.jsx (o index.js en Create React App) │ │ └── index.css (o styles.css) │ ├── vite.config.js (si usas Vite) │ └── package.json │ └── README.md
-```
+{% highlight text %}
+mi-app-mern/
+├── backend/
+│   ├── models/
+│   │   └── Model.js
+│   ├── routes/
+│   │   └── apiRoutes.js
+│   ├── .env
+│   ├── server.js
+│   └── package.json
+│
+├── frontend/
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── components/
+│   │   │   └── ExampleComponent.jsx
+│   │   ├── pages/
+│   │   │   └── Home.jsx
+│   │   ├── services/
+│   │   │   └── api.js
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   ├── vite.config.js
+│   └── package.json
+│
+└── README.md
+{% endhighlight %}
+
 
 ---
 
