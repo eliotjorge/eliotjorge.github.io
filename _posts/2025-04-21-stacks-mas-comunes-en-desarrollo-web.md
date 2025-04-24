@@ -36,6 +36,8 @@ Un *stack tecnológico* es el conjunto de tecnologías que usas para construir u
 - Requiere configurar muchas cosas desde cero.
 - React necesita herramientas adicionales para SSR o SEO (como Next.js).
 
+> Echar un vistazo a este post [Checklist completa para empezar un proyecto con el stack MERN](https://jorgerosa.dev/posts/checklist-completa-para-empezar-un-proyecto-mern/) para que no se te pase nada cuando quieras crear un proyecto con este stack.
+
 <div style="text-align: center;">
   <img src="https://media.giphy.com/media/jRf5fsn8G6YaogAWxn/giphy.gif" alt="React happy" width="300"/>
 </div>
