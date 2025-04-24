@@ -76,4 +76,8 @@ _**(¡Los elementos marcados no se guardan entre sesiones!)**_
 
 ---
 
+Al final la estructura de carpetas del tu proyecto tuene que ser esta:
+
+<pre> ```plaintext mi-app-mern/ ├── backend/ │ ├── models/ │ │ └── Model.js │ ├── routes/ │ │ └── apiRoutes.js │ ├── .env │ ├── server.js │ └── package.json │ ├── frontend/ │ ├── public/ │ │ └── index.html │ ├── src/ │ │ ├── components/ │ │ │ └── ExampleComponent.jsx │ │ ├── pages/ │ │ │ └── Home.jsx │ │ ├── services/ │ │ │ └── api.js │ │ ├── App.jsx │ │ ├── main.jsx (o index.js en Create React App) │ │ └── index.css (o styles.css) │ ├── vite.config.js (si usas Vite) │ └── package.json │ └── README.md ``` </pre>
+
 Con esta checklist puedes iniciar cualquier tipo de proyecto full-stack con el stack MERN, desde paneles administrativos hasta plataformas de contenido o e-commerce. Si estás comenzando, sigue los pasos uno a uno y verás cómo tu aplicación cobra vida de forma estructurada y escalable.
