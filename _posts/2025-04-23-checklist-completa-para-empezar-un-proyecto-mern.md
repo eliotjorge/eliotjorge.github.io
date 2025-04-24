@@ -78,7 +78,8 @@ _**(¡Los elementos marcados no se guardan entre sesiones!)**_
 
 Al final la estructura de carpetas del tu proyecto tuene que ser esta:
 
-{% highlight text class = "diagrama" %}
+<div style="background-color:#f9f5f0;">
+{% highlight text %}
 mi-app-mern/
 ├── backend/
 │   ├── models/
@@ -107,7 +108,7 @@ mi-app-mern/
 │
 └── README.md
 {% endhighlight %}
-
+</div>
 
 ---
 
