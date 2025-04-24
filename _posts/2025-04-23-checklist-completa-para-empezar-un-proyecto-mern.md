@@ -43,14 +43,14 @@ _**(¡Los elementos marcados no se guardan entre sesiones!)**_
 
 ## 🌐 Frontend (React)
 
-<input type="checkbox"> Crear una app React con:  
-  ```bash
-  npx create-react-app frontend
-  ```  
-  O, si prefieres Vite (más rápido y ligero):  
+<input type="checkbox"> Crear una app React Vite (más rápido y ligero):  
   ```bash
   npm create vite@latest frontend -- --template react
-  ```
+  ```  
+  O, si prefieres con CRA (más lento y un poco engorroso):
+  ```bash
+  npx create-react-app frontend
+  ``` 
 <input type="checkbox"> Instalar dependencias útiles para el desarrollo:  
   ```bash
   npm install axios react-router-dom
