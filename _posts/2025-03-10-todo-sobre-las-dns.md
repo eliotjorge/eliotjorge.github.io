@@ -1,6 +1,7 @@
 ---
 title: "🌐 Todo sobre las DNS: Qué son y cómo funcionan"
 image: https://github.com/user-attachments/assets/b8da8aac-99e6-4a9c-820b-6b93332e9134
+description: "Conoce todo sobre las DNS: qué son, cómo funcionan y los tipos de registros más comunes. Aprende cómo los servidores DNS traducen nombres de dominio en direcciones IP para navegar por Internet de forma rápida y segura."
 date: 2025-03-10
 categories: [DNS, servidores, dominios, registros DNS]
 tags: [DNS, servidores, dominios, registros DNS]
