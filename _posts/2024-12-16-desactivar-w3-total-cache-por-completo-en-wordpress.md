@@ -1,6 +1,7 @@
 ---
 title: Desactivar W3 Total Cache por completo en Wordpress
 image: https://www.wpkube.com/wp-content/uploads/2022/08/w3-total-cache-free-plugin.png
+description: "Guía completa para desactivar y eliminar W3 Total Cache en WordPress. Aprende a borrar archivos residuales, limpiar caché, eliminar entradas en .htaccess y wp-config.php, y preparar tu sitio para instalar WP Super Cache sin problemas."
 date: 2024-12-16
 categories: [web,programacion,codigo,php,wordpress,cache,w3total,plugin]
 tags: [web,programacion,codigo,php,wordpress,cache,w3total,plugin]
