@@ -1,6 +1,7 @@
 ---
 title: "🛡️ ¿Qué es DMARC y por qué es importante para proteger tu dominio? 📧"
 date: 2025-03-06
+description: "Descubre qué es DMARC y por qué es fundamental para proteger tu dominio de correos fraudulentos, phishing y suplantación de identidad. Aprende cómo funciona este protocolo de autenticación que mejora la seguridad y la entregabilidad del correo electrónico."
 categories: [Seguridad, Email]
 tags: [Seguridad, Email]
 pin: false
