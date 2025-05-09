@@ -1,6 +1,7 @@
 ---
 title: "🐍 Python: Solución al problema '383. Ransom Note' en Python"
 image: https://github.com/user-attachments/assets/2ebf3ff1-2dd0-4b0c-9142-69bd6d5b91c0
+description: "Solución al problema 383 Ransom Note: aprende cómo determinar si una nota puede construirse con las letras disponibles en una revista. Explicación paso a paso y código eficiente para validar la disponibilidad de caracteres."
 date: 2025-02-27
 categories: [python,leetcode]
 tags: [python,leetcode]
