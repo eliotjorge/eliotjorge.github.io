@@ -1,6 +1,7 @@
 ---
 title: "📊 Ejemplo de resumen OLS válido para el análisis"
 image:
+description: "Aprende con un ejemplo práctico y concluyente cómo aplicar la técnica de Mínimos Cuadrados Ordinarios (OLS) para análisis estadístico. Explicación clara y paso a paso para tus proyectos."
 date: 2025-04-13 19:40:00
 categories: [data science, ols, estadística]
 tags: [data science, ols, estadística]
