@@ -1,6 +1,7 @@
 ---
 title: "Big O Notation: Qué es y cómo afecta el rendimiento de tu código"
 date: 2025-02-28
+description: "Entiende qué es la notación Big-O y cómo afecta al rendimiento de los algoritmos. Aprende a analizar la complejidad temporal para optimizar tus programas y tomar mejores decisiones en desarrollo de software."
 categories: [programacion,desarrollo,algoritmos,rendimiento]
 tags: [programacion,desarrollo,algoritmos,rendimiento]
 pin: false
