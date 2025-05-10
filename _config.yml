@@ -28,8 +28,9 @@ title: Jorge Rosa | Blog
 
 tagline:
 
-description: >- # used by seo meta and the atom feed
-  Blog de un desarrollador multiplataforma y aprendiendo ML y AI
+description: "Cuaderno de bitácora de un desarrollador web con 12 años de experiencia: soluciones prácticas, problemas resueltos y conceptos clave de desarrollo, UI/UX y metodologías ágiles."
+# used by seo meta and the atom feed
+
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://jorgerosa.dev"
