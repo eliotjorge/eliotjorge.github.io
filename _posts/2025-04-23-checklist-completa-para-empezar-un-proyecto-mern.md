@@ -1,6 +1,6 @@
 ---
 title: "Checklist completa para empezar un proyecto con el stack MERN"
-image: https://images.unsplash.com/photo-1654931799020-ce7cf3f4a2c7?q=50&w=800&fm=jpg
+image:
 description: "Aprende a crear una aplicación web moderna paso a paso usando MongoDB, Express, React y Node.js. Esta guía te ayudará a estructurar tu proyecto MERN desde cero."
 date: 2025-04-23
 categories: [Desarrollo Web, Full Stack, JavaScript, MERN, React, Node.js, MongoDB, Express, Checklist, Guía paso a paso, Full Stack]
