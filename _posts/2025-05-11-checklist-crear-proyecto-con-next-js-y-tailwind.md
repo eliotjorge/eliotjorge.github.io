@@ -1,6 +1,6 @@
 ---
 title: "Checklist completa para empezar un proyecto con Next.js y Tailwind CSS"
-image:
+image: https://media.licdn.com/dms/image/v2/D5612AQE_3tQyJY6lRA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1727013538184?e=2147483647&v=beta&t=HuxCQ8VVsHI1OzkTbTJIMCDp2-nIB7Y2xVe-_Ghhk-8
 description: "Guía paso a paso para crear una aplicación web moderna usando Next.js y Tailwind CSS desde cero. Aprende a configurar y estructurar tu proyecto con buenas prácticas."
 date: 2025-05-11
 categories: [Desarrollo Web, Frontend, JavaScript, Next.js, Tailwind CSS, Checklist, Guía paso a paso]
