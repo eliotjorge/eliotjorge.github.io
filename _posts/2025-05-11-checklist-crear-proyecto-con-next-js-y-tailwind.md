@@ -14,7 +14,7 @@ A continuación, te presento una **checklist práctica y detallada** para ayudar
 <div style="text-align: center;">
   <img src="https://media.giphy.com/media/QJvwBSGaoc4eI/giphy.gif" alt="Empezar proyecto" width="300" />
 </div>
-_**<p style="text-align:center;">(¡Los elementos marcados no se guardan entre sesiones!)</p>**_
+<div style="text-align: center;">_**(¡Los elementos marcados no se guardan entre sesiones!)**_</div>
 
 ---
 
