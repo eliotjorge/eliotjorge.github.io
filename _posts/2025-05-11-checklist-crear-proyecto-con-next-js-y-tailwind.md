@@ -51,14 +51,29 @@ cd mi-app-next-tailwind
 
 ```bash
 npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
 ```
 
 O con yarn:
 
 ```bash
 yarn add -D tailwindcss postcss autoprefixer
-yarn tailwindcss init -p
+```
+
+<input type="checkbox"> Configura los plugins PostCSS, crea un archivo `postcss.config.mjs` en la raíz del proyecto y añade el plugin @tailwindcss/postcss a la configuración de PostCSS
+
+```postcss.config.js
+const config = {
+  plugins: {
+    "@tailwindcss/postcss": {},
+  },
+};
+export default config;
+```
+
+<input type="checkbox"> Importa Tailwind CSS, @import en ./src/styles/globals.css
+
+```global.css
+@import "tailwindcss";
 ```
 
 <input type="checkbox"> Configurar el archivo `tailwind.config.js` para que Tailwind procese los archivos dentro de `./src/pages`, `./src/components` y otros:
