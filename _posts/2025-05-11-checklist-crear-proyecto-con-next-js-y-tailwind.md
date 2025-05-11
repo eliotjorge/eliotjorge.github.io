@@ -61,7 +61,7 @@ yarn add -D tailwindcss postcss autoprefixer
 
 <input type="checkbox"> Configura los plugins PostCSS, crea un archivo `postcss.config.mjs` en la raíz del proyecto y añade el plugin @tailwindcss/postcss a la configuración de PostCSS
 
-```postcss.config.js
+```js
 const config = {
   plugins: {
     "@tailwindcss/postcss": {},
@@ -72,7 +72,7 @@ export default config;
 
 <input type="checkbox"> Importa Tailwind CSS, @import en ./src/styles/globals.css
 
-```global.css
+```css
 @import "tailwindcss";
 ```
 
@@ -175,7 +175,7 @@ mi-app-next-tailwind/
 │   │   └── globals.css
 ├── .gitignore
 ├── package.json
-├── postcss.config.js
+├── postcss.config.mjs
 ├── tailwind.config.js
 └── README.md
 ```
