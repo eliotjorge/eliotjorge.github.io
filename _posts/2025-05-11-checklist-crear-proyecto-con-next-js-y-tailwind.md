@@ -7,14 +7,14 @@ categories: [Desarrollo Web, Frontend, JavaScript, Next.js, Tailwind CSS, Checkl
 tags: [Desarrollo Web, Frontend, JavaScript, Next.js, Tailwind CSS, Checklist, Guía paso a paso]
 ---
 
-El stack **Next.js + Tailwind CSS** es una combinación poderosa para crear aplicaciones web modernas, rápidas y con un diseño responsivo usando React con renderizado híbrido y un sistema CSS modular y eficiente.
+El stack **Next.js + Tailwind CSS** es una combinación poderosa para crear aplicaciones web modernas, rápidas y con un diseño responsive usando React con renderizado híbrido y un sistema CSS modular y eficiente.
 
 A continuación, te presento una **checklist práctica y detallada** para ayudarte a comenzar un nuevo proyecto con Next.js y Tailwind CSS desde cero, con pasos organizados y buenas prácticas.
 
 <div style="text-align: center;">
   <img src="https://media.giphy.com/media/QJvwBSGaoc4eI/giphy.gif" alt="Empezar proyecto" width="300" />
 </div>
-_**(¡Los elementos marcados no se guardan entre sesiones!)**_
+_**<p style="text-align:center;">(¡Los elementos marcados no se guardan entre sesiones!)</p>**_
 
 ---
 
@@ -38,6 +38,8 @@ yarn create next-app mi-app-next-tailwind
 ```bash
 cd mi-app-next-tailwind
 ```
+(Si usas Visual Studio Code después en el termial escribe `code .`)
+
 
 <input type="checkbox"> (Opcional) Crear carpeta `src/` y mover las carpetas `pages/`, `styles/` dentro de `src/` para mejor organización
 
