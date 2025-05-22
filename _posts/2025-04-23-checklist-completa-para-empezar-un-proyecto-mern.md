@@ -15,7 +15,7 @@ A continuación, te presento una **checklist práctica y detallada** para ayudar
   <img src="https://media.giphy.com/media/HZrx8kjIA7lyeTqXVM/giphy.gif" alt="Todo bien" width="300" />
 </div>
 
-_**(¡Los elementos marcados no se guardan entre sesiones!)**_
+<div style="text-align: center; font-weight:bold;">(¡Los elementos marcados no se guardan entre sesiones!)</div>
 
 ---
 
