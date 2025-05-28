@@ -32,8 +32,6 @@ Un **Headless CMS** separa el backend del frontend. Literalmente se le “corta 
 * Pero no hay un tema o plantilla: el contenido se entrega como **API (normalmente REST o GraphQL)**.
 * El frontend lo construyes tú, con lo que quieras: React, Vue, Svelte, Astro, Next.js… lo que más te guste.
 
-🎬 **Ejemplo visual:**
-
 ![Headless explained](https://media.giphy.com/media/IccYNHbkRBB0elljw6/giphy.gif)
 
 ## 🔧 ¿Cómo funciona?
@@ -88,13 +86,3 @@ Si quieres una app moderna, escalable y hecha a medida → Headless CMS.
 * Necesitas construir el frontend tú mismo 👷‍♂️
 * Curva de aprendizaje más pronunciada 📉
 * La vista previa del contenido no es inmediata 👀 (aunque muchos CMS ofrecen soluciones)
-
-## 📦 Mi caso personal
-
-Me estoy planteando usar uno para un proyecto en el que quiero separar bien el contenido de la lógica de presentación. Poder crear los posts desde una interfaz cómoda y consumirlos desde un frontend hecho con Astro o Next.js me parece una opción moderna, elegante y muy potente 🚀.
-
----
-
-Y eso es todo (por ahora) sobre los Headless CMS. Un concepto que puede parecer raro al principio, pero que encaja perfectamente con la arquitectura moderna y los sitios estáticos o híbridos. Quizá no lo uses para todo, pero cuando lo pruebas, cuesta volver atrás.
-
-![headless dev mode](https://media.giphy.com/media/iIqmM5tTjmpOB9mpbn/giphy.gif)
