@@ -1,7 +1,7 @@
 ---
 title: "Cómo montar un Headless CMS con Strapi (en local y en producción)"
 description: "Aprende paso a paso a montar un CMS Headless con Strapi. Desde la instalación local hasta el despliegue en producción, incluyendo ejemplos, gifs y consejos técnicos."
-image: "[https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif](https://github.com/user-attachments/assets/bdba9a62-ac40-430e-aa6a-7075d5c8e952)"
+image: "https://github.com/user-attachments/assets/bdba9a62-ac40-430e-aa6a-7075d5c8e952"
 date: 2025-05-29
 categories: [desarrollo-web, arquitectura-web]
 tags: [headless, strapi, cms, api, backend, despliegue]
