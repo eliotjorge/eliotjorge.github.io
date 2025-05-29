@@ -7,7 +7,7 @@ categories: [desarrollo-web, arquitectura-web]
 tags: [headless, cms, api, desarrollo-web, frontend, backend]
 ---
 
-> 💡 Spoiler: un Headless CMS es un gestor de contenidos… sin cabeza. Pero no te preocupes, sigue siendo muy útil (y no muerde 🧠).
+> 💡 Spoiler: un Headless CMS es un gestor de contenidos… sin cabeza (sin front-end). Pero no te preocupes, sigue siendo muy útil (y no muerde 🧠).
 
 ## 🌐 ¿Qué es un CMS tradicional?
 
