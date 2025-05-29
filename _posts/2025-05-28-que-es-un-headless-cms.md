@@ -1,5 +1,5 @@
 ---
-title: "¿Qué es un Headless CMS? Descubre su magia (sin perder la cabeza)"
+title: "¿Qué es un Headless CMS? Descubre su magia"
 description: "Explora qué es un Headless CMS, cómo funciona y cuándo usarlo. Con ejemplos, código y gifs que te ayudarán a entender esta arquitectura moderna sin volverte loco."
 image: https://github.com/user-attachments/assets/bdba9a62-ac40-430e-aa6a-7075d5c8e952
 date: 2025-05-28
@@ -86,3 +86,7 @@ Si quieres una app moderna, escalable y hecha a medida → Headless CMS.
 * Necesitas construir el frontend tú mismo 👷‍♂️
 * Curva de aprendizaje más pronunciada 📉
 * La vista previa del contenido no es inmediata 👀 (aunque muchos CMS ofrecen soluciones)
+
+## 🤷‍♂️ ¿Y ahora qué?
+
+Ya sabemos que un headless CMS por qué no vemos un ejemplo con Strapi. [**Pásate por este post**](https://jorgerosa.dev/posts/como-montar-un-headless-cms-con-strapi/).
