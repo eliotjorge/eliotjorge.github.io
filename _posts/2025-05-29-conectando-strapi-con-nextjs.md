@@ -2,7 +2,7 @@
 title: "Conectando Strapi con Next.js: crea tu frontend con datos dinámicos"
 description: "Aprende cómo conectar un Headless CMS como Strapi con un frontend hecho en Next.js. Desde las peticiones a la API hasta el renderizado dinámico de contenidos, paso a paso y con ejemplos claros."
 image: https://github.com/user-attachments/assets/bdba9a62-ac40-430e-aa6a-7075d5c8e952
-date: 2025-05-28
+date: 2025-05-28 +1000
 categories: [desarrollo-web, headless-cms, nextjs]
 tags: [strapi, headless, nextjs, react, frontend, api]
 ---
