@@ -80,7 +80,7 @@ export default function Home({ articulos }) {
       <ul>
         {articulos.map(({ id, attributes }) => (
           <li key={id}>
-            <a href={`/articulo/${attributes.slug}`} className="text-blue-600 underline">
+            <a href={'/articulo/${attributes.slug}'} className="text-blue-600 underline">
               {attributes.titulo}
             </a>
           </li>
