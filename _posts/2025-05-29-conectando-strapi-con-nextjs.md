@@ -76,7 +76,7 @@ import { getArticulos } from "@/lib/api";
 export default function Home({ articulos }) {
   return (
     <main className="p-8">
-      <h1 className="text-3xl font-bold mb-4">📰 Artículos</h1>
+      <h1 className="text-3xl font-bold mb-4">Artículos</h1>
       <ul>
         {articulos.map(({ id, attributes }) => (
           <li key={id}>
