@@ -41,6 +41,103 @@ npm install axios
 
 ---
 
+
+## 🗂️ ¿Cómo organizar el frontend y el backend?
+
+En este tipo de proyectos tendremos dos frameworks, uno encargado del **backend** (Strapi) y del **front-end** (Next.js), cada uno va en **su propia carpeta**, así:
+
+```
+mi-proyecto/
+├── backend-strapi/      ← Strapi
+└── frontend-nextjs/     ← Next.js
+```
+
+---
+
+## 🛠️ ¿Cómo los ejecuto a la vez?
+
+Tienes dos opciones:
+
+---
+
+### 🧩 Opción 1: Ejecutarlos manualmente en dos terminales
+
+1. Abre una terminal y arranca Strapi:
+
+```bash
+cd backend-strapi
+npm run develop
+```
+
+2. Abre otra terminal y arranca Next.js:
+
+```bash
+cd frontend-nextjs
+npm run dev
+```
+
+Esto es lo más habitual cuando estás desarrollando localmente.
+
+---
+
+### 🧰 Opción 2: Unificar con `concurrently` (opcional)
+
+Si te molesta tener dos terminales abiertas, puedes crear una carpeta raíz y un script para lanzar ambos.
+
+1. Estructura:
+
+```
+mi-proyecto/
+├── backend-strapi/
+├── frontend-nextjs/
+└── package.json  ← aquí va el script unificado
+```
+
+2. Instala `concurrently` en la raíz:
+
+```bash
+npm init -y
+npm install concurrently --save-dev
+```
+
+3. En el `package.json` raíz, añade:
+
+```json
+"scripts": {
+  "dev": "concurrently \"npm run develop --prefix backend-strapi\" \"npm run dev --prefix frontend-nextjs\""
+}
+```
+
+4. Ahora puedes lanzar ambos con:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🌐 Configuración de URLs
+
+Asegúrate de que Next.js apunte correctamente al backend. En desarrollo local:
+
+* Strapi suele correr en `http://localhost:1337`
+* Next.js corre en `http://localhost:3000`
+
+En tu `frontend-nextjs/.env.local`:
+
+```env
+NEXT_PUBLIC_API_URL=http://localhost:1337/api
+```
+
+Y en tu código usa esa variable:
+
+```js
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
+```
+
+---
+
+
 ## 🔗 Conectar con la API de Strapi
 
 Supongamos que en Strapi tienes una colección `articulos` con campos `titulo`, `slug` y `contenido`.
