@@ -27,7 +27,9 @@ Eso hará todo por ti:
 
 ⏳ Puede tardar un par de minutos. Y luego…
 
-![loading magic](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzhiZXdxbTcyZ3VjMGMwNXY4d2oycWF4ZDU5NWliYTZzM25sazR5ZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/JIX9t2j0ZTN9S/giphy.gif)
+<div style="text-align: center;">
+  <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Todo bien" width="300" />
+</div>
 
 ---
 
@@ -142,7 +144,9 @@ Así las imágenes subidas en producción van directas a la nube ☁️.
 
 Ya con Strapi funcionando, tienes una API robusta y flexible para alimentar cualquier frontend que te apetezca: React, Astro, Svelte, Vue… o incluso una app móvil. Puedes montar relaciones entre colecciones, controlar los permisos por roles, extender el admin panel y mucho más.
 
-![let's gooo](https://media.giphy.com/media/RrVzUOXldFe8M/giphy.gif)
+<div style="text-align: center;">
+  <img src="https://media.giphy.com/media/RrVzUOXldFe8M/giphy.gif" alt="Todo bien" width="300" />
+</div>
 
 ---
 
@@ -158,4 +162,4 @@ Ya con Strapi funcionando, tienes una API robusta y flexible para alimentar cual
 
 ---
 
-Hasta aquí la aventura de hoy. Montar tu propio Headless CMS con Strapi no solo es posible, sino también muy gratificante si te gusta tener el control de tus herramientas. Ahora, a conectarlo con un frontend y que empiece la fiesta de los datos 🎉.
+Hasta aquí la aventura de hoy. Montar tu propio Headless CMS con Strapi no solo es posible, sino también muy gratificante si te gusta tener el control de tus herramientas. Ahora, a [conectarlo con un frontend hecho con Next.js ↗](https://jorgerosa.dev/posts/conectando-strapi-con-nextjs/) y que empiece la fiesta de los datos 🎉.
