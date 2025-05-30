@@ -17,7 +17,7 @@ La forma más sencilla es usar `npx` para crear un proyecto nuevo. Necesitas ten
 
 ```bash
 npx create-strapi-app@latest mi-cms --quickstart
-````
+```
 
 Eso hará todo por ti:
 
@@ -58,7 +58,7 @@ La primera vez que accedas a `http://localhost:1337/admin`, te pedirá que crees
 
 ¡Y listo! La API ya está generada automáticamente. 😮
 
-```http
+```bash
 GET http://localhost:1337/api/articulos
 ```
 
