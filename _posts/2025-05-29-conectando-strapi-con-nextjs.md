@@ -172,7 +172,9 @@ npx vercel
 * El frontend de Next.js lo consume y muestra
 * Si cambias algo en Strapi, el frontend se actualiza automáticamente en el próximo build o al cabo de unos segundos si usas ISR (Incremental Static Regeneration)
 
-![it's alive](https://media.giphy.com/media/YQitE4YNQNahy/giphy.gif)
+<div style="text-align: center;">
+  <img src="https://media.giphy.com/media/YQitE4YNQNahy/giphy.gif" alt="Chequeado y aprobado" width="300" />
+</div>
 
 ---
 
