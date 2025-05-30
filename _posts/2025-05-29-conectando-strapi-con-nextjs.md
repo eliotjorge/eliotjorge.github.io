@@ -56,9 +56,7 @@ mi-proyecto/
 
 ## 🛠️ ¿Cómo los ejecuto a la vez?
 
-Tienes dos opciones:
-
----
+Hay dos opciones:
 
 ### 🧩 Opción 1: Ejecutarlos manualmente en dos terminales
 
