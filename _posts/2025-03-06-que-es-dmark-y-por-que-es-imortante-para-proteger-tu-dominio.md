@@ -50,4 +50,8 @@ Implementar **DMARC** tiene varias ventajas clave:
 3. **🌐 Publica el registro en el DNS:** Agrega el registro TXT en la configuración del DNS de tu dominio.
 4. **📊 Monitorea los informes:** Revisa los reportes para detectar intentos de suplantación y ajustar la política si es necesario.
 
+## ❓ Cómo verificar DMARC en tu dominio
 
+[https://dmarcian.com/dmarc-inspector/](https://dmarcian.com/dmarc-inspector/){:target="_blank"}
+
+[https://mxtoolbox.com/DMARC.aspx](https://mxtoolbox.com/DMARC.aspx){:target="_blank"}
