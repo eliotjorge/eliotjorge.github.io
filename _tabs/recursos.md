@@ -15,6 +15,8 @@ order: 6
 
 [URL Scanner](https://cyscan.io/){:target="_blank"}
 
+[Mail tester SPAM](https://www.mail-tester.com/){:target="_blank"}
+
 [Hosting Checker](https://hosting-checker.net/){:target="_blank"}
 
 [XML Sitemaps](https://www.xml-sitemaps.com/){:target="_blank"}
