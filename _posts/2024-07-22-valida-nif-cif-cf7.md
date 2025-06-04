@@ -1,5 +1,6 @@
 ---
-title: Validación de DNI (NIF), CIF, NIE en Contact Form 7 en functions.php
+title: "Validación de DNI (NIF), CIF, NIE en Contact Form 7 en functions.php"
+description: "Aprende cómo validar correctamente NIF y CIF en formularios de WordPress utilizando Contact Form 7. Descubre paso a paso cómo implementar la validación para evitar errores y mejorar la seguridad de tus formularios. Solución práctica y sencilla para webs en España. ¡Optimiza tus formularios y cumple con la normativa fácilmente!"
 date: 2024-07-22
 categories: [web,programacion,codigo,php,formulario,donaciones,olvidados,woocommerce,wordpress,cf7]
 tags: [web,programacion,codigo,php,formulario,donaciones,olvidados,woocommerce,wordpress,cf7]
