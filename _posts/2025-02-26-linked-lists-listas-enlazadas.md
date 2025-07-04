@@ -89,16 +89,10 @@ ll.display()  # Salida: 10 -> 20 -> 30 -> None
 
 ## 📌 ¿Cuándo usar Linked List vs List de Python?
 | Característica | List (Python) | Linked List |
-|---|---|---|
-| Acceso por índice | Rápido (`O(1)`) | Lento (`O(n)`) |
-| Inserción/Eliminación | Lenta si es en medio (`O(n)`) | Rápida en cualquier posición (`O(1)` si ya tienes la referencia) |
+|-------|--------|---------|
+| Acceso por índice | 🚀 Rápido (`O(1)`) | 🐢 Lento (`O(n)`) |
+| Inserción/Eliminación | 🐢 Lenta si es en medio (`O(n)`) | 🚀 Rápida en cualquier posición (`O(1)` si ya tienes la referencia) |
 | Uso de memoria | Ocupa más por preasignación | Menos, ya que asigna solo lo necesario |
 | Implementación | Fácil (`list.append()`) | Requiere definir nodos y punteros |
-
-| Priority apples | Second priority | Third priority |
-|-------|--------|---------|
-| ambrosia | gala | red delicious |
-| pink lady | jazz | macintosh |
-| honeycrisp | granny smith | fuji |
 
 En Python, la estructura de `list` es lo suficientemente eficiente para la mayoría de los casos, pero las Linked Lists son útiles cuando se necesita optimizar inserciones y eliminaciones en estructuras más dinámicas.
