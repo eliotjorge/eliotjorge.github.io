@@ -95,4 +95,10 @@ ll.display()  # Salida: 10 -> 20 -> 30 -> None
 | Uso de memoria | Ocupa más por preasignación | Menos, ya que asigna solo lo necesario |
 | Implementación | Fácil (`list.append()`) | Requiere definir nodos y punteros |
 
+| Priority apples | Second priority | Third priority |
+|-------|--------|---------|
+| ambrosia | gala | red delicious |
+| pink lady | jazz | macintosh |
+| honeycrisp | granny smith | fuji |
+
 En Python, la estructura de `list` es lo suficientemente eficiente para la mayoría de los casos, pero las Linked Lists son útiles cuando se necesita optimizar inserciones y eliminaciones en estructuras más dinámicas.
