@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Cómo incrustar un vídeo de YouTube responsive sin bandas negras"
 date: 2025-07-28
 categories: [CSS, YouTube, Responsive]
