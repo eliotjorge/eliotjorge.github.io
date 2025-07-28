@@ -86,7 +86,9 @@ En cambio, el `padding-bottom` **sí se calcula respecto al ancho del contenedor
 ✅ **Sin bandas negras**
 ✅ Y todo con un poquito de CSS 😎
 
-<p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="XWOxLYv" data-user="openai-gpt" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 1px solid #ccc; margin: 1em 0; padding: 1em;" data-preview="true">
-  <span>Ver la demo en <a href="https://codepen.io/openai-gpt/pen/XWOxLYv" target="_blank">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML pen" src="https://codepen.io/dosullz/embed/QNxdzd?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/dosullz/pen/QNxdzd">
+  HTML pen</a> by Denis OSullivan (<a href="https://codepen.io/dosullz">@dosullz</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
