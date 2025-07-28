@@ -78,17 +78,16 @@ En cambio, el `padding-bottom` **sí se calcula respecto al ancho del contenedor
 | `height: em`        | ❌ relativo al tamaño de fuente         | ❌ No sirve para proporciones     |
 | `padding-bottom: %` | ✅ relativo al **ancho** del contenedor | ✅ ¡Ideal para proporciones! ✅    |
 
+
 ## Resultado
 
 ✅ El vídeo ocupa el 100% del ancho del contenedor
+
 ✅ Se adapta al tamaño de pantalla
+
 ✅ Mantiene la proporción 16:9
+
 ✅ **Sin bandas negras**
+
 ✅ Y todo con un poquito de CSS 😎
 
-
-<iframe height="300" style="width: 100%;" scrolling="no" title="HTML pen" src="https://codepen.io/dosullz/embed/QNxdzd?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/dosullz/pen/QNxdzd">
-  HTML pen</a> by Denis OSullivan (<a href="https://codepen.io/dosullz">@dosullz</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
