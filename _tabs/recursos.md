@@ -26,3 +26,5 @@ order: 6
 [Compresor de imágenes](https://small.im/){:target="_blank"}
 
 [Herramientas de SEO](https://technicalseo.com/tools/){:target="_blank"}
+
+[ImgOps](https://imgops.com){:target="_blank"}
