@@ -4,7 +4,6 @@ description: "Explico qué es el subdominio secuestrado, por qué puede afectar 
 date: 2025-08-18
 categories: [seguridad, dominios, web]
 tags: [subdominios, seguridad, github-pages, cloudflare, dns, hosting]
-image: [https://github.com/user-attachments/assets/15a07a95-e6e6-4911-8aed-6abe63f9569c](https://github.com/user-attachments/assets/15a07a95-e6e6-4911-8aed-6abe63f9569c)
 ---
 
 ***
