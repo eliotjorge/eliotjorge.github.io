@@ -8,8 +8,6 @@ tags: [subdominios, seguridad, github-pages, cloudflare, dns, hosting]
 
 ***
 
-# ¿Qué es el Subdominio Secuestrado (Subdomain Hijacking) y cómo evitarlo? 🛡️
-
 Si tienes un blog o web alojada en GitHub Pages con un dominio personalizado, y usas servicios de DNS y seguridad como Cloudflare, quizá no conozcas el riesgo del **subdominio secuestrado** (o subdomain hijacking). Aquí te cuento en detalle qué es, por qué puede afectar a tu dominio y cómo protegerte para mantener tu imagen y SEO seguros. 🚀✨
 
 ***
