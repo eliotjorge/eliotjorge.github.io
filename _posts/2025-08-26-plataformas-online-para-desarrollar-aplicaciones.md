@@ -17,7 +17,10 @@ Y la respuesta es sí. Hoy quiero repasar las opciones más interesantes que enc
 
 ## StackBlitz ⚡
 
-<iframe src="https://giphy.com/embed/l41YtZOb9EUABnuqA" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<div style="text-align: center;">
+  <img src="https://media.giphy.com/media/Ws6T5PN7wHv3cY8xy8/giphy.gif" alt="Chequeado y aprobado" width="300" />
+</div>
+
 
 StackBlitz es probablemente la opción más rápida para proyectos con **React + Vite**. Funciona directamente en el navegador gracias a su motor *WebContainers*, que simula un entorno Node.  
 
@@ -36,7 +39,9 @@ https://stackblitz.com/github/usuario/repositorio
 
 ## GitHub Codespaces 💻☁️
 
-<iframe src="https://giphy.com/embed/3o7TKx2UxW9FjHEnYw" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<div style="text-align: center;">
+  <img src="https://media.giphy.com/media/EZr27ZbJwmjE9PGyLN/giphy.gif" alt="Chequeado y aprobado" width="300" />
+</div>
 
 Aquí entramos en un nivel superior: Codespaces es básicamente un **Linux remoto con VS Code en tu navegador**.
 
@@ -50,7 +55,9 @@ Aquí entramos en un nivel superior: Codespaces es básicamente un **Linux remot
 
 ## CodeSandbox 🏖️
 
-<iframe src="https://giphy.com/embed/3o6Zt481isNVuQI1l6" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<div style="text-align: center;">
+  <img src="https://media.giphy.com/media/QHE5gWI0QjqF2/giphy.gif" alt="Chequeado y aprobado" width="300" />
+</div>
 
 Otra opción muy interesante es CodeSandbox.
 Está pensado para prototipado rápido y, lo bueno, es que **sí soporta `pnpm`** 🎉.
