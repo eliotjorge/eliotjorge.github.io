@@ -1,7 +1,7 @@
 ---
 title: "GitHub Codespaces: desarrolla en la nube como si fuera tu propio PC"
 description: "Aprende a usar GitHub Codespaces para programar en la nube sin instalar nada en tu ordenador. Cómo crearlo, iniciar un entorno, detenerlo, saber el precio y controlar el tiempo usado."
-image: "https://github.com/user-attachments/assets/ed0c5fdf-c45b-4475-ab30-f44592a95a40"
+image: "https://github.com/user-attachments/assets/a0fe7d54-672b-4d12-90d7-414e6a7ea791"
 date: 2025-08-27
 categories: [desarrollo-web, herramientas]
 tags: [github, codespaces, cloud, desarrollo-online, pnpm, react, vite]
