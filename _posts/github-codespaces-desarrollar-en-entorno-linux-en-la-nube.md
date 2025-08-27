@@ -1,7 +1,7 @@
 ---
 title: "GitHub Codespaces: desarrolla en la nube como si fuera tu propio PC"
 description: "Aprende a usar GitHub Codespaces para programar en la nube sin instalar nada en tu ordenador. Cómo crearlo, iniciar un entorno, detenerlo, saber el precio y controlar el tiempo usado."
-image: "https://media.giphy.com/media/l0Exk8EUzSLsrErEQ/giphy.gif"
+image: "https://github.com/user-attachments/assets/ed0c5fdf-c45b-4475-ab30-f44592a95a40"
 date: 2025-08-26
 categories: [desarrollo-web, herramientas]
 tags: [github, codespaces, cloud, desarrollo-online, pnpm, react, vite]
@@ -16,7 +16,10 @@ Y la verdad: me sorprendió lo bien que funciona. Aquí voy a repasar cómo crea
 
 ## ¿Qué es GitHub Codespaces? ☁️
 
-<iframe src="https://giphy.com/embed/l0Exk8EUzSLsrErEQ" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<div style="text-align: center;">
+  <img src="https://media.giphy.com/media/bc5at4DVgJy3k5r0n0/giphy.gif" alt="Chequeado y aprobado" width="300" />
+</div>
+
 
 Codespaces te permite abrir un proyecto de GitHub en un entorno remoto que ya tiene:  
 - Node.js (puedes instalar `pnpm` si quieres).  
@@ -86,7 +89,9 @@ Los precios extra rondan los **0,18 USD/hora** para computación y **0,07 USD/GB
 
 ## Cómo ver tu tiempo usado ⏱️
 
-<iframe src="https://giphy.com/embed/l0IyhpN6Sq2tviJ8Q" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<div style="text-align: center;">
+  <img src="https://media.giphy.com/media/l0G17RknJuOlxnFO8/giphy.gif" alt="Chequeado y aprobado" width="300" />
+</div>
 
 Para no pasarte del límite gratuito, puedes revisar tu consumo:
 
