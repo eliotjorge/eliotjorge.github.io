@@ -49,7 +49,7 @@ Aquí entramos en un nivel superior: Codespaces es básicamente un **Linux remot
 * Todo queda guardado en la nube: dependencias, configuraciones, cambios de código.
 * Es literalmente como tener tu entorno local, pero sin instalar nada en el ordenador donde estés.
 
-⚠️ En este post no me voy a meter en detalle con precios, horas incluidas o cómo crearlo. Eso lo dejaré para otra entrada, porque merece su propio espacio.
+⚠️ En este post no me voy a meter en detalle con precios, horas incluidas o cómo crearlo. Eso lo puedes leer en [esta entrada](https://jorgerosa.dev/posts/github-codespaces-desarrollar-en-entorno-linux-en-la-nube), porque merece su propio espacio.
 
 ---
 
