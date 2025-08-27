@@ -7,7 +7,7 @@ categories: [desarrollo-web, arquitectura-web]
 tags: [headless, strapi, cms, api, backend, despliegue]
 ---
 
-> 🧠 Después de entender qué es un [Headless CMS](https://jorgerosa.dev/posts/que-es-un-headless-cms/), producc ahora me lanzo a **montar uno desde cero con Strapi**, primero en local y luego dejándolo listo paraión.
+> 🧠 Después de entender qué es un [Headless CMS](https://jorgerosa.dev/posts/que-es-un-headless-cms/), ahora me lanzo a **montar uno desde cero con Strapi**, primero en local y luego dejándolo listo paraión.
 
 ---
 
