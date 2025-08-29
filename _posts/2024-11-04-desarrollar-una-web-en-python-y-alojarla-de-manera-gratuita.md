@@ -10,12 +10,16 @@ render_with_liquid: false
 canonical_url: "https://jorgerosa.dev/python-web-gratis"
 ---
 
-Desarrollar una página web con **Python** y publicarla en Internet de forma gratuita es totalmente posible.  
+Desarrollar una página web con **Python** y publicarla en Internet de forma gratuita es totalmente posible 🚀.  
 En esta guía práctica te muestro cómo hacerlo paso a paso, desde elegir un framework hasta desplegar tu aplicación en un hosting gratuito.
+
+<div style="text-align: center;">
+  <img src="https://media.giphy.com/media/Dk57URqjqjHjNGHeMV/giphy.gif" alt="Vamos allá" width="300" />
+</div>
 
 ---
 
-## 1. Elegir un framework web en Python
+## 1. Elegir un framework web en Python 🐍
 
 Los dos frameworks más usados son:
 
@@ -26,7 +30,7 @@ Ambos son opciones excelentes según tus necesidades.
 
 ---
 
-## 2. Crear tu aplicación en Python
+## 2. Crear tu aplicación en Python 💻
 
 ### Instalar Python y entorno virtual
 Primero asegúrate de tener **Python 3** en tu sistema. Después, crea un entorno virtual:
@@ -67,14 +71,14 @@ python manage.py runserver
 
 ---
 
-## 3. Probar la aplicación en local
+## 3. Probar la aplicación en local 🧪
 
 * Flask: accede a `http://127.0.0.1:5000/`
 * Django: accede a `http://127.0.0.1:8000/`
 
 ---
 
-## 4. Plataformas gratuitas para alojar tu aplicación
+## 4. Plataformas gratuitas para alojar tu aplicación 🌍
 
 Existen varias alternativas de **hosting gratis para Python**:
 
@@ -87,26 +91,30 @@ Existen varias alternativas de **hosting gratis para Python**:
 
 💡 Consejo: Para proyectos de aprendizaje, **Render** y **PythonAnywhere** son los más fáciles de configurar.
 
+<div style="text-align: center;">
+  <img src="https://media.giphy.com/media/2D8g2rXcWx1DO/giphy.gif" alt="Hosting gratuito" width="300" />
+</div>
+
 ---
 
-## 5. Bases de datos gratuitas
+## 5. Bases de datos gratuitas 🗄️
 
 Si tu aplicación necesita guardar datos, revisa las opciones que da cada servicio:
 
-* Heroku → addons de PostgreSQL gratuitos.
-* Render / Railway → también ofrecen PostgreSQL o MySQL en planes gratis.
-* PythonAnywhere → SQLite para proyectos básicos.
+* **Heroku** → addons de PostgreSQL gratuitos.
+* **Render / Railway** → también ofrecen PostgreSQL o MySQL en planes gratis.
+* **PythonAnywhere** → SQLite para proyectos básicos.
 
 ---
 
-## 6. Publicar y compartir tu web
+## 6. Publicar y compartir tu web 📢
 
 Una vez desplegada, tu aplicación tendrá una URL pública.
 Ejemplo: `https://tuproyecto.onrender.com` o `https://tuproyecto.herokuapp.com`.
 
 ---
 
-## 7. Mantener y actualizar tu aplicación
+## 7. Mantener y actualizar tu aplicación 🔄
 
 El despliegue es solo el comienzo. Recuerda:
 
@@ -114,9 +122,18 @@ El despliegue es solo el comienzo. Recuerda:
 * Revisar la seguridad de dependencias.
 * Optimizar tu código para que el rendimiento no se resienta en los planes gratuitos.
 
+<div style="text-align: center;">
+  <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" alt="Actualización continua" width="300" />
+</div>
+
 ---
 
-## Conclusión
+## Conclusión ✅
 
 Crear y alojar una web con **Python** gratis es una excelente forma de aprender desarrollo web moderno.
 Con **Flask o Django** puedes empezar en minutos y publicar tu aplicación en Internet sin gastar un euro.
+
+
+<div style="text-align: center;">
+  <img src="https://media.giphy.com/media/111ebonMs90YLu/giphy.gif" alt="Chequeado y aprobado" width="300" />
+</div>
