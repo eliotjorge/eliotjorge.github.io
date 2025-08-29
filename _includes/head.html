@@ -152,4 +152,37 @@
   }
   </script>
 
+  <!-- json dinamico para google y el seo-->
+    {% if page.layout == 'post' %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "{{ page.url | absolute_url }}"
+        },
+        "headline": "{{ page.title | escape }}",
+        "description": "{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | escape }}{% endif %}",
+        "image": "{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ site.logo | absolute_url }}{% endif %}",
+        "author": {
+          "@type": "Person",
+          "name": "{{ site.author.name }}",
+          "url": "{{ site.url }}"
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "{{ site.author.name }}",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{ site.logo | absolute_url }}"
+          }
+        },
+        "datePublished": "{{ page.date | date_to_xmlschema }}",
+        "dateModified": "{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}"
+      }
+      //Hola Jorge
+    </script>
+
+    {% endif %}
   </head>
