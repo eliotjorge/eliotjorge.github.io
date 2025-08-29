@@ -1,6 +1,7 @@
 ---
 layout: page
 noindex: true
+sitemap: false
 ---
 
 ### MINI
