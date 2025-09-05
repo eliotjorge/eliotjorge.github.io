@@ -105,7 +105,6 @@ document.body.classList.add(tema);
 - Usa `localStorage` para datos que deben persistir más allá de la sesión del navegador, como configuraciones de usuario o tokens de autenticación.
 - Usa `sessionStorage` para datos temporales que solo necesitan estar disponibles durante la sesión actual, como identificadores de sesión o datos específicos de una pestaña.
 
-{% raw %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -138,4 +137,3 @@ document.body.classList.add(tema);
   ]
 }
 </script>
-{% endraw %}
