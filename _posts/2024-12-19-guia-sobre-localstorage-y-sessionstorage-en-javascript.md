@@ -3,8 +3,8 @@ title: Guía sobre localStorage y sessionStorage en JavaScript
 image: https://github.com/user-attachments/assets/48375fdf-328e-4a4c-b9c4-edbc96ac0007
 date: 2024-12-19
 description: "Aprende qué son localStorage y sessionStorage en JavaScript, sus diferencias principales, ejemplos prácticos de uso y cuándo elegir cada uno para almacenar datos en el navegador."
-categories: [ia,gpt,openai,inteligencia artificial,cahtgpt]
-tags: [ia,gpt,openai,inteligencia artificial,cahtgpt]
+categories: [localStorage, sessionStorage, webstorage]
+tags: [localStorage, sessionStorage, webstorage]
 pin: false
 comments: false
 render_with_liquid: false
