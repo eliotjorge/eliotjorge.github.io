@@ -104,3 +104,38 @@ document.body.classList.add(tema);
 
 - Usa `localStorage` para datos que deben persistir más allá de la sesión del navegador, como configuraciones de usuario o tokens de autenticación.
 - Usa `sessionStorage` para datos temporales que solo necesitan estar disponibles durante la sesión actual, como identificadores de sesión o datos específicos de una pestaña.
+
+{% raw %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es localStorage en JavaScript?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "localStorage es una forma de almacenamiento web que guarda datos de forma persistente en el navegador, incluso después de cerrar la pestaña o el navegador."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué es sessionStorage en JavaScript?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "sessionStorage es similar a localStorage, pero sus datos se eliminan automáticamente cuando se cierra la pestaña o ventana del navegador."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuál es la diferencia entre localStorage y sessionStorage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La diferencia principal es la duración de los datos: localStorage mantiene los datos de manera indefinida (hasta que se borren manualmente), mientras que sessionStorage los elimina al cerrar la pestaña o ventana."
+      }
+    }
+  ]
+}
+</script>
+{% endraw %}
