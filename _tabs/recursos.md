@@ -28,3 +28,5 @@ order: 6
 [Herramientas de SEO](https://technicalseo.com/tools/){:target="_blank"}
 
 [ImgOps](https://imgops.com){:target="_blank"}
+
+[LocalWP - App de escritorio para montar Wordpress](https://localwp.com/){:target="_blank"}
