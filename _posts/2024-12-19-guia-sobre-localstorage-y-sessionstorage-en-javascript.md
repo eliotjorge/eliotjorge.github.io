@@ -8,6 +8,13 @@ tags: [localStorage, sessionStorage, webstorage]
 pin: false
 comments: false
 render_with_liquid: false
+faq:
+  - question: "¿Qué es localStorage en JavaScript?"
+    answer: "localStorage guarda pares clave-valor de forma persistente en el navegador, permaneciendo después de cerrar la pestaña o el navegador hasta que se eliminen."
+  - question: "¿Qué es sessionStorage en JavaScript?"
+    answer: "sessionStorage guarda pares clave-valor solo durante la sesión actual; sus datos se eliminan al cerrar la pestaña o ventana del navegador."
+  - question: "¿Cuál es la diferencia entre localStorage y sessionStorage?"
+    answer: "localStorage mantiene los datos indefinidamente, mientras que sessionStorage los elimina al cerrar la pestaña. La API es la misma (setItem, getItem, etc.)."
 ---
 
 ## ✨ ¿Qué son `localStorage` y `sessionStorage`?
@@ -107,74 +114,3 @@ document.body.classList.add(tema);
 - Usa `sessionStorage` para datos temporales que solo necesitan estar disponibles durante la sesión actual, como identificadores de sesión o datos específicos de una pestaña.
 
 ---
-
-## ❓ FAQ sobre `localStorage` y `sessionStorage`
-
-### ¿Qué es `localStorage` en JavaScript?
-`localStorage` guarda pares clave-valor de forma persistente en el navegador. Los datos permanecen incluso después de cerrar la pestaña o el navegador, hasta que se eliminen manualmente.
-
-### ¿Qué es `sessionStorage` en JavaScript?
-`sessionStorage` también guarda pares clave-valor, pero únicamente durante la sesión actual. Sus datos se eliminan automáticamente al cerrar la pestaña o la ventana del navegador.
-
-### ¿Cuál es la diferencia entre `localStorage` y `sessionStorage`?
-La diferencia principal es la **persistencia**:  
-- `localStorage` mantiene los datos indefinidamente (hasta que se borren).  
-- `sessionStorage` elimina los datos al cerrar la pestaña o ventana.  
-Ambos usan la misma API (`setItem`, `getItem`, `removeItem`, `clear`).
-
-### ¿Se comparten los datos entre pestañas?
-- `localStorage`: Sí, se comparte entre todas las pestañas del mismo dominio.  
-- `sessionStorage`: No, es único por cada pestaña o ventana.
-
-### ¿Cuál es la capacidad típica de almacenamiento?
-Tanto `localStorage` como `sessionStorage` suelen permitir hasta **5 MB por dominio**, aunque puede variar según el navegador.
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "¿Qué es localStorage en JavaScript?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "localStorage guarda pares clave-valor de forma persistente en el navegador, permaneciendo después de cerrar la pestaña o el navegador hasta que se eliminen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Qué es sessionStorage en JavaScript?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "sessionStorage guarda pares clave-valor solo durante la sesión actual; sus datos se eliminan al cerrar la pestaña o ventana del navegador."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Cuál es la diferencia entre localStorage y sessionStorage?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Principalmente la persistencia: localStorage mantiene los datos indefinidamente (hasta borrarlos), mientras que sessionStorage los elimina al cerrar la pestaña. La API (setItem, getItem, removeItem, clear) es la misma."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Se comparten los datos entre pestañas?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "localStorage se comparte entre pestañas del mismo dominio; sessionStorage es único por pestaña o ventana."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Cuál es la capacidad típica de almacenamiento?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Típicamente alrededor de 5 MB por origen tanto para localStorage como para sessionStorage, aunque puede variar por navegador."
-      }
-    }
-  ]
-}
-</script>
