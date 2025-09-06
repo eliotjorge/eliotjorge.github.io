@@ -5,6 +5,21 @@ image: https://github.com/user-attachments/assets/bdba9a62-ac40-430e-aa6a-7075d5
 date: 2025-05-28
 categories: [desarrollo-web, arquitectura-web]
 tags: [headless, cms, api, desarrollo-web, frontend, backend]
+faq:
+  - question: "¿Qué es un Headless CMS?"
+    answer: "Un Headless CMS es un gestor de contenidos que separa el backend del frontend. El contenido se administra en un panel y se entrega a través de una API (REST o GraphQL) para que cualquier frontend lo consuma, como webs en React, apps móviles o incluso smart TVs."
+  - question: "¿En qué se diferencia un Headless CMS de un CMS tradicional?"
+    answer: "En un CMS tradicional el backend y el frontend están acoplados (ejemplo: WordPress con sus temas). En un Headless CMS, el contenido se gestiona en el backend y se expone por API, permitiendo total libertad para construir el frontend con cualquier tecnología."
+  - question: "¿Qué ventajas tiene un Headless CMS?"
+    answer: "Permite mayor flexibilidad de diseño, reutilización del mismo contenido en múltiples plataformas (web, móvil, dispositivos IoT) y mejor rendimiento en algunos escenarios. Es ideal para proyectos modernos y escalables."
+  - question: "¿Qué desventajas tiene un Headless CMS?"
+    answer: "Requiere conocimientos técnicos para construir el frontend desde cero, tiene una curva de aprendizaje más alta y en algunos casos la vista previa del contenido no es inmediata."
+  - question: "¿Cuándo conviene usar un Headless CMS y cuándo un CMS tradicional?"
+    answer: "Si necesitas un sitio rápido de montar y fácil de usar sin código, un CMS tradicional como WordPress es mejor. Si buscas escalabilidad, personalización total y reutilizar el contenido en varios canales, un Headless CMS es la opción adecuada."
+  - question: "¿Qué ejemplos de Headless CMS existen?"
+    answer: "Algunos de los más populares son Strapi (open source en Node.js), Contentful (muy usado en empresas), Sanity (flexible y potente), DatoCMS (pensado para JAMstack) y Ghost en modo headless."
+  - question: "¿Cómo funciona un Headless CMS en la práctica?"
+    answer: "El contenido se escribe en el backend, se guarda en la base de datos y se expone por API. El frontend realiza una petición (fetch) a esa API, recibe datos en JSON y los renderiza según la tecnología elegida (React, Vue, Astro, Next.js, etc.)."
 ---
 
 > 💡 Spoiler: un Headless CMS es un gestor de contenidos… sin cabeza (sin front-end). Pero no te preocupes, sigue siendo muy útil (y no muerde 🧠).
