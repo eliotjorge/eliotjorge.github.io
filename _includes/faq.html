@@ -1,0 +1,28 @@
+{% if page.faq %}
+<div class="faq-block">
+  <h2>❓ FAQ</h2>
+  {% for item in page.faq %}
+    <h3>{{ item.question }}</h3>
+    <p>{{ item.answer }}</p>
+  {% endfor %}
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in page.faq %}
+    {
+      "@type": "Question",
+      "name": "{{ item.question | escape }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ item.answer | escape }}"
+      }
+    }{% if forloop.last == false %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
