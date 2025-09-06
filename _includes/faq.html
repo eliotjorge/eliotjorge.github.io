@@ -3,7 +3,8 @@
 <div class="faq-block">
   <h2 id="faq">❓ FAQ</h2>
   {% for item in page.faq %}
-    <h3>{{ item.question }}</h3>
+  {% assign faq_id = item.question | downcase | replace: " ", "-" | replace: "¿", "" | replace: "?", "" | replace: "á","a" | replace:"é","e" | replace:"í","i" | replace:"ó","o" | replace:"ú","u" %}
+    <h3 id="{{ faq_id }}">{{ item.question }}</h3>
     <p>{{ item.answer }}</p>
   {% endfor %}
 </div>
