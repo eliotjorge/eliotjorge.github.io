@@ -1,7 +1,7 @@
 {% if page.faq %}
 <hr>
 <div class="faq-block">
-  <h2>❓ FAQ</h2>
+  <h2 id="faq">❓ FAQ</h2>
   {% for item in page.faq %}
     <h3>{{ item.question }}</h3>
     <p>{{ item.answer }}</p>
