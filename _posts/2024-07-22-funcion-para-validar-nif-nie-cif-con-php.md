@@ -1,10 +1,29 @@
 ---
 title: Función para validar DNI (NIF), CIF, NIE con PHP
 date: 2024-07-22
-categories: [web,programacion,codigo,php,formulario,donaciones,olvidados,woocommerce,wordpress]
-tags: [web,programacion,codigo,php,formulario,donaciones,olvidados,woocommerce,wordpress]
+description: "Aprende a validar DNI, NIF, CIF y NIE en PHP con una sola función. Descubre expresiones regulares, ejemplos de código y cómo comprobar la letra o dígito de control en identificadores españoles."
+categories: [web,programacion,codigo,php,formulario]
+tags: [web,programacion,codigo,php,formulario]
 comments: false
 render_with_liquid: false
+faq:
+  - question: "¿Cómo validar un DNI o NIF en PHP?"
+    answer: "Para validar un DNI/NIF se comprueba que tenga 8 dígitos seguidos de una letra de control. La letra se calcula con el módulo 23 y debe coincidir con la proporcionada en el número."
+
+  - question: "¿Cuál es la diferencia entre DNI, NIF, CIF y NIE?"
+    answer: "El DNI o NIF identifica a ciudadanos españoles, el NIE identifica a extranjeros, y el CIF corresponde a empresas y entidades jurídicas."
+
+  - question: "¿Qué expresiones regulares se usan para validar identificadores españoles?"
+    answer: "DNI/NIF: ^[0-9]{8}[A-Z]$, NIE: ^[XYZ][0-9]{7}[A-Z]$, CIF: ^[ABCDEFGHJNPQRSUVW][0-9]{7}[A-Z0-9]$, y NIE especial: ^T[0-9]{8}$."
+
+  - question: "¿Se puede validar un CIF con PHP?"
+    answer: "Sí. El algoritmo suma los dígitos pares e impares, calcula el dígito de control y lo compara con el último carácter del CIF, que puede ser una letra o un número."
+
+  - question: "¿El NIE funciona igual que el NIF?"
+    answer: "En el NIE, la letra inicial (X, Y, Z) se convierte en un número (0, 1 o 2) antes de calcular la letra de control con el mismo algoritmo que el NIF."
+
+  - question: "¿Qué devuelve la función validDniCifNie en PHP?"
+    answer: "Devuelve true si el número es válido y false si no cumple con ningún formato aceptado."
 ---
 
 En este post, exploraremos una función en PHP diseñada para validar los principales formatos de identificación utilizados en España: **DNI (NIF)**, **CIF**, y **NIE**. Estos números son fundamentales para identificar tanto a personas físicas como jurídicas en procedimientos oficiales.
