@@ -2,11 +2,10 @@
 title: Función para validar DNI (NIF), CIF, NIE con PHP
 date: 2024-07-22
 description: "Aprende a validar DNI, NIF, CIF y NIE en PHP con una sola función. Descubre expresiones regulares, ejemplos de código y cómo comprobar la letra o dígito de control en identificadores españoles."
-image: "https://github.com/user-attachments/assets/445cdfdf-6acc-4a62-b4ba-ada369e069cd"
 categories: [web,programacion,codigo,php,formulario]
 tags: [web,programacion,codigo,php,formulario]
+image: "https://github.com/user-attachments/assets/445cdfdf-6acc-4a62-b4ba-ada369e069cd"
 comments: false
-render_with_liquid: false
 faq:
   - question: "¿Cómo validar un DNI o NIF en PHP?"
     answer: "Para validar un DNI/NIF se comprueba que tenga 8 dígitos seguidos de una letra de control. La letra se calcula con el módulo 23 y debe coincidir con la proporcionada en el número."
