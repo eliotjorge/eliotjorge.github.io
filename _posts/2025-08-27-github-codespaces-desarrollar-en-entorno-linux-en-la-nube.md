@@ -5,6 +5,21 @@ image: "https://github.com/user-attachments/assets/a0fe7d54-672b-4d12-90d7-414e6
 date: 2025-08-27
 categories: [desarrollo-web, herramientas]
 tags: [github, codespaces, cloud, desarrollo-online, pnpm, react, vite]
+faq:
+  - question: "¿Qué es GitHub Codespaces y para qué sirve?"
+    answer: "GitHub Codespaces es un entorno de desarrollo en la nube que funciona como Visual Studio Code en tu navegador. Permite programar sin instalar nada en tu ordenador, ideal para trabajar desde cualquier lugar."
+  
+  - question: "¿Cómo crear un Codespace en GitHub?"
+    answer: "Debes entrar en el repositorio de GitHub, pulsar el botón verde **Code**, ir a la pestaña **Codespaces** y hacer clic en **Create codespace on main**. En segundos tendrás un entorno listo para programar."
+  
+  - question: "¿Cómo detener un Codespace para que no consuma horas?"
+    answer: "Cerrar la pestaña del navegador no detiene el Codespace. Para pararlo, ve a [github.com/codespaces](https://github.com/codespaces) y pulsa **Stop codespace**. Si ya no lo necesitas, puedes elegir **Delete**."
+  
+  - question: "¿Cuánto cuesta usar GitHub Codespaces?"
+    answer: "Con GitHub Free dispones de 60 horas al mes y 15 GB gratis. Con GitHub Pro tienes 180 horas y 20 GB. Si superas esos límites, el coste aproximado es de 0,18 USD/hora de computación y 0,07 USD/GB de almacenamiento."
+  
+  - question: "¿Cómo saber cuántas horas llevo consumidas en Codespaces?"
+    answer: "Entra en tu cuenta de GitHub → **Billing & plans** → sección **Codespaces**. Allí verás tus horas usadas y el almacenamiento consumido. También puedes consultar el detalle en la página de Usage."
 ---
 
 Después de descubrir plataformas como StackBlitz y CodeSandbox, había una que me llamaba especialmente la atención: **GitHub Codespaces**.  
