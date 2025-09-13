@@ -4,6 +4,7 @@ description: "Descubre qué son los roles de usuario en WordPress, cuáles exist
 date: 2025-09-13
 categories: [WordPress, Tutoriales]
 tags: [roles de usuario, wordpress, permisos, seguridad, administración]
+image: "https://github.com/user-attachments/assets/934e631a-bf59-4822-8188-055d437ac525"
 faq:
 - question: "¿Qué son los roles de usuario en WordPress?"
   answer: "Son perfiles predefinidos que determinan qué acciones puede realizar cada usuario en un sitio WordPress, como publicar, editar, moderar comentarios o administrar el sitio."
