@@ -26,14 +26,6 @@ En WordPress, cada usuario tiene un rol que define **qué puede y qué no puede 
 <img src="https://media.giphy.com/media/mEVWOs5Kto9RErUBCi/giphy.gif" alt="Chequeado y aprobado" width="300" />
 </div>
 
-A lo largo de este post veremos:
-
-✅ Qué roles existen en WordPress
-✅ Qué permisos tiene cada uno
-✅ Ejemplos prácticos
-✅ Una tabla comparativa optimizada para móviles
-✅ FAQs para resolver dudas rápidas
-
 ---
 
 ## Los roles de usuario en WordPress
