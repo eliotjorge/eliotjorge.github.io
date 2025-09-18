@@ -72,13 +72,6 @@ Sí ✅.
 
 ---
 
-## ❓ Preguntas comunes que suelen hacer a los registradores
-
-* “¿Dónde encuentro el Authcode?” → Normalmente en el panel de tu registrador o solicitándolo al soporte.
-* “¿Puedo cambiar de titular durante la transferencia?” → No, primero transfiere, luego cambia datos.
-* “¿Puedo cancelar una transferencia en curso?” → Sí, desde el correo de Red.es o contactando con el registrador de destino.
-
----
 
 ## 🔄 Comparativa con otros TLDs
 
