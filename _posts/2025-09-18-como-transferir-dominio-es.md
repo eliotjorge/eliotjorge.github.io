@@ -1,7 +1,7 @@
 ---
 title: "Cómo transferir un dominio .es entre registradores: pasos, tiempos y consejos"
 description: "Guía práctica para transferir un dominio .es entre registradores: pasos con Authcode, correo de Red.es, tiempos, errores frecuentes, consejos para agilizar y checklist final."
-date: 2025-09-17
+date: 2025-09-18
 image: "https://github.com/user-attachments/assets/865443ea-b4ba-4847-8f33-9ecd6e6ee2a5"
 categories: [Dominios, Hosting, SEO]
 tags: [transferencia dominio .es, authcode .es, red.es, transferir dominio, registrar, SEO]
