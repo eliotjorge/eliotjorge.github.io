@@ -20,13 +20,13 @@ faq:
     answer: "Sí, desde el correo de Red.es o contactando con el registrador de destino."
 ---
 
-## Transferir un dominio .es entre registradores 🇪🇸
+## Transferir un dominio .es entre registradores
 
 Los dominios **.es** tienen un procedimiento de transferencia muy concreto. La clave está en dos cosas:  
 1. Conseguir el **Authcode**.  
 2. **Aceptar el correo de Red.es**.  
 
-👉 Si lo que necesitas es transferir un dominio **.com**, te dejo aquí la [guía completa para transferir un .com](/como-transferir-dominio-com).  
+👉 Si lo que necesitas es transferir un dominio **.com**, te dejo aquí la [guía completa para transferir un .com](https://jorgerosa.dev/posts/como-transferir-dominio-com).  
 
 ---
 
