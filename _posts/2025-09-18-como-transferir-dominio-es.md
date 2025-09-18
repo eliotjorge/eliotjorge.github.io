@@ -90,7 +90,9 @@ Sí ✅.
 ## 📋 Checklist ANTES de transferir un .es
 
 <input type="checkbox"> Solicité el **Authcode** en mi registrador actual.
-* [ ] Comprobé que el **correo del titular** está actualizado.
-* [ ] Inicié la transferencia en el nuevo registrador.
-* [ ] Acepté el **correo de Red.es**.
-* [ ] Confirmé que el dominio está desbloqueado (si aplica).
+<input type="checkbox"> Comprobé que el **correo del titular** está actualizado.
+<input type="checkbox"> Inicié la transferencia en el nuevo registrador.
+<input type="checkbox"> Acepté el **correo de Red.es**.
+<input type="checkbox"> Confirmé que el dominio está desbloqueado (si aplica).
+
+(*Los elementos marcados no se guardan entre sesiones*)
