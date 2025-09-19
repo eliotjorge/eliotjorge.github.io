@@ -1,6 +1,6 @@
 ---
 title: Función para validar DNI (NIF), CIF y NIE con JavaScript
-date: 2025-09
+date: 2025-09-22
 description: "Aprende a validar DNI, NIF, CIF y NIE en JavaScript con una sola función. Incluye expresiones regulares, ejemplos de código, explicaciones paso a paso y cómo comprobar la letra o dígito de control en identificadores españoles."
 categories: [web,programacion,codigo,javascript,formulario]
 tags: [web,programacion,codigo,javascript,formulario]
