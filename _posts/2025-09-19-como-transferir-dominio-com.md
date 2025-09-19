@@ -78,10 +78,10 @@ Sí ✅.
 
 ## 📋 Checklist antes de transferir un .com
 
-<input type="checkbox"> Desbloqueé el dominio en el registrador actual.
-<input type="checkbox"> Solicité el **Authcode**.
-<input type="checkbox"> Inicié la transferencia en el nuevo registrador.
-<input type="checkbox"> Revisé el **correo del registrador actual**.
-<input type="checkbox"> Confirmé (si era posible) en el panel de origen y destino.
+<input type="checkbox"> Desbloqueé el dominio en el registrador actual.<br/>
+<input type="checkbox"> Solicité el **Authcode**.<br/>
+<input type="checkbox"> Inicié la transferencia en el nuevo registrador.<br/>
+<input type="checkbox"> Revisé el **correo del registrador actual**.<br/>
+<input type="checkbox"> Confirmé (si era posible) en el panel de origen y destino.<br/>
 
 (*Los elementos marcados no de guardan entre sesiones*)
