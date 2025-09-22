@@ -28,6 +28,10 @@ faq:
 
 En este post, exploraremos una función en PHP diseñada para validar los principales formatos de identificación utilizados en España: **DNI (NIF)**, **CIF**, y **NIE**. Estos números son fundamentales para identificar tanto a personas físicas como jurídicas en procedimientos oficiales.
 
+Si prefieres usar JavaScript para hacer esta validación échale un vistazo a esta entrada, [Función para validar DNI (NIF), CIF y NIE con JavaScript](https://jorgerosa.dev/posts/funcion-para-validar-nif-nie-cif-con-javascript/)
+
+<div style="text-align: center;"><img src="https://media.giphy.com/media/kC9Kveaw468cPLxpYE/giphy.gif" alt="Echa un vistazo" width="300" /> </div>
+
 ## **Sintaxis**
 
 validDniCifNie(_dni_);
@@ -198,9 +202,4 @@ if (preg_match('/^T[0-9]{8}$/', $dni)) {
 }
 ```
 
-
-
-
-
-
-
+Para hacer la validación usando JavaScript pásate por esta entrada [Función para validar DNI (NIF), CIF y NIE con JavaScript](https://jorgerosa.dev/posts/funcion-para-validar-nif-nie-cif-con-javascript/)
