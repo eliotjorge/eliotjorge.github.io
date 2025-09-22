@@ -21,7 +21,7 @@ faq:
     answer: "Devuelve true si el número es válido y false si no cumple con ningún formato aceptado."
 ---
 
-En esta ocasión voy a dejar por aquí una función en **JavaScript** que permite validar los principales documentos identificativos en España: **DNI/NIF**, **NIE** y **CIF**. Algo bastante útil cuando necesitas comprobar que los datos de un formulario son correctos ✅.
+En este otro post explicaba como **[validar documentos con PHP](https://jorgerosa.dev/posts/funcion-para-validar-nif-nie-cif-con-php/)** y en esta ocasión voy a dejar por aquí una función en **JavaScript** que permite validar los principales documentos identificativos en España: **DNI/NIF**, **NIE** y **CIF**. Algo bastante útil cuando necesitas comprobar que los datos de un formulario son correctos ✅.
 
 <div style="text-align: center;">
   <img src="https://media.giphy.com/media/mEVWOs5Kto9RErUBCi/giphy.gif" alt="Chequeado y aprobado" width="300" />
@@ -140,3 +140,5 @@ console.log(validDniCifNie("12345678A")); // false (letra incorrecta)
 <div style="text-align: center;">
   <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Validando identificadores" width="300" />
 </div>
+
+Recuerda, si quieres validar los documentos con PHP pásate por este post, [Función para validar DNI (NIF), CIF, NIE con PHP](https://jorgerosa.dev/posts/funcion-para-validar-nif-nie-cif-con-php/)
