@@ -141,4 +141,5 @@ console.log(validDniCifNie("12345678A")); // false (letra incorrecta)
   <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Validando identificadores" width="300" />
 </div>
 
-Recuerda, si quieres validar los documentos con PHP pásate por este post, [Función para validar DNI (NIF), CIF, NIE con PHP](https://jorgerosa.dev/posts/funcion-para-validar-nif-nie-cif-con-php/)
+
+Recuerda, si quieres **validar los documentos con PHP** pásate por este post, **[Función para validar DNI (NIF), CIF, NIE con PHP](https://jorgerosa.dev/posts/funcion-para-validar-nif-nie-cif-con-php/)**
