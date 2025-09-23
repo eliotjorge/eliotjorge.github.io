@@ -115,6 +115,8 @@ function validDniCifNie(dni) {
 
 El objetivo de la función es **comprobar si un identificador es válido según su formato oficial en España**. Incluye reglas diferentes según se trate de un **NIF**, **NIE** o **CIF**.
 
+>Si quieres generar números de identificación ficticios, pero correctos te recomiendo esta página (Generador de DNI)[https://generador-de-dni.es/dni/?utm_source=generadordni&utm_medium=menu&utm_campaign=migracion]{:target="_blank"}
+
 ---
 
 ## 📊 Tabla comparativa
