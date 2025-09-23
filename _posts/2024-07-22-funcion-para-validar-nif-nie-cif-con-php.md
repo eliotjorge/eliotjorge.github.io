@@ -111,6 +111,8 @@ function validDniCifNie($dni) {
 
 La función `validDniCifNie` recibe como entrada un número de identificación y valida si este corresponde a un formato válido de DNI, CIF o NIE. Además, comprueba la validez del número de control (letra o dígito, dependiendo del caso) que forma parte de estos documentos.
 
+>Si quieres generar números de identificación ficticios, pero correctos te recomiendo esta página (Generador de DNI)[https://generador-de-dni.es/dni/?utm_source=generadordni&utm_medium=menu&utm_campaign=migracion]{:target="_blank"}
+
 ### **Estructura básica de los identificadores**
 
 1. **DNI/NIF (Número de Identificación Fiscal):** 8 dígitos y 1 letra de control.  
