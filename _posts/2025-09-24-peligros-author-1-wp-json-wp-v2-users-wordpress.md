@@ -1,8 +1,9 @@
 ---
 title: "Peligros de `/?author=1` y `wp-json/wp/v2/users` en WordPress — qué son, cómo se usan para hackear y cómo mitigarlos"
-date: 2025-09-18
+date: 2025-09-24
 categories: ["Seguridad WordPress","Hardening","SEO"]
 tags: ["WordPress","seguridad","author-enumeration","REST-API","hardening","SEO"]
+image: "https://github.com/user-attachments/assets/2c7be737-3728-4ce7-81a9-bc14230f6850"
 description: "Cómo `/?author=1` y el endpoint `wp-json/wp/v2/users` facilitan la enumeración de usuarios en WordPress, por qué eso es peligroso para la seguridad y SEO, y medidas prácticas (código y configuraciones) para bloquearlos sin romper tu web."
 faq:
   - question: "¿Qué es la enumeración de autores (`/?author=1`) y por qué importa?"
