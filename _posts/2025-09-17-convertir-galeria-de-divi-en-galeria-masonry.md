@@ -33,27 +33,40 @@ No podemos cambiar ese HTML, pero sí podemos **forzarlo con CSS** a comportarse
 Aquí está el CSS que usé (y que puedes copiar/pegar en *Divi > Opciones del tema > CSS personalizado* o en el módulo de página):
 
 ```css
-/* Masonry para la galería de Divi */
+/* Masonry Gallery para Divi con clase .gallery-masonry */
+
+/* Anular el grid y flex de Divi */
 .et_pb_gallery.gallery-masonry .et_pb_gallery_items {
-  column-count: 3;        /* Número de columnas en escritorio */
-  column-gap: 1em;        /* Espaciado entre columnas */
-  display: block !important; /* Forzamos que sea compatible con Masonry */
+  display: block !important;   /* fuera flex */
+  column-count: 3;             /* columnas en escritorio */
+  column-gap: 1em;
 }
 
+/* Anular reglas internas de grid/flex en los ítems */
 .et_pb_gallery.gallery-masonry .et_pb_gallery_item {
-  display: inline-block;  /* Necesario para que las columnas fluyan */
-  width: 100%;            /* Que cada item ocupe su columna */
-  margin: 0 0 1em;        /* Espacio inferior */
-  break-inside: avoid;    /* Evita cortes raros */
+  float: none !important;             /* fuera float */
+  position: static !important;        /* fuera absolute si lo hubiera */
+  display: inline-block !important;   /* clave para masonry */
+  width: 100% !important;             /* ocupa ancho de columna */
+  margin: 0 0 1em !important;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
 }
 
-/* Ajuste responsive */
+/* Asegurar que la imagen se adapta */
+.et_pb_gallery.gallery-masonry .et_pb_gallery_image img {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+
+/* Responsive */
 @media (max-width: 991px) {
   .et_pb_gallery.gallery-masonry .et_pb_gallery_items {
     column-count: 2;
   }
 }
-
 @media (max-width: 600px) {
   .et_pb_gallery.gallery-masonry .et_pb_gallery_items {
     column-count: 1;
