@@ -38,7 +38,7 @@ El truco consiste en meter el `<iframe>` dentro de un contenedor y aplicar este 
 .video-container { 
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 = 9 / 16 = 0.5625 = 56.25% */
+  padding-bottom: 56.25%; /* 16:9 = 9 / 16 = 0.5625 · 100 = 56.25% */
   height: 0;
   overflow: hidden;
 }
