@@ -1,5 +1,5 @@
 ---
-title: "📊 ¿Qué es OLS (Mínimos Cuadrados Ordinarios)?"
+title: "¿Qué es OLS (Mínimos Cuadrados Ordinarios)?"
 date: 2025-04-13
 description: "Descubre qué es OLS (Mínimos Cuadrados Ordinarios) y cómo se utiliza en análisis estadístico para estimar relaciones entre variables de forma precisa y eficiente."
 categories: [data science, ols, estadística]
