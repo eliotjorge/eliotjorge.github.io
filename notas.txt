@@ -1,0 +1,3 @@
+- como añadir login con supabase a tu app de react
+- como usar el reloj para desarrollo "lvgl esp32" el que me llegó para el MINI
+- Como añadir un className en react con clases de vite y clases cambiantes por variable
