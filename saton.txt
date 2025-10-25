@@ -1,3 +1,26 @@
+- En supabase permisos RLS y como funcionan las políticas como crearlas, por ejemplo "CREATE POLICY "Usuarios pueden ver sus vehículos" ON vehicles FOR SELECT USING (auth.uid() = user_id);" y no tener desactivado RLS policies.
+- Lo del header del logout 
+App.jsx
+"const handleLogout = async () => {
+    await supabaseService.auth.signOut();
+    setUser(null);
+    navigate('/login');
+  };
+...
+...
+<Header onAddVehicle={() => navigate('/nuevo')} onLogout={handleLogout} />" le pasas como prop onLogout para luego usarlo en el componenete
+
+En el componente lo recibes como prop para poder usarlo
+Header.jsx
+"function Header({ onAddVehicle, onLogout }) {
+  return (
+    <header>
+      <button onClick={onAddVehicle}>Añadir vehículo</button>
+      <button onClick={onLogout}>Cerrar sesión</button>
+    </header>
+  );
+}"
+
 - como añadir login con supabase a tu app de react
 - como usar el reloj para desarrollo "lvgl esp32" el que me llegó para el MINI
 - Como añadir un className en react con clases de vite y clases cambiantes por variable
