@@ -31,4 +31,4 @@ order: 6
 
 [LocalWP - *App de escritorio para montar Wordpress*](https://localwp.com/){:target="_blank"}
 
-[Editor de SVG online (opción de ver el código del svg)](https://svgedit.netlify.app/editor){:target="_blank"}
+[Editor de SVG online (opción de ver el código del svg y con librería de iconos)](https://www.svgviewer.dev/){:target="_blank"}
