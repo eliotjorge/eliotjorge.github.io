@@ -34,7 +34,7 @@ Ofrece una infraestructura completa para tu backend, construida sobre **PostgreS
 Lo que más me gusta es que puedes acceder a todo directamente desde su **panel online** o desde la **CLI** (línea de comandos).  
 Nada de configuraciones raras ni dependencias cerradas: lo creas, lo ejecutas y funciona.
 
-👉 [https://supabase.com/](supabase.com)
+[https://supabase.com/](supabase.com)
 
 ---
 
@@ -47,7 +47,7 @@ Solo con crear una tabla, ya puedes hacer peticiones como:
 
 ```bash
 GET https://<tu-proyecto>.supabase.co/rest/v1/inventario
-````
+```
 
 O desde JavaScript:
 
