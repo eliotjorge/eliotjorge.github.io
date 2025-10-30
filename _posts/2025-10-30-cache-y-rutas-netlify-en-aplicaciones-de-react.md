@@ -18,7 +18,7 @@ faq:
 
 # 🚧 Problemas de caché y rutas en Netlify con aplicaciones React
 
-Hace poco, mientras desplegaba una pequeña aplicación hecha con **React** (una especie de gestor de mantenimiento para mis vehículos 🧰), me encontré con un error que parecía no tener sentido:  
+Hace poco, mientras desplegaba una pequeña aplicación hecha con **React** (una especie de gestor de usuarios), me encontré con un error que parecía no tener sentido:  
 
 > **Netlify decía que mi página no existía**, aunque la ruta funcionaba perfectamente en local.  
 
