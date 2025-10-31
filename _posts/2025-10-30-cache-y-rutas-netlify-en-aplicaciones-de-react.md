@@ -172,5 +172,3 @@ La solución pasa por **enseñarle a Netlify a redirigir todo hacia `index.html`
 
 Y si te lo preguntas: no, **no hace falta borrar el `dist/` local** cada vez que haces deploy 😉
 Netlify ya lo hace por ti, de forma limpia y automática.
-
-```
