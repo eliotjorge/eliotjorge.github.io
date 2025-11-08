@@ -14,8 +14,6 @@ faq:
     answer: "En general no, siempre que copies el valor tal cual. Ese campo contiene estilos, presets y ajustes del tema, así que restaurarlo corrige la pérdida de colores globales y otros ajustes asociados."
 ---
 
-# Cómo solucioné el problema de los Colores Globales de Divi tras migrar WordPress
-
 A veces una migración parece sencilla hasta que no lo es 😅.  
 Estaba moviendo una web hecha con **WordPress + Divi** desde mi servidor de desarrollo al servidor del cliente. Todo funcionaba… excepto algo bastante llamativo: **los colores globales no existían**.
 
