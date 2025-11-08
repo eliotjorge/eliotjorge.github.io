@@ -12,8 +12,6 @@ Fuera de la oficina me encontrarás soñando con el motociclismo, bueno realment
   <div class="item-about">I have spent the last 12 years working in different areas of web development; front-end development, design and programming of online banners, UI/UX of applications, marketing campaigns, avoiding and solving attacks by bad guys on web pages and optimizing them, to my current position as a web page developer, online stores, etc. 
 These days I spend my time researching, learning, prototyping and programming. I also help new developers launch their careers. 
 Outside of the office you will find me dreaming about motorcycling, well really anything with a motor and about sports.</div>
-</div>
-
-<div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="jorge-rosa-dev" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://es.linkedin.com/in/jorge-rosa-dev?trk=profile-badge">Jorge Rosa</a></div>             
+</div>        
 
 {: .prompt-tip }
