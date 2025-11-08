@@ -118,7 +118,8 @@ option_name = et_divi
 4. Haces clic en **Editar**.  
 5. Ahí verás un bloque enorme parecido a:
 
-```txt
+```
+
 a:119:{
 s:29:"presets_storage_migrated_flag";b:1;
 s:23:"builder_custom_defaults";O:8:"stdClass":0:{}
@@ -126,6 +127,7 @@ s:23:"builder_custom_defaults";O:8:"stdClass":0:{}
 s:15:"divi_custom_css";s:24672:" /* todo tu CSS */ ";
 ...
 }
+
 ```
 
 Ese bloque contiene literalmente todo lo que Divi necesita para reconstruir tus colores globales.
