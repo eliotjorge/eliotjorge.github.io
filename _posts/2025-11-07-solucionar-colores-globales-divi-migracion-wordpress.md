@@ -104,19 +104,19 @@ A veces, lo más simple es lo que mejor funciona.
 En phpMyAdmin:
 
 1. Seleccionas la base de datos.  
-2. Abres la tabla:  
-```
+2. Abres la tabla:
 
+```
 wp_options
-
 ```
+
 (o el prefijo que uses)
-3. Buscas la opción:  
+3. Buscas la opción: 
+
+```
+option_name = et_divi
 ```
 
-option_name = et_divi
-
-````
 4. Haces clic en **Editar**.  
 5. Ahí verás un bloque enorme parecido a:
 
