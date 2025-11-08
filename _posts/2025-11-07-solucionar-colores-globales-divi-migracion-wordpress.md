@@ -126,7 +126,7 @@ s:23:"builder_custom_defaults";O:8:"stdClass":0:{}
 s:15:"divi_custom_css";s:24672:" /* todo tu CSS */ ";
 ...
 }
-````
+```
 
 Ese bloque contiene literalmente todo lo que Divi necesita para reconstruir tus colores globales.
 
@@ -147,7 +147,9 @@ Pero en mi caso —y seguramente en el tuyo— fue la solución perfecta.
 Si haces muchas webs con Divi, quizá te ahorre tiempo usar un plugin preparado para manejar datos serializados:
 
 ✅ **WP Migrate Lite**
+
 ✅ **All-in-One WP Migration**
+
 ✅ **Duplicator**
 
 Estos plugins manejan automáticamente serialización, rutas y reemplazos internos sin romper nada.
