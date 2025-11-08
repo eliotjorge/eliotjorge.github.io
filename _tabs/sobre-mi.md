@@ -14,5 +14,6 @@ These days I spend my time researching, learning, prototyping and programming. I
 Outside of the office you will find me dreaming about motorcycling, well really anything with a motor and about sports.</div>
 </div>
 
+<div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="jorge-rosa-dev" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://es.linkedin.com/in/jorge-rosa-dev?trk=profile-badge">Jorge Rosa</a></div>             
 
 {: .prompt-tip }
