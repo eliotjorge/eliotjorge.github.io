@@ -3,8 +3,8 @@ title: "Cómo solucioné el problema de los Colores Globales de Divi tras migrar
 description: "Cómo arreglar los colores globales de Divi cuando desaparecen después de una migración de WordPress. Explico el fallo, por qué ocurre y la solución real que me funcionó, copiando directamente el campo et_divi entre bases de datos."
 date: 2025-11-07
 image: "https://github.com/user-attachments/assets/a0dd56d2-7a57-4b41-a818-a3c347eda1fc"
-categories:[Wordpress, Divi]
-tags:[Divi, Wordpress, migraciones, colores globales]
+categories: [Wordpress, Divi]
+tags: [Divi, Wordpress, migraciones, colores globales]
 faq:
   - question: "¿Por qué desaparecen los colores globales de Divi después de migrar una web?"
     answer: "Porque Divi guarda esos colores en un bloque serializado dentro de la tabla wp_options. Si ese bloque se corrompe o se exporta mal desde phpMyAdmin, las referencias a los colores globales dejan de existir."
