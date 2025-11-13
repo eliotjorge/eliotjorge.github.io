@@ -20,7 +20,6 @@ Para crearlo en el `functions.php` de nuestro tema hijo añadiremos:
 
 /**
  * Polylang Shortcode - https://wordpress.org/plugins/polylang/
- * Put shortcode [polylang_langswitcher] to post/page for display flags
  *
  * @return string
  */
