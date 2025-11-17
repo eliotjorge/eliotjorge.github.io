@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "404: Page not found"
+#title: "404: Page not found"
 permalink: /404.html
 
 redirect_from:
@@ -11,13 +11,11 @@ redirect_from:
 
 {% include lang.html %}
 
+<h1 style="text-align: center;">404 página no encontrada</h1>
+
+<p class="lead" style="text-align: center;">{{ site.data.locales[lang].not_found.statment }}</p>
+
 <div style="text-align: center;">
   <img src="https://media.giphy.com/media/g01ZnwAUvutuK8GIQn/giphy.gif" alt="Not found" width="600" />
 </div>
 
-<p class="lead">{{ site.data.locales[lang].not_found.statment }}</p>
-
-
-<div id="post-list" class="flex-grow-1 pe-xl-2">
-  {% include refactor-content.html content=content lang=lang %}
-</div>
