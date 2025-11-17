@@ -47,11 +47,11 @@ jobs:
         run: rm -rf vendor/bundle
 
       # No estaba especificada la versión de Ruby a configurar. Tiene que coincidir con la del archivo Gemfile.
-      # Hay una nueva que es la 3.4.1, pero la más estable hasta la fecha es la 3.0.0 Importante ponerlo entre comillas.
+      # Hay una nueva que es la 3.4.1, pero la más estable hasta la fecha es la 3.2.2 Importante ponerlo entre comillas.
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.4.1'
+          ruby-version: '3.2.2'
           bundler-cache: true
         
       - name: Install dependencies
