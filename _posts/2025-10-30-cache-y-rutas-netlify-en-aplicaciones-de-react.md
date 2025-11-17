@@ -16,9 +16,8 @@ faq:
     answer: "No. Netlify genera el directorio dist desde cero en cada build. Solo conviene borrarlo manualmente si experimentas errores locales o artefactos de compilaciones anteriores."
 ---
 
-# 🚧 Problemas de caché y rutas en Netlify con aplicaciones React
 
-Hace poco, mientras desplegaba una pequeña aplicación hecha con **React** (una especie de gestor de usuarios), me encontré con un error que parecía no tener sentido:  
+Mientras desplegaba una pequeña aplicación hecha con **React** (una especie de gestor de usuarios), me encontré con un error que parecía no tener sentido:  
 
 > **Netlify decía que mi página no existía**, aunque la ruta funcionaba perfectamente en local.  
 
