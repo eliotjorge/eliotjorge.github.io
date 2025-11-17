@@ -11,4 +11,13 @@ redirect_from:
 
 {% include lang.html %}
 
-<p class="lead">{{ site.data.locales[lang].not_found.statment }} Hola</p>
+<div style="text-align: center;">
+  <img src="https://media.giphy.com/media/g01ZnwAUvutuK8GIQn/giphy.gif" alt="Not found" width="600" />
+</div>
+
+<p class="lead">{{ site.data.locales[lang].not_found.statment }}</p>
+
+
+<div id="post-list" class="flex-grow-1 pe-xl-2">
+  {% include refactor-content.html content=content lang=lang %}
+</div>
