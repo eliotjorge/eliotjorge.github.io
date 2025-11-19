@@ -2,7 +2,7 @@
 title: "Cómo usar get_option y update_option en WordPress: guía práctica y ejemplos"
 description: "Aprende qué son get_option y update_option en WordPress, cómo funcionan, dónde se guardan en la base de datos y cómo usarlas correctamente con ejemplos prácticos."
 date: 2025-11-19
-img: "https://github.com/user-attachments/assets/f1b93b56-978c-4388-b5e5-32d80745f0cf"
+image: "https://github.com/user-attachments/assets/f1b93b56-978c-4388-b5e5-32d80745f0cf"
 categories: ["WordPress", "Desarrollo", "Backend"]
 tags: ["WordPress", "get_option", "update_option", "Base de datos", "Desarrollo web"]
 faq:
