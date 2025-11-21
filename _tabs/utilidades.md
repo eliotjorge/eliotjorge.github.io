@@ -13,3 +13,5 @@ order: 5
 
 [Generador @media CSS](https://eliotjorge.github.io/utilidades/generadormedia)
 
+[Validador DNI (NIF), CIF y NIE](https://eliotjorge.github.io/utilidades/validador-nif-cif-nie)
+
