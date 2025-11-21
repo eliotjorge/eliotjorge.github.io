@@ -1,8 +1,8 @@
 ---
 layout: page
-title: validador NIF, CIF y NIE
+title: "Validador NIF, CIF y NIE"
+permalink: /utilidades/validador-nif-cif-nie/
 ---
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
 
 # Hola MD
 
