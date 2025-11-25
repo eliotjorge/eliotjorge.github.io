@@ -131,19 +131,19 @@ html[data-mode=light] {
 
 /* Animación logo */
 
-#J {
+.logoWEB .logoJ {
   stroke-dasharray: 349;   /* longitud real aproximada del path de las líneas internas */
   stroke-dashoffset: 349;
   animation: drawLine 4s forwards;
   
 }
-#R {
+.logoWEB .logoR {
   stroke-dasharray: 349;   /* longitud real aproximada del path de las líneas internas */
   stroke-dashoffset: 349;
   animation: drawLine 6s forwards;
 }
 
-.circle {
+.logoWEB .circle {
   stroke-dasharray: 600;   /* longitud real aproximada del path del círculo */
   stroke-dashoffset: 600;
   animation: drawCircle 2s forwards;
