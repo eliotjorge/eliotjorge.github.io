@@ -130,14 +130,7 @@ html[data-mode=light] {
 }
 
 /* Animación logo */
-
-.logoWEB .logoJ {
-  stroke-dasharray: 349;   /* longitud real aproximada del path de las líneas internas */
-  stroke-dashoffset: 349;
-  animation: drawLine 4s forwards;
-  
-}
-.logoWEB .logoR {
+.logoWEB  {
   stroke-dasharray: 349;   /* longitud real aproximada del path de las líneas internas */
   stroke-dashoffset: 349;
   animation: drawLine 6s forwards;
