@@ -130,32 +130,23 @@ html[data-mode=light] {
 }
 
 /* Animación logo */
-.logoWEB  {
-  stroke-dasharray: 349;   /* longitud real aproximada del path de las líneas internas */
+
+.logoWEB {
+  stroke-dasharray: 349;
   stroke-dashoffset: 349;
+}
+
+.logoWEB.animate {
   animation: drawLine 6s forwards;
 }
 
 .logoWEB .circle {
-  stroke-dasharray: 600;   /* longitud real aproximada del path del círculo */
+  stroke-dasharray: 600;
   stroke-dashoffset: 600;
+}
+
+.logoWEB.animate .circle {
   animation: drawCircle 2s forwards;
-  animation-delay: 1s;     /* empieza después de que se dibujen las líneas */
+  animation-delay: 1s;
 }
 
-/* Animaciones */
-@keyframes drawLine {
-  from {
-    stroke-dashoffset: 349;
-  }
-  
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes drawCircle {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
