@@ -128,3 +128,41 @@ html[data-mode=light] {
     margin: 10px 0; /* Espaciado vertical entre los divs */
   }
 }
+
+/* Animación logo */
+
+#J {
+  stroke-dasharray: 349;   /* longitud real aproximada del path de las líneas internas */
+  stroke-dashoffset: 349;
+  animation: drawLine 4s forwards;
+  
+}
+#R {
+  stroke-dasharray: 349;   /* longitud real aproximada del path de las líneas internas */
+  stroke-dashoffset: 349;
+  animation: drawLine 6s forwards;
+}
+
+.circle {
+  stroke-dasharray: 600;   /* longitud real aproximada del path del círculo */
+  stroke-dashoffset: 600;
+  animation: drawCircle 2s forwards;
+  animation-delay: 1s;     /* empieza después de que se dibujen las líneas */
+}
+
+/* Animaciones */
+@keyframes drawLine {
+  from {
+    stroke-dashoffset: 349;
+  }
+  
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes drawCircle {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
