@@ -128,25 +128,3 @@ html[data-mode=light] {
     margin: 10px 0; /* Espaciado vertical entre los divs */
   }
 }
-
-/* Animación logo */
-
-.logoWEB {
-  stroke-dasharray: 349;
-  stroke-dashoffset: 349;
-}
-
-.logoWEB.animate {
-  animation: drawLine 6s forwards;
-}
-
-.logoWEB .circle {
-  stroke-dasharray: 600;
-  stroke-dashoffset: 600;
-}
-
-.logoWEB.animate .circle {
-  animation: drawCircle 2s forwards;
-  animation-delay: 1s;
-}
-
