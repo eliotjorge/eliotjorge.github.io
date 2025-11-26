@@ -14,7 +14,7 @@ faq:
     answer: "Sí. No solo actualiza: si la opción no existe, la crea automáticamente."
 ---
 
-## ¿Qué son `get_option` y `update_option`?
+## ¿Qué son *get_option* y *update_option*?
 
 En pocas palabras:
 
