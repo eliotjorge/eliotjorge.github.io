@@ -9,7 +9,7 @@ App.jsx
   };
 ...
 ...
-<Header onAddVehicle={() => navigate('/nuevo')} onLogout={handleLogout} />" le pasas como prop onLogout para luego usarlo en el componenete
+<Header onAddVehicle={() => navigate('/nuevo')} onLogout={handleLogout} />" le pasas como prop onLogout para luego usarlo en el componente
 
 En el componente lo recibes como prop para poder usarlo
 Header.jsx
@@ -26,78 +26,4 @@ Header.jsx
 - como usar el reloj para desarrollo "lvgl esp32" el que me llegó para el MINI
 - Como añadir un className en react con clases de vite y clases cambiantes por variable
 - Qué hacer cuando al hacer un commit a un repo de github te dice el CLI que lo que hay en el repo es mas nuevo que lo que tienes tu en tu entrono (se te olvidó hacer un pull), opciones que hay, comandos, posibles problemas, conflictos, soluciones...
-- no funcionaban los enlaces de netlify y ha habido que configurar unos permisos en netlify. Le puse con rearct-router que la url fuera "...actualizar-km/id" pero a pesar de que la página existía y funcioanaba
-en el entorno de desarrollo, al compilar la app en netlify salia un mensaje que decía "páigina" no encontrada y es por los permisos de netlify
-Explicación de ChatGPT "
-Perfecto, muy buena observación 👏
-El problema que tienes **no es del código React en sí**, sino de **cómo Netlify maneja el enrutamiento** de una SPA (**Single Page Application**, como lo es React Router).
-
----
-
-## 🧩 Por qué te sale “Página no encontrada” en Netlify
-
-Cuando escribes directamente en el navegador:
-
-```
-https://mant-vehi.netlify.app/actualizar-km/mh1uv2bo80b3p9g
-```
-
-El navegador le pide **esa ruta exacta al servidor (Netlify)**.
-Pero en una SPA, esa ruta no existe físicamente — solo existe **dentro de React Router**.
-
-👉 Por eso, Netlify devuelve un 404: él no sabe que esa URL debería cargar tu `index.html` y dejar que React maneje la ruta.
-
----
-
-## ✅ Solución: decirle a Netlify que redirija todo a React
-
-Tienes que añadir un archivo especial en tu carpeta `public/` llamado **`_redirects`** (sin extensión).
-
-Dentro de ese archivo pon esto:
-
-```
-/*    /index.html   200
-```
-
-### 📄 Explicación
-
-* `/*` → significa “todas las rutas”
-* `/index.html` → le dice a Netlify que las sirva con tu `index.html`
-* `200` → es el código HTTP para “OK” (no redirigir realmente, sino devolver la SPA)
-
----
-
-### 🪄 Ejemplo completo
-
-1. Crea un archivo en tu proyecto:
-   `public/_redirects`
-
-2. Dentro pon:
-
-   ```
-   /*    /index.html   200
-   ```
-
-3. Vuelve a desplegar tu app en Netlify.
-
-4. Ahora, si accedes directamente a:
-
-   ```
-   https://mant-vehi.netlify.app/actualizar-km/mh1uv2bo80b3p9g
-   ```
-
-   ✅ Cargará tu aplicación React y React Router mostrará `UpdateKmPage`.
-
----
-
-## 🧠 Extra: comprobación local
-
-Esto no afecta el desarrollo local (`npm run dev` o `vite` lo manejan bien).
-Solo es necesario cuando la app está **en producción (Netlify, Vercel, etc.)**.
-
----
-
-¿Quieres que te pase también el archivo completo `UpdateKmPage.jsx` listo para conectar con tu `handleUpdateKm` y Supabase (solo campo kilómetros + guardar)?
-
-"
 
