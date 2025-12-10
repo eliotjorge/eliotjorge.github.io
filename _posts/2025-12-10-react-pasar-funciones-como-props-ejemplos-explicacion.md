@@ -2,7 +2,7 @@
 title: "Cómo pasar funciones como props en React (explicación clara, ejemplos y casos reales)"
 description: "Aprende cómo pasar funciones como props en React, por qué es útil, cómo usarlas para manejar eventos entre componentes y cómo crear un botón de logout reutilizando funciones existentes."
 date: 2025-12-10
-image: "https://github.com/user-attachments/assets/55139f7c-97b1-477c-b221-5284cd91ac92"
+image: "https://github.com/user-attachments/assets/90e76dc1-ecfc-4aba-b919-bc49d96d84d8"
 categories: ["React", "JavaScript", "Desarrollo Web"]
 tags: ["react", "props", "componentes", "funciones", "frontend", "logout", "event-handling"]
 faq:
