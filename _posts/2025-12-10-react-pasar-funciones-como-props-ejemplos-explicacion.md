@@ -12,8 +12,6 @@ faq:
     answer: "Sí, es una de las principales ventajas: defines la función una sola vez y la pasas donde la necesites mediante props."
 ---
 
-# Cómo pasar funciones como *props* en React (y añadir un botón de logout) 🚀
-
 A veces, mientras avanzo en mi app y reorganizo componentes, necesito que un componente hijo pueda ejecutar algo que ya tengo implementado en el padre. Por ejemplo, un *logout*, una creación de usuario, un cambio de estado global… En estos casos, **React no permite que el hijo llame directamente al padre**, pero sí permite algo mejor: **pasar funciones como props**.
 
 Cuando lo interioricé, fue como ese momento en el que de repente encajas una pieza del puzzle 🧩.
@@ -70,7 +68,7 @@ Porque mantiene el **estado y la lógica donde deben estar** (normalmente arriba
 React a esto lo llama **"lifting state up"**, pero también aplica a “lifting actions up”.
 
 <div style="text-align: center;">
-<img src="https://media.giphy.com/media/3o6ZsXNO4piW3ttn6k/giphy.gif" alt="Flow of props in React" width="300" />
+<img src="https://media.giphy.com/media/X4YqmJEl6wJoY/giphy.gif" alt="Flow of props in React" width="300" />
 </div>
 
 ---
@@ -157,20 +155,4 @@ function Header({ onLogout }) {
 Nada.
 **La cambias solo en App**, y todos los componentes que la usan automáticamente ejecutarán la nueva lógica.
 
-Esa es una de las razones por las que React escala tan bien en aplicaciones grandes.
-
----
-
-# 📚 FAQs (para SEO + para mí mismo)
-
-Estas FAQs ya están incluidas en el front matter, pero las dejo aquí para lectura:
-
----
-
-### **¿Por qué es útil pasar funciones como props en React?**
-
-Porque permite que un componente hijo ejecute lógica definida en el padre, sin duplicar código ni mover estado innecesariamente.
-
-### **¿Puedo reutilizar la misma función en varios componentes?**
-
-Sí, es una de las grandes ventajas de React: defines la función una vez y la pasas a todos los componentes que la necesiten.
+Esa es una de las razones por las que React escala tan bien en aplicaciones grandes
