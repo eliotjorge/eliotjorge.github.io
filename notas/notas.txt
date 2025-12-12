@@ -1,5 +1,6 @@
 - En supabase permisos RLS y como funcionan las políticas como crearlas, por ejemplo "CREATE POLICY "Usuarios pueden ver sus vehículos" ON vehicles FOR SELECT USING (auth.uid() = user_id);" y no tener desactivado RLS policies.
 - Cómo hacer un popup en react con vite y tailwind como el que se usa para mostrar los QR en cada ficha de vehículo.
+- Diferencias entre display:flex y display:grid, cuando usar uno u otro y el boom del uso de flexbox
 - Lo del header del logout 
 App.jsx
 "const handleLogout = async () => {
