@@ -41,7 +41,7 @@ La clave está en **servir un favicon distinto según el esquema de color del si
 
 ---
 
-## `prefers-color-scheme`: la pieza clave
+## prefers-color-scheme: la pieza clave
 
 Desde hace tiempo, los navegadores soportan la media query:
 
@@ -63,13 +63,13 @@ Normalmente se usa en CSS, pero **también funciona en las etiquetas `<link>`**,
 Este es el código que uso y que puedes pegar directamente en el `<head>` de tu web:
 
 ```html
-<!-- Default favicon (for browsers that don't support media queries in link tags) -->
+<!-- favicon por defecto (para navegadores que no soportan media queries en etiquetas link) -->
 <link rel="icon" href="https://paginaweb.com/favicon-oscuro.ico" type="image/x-icon">
 
-<!-- Light mode favicon -->
+<!-- favicon modo claro -->
 <link rel="icon" href="https://paginaweb.com/favicon-oscuro.ico" type="image/x-icon" media="(prefers-color-scheme: light)">
 
-<!-- Dark mode favicon -->
+<!-- favicon modo oscuro -->
 <link rel="icon" href="https://paginaweb.com/favicon-claro.ico" type="image/x-icon" media="(prefers-color-scheme: dark)">
 ```
 
@@ -124,14 +124,3 @@ Aunque el favicon no es un factor SEO directo:
 * Da sensación de web cuidada y profesional
 
 Y, al final, esas pequeñas cosas son las que hacen que una web se sienta bien hecha 😊
-
----
-
-## Conclusión rápida
-
-✔️ Sí, el favicon puede cambiar según el tema
-✔️ No necesitas JavaScript
-✔️ `prefers-color-scheme` funciona también en `<link>`
-✔️ Evitas iconos invisibles en dark mode
-
-Un detalle pequeño, pero que marca la diferencia.
