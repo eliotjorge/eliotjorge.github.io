@@ -2,6 +2,7 @@
 title: "Cuándo usar px, em, rem, %, vh y vw en CSS (guía práctica orientada a responsive)"
 description: "Guía clara y práctica sobre cuándo usar px, em, rem, porcentajes, vh y vw en CSS. Enfoque responsive, ejemplos reales y buenas prácticas para layouts modernos."
 date: 2026-01-03
+image:"https://github.com/user-attachments/assets/1bcc2af7-cafe-4ef9-9a7d-afb17633a059"
 categories: [css, desarrollo-web]
 tags: [css, responsive, unidades-css, front-end, diseño-web]
 faq:
