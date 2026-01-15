@@ -18,9 +18,6 @@ faq:
     answer: "Sí. SSH es muy útil para administrar WordPress, actualizar plugins, gestionar archivos o usar WP-CLI."
 ---
 
-
-# SSH: conectarse a otro ordenador (o servidor) sin miedo 😌
-
 SSH es una de esas herramientas que al principio imponen respeto, pero cuando entiendes **qué hace y por qué existe**, pasa a ser algo casi cotidiano.
 No es magia, no es solo “para sysadmins” y, desde luego, no es algo oscuro que solo se usa escribiendo comandos raros sin saber qué pasa.
 
