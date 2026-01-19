@@ -39,6 +39,6 @@ order: 6
 
 ### Como no todo es trabajar...
 
-[Lucida](https://lucida.to/){:target="_blank"}
+[🎶 Lucida](https://lucida.to/){:target="_blank"}
 
-[Dos - Colección de videojuegos retro gratis para jugar en el navegador](https://dos.zone/){:target="_blank"}
+[🕹️ Dos.zone - Colección de videojuegos retro gratis para jugar en el navegador](https://dos.zone/){:target="_blank"}
