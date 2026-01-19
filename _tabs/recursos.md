@@ -37,4 +37,8 @@ order: 6
 
 [WEB-Check - *Obtener vista de rayosX de una web por el dominio*](https://web-check.xyz/){:target="_blank"}
 
+### Como no todo es trabajar...
+
 [Lucida](https://lucida.to/){:target="_blank"}
+
+[Dos - Colección de videojuegos retro gratis para jugar en el navegador](https://dos.zone/){:target="_blank"}
