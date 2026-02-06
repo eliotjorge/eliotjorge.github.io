@@ -42,3 +42,5 @@ order: 6
 [🎶 Lucida](https://lucida.to/){:target="_blank"}
 
 [🕹️ Dos.zone - Colección de videojuegos retro gratis para jugar en el navegador](https://dos.zone/){:target="_blank"}
+
+[📻 RX-TX - Mapa de SDR disponibles para escucha online](https://rx-tx.info/map-sdr-points){:target="_blank"}
