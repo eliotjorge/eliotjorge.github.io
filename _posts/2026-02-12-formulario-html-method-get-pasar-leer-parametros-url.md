@@ -30,7 +30,7 @@ Al trabajar con formularios para búsquedas (por ejemplo, un motor de reservas),
 /reservas?checkin=2026-05-01&checkout=2026-05-05
 ```
 
-Este comportamiento depende directamente de `method="GET"` y del atributo `name` de los campos del formulario.
+Este comportamiento depende directamente de **method="GET"** y del atributo **name** de los campos del formulario.
 
 Dejo aquí el funcionamiento detallado y cómo recuperar esos valores en la página de destino 🧩.
 
