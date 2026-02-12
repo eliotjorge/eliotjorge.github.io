@@ -43,4 +43,6 @@ order: 6
 
 [🕹️ Dos.zone - Colección de videojuegos retro gratis para jugar en el navegador](https://dos.zone/){:target="_blank"}
 
+[🕹️ Nexus Mods](https://www.nexusmods.com/){:target="_blank"}
+
 [📻 RX-TX - Mapa de SDR disponibles para escucha online](https://rx-tx.info/map-sdr-points){:target="_blank"}
