@@ -18,7 +18,6 @@ faq:
   answer: "WP-CLI es seguro si el acceso SSH está correctamente configurado y protegido mediante claves públicas y privadas, evitando el uso de contraseñas simples."
 ---
 
-Hay un momento en el que el panel de administración de WordPress se queda corto.
 Cuando necesitas automatizar tareas, gestionar múltiples instalaciones o resolver un problema sin acceso al backend… el terminal empieza a tener sentido.
 
 Ahí entra **WP-CLI**, la interfaz de línea de comandos oficial de WordPress.
