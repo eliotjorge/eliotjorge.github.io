@@ -37,7 +37,7 @@ order: 6
 
 [WEB-Check - *Obtener vista de rayosX de una web por el dominio*](https://web-check.xyz/){:target="_blank"}
 
-[Professional software and services without monthly fees. Explore 547+ one-time purchase, free, or open source tools.](https://nosubscription.org/){:target="_blank"}
+[nosubscription.org - Professional software and services without monthly fees. Explore 547+ one-time purchase, free, or open source tools.](https://nosubscription.org/){:target="_blank"}
 
 ### Como no todo es trabajar...
 
