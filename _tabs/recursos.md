@@ -33,6 +33,8 @@ order: 6
 
 [svgviewer - *Editor de SVG online (opción de ver el código del svg y con librería de iconos)*](https://www.svgviewer.dev/){:target="_blank"}
 
+[geeksforgeeks - *Tutoriales gratuitos, recursos de preparación para entrevistas sobre estructuras de datos, algoritmos y desarrollo web*](https://www.geeksforgeeks.org/){:target="_blank"}
+
 [UPPDump - *Generar archivos ISO de Windows directamente desde los servidores de Microsoft (perfecto para versiones antiguas)*](https://uupdump.net/){:target="_blank"}
 
 [WEB-Check - *Obtener vista de rayosX de una web por el dominio*](https://web-check.xyz/){:target="_blank"}
