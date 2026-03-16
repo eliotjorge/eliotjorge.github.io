@@ -1,6 +1,7 @@
 ---
 title: "Cómo crear Custom Post Types en WordPress (guía práctica paso a paso)"
 description: "Aprende a crear Custom Post Types en WordPress para organizar mejor tu contenido. Ejemplo de código PHP, dónde colocarlo en el tema hijo y herramientas para generarlo automáticamente."
+image: "https://github.com/user-attachments/assets/ddfe77cf-8059-4568-9a9a-ced69a4bc99b"
 date: 2026-03-07
 categories: [wordpress, desarrollo-web, blogging]
 tags: [wordpress, custom-post-types, cpt, php, desarrollo-wordpress, wordpress-avanzado, tema-hijo]
