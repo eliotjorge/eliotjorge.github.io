@@ -2,7 +2,7 @@
 title: "OpenClaw: cómo instalarlo en Windows, macOS y Linux, requisitos técnicos y configuración en apps de mensajería"
 description: "Guía completa sobre OpenClaw: qué es, cómo instalarlo en Windows, macOS y Linux, requisitos mínimos y recomendados, instalación en Raspberry Pi y cómo configurarlo para usarlo en apps de mensajería. Incluye enlaces oficiales, ejemplos y preguntas frecuentes optimizadas para SEO."
 date: 2026-02-18
-image: "https://github.com/user-attachments/assets/9af14463-5515-4d80-abaf-43fef62b7f91"
+image: "https://github.com/user-attachments/assets/048ad34c-9083-4d00-ad13-5dbf33e2c56a"
 categories: [software, inteligencia-artificial, self-hosted]
 tags: [openclaw, instalacion, windows, macos, linux, raspberry-pi, mensajeria, ia-local]
 faq:
