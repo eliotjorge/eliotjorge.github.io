@@ -2,7 +2,7 @@
 title: "Method GET: cómo pasar y leer parámetros en la URL (JavaScript y WordPress)"
 description: "Guía técnica para entender cómo funciona method GET en formularios HTML, cómo se generan los parámetros en la URL y cómo leer la query string en JavaScript y WordPress paso a paso."
 date: 2026-02-11
-image: "https://github.com/user-attachments/assets/4c3811d0-b340-40bd-954a-d89dfcd8373c"
+image: "https://github.com/user-attachments/assets/ebdb402f-dd21-417e-8814-ff540bdb69fc"
 categories: [desarrollo-web, javascript, wordpress, html]
 tags: [method-get, query-string, parametros-url, javascript, php, wordpress]
 faq:
