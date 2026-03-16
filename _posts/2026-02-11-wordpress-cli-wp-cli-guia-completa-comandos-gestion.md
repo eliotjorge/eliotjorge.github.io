@@ -2,7 +2,7 @@
 title: "WordPress CLI (WP-CLI): guía completa para gestionar WordPress desde el terminal"
 description: "Guía completa sobre WordPress CLI (WP-CLI): qué es, para qué sirve, cómo conectarse por SSH, comandos esenciales, actualizaciones, gestión de plugins, edición de functions.php y administración avanzada desde el terminal."
 date: 2026-02-11
-image: https://github.com/user-attachments/assets/885a050e-3cfc-4ae6-a8f8-bed89e40823e
+image: "https://github.com/user-attachments/assets/358e2ed5-c63b-4fd8-8c42-1c880e0637da"
 categories: [wordpress,desarrollo-web]
 tags: [wordpress,wp-cli,ssh,terminal,administracion-servidor,automatizacion]
 faq: 
