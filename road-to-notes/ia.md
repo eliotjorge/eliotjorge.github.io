@@ -18,3 +18,53 @@ agente valido (aunque literalmente esté dentro de la carpeta...)
 Para crear un agente vamos a necesitar una API key de Google AI Studio que está en
 [esta web](https://aistudio.google.com/). Es gratuita hasta cierto uso y ciertos requerimientos,
 pero para aprender sirve. En el panel de la izquierda vas a "Get API Key"
+
+Hay dos modos de generar un entorno para que vivan los agentes
+1. Modo "config-first" o modo YAML (limitado pero simple): `uvx --from google-adk adk create --type=config my_agent` (en la configuración de opciones te va a pedir la API key) por el cual dentro de la carpeta del agente se genera un archivo YAML, a parte del agent.py
+   
+   my_agent/
+   ├── root_agent.yaml
+   ├── agent.py
+
+Esta manera es mas user-frienly porque dentro del 'root_agent.yaml' le vas a decir la confriguración sin tener que programar en Python
+'YAML → se lee → se convierte en objeto → se ejecuta'
+```Yaml
+instruction: Eres un experto en motos
+model: gemini-2.5-flash
+```
+👉 Luego agent.py hace algo así (simplificado):
+
+```Python
+agent = Agent.from_yaml("root_agent.yaml")
+```
+
+👉 Traducción:
+
+“carga esta config y crea el agente en memoria”
+
+2. Modo "code-first" o modo Python (potente y más complejo): `adk create my_agent` se edita directamente el archivo 'agent.py', la ventaja frente al otro modo es que en este de tocar directamente el python puedes hacer lógica tipo if, loops, funciones...
+```Python
+def responder(msg):
+    if "ruido" in msg:
+        return "Revisa válvulas"
+```
+
+#### Cuándo usar cada uno?
+
+🟡 Usa YAML cuando:
+
+- quieres prototipar rápido
+
+- estás aprendiendo
+
+- solo necesitas prompts + tools
+
+🔵 Usa Python cuando:
+
+- quieres lógica real
+
+- integrar con APIs
+
+- usarlo en producción
+
+Pueden convivir dentro de cada entrono los dos tipos de agentes uno creado con YAML y otro con Python pero ambos crean el mismo tipo de agente. Si se hace algo rápido y que no es complejo usa YAML
