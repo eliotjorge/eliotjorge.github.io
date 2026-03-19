@@ -1,5 +1,6 @@
 ---
 layout: notes
 title: Notas
-permalink: /notes/
+icon: fas fa-info-circle
+order: 8
 ---
