@@ -16,6 +16,7 @@ layout: default
           {% if note.notebook == nb %}
             <a href="{{ note.url }}" class="note-card">
               <h3>{{ note.title }}</h3>
+                <p>{{ note.resumen }}</p>
             </a>
           {% endif %}
         {% endfor %}
