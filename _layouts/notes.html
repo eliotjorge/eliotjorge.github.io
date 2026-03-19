@@ -2,14 +2,14 @@
 layout: default
 ---
 
-<h1>📚 Mis cuadernos</h1>
+<h1>Mis cuadernos</h1>
 
 <div class="notes-grid">
   {% assign notebooks = site.notes | map: "notebook" | uniq %}
 
   {% for nb in notebooks %}
     <div class="notebook">
-      <h2>{{ nb | capitalize }}</h2>
+      <h2>{{ nb.notebook_title }}</h2>
 
       <div class="notes-subgrid">
         {% for note in site.notes %}
