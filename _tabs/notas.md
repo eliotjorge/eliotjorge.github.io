@@ -1,6 +1,6 @@
 ---
 layout: notes
 title: Notas
-icon: fas fa-book
+icon: fa-fw fa-book
 order: 8
 ---
