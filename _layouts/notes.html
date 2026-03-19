@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<h1>📚 Mis cuadernos</h1>
+
+<div class="notes-grid">
+  {% assign notebooks = site.notes | map: "notebook" | uniq %}
+
+  {% for nb in notebooks %}
+    <div class="notebook">
+      <h2>{{ nb | capitalize }}</h2>
+
+      <div class="notes-subgrid">
+        {% for note in site.notes %}
+          {% if note.notebook == nb %}
+            <a href="{{ note.url }}" class="note-card">
+              <h3>{{ note.title }}</h3>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
