@@ -2,6 +2,7 @@
 title: Calendario de Adviento
 layout: note
 notebook: IA
+resumen: "Calendario de adviento de Navidad de Google"
 ---
 
 # [Calendario de adviento de agentes](https://adventofagents.com/2025/12/)
