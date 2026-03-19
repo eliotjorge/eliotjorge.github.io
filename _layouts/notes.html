@@ -9,7 +9,7 @@ layout: default
 
   {% for nb in notebooks %}
     <div class="notebook">
-      <h2>{{ nb }}</h2>
+      <h2>{{ nb.notebook }}</h2>
 
       <div class="notes-subgrid">
         {% for note in site.notes %}
