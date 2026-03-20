@@ -19,18 +19,19 @@ darle su personalidad y su forma de actuar.
 - No se ejecuta cada agente de forma independiente, sino que ejecutas el entorno (ADK) donde 'vivirán'
 los egentes, en la web que se compila te deja elegir cuál quieres usar.
 
-**Importante** a diferencia de crear una proyecto con React que tienes que acceder a la carpeta para
+- **Importante** a diferencia de crear una proyecto con React que tienes que acceder a la carpeta para
 ejecutarlo, aquí no hay que entrar en "my_agent" va a dar error en el que dice que no encuentra un
 agente valido (aunque literalmente esté dentro de la carpeta...)
 
-Para crear un agente vamos a necesitar una API key de Google AI Studio que está en
+- Para crear un agente vamos a necesitar una API key de Google AI Studio que está en
 [esta web](https://aistudio.google.com/). Es gratuita hasta cierto uso y ciertos requerimientos,
 pero para aprender sirve. En el panel de la izquierda vas a "Get API Key"
 
-## otro título
+## Hay dos modos de generar un entorno para que vivan los agentes
 
-Hay dos modos de generar un entorno para que vivan los agentes
-1. Modo "config-first" o modo YAML (limitado pero simple): `uvx --from google-adk adk create --type=config my_agent` (en la configuración de opciones te va a pedir la API key) por el cual dentro de la carpeta del agente se genera un archivo YAML, a parte del agent.py
+### Modo "config-first" o modo YAML (limitado pero simple)
+
+`uvx --from google-adk adk create --type=config my_agent` (en la configuración de opciones te va a pedir la API key) por el cual dentro de la carpeta del agente se genera un archivo YAML, a parte del agent.py
    
    my_agent/
    ├── root_agent.yaml
@@ -49,11 +50,11 @@ model: gemini-2.5-flash
 agent = Agent.from_yaml("root_agent.yaml")
 ```
 
-👉 Traducción:
+👉 Traducción: “carga esta config y crea el agente en memoria”
 
-“carga esta config y crea el agente en memoria”
+### Modo "code-first" o modo Python (potente y más complejo)
 
-2. Modo "code-first" o modo Python (potente y más complejo): `adk create my_agent` se edita directamente el archivo 'agent.py', la ventaja frente al otro modo es que en este de tocar directamente el python puedes hacer lógica tipo if, loops, funciones...
+`adk create my_agent` se edita directamente el archivo 'agent.py', la ventaja frente al otro modo es que en este de tocar directamente el python puedes hacer lógica tipo if, loops, funciones...
 ```
 def responder(msg):
     if "ruido" in msg:
