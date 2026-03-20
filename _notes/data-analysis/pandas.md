@@ -3,6 +3,7 @@ title: Uso de Pandas
 layout: note
 notebook: Data analysis
 resumen: "resumen de prueba"
+toc: true
 ---
 El stack **MERN** (MongoDB, Express, React y Node.js) es una de las combinaciones más populares para desarrollar aplicaciones web full-stack modernas utilizando JavaScript de principio a fin.
 
