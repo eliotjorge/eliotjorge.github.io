@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Uso de Pandas
 layout: note
 notebook: Data analysis
