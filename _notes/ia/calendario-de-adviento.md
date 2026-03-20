@@ -1,6 +1,6 @@
 ---
 title: Calendario de Adviento
-layout: note
+layout: post
 notebook: IA
 resumen: "Calendario de adviento de Navidad de Google"
 toc: true
