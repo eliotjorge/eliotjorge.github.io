@@ -6,17 +6,17 @@ resumen: "Calendario de adviento de Navidad de Google"
 toc: true
 ---
 
-## [Calendario de adviento de agentes](https://adventofagents.com/2025/12/)
+## [Link al calendario](https://adventofagents.com/2025/12/)
 
-Al crear el agente con el comando y el ADK (Agent Development Kit) le especificamos que el agente
+- Al crear el agente con el comando y el ADK (Agent Development Kit) le especificamos que el agente
 se llamará "my_agent" por ejemplo, ésto creará una carpeta en la que habrá una serie de archivos,
 entre ellos algo como "agent.py", "my_agent.yaml" que tendrá la configuración de nuestro agente.
 
-Cada carpeta como la de "my_agent" es un agente independiente, de ahí que dentro haya unos archivos
+- Cada carpeta como la de "my_agent" es un agente independiente, de ahí que dentro haya unos archivos
 de configuración. Se peude crear un agente "desarrollador" otro "Cocinero" o "Mecánico" y a cada uno
 darle su personalidad y su forma de actuar.
 
-No se ejecuta cada agente de forma independiente, sino que ejecutas el entorno (ADK) donde 'vivirán'
+- No se ejecuta cada agente de forma independiente, sino que ejecutas el entorno (ADK) donde 'vivirán'
 los egentes, en la web que se compila te deja elegir cuál quieres usar.
 
 **Importante** a diferencia de crear una proyecto con React que tienes que acceder a la carpeta para
@@ -38,13 +38,14 @@ Hay dos modos de generar un entorno para que vivan los agentes
 
 Esta manera es mas user-frienly porque dentro del 'root_agent.yaml' le vas a decir la confriguración sin tener que programar en Python
 'YAML → se lee → se convierte en objeto → se ejecuta'
-```Yaml
+
+```
 instruction: Eres un experto en motos
 model: gemini-2.5-flash
 ```
 👉 Luego agent.py hace algo así (simplificado):
 
-```Python
+```
 agent = Agent.from_yaml("root_agent.yaml")
 ```
 
@@ -53,7 +54,7 @@ agent = Agent.from_yaml("root_agent.yaml")
 “carga esta config y crea el agente en memoria”
 
 2. Modo "code-first" o modo Python (potente y más complejo): `adk create my_agent` se edita directamente el archivo 'agent.py', la ventaja frente al otro modo es que en este de tocar directamente el python puedes hacer lógica tipo if, loops, funciones...
-```Python
+```
 def responder(msg):
     if "ruido" in msg:
         return "Revisa válvulas"
