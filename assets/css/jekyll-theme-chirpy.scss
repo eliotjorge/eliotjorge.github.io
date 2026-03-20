@@ -193,8 +193,8 @@ html[data-mode=light] {
 .container-notas .book {
   position: relative;
   display: block;
-  width: 400px;
-  height: 550px;
+  width: 200px;
+  height: 275px;
   margin: 5% auto;
   border-radius: 2px 4px 4px 2px;
   background: linear-gradient(45deg,  #DAD5DC 0%, #f2ebf4 100%);
@@ -250,7 +250,7 @@ box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
   width: 40px;
   left: -20px;
   height: 550px;
-  background-color: green;
+  background-color: whitesmoke;
   -webkit-transform: rotate3d(0,1,0,-90deg);
   -moz-transform: rotate3d(0,1,0,-90deg);
   transform: rotate3d(0,1,0,-90deg);
@@ -310,7 +310,7 @@ text-align:center;
 }
 
 .cover {
- background: red;
+ background: whitesmoke;
 }
 
 

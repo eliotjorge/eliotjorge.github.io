@@ -52,6 +52,7 @@ agent = Agent.from_yaml("root_agent.yaml")
 
 👉 Traducción: “carga esta config y crea el agente en memoria”
 
+
 ### Modo "code-first" o modo Python (potente y más complejo)
 
 `adk create my_agent` se edita directamente el archivo 'agent.py', la ventaja frente al otro modo es que en este de tocar directamente el python puedes hacer lógica tipo if, loops, funciones...
@@ -63,7 +64,7 @@ def responder(msg):
 
 ## Cuándo usar cada uno?
 
-🟡 Usa YAML cuando:
+### Usa YAML cuando:
 
 - quieres prototipar rápido
 
@@ -71,7 +72,7 @@ def responder(msg):
 
 - solo necesitas prompts + tools
 
-🔵 Usa Python cuando:
+### Usa Python cuando:
 
 - quieres lógica real
 
