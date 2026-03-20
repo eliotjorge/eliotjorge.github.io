@@ -1,6 +1,6 @@
 ---
 title: Uso de Pandas
-layout: note
+layout: post
 notebook: Data analysis
 resumen: "resumen de prueba"
 toc: true
