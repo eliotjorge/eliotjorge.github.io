@@ -15,28 +15,11 @@ layout: full-width
         {% for note in site.notes %}
           {% if note.notebook == nb %}
             <a href="{{ note.url }}" class="note-card">
-             
-               
-
-
-            <div class="container-notas">
-		<div class="book">
-			<div class="front">
-				<div class="cover">
-          <h3 class=titulo>{{ note.title }}</h3> 
+              <h3 class=titulo>{{ note.title }}</h3> 
            {% if note.resumen %}
                   <p>{{ note.resumen }}</p>
                 {% endif %}
-				</div>
-			</div>
-			<div class="left-side">
-				<h2>
-					<span>{{ note.title }}</span>
-					<span>2026</span>
-				</h2>
-			</div>
-		</div>
-	</div>
+
             </a>
         
           {% endif %}
