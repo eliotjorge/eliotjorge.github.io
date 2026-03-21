@@ -1,6 +1,6 @@
 ---
 layout: notes
 title: Notas
-icon: fa-regular fa-clipboard
+icon: fa-solid fa-file-pen
 order: 8
 ---
