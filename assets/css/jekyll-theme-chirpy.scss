@@ -131,16 +131,6 @@ html[data-mode=light] {
 
 /* Notas de cursos */
 /* contenedor principal */
-.notes-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-/* cada cuaderno */
-.notebook h2 {
-  margin-bottom: 1rem;
-}
 
 /* grid de tarjetas */
 .notes-subgrid {
@@ -149,30 +139,7 @@ html[data-mode=light] {
   gap: 1rem;
 }
 
-/* tarjetas cuadradas */
-.note-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  aspect-ratio: 1 / 1;
-  transition: 0.2s;
-}
 
-/* breadcrumb */
-.breadcrumbs {
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-}
-
-/* responsive */
-@media (max-width: 768px) {
-  .notes-subgrid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/*Efecto libro para notas*/
 /* Notas de cursos */
 /* contenedor principal */
 .notes-grid {
@@ -199,9 +166,9 @@ html[data-mode=light] {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  aspect-ratio: 1 / 2;
+  aspect-ratio: 1 / 1.414;
   background: #f5f5f5;
-  border-radius: 12px;
+  border-radius: 5px;
   border: 1px solid grey;
   text-decoration: none;
   color: inherit;
