@@ -62,9 +62,9 @@ def responder(msg):
         return "Revisa válvulas"
 ```
 
-## Cuándo usar cada uno?
+### Cuándo usar cada uno?
 
-### Usa YAML cuando:
+#### Usa YAML cuando:
 
 - quieres prototipar rápido
 
@@ -72,7 +72,7 @@ def responder(msg):
 
 - solo necesitas prompts + tools
 
-### Usa Python cuando:
+#### Usa Python cuando:
 
 - quieres lógica real
 
