@@ -6,7 +6,9 @@ resumen: "Calendario de adviento de Navidad de Google"
 toc: true
 ---
 
-## [Link al calendario](https://adventofagents.com/2025/12/)
+## [🔗 Link al calendario](https://adventofagents.com/2025/12/)
+
+## Días 1, 2, 3 y 4
 
 - Al crear el agente con el comando y el ADK (Agent Development Kit) le especificamos que el agente
 se llamará "my_agent" por ejemplo, ésto creará una carpeta en la que habrá una serie de archivos,
@@ -81,3 +83,8 @@ def responder(msg):
 - usarlo en producción
 
 Pueden convivir dentro de cada entrono los dos tipos de agentes uno creado con YAML y otro con Python pero ambos crean el mismo tipo de agente. Si se hace algo rápido y que no es complejo usa YAML
+
+## Día 6
+
+
+
