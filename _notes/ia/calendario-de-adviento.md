@@ -184,7 +184,7 @@ Una vez hecho el deploy con este código, puedes interactuar con tu agente (al c
 
 ## Día 5
 
-- Una vez desplegado el agente nos interesa ver cómo se compoerta y que hace y eos se puede hacer desde el panel de Google Cloud.
+- Una vez desplegado el agente nos interesa ver cómo se comporta, qué hace... y eso se puede ver desde el panel de Google Cloud.
 
 [Link Youtube](https://www.youtube.com/watch?v=Q5CXbwkHHns)
 
