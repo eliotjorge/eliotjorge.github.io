@@ -34,10 +34,12 @@ pero para aprender sirve. En el panel de la izquierda vas a "Get API Key"
 ### Modo "config-first" o modo YAML (limitado pero simple)
 
 `uvx --from google-adk adk create --type=config my_agent` (en la configuración de opciones te va a pedir la API key) por el cual dentro de la carpeta del agente se genera un archivo YAML, a parte del agent.py
-   
+
+  <pre>
    my_agent/
    ├── root_agent.yaml
    ├── agent.py
+  </pre>
 
 Esta manera es mas user-frienly porque dentro del 'root_agent.yaml' le vas a decir la confriguración sin tener que programar en Python
 'YAML → se lee → se convierte en objeto → se ejecuta'
