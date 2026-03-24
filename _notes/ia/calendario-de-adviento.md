@@ -200,7 +200,7 @@ Una vez hecho el deploy con este código, puedes interactuar con tu agente (al c
 <pre>
   project/
     ├── backend/   ← ADK (lo que ejecutamos en días anteriores)
-    ├── frontend/  ← app bonita (UI hecha con React)
+    ├── frontend/  ← app bonita (UI hecha con React o con Next.js)
     ├── Makefile   ← Archivo donde se configuaran comandos que ejecutar, entre otras cosas.
 </pre>
 
@@ -223,6 +223,21 @@ playground: dev
 - Ejecutaríamos **`make install`** y sólo con ese comando se ejecuta esto → `@command -v uv >/dev/null 2>&1 || { echo "uv is not installed. Installing uv..."; curl -LsSf https://astral.sh/uv/0.6.12/install.sh | sh; source $$HOME/.local/bin/env; }
 	uv sync`
 
-- Si ejecutamos **`make dev`** se lanza el servidor local con  →  `uv run adk web . --port 8501`
+- Si ejecutamos **`make dev`** se lanza el servidor local con  →  `uv run adk web . --port 8501` (si ejecutamos sólo esto como dice el texto del calendario, solo veremos el agente del backend hay que ejecutar los siguiente)
+- 
+- En el ejemplo del vídeo ejecuta un comando `make ag-ui` que ejecuta este bundle de comandos que también esta definido en Makefile:
+
+```
+## Run AG-UI frontend (backend + Next.js frontend)
+ag-ui:
+	@echo "Starting AG-UI servers..."
+	@echo "Backend will run at http://localhost:8000"
+	@echo "Frontend will run at http://localhost:3000"
+	@echo ""
+	@trap 'kill 0' INT; \
+	(cd app/frontend/backend && python main.py) & \
+	(cd app/frontend && npm run dev) & \
+	wait
+```
 
 [Link Youtube](https://www.youtube.com/watch?v=u1txECrXj6k)
