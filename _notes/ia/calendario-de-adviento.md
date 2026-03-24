@@ -29,9 +29,9 @@ agente valido (aunque literalmente esté dentro de la carpeta...)
 [esta web](https://aistudio.google.com/). Es gratuita hasta cierto uso y ciertos requerimientos,
 pero para aprender sirve. En el panel de la izquierda vas a "Get API Key"
 
-## Hay dos modos de generar un entorno para que vivan los agentes
+### Hay dos modos de generar un entorno para que vivan los agentes
 
-### Modo "config-first" o modo YAML (limitado pero simple)
+#### Modo "config-first" o modo YAML (limitado pero simple)
 
 `uvx --from google-adk adk create --type=config my_agent` (en la configuración de opciones te va a pedir la API key) por el cual dentro de la carpeta del agente se genera un archivo YAML, a parte del agent.py
 
@@ -72,7 +72,7 @@ o
 adk web
 ```
 
-### Modo "code-first" o modo Python (potente y más complejo)
+#### Modo "code-first" o modo Python (potente y más complejo)
 
 `adk create my_agent` se edita directamente el archivo 'agent.py', la ventaja frente al otro modo es que en este de tocar directamente el python puedes hacer lógica tipo if, loops, funciones... el del vídeo de la chica → [Build an AI Agent with Gemini 3](https://www.youtube.com/watch?v=9EGtawwvlNs){target="_blank"}
 Poer lo general se hace un [entorno virtual de Python](https://jorgerosa.dev/posts/crear-entorno-virtual-python/) mientras de desarrolla.
@@ -180,7 +180,7 @@ make deploy
 ```
 
 Una vez hecho el deploy con este código, puedes interactuar con tu agente (al cual le has dado sus órdendes específicas) desde la pestaá `playground` de Google Cloud
-<img width="1685" height="1079" alt="image" src="https://github.com/user-attachments/assets/1b2d8b65-ae0c-4454-91f8-810f54774e75" />
+<img width="1000"  alt="image" src="https://github.com/user-attachments/assets/1b2d8b65-ae0c-4454-91f8-810f54774e75" />
 
 ## Día 5
 
@@ -193,6 +193,8 @@ Una vez hecho el deploy con este código, puedes interactuar con tu agente (al c
 
 - Los agentes pueden tener un entorno visual (UI) crado con React por ejemplo y por detrás se esta ejecuntando el ADK.
 
+  <img width="1000" alt="image" src="https://github.com/user-attachments/assets/f2e96677-84b7-4eac-bcba-6b3e955e6eed" />
+
 - El sistema de archivos suele tener esta estructura:
 
 <pre>
@@ -202,4 +204,25 @@ Una vez hecho el deploy con este código, puedes interactuar con tu agente (al c
     ├── Makefile   ← Archivo donde se configuaran comandos que ejecutar, entre otras cosas.
 </pre>
 
-- El archivo Makefile es como el package.json en Node
+- El archivo Makefile es como el package.json en Node, entre otras cosas hay definidos bundles de comandos.
+
+```
+## Install dependencies
+install:
+	@command -v uv >/dev/null 2>&1 || { echo "uv is not installed. Installing uv..."; curl -LsSf https://astral.sh/uv/0.6.12/install.sh | sh; source $$HOME/.local/bin/env; }
+	uv sync
+
+## Run agent locally with ADK web UI
+dev:
+	uv run adk web . --port 8501
+
+## Alias for dev
+playground: dev
+```
+
+- Ejecutaríamos **`make install`** y sólo con ese comando se ejecuta esto → `@command -v uv >/dev/null 2>&1 || { echo "uv is not installed. Installing uv..."; curl -LsSf https://astral.sh/uv/0.6.12/install.sh | sh; source $$HOME/.local/bin/env; }
+	uv sync`
+
+- Si ejecutamos **`make dev`** se lanza el servidor local con  →  `uv run adk web . --port 8501`
+
+[Link Youtube](https://www.youtube.com/watch?v=u1txECrXj6k)
