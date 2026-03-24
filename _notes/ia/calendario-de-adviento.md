@@ -223,8 +223,8 @@ playground: dev
 - Ejecutaríamos **`make install`** y sólo con ese comando se ejecuta esto → `@command -v uv >/dev/null 2>&1 || { echo "uv is not installed. Installing uv..."; curl -LsSf https://astral.sh/uv/0.6.12/install.sh | sh; source $$HOME/.local/bin/env; }
 	uv sync`
 
-- Si ejecutamos **`make dev`** se lanza el servidor local con  →  `uv run adk web . --port 8501` (si ejecutamos sólo esto como dice el texto del calendario, solo veremos el agente del backend hay que ejecutar los siguiente)
-- 
+- Si ejecutamos **`make dev`** se lanza el servidor local con  →  `uv run adk web . --port 8501` (si ejecutamos sólo esto como dice el texto del calendario, solo veremos el agente del backend, hay que ejecutar los siguiente para que cargue el front-end)
+  
 - En el ejemplo del vídeo ejecuta un comando `make ag-ui` que ejecuta este bundle de comandos que también esta definido en Makefile:
 
 ```
