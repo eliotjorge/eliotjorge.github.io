@@ -131,26 +131,10 @@ html[data-mode=light] {
 
 /* Notas de cursos */
 /* contenedor principal */
-
-/* grid de tarjetas */
-.notes-subgrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-
-/* Notas de cursos */
-/* contenedor principal */
 .notes-grid {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-}
-
-/* cada cuaderno */
-.notebook h2 {
-  margin-bottom: 1rem;
 }
 
 /* grid de tarjetas */
@@ -161,38 +145,16 @@ html[data-mode=light] {
   gap: 1rem;*/
 }
 
-/* tarjetas cuadradas */
-.note-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  aspect-ratio: 1 / 1.414;
-  background: #f5f5f5;
-  border-radius: 5px;
-  border: 1px solid grey;
-  text-decoration: none;
-  color: inherit;
-  padding: 1rem;
-  text-align: center;
-  transition: 0.2s;
-}
-
-.note-card:hover {
-  transform: translateY(-4px);
-}
-
 /*Nuevo diseño tarjetas - skillsmp com*/
 .carta-nota{
   border-radius: 12px;
   border:1px solid #8b929e;
-  
+  transition: translateY 300ms;
 }
 
 .carta-nota a{
   font-family: var(--bs-font-monospace);
   color: #5b6370; 
-  transition: translatey 300ms;
 }
 
 .titulo-nota, .resumen-nota, .fecha-nota{
