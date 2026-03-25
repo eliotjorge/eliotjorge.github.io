@@ -54,7 +54,10 @@ layout: full-width
         </span></span></div>
    </div>
    <div class="mt-auto px-4 bg-muted/20 border-t border-border/50 flex items-center justify-between">
-      <span class="text-xs font-mono text-muted-foreground">{{ note.date }}</span>
+      <span class="text-xs font-mono text-muted-foreground">
+      {{ site.data.locales[lang].note.posted }}
+      {% include datetime.html date=page.date tooltip=true lang=lang %}  
+      </span>
       <div class="flex items-center gap-2">
          <div class="pointer-events-none">
             <button class="
