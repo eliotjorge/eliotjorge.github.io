@@ -182,6 +182,33 @@ html[data-mode=light] {
   transform: translateY(-4px);
 }
 
+/*Nuevo diseño tarjetas - skillsmp com*/
+.carta-nota{
+  font-family: var(--bs-font-monospace);
+  color: #5b6370;
+  border-radius: 12px;
+  border:1px solid #8b929e;
+  
+}
+
+.carta-nota:hover {
+  transform: translateY(-4px);
+}
+
+.titulo-nota{
+  background-color: color-mix(in oklab, #f3f4f6 30%, transparent);
+  text-align: center;
+}
+.resumen-nota{
+  border-top: 1px solid #8b929e;
+  border-bottom: 1px solid #8b929e;
+}
+.fecha-nota{
+  background-color: color-mix(in oklab, #f3f4f6 30%, transparent);
+}
+
+/*FIN Nuevo diseño tarjetas*/
+
 /* breadcrumb */
 .breadcrumbs {
   font-size: 0.9rem;
