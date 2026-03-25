@@ -1,5 +1,6 @@
 ---
 title: Road to IA
+date: 2026-03-25
 layout: post
 notebook: IA
 resumen: "Notas del camino de entender y crear IAs propias"
