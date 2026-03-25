@@ -1,5 +1,6 @@
 ---
 title: Calendario de Adviento
+date: 2026-03-20
 layout: post
 notebook: IA
 resumen: "Calendario de adviento de Navidad de Google"
