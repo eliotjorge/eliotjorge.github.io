@@ -140,9 +140,9 @@ html[data-mode=light] {
 /* grid de tarjetas */
 .notes-subgrid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  /*grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;*/
+  //grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
 /*Nuevo diseño tarjetas - skillsmp com*/
