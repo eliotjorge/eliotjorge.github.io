@@ -13,12 +13,12 @@ Cuando especifiqué que el modelo de IA de Gemini que quería que usara mi API e
 ```
 RESPONSE: {"error":"[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."}
 ```
-Lo importante toda esa línea es este cachito "models/gemini-1.5-flash is not found for API version v1beta" que significa:
+Lo importante toda esa línea es este cachito `models/gemini-1.5-flash is not found for API version v1beta` que significa:
 > "Estás usando un modelo que ya no existe o no está disponible con ese endpoint"
 
 Sólo hay que cambiar el modelo que estas usando por el que te interes. Se pueden ver en este enlace [Modelos de IA de Gemini (Google)](https://ai.google.dev/gemini-api/docs/models?hl=es-419)
 
-A día de hoy (marzo - 2026) ha salido **Gemini 3** y tiene estas opciones:
+El día que se escribe esto ha salido **Gemini 3** y tiene estas opciones:
 
 <img width="1270" height="729" alt="image" src="https://github.com/user-attachments/assets/3214ff22-81d4-48ce-8d48-c05702796c8d" />
 
@@ -27,7 +27,7 @@ Si pinchas en alguna de las tarjetas Gemini 3 Flash por ejemplo, hay que fijarse
 <img width="875" height="299" alt="image" src="https://github.com/user-attachments/assets/a7bf8be0-7da0-4416-855f-6bc9d6f2e990" />
 
 
-Lo defines aquí en 'model: ':
+Lo defines aquí en ´model: ´:
 
 ```
 const model = genAI.getGenerativeModel({
@@ -35,7 +35,7 @@ const model = genAI.getGenerativeModel({
     });
 ```
 
-- Por supuesto en hay que importar la librería de Gemini en el archivo al principio y generar en el hosting de la api una variable de entorno con la **API KEY** de Gemini
+Por supuesto en hay que importar la librería de Gemini en el archivo al principio y generar en el hosting de la API una variable de entorno con la **API KEY** de Gemini.  
 
 ```
 import { GoogleGenerativeAI } from "@google/generative-ai";
@@ -53,12 +53,12 @@ La **API KEY** se consigue en → [https://aistudio.google.com/](https://aistudi
 
 ## Peticiones desde CLI web
 
-Como lo que realmente esto progrmamando es una api la cual recibe una pregunta/consulta y devuelve la respuesta si visitas el archivo js de la IA de la api,
+Como lo que realmente estoy progrmando es una API la cual recibe una pregunta/consulta y devuelve la respuesta, si visitas el archivo .js de la IA de la API,
 como no le has pasado ninguna pregunta te devuelve:
 
 <img width="310" height="81" alt="image" src="https://github.com/user-attachments/assets/15b22c6d-4445-47a7-aad6-5ccb3bd1fa1f"/>
 
-Se pueden usar herramientas como **Jetpack** para hacer peticiones, pero también se pueden hacer desde la consola de Chorme.
+Se pueden usar herramientas como **Jetpack** para hacer peticiones, pero también se pueden hacer desde la consola del navegador.
 
 Abres la consola de Chrome y haces la petición en la línea de comandos:
 
@@ -81,13 +81,13 @@ fetch("https://project-c4tfr43.vercel.app/api/chat", {
 
 Si lo ejecutamos nos devolverá, dependiendo de si encuentra la IA respuesta o no, un
  - **'STATUS'**: 200 si ok, 400 si no se encuentra, 500 si hay fallo del servidor...
- - **'RESPONSE'**: la respuesta de la IA "{"answer":"**sessionStorage** es una interfaz de JavaScript que permite almacenar datos..." o si no ha podido generar
-la respuesta porque no hay datos en la web sacará "RESPONSE: {"answer":"No tengo información sobre eso en el blog."}"
+ - **'RESPONSE'**: la respuesta de la IA ´{"answer":"**sessionStorage** es una interfaz de JavaScript que permite almacenar datos...´ o si no ha podido generar
+la respuesta porque no hay datos en la web sacará ´{"answer":"No tengo información sobre eso en el blog."}´
 
 
 ## Errores de petición por bloqueo de Cloudflare, pero si pegas la url del JSON sí se ve.
 
-Estaba pasando una cosa curiosa y es que el código de la IA funcionaba con los más básico y por otra parte si pegabas la URL del JSON 'https://jorgerosa.dev/data/busqueda.json' en el navegador se veía el JSON perfecto.
+Estaba pasando una cosa curiosa y es que el código de la IA funcionaba con lo más básico y hacía la petición, por otra parte si pegabas la URL del JSON 'https://jorgerosa.dev/data/busqueda.json' en el navegador se veía el JSON perfecto.
 
 Lo que estaba pasando es que Cloudflare está bloqueando la petición desde Vercel (bot protection)
 
@@ -175,5 +175,15 @@ Para verlos tenemos que loguearnos en Vercel, ir al proyecto, y en el menú de l
 > Unidad mínima de información — palabra, parte de una palabra, número o símbolo— que un modelo de lenguaje utiliza para procesar y generar texto. Los modelos no
 > leen palabras completas, sino que dividen el texto en estos fragmentos (tokenización) para calcular la siguiente pieza más probable. Generalmente, 100 tokens
 > equivalen aproximadamente a 75 palabras.
+
+### MCP (Model Context Protocol)
+> Es un estándar abierto desarrollado por Anthropic en 2024 que permite a los modelos de lenguaje grandes (LLM) conectarse de forma estandarizada a fuentes de datos, herramientas y servicios
+> externos.  Actúa como un puente universal que soluciona la limitación de los modelos de IA de tener conocimiento estático, permitiéndoles acceder a información en tiempo real y realizar acciones como reservar citas o
+> consultar bases de datos.
+> 
+> A diferencia de técnicas como RAG, que se centran en la recuperación pasiva de información, el MCP está diseñado para la interacción activa, permitiendo que la IA ejecute tareas complejas y tome decisiones basadas en
+> datos externos dinámicos.  Esto estandariza la integración, eliminando la necesidad de crear APIs personalizadas para cada nueva herramienta y facilitando el desarrollo de agentes de IA autónomos.
+> 
+> <img width="768" height="317" alt="image" src="https://github.com/user-attachments/assets/01ae2d2b-c590-455c-afbf-f58b944c0c75" />
 
 
