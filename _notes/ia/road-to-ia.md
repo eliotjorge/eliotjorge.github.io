@@ -42,3 +42,14 @@ La **API KEY** se consigue en → [https://aistudio.google.com/](https://aistudi
 ---
 
 
+## Diccionario de términos
+
+### RAG (Retrieval Augmented Generation)
+> La Generación Aumentada por Recuperación es una técnica de IA que conecta los modelos de lenguaje (LLM) con fuentes de datos
+> externas fiables, mejorando la precisión y actualizando la información sin reentrenar el modelo. Reduce alucinaciones al buscar documentos específicos (PDFs,
+> bases de datos) para contextualizar la respuesta.
+
+### LLM (Large Language Model)
+> Es una IA avanzada entrenada con volúmenes masivos de texto para comprender, resumir, traducir, predecir y generar lenguaje humano. Basados en redes neuronales
+> transformadoras, aprenden patrones para responder preguntas y crear contenido, siendo ejemplos clave ChatGPT, GPT-4, Llama y Gemini.
+
