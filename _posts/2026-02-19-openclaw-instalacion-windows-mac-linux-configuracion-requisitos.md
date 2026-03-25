@@ -277,5 +277,3 @@ location / {
 <div style="text-align: center;">
  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" alt="Servidor y automatización funcionando" width="300" />
 </div>
-
-Este post me sirve como referencia rápida para futuras instalaciones y pruebas. Tener control sobre la infraestructura de IA es algo que cada vez me interesa más, especialmente cuando se trata de automatización e integración con herramientas propias.
