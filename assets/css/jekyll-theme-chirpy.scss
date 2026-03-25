@@ -164,14 +164,19 @@ padding: 10px 16px;
   transform: translateY(-4px);
   transition: 300ms;
 }
+
 .titulo-nota{
   background-color: color-mix(in oklab, #f3f4f6 30%, transparent);
   text-align: center;
+  font-size: 20px;
 }
+
 .resumen-nota{
   border-top: 1px solid #8b929e;
   border-bottom: 1px solid #8b929e;
+  background-color: white;
 }
+
 .fecha-nota{
   background-color: color-mix(in oklab, #f3f4f6 30%, transparent);
 }
