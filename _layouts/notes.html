@@ -29,26 +29,25 @@ layout: full-width
 
         <!-- Nuevo diseño -->
         <a href="{{ note.url }}">
-<div class="relative h-full bg-card border border-border rounded-xl overflow-hidden hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-1 active:translate-y-0 active:scale-[0.99] transition-all duration-300 flex flex-col gpu-accelerated">
-   <div class="flex items-center justify-between px-4 py-2.5 bg-muted/30 border-b border-border">
-      <div class="flex items-center gap-2 min-w-0 flex-1 overflow-hidden">
-        <span class="font-mono text-xs text-muted-foreground truncate" title="security-triage.md"><span class="">{{ note.title }}</span></span>
-      </div>
-   </div>
-   <div class="relative z-10 flex flex-col min-w-0 flex-1 px-4 pt-2 pb-2.5">
-      <div class="mt-1 font-mono text-xs leading-relaxed flex-1"><span class="text-muted-foreground line-clamp-3"><span class="">
-        {% if note.resumen %}
-          {{ note.resumen }}
-        {% endif %}
-        </span></span></div>
-   </div>
-   <div class="mt-auto px-4 bg-muted/20 border-t border-border/50 flex items-center justify-between">
-      <span class="text-xs font-mono text-muted-foreground">
-      {% include datetime.html date=note.date tooltip=true lang=lang %}  
-      </span>
-   </div>
-</div>
-
+          <div class="carta-nota">
+             <div class="titulo-nota">
+                  <span>
+                    {{ note.title }}
+                  </span>
+             </div>
+             <div class="resumen-nota">
+                <span>
+                  {% if note.resumen %}
+                    {{ note.resumen }}
+                  {% endif %}
+                </span>
+             </div>
+             <div class="fecha-nota">
+                <span>
+                {% include datetime.html date=note.date tooltip=true lang=lang %}  
+                </span>
+             </div>
+          </div>
         </a>
 
 
