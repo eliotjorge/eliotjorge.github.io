@@ -14,13 +14,4 @@ These days I spend my time researching, learning, prototyping and programming. I
 Outside of the office you will find me dreaming about motorbikes and cars, well really anything with a motor and about sports.</div>
 </div>
 
-<div class="calendar"></div>
-
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
-
-<script>
-  GitHubCalendar(".calendar", "eliotjorge");
-</script>
-
 {: .prompt-tip }
