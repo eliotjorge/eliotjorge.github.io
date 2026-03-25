@@ -1,3 +1,11 @@
+---
+title: Road to IA
+layout: post
+notebook: IA
+resumen: "Notas del camino de entender y crear IAs propias"
+toc: true
+---
+
 
 - Cuando especifiqué que el modelo de IA de Gemini que quería que usara mi API es "gemini-1.5-flash" me daba en la consola del navegador este error:
 ```
