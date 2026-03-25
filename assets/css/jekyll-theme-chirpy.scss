@@ -184,17 +184,24 @@ html[data-mode=light] {
 
 /*Nuevo diseño tarjetas - skillsmp com*/
 .carta-nota{
-  font-family: var(--bs-font-monospace);
-  color: #5b6370;
   border-radius: 12px;
   border:1px solid #8b929e;
   
 }
 
+.carta-nota a{
+  font-family: var(--bs-font-monospace);
+  color: #5b6370; 
+  transition: translatey 300ms;
+}
+
+.titulo-nota, .resumen-nota, .fecha-nota{
+padding: 10px 16px;
+}
+
 .carta-nota:hover {
   transform: translateY(-4px);
 }
-
 .titulo-nota{
   background-color: color-mix(in oklab, #f3f4f6 30%, transparent);
   text-align: center;
