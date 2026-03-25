@@ -137,7 +137,7 @@ Por ejemplo
 
 La desventaja de esto es que cada vez que cree una entrada nueva el JSON de la api de IA no va a tener esa última, así que habrá que actualizar la "base de conocimiento" de la IA.
 
-## URS de Vercel
+## URLs de Vercel
 
 En el panel 'Overview' del proyecto de Vercel aparecen dos URLs
 
