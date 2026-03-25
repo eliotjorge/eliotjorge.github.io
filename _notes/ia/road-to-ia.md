@@ -3,7 +3,7 @@ title: Road to IA
 date: 2026-03-25
 layout: post
 notebook: IA
-resumen: "Notas del camino de entender y crear IAs propias"
+resumen: "Notas del camino para crear IAs propias"
 toc: true
 ---
 
@@ -58,7 +58,7 @@ como no le has pasado ninguna pregunta te devuelve:
 
 <img width="310" height="81" alt="image" src="https://github.com/user-attachments/assets/15b22c6d-4445-47a7-aad6-5ccb3bd1fa1f"/>
 
-Se pueden usar herramientas como Jetpack para hacer peticiones, pero también se pueden hacer desde la consola de Chorme.
+Se pueden usar herramientas como **Jetpack** para hacer peticiones, pero también se pueden hacer desde la consola de Chorme.
 
 Abres la consola de Chrome y haces la petición en la línea de comandos:
 
@@ -85,7 +85,7 @@ Si lo ejecutamos nos devolverá, dependiendo de si encuentra la IA respuesta o n
 la respuesta porque no hay datos en la web sacará "RESPONSE: {"answer":"No tengo información sobre eso en el blog."}"
 
 
-## Errores de petición por bloqueo de Cloudflare, pero si pegas la url del json sí se ve.
+## Errores de petición por bloqueo de Cloudflare, pero si pegas la url del JSON sí se ve.
 
 Estaba pasando una cosa curiosa y es que el código de la IA funcionaba con los más básico y por otra parte si pegabas la URL del JSON 'https://jorgerosa.dev/data/busqueda.json' en el navegador se veía el JSON perfecto.
 
@@ -168,5 +168,11 @@ Para verlos tenemos que loguearnos en Vercel, ir al proyecto, y en el menú de l
 
 ### LLM (Large Language Model)
 > Es una IA avanzada entrenada con volúmenes masivos de texto para comprender, resumir, traducir, predecir y generar lenguaje humano. Basados en redes neuronales
-> transformadoras, aprenden patrones para responder preguntas y crear contenido, siendo ejemplos clave ChatGPT, GPT-4, Llama y Gemini.
+> transformadoras, aprenden patrones para responder preguntas y crear contenido, siendo ejemplos clave ChatGPT, GPT-4, Llama y Gemini. 
+
+### Token
+> Unidad mínima de información — palabra, parte de una palabra, número o símbolo— que un modelo de lenguaje utiliza para procesar y generar texto. Los modelos no
+> leen palabras completas, sino que dividen el texto en estos fragmentos (tokenización) para calcular la siguiente pieza más probable. Generalmente, 100 tokens
+> equivalen aproximadamente a 75 palabras.
+
 
