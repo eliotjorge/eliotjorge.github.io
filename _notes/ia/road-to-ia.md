@@ -91,12 +91,12 @@ Estaba pasando una cosa curiosa y es que el código de la IA funcionaba con los 
 
 Lo que estaba pasando es que Cloudflare está bloqueando la petición desde Vercel (bot protection)
 
-### ¿Por qué ocurre?
+#### ¿Por qué ocurre?
 
 Tu flujo actual:
-`
+```
 Vercel (serverless) → fetch → jorgerosa.dev
-`
+```
 Pero Cloudflare detecta:
 
 - request desde servidor (**no navegador**)
@@ -104,14 +104,14 @@ Pero Cloudflare detecta:
 - sin JS challenge
 
 Resultado:
-`
+```
 403 + HTML (challenge page)
-`
+```
 
 Y luego:
-`
+```
 JSON.parse("<!DOCTYPE html>...")
-`
+```
 
 ¿Por qué en el navegador **SÍ funciona**?
 
@@ -123,7 +123,7 @@ Porque:
 
 Vercel no puede hacer esto.
 
-¿Cuál es la solución?
+#### ¿Cuál es la solución?
 
 Hacer un archivo dentro de la propia API para que ésta no tenga que pedirle a Cloudflare el JSON.
 Por ejemplo
@@ -135,6 +135,7 @@ Por ejemplo
    └ posts.json
 </pre>
 
+La desventaja de esto es que cada vez que cree una entrada nueva el JSON de la api de IA no va a tener esa última, así que habrá que actualizar la "base de conocimiento" de la IA.
 
 ## URS de Vercel
 
