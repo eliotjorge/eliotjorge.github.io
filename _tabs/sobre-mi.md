@@ -12,6 +12,15 @@ Fuera de la oficina me encontrarás soñando con las motos y los coches, bueno r
   <div class="item-about">I have spent the last 12 years working in different areas of web development; front-end development, design and programming of online banners, UI/UX of applications, marketing campaigns, avoiding and solving attacks by bad guys on web pages and optimizing them, to my current position as a web page developer, online stores, etc.<br/> <br/>
 These days I spend my time researching, learning, prototyping and programming. I also help new developers launch their careers.<br/> <br/>
 Outside of the office you will find me dreaming about motorbikes and cars, well really anything with a motor and about sports.</div>
-</div>        
+</div>
+
+<div class="calendar"></div>
+
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+
+<script>
+  GitHubCalendar(".calendar", "eliotjorge");
+</script>
 
 {: .prompt-tip }
