@@ -149,7 +149,6 @@ html[data-mode=light] {
 .carta-nota{
   border-radius: 12px;
   border:1px solid #8b929e;
-  transition: translateY 300ms;
 }
 
 .carta-nota a{
@@ -163,6 +162,7 @@ padding: 10px 16px;
 
 .carta-nota:hover {
   transform: translateY(-4px);
+  transition: 300ms;
 }
 .titulo-nota{
   background-color: color-mix(in oklab, #f3f4f6 30%, transparent);
