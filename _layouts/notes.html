@@ -14,23 +14,17 @@ layout: full-width
       <div class="notes-subgrid">
         {% for note in site.notes %}
           {% if note.notebook == nb %}
-
-
-        <!--
-            <a href="{{ note.url }}" class="note-card">
-              <h3 class=titulo>{{ note.title }}</h3> 
-           {% if note.resumen %}
-                  <p>{{ note.resumen }}</p>
-                {% endif %}
-              <p>{{ note.date }}</p>
-
-            </a>
-        -->
-
+        
         <!-- Nuevo diseño -->
           <div class="carta-nota">
             <a href="{{ note.url }}">
-             <div class="titulo-nota">
+             <div class="titulo-nota"
+                  style=" background-color: 
+                  {% if note.color %}
+                   rgba({{ note.color }}, 0.5)
+                 {% else %}
+                 "#5b6370"
+               ;">
                   <span>
                     {{ note.title }}
                   </span>
