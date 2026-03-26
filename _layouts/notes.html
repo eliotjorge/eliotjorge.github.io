@@ -20,11 +20,12 @@ layout: full-width
             <a href="{{ note.url }}">
              <div class="titulo-nota"
                   style=" background-color: 
-                  {% if note.color %}
-                   rgba({{ note.color }}, 0.5)
-                 {% else %}
-                 "#5b6370"
-               ;">
+                    {% if note.color %}
+                      rgba({{ note.color }}, 0.5)
+                    {% else %}
+                  "#5b6370"
+                 ;">
+                   {% endif %}
                   <span>
                     {{ note.title }}
                   </span>
