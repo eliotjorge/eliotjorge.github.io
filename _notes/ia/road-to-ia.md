@@ -16,7 +16,7 @@ RESPONSE: {"error":"[GoogleGenerativeAI Error]: Error fetching from https://gene
 Lo importante toda esa línea es este cachito `models/gemini-1.5-flash is not found for API version v1beta` que significa:
 > "Estás usando un modelo que ya no existe o no está disponible con ese endpoint"
 
-Sólo hay que cambiar el modelo que estas usando por el que te interes. Se pueden ver en este enlace [Modelos de IA de Gemini (Google)](https://ai.google.dev/gemini-api/docs/models?hl=es-419)
+Sólo hay que cambiar el modelo que estas usando por el que te interes. Se pueden ver en este enlace [Modelos de IA de Gemini (Google)](https://ai.google.dev/gemini-api/docs/models?hl=es-419){:target="_blank"}
 
 El día que se escribe esto ha salido **Gemini 3** y tiene estas opciones:
 
@@ -47,7 +47,7 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 ```
 
-La **API KEY** se consigue en → [https://aistudio.google.com/](https://aistudio.google.com/)
+La **API KEY** se consigue en → [https://aistudio.google.com/](https://aistudio.google.com/){:target="_blank"}
 
 ---
 
