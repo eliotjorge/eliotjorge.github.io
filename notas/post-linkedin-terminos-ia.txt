@@ -1,0 +1,88 @@
+url: https://es.linkedin.com/posts/ignacioandrecm_artificialintelligence-aiengineering-aiarchitecture-activity-7434415418418761728-Olqy
+
+🧠 La mayoría del contenido sobre IA hoy enseña términos.
+
+Muy poco enseña a pensar.
+
+La gente memoriza:
+
+RAG.
+Fine-tuning.
+Agents.
+Embeddings.
+
+Pero cuando tienen que diseñar un sistema real…
+
+la comprensión se derrumba.
+
+Porque la IA no es una lista de buzzwords.
+
+Es una arquitectura conectada de conceptos que trabajan juntos.
+
+━━━━━━━━━━━━━━━━━━
+
+Por eso creé este mapa visual:
+
+Top 40 conceptos de IA, organizados como realmente se construyen los sistemas en el mundo real.
+
+Desde:
+
+🔹 Fundamentos de aprendizaje
+• ML
+• DL
+• RL
+
+🔹 Mecánica del modelo
+• Tokens
+• Pesos
+• Embeddings
+• Quantization
+
+🔹 Comportamiento en producción
+• Inference
+• Hallucination
+• Context windows
+• Cost optimization
+
+🔹 Infraestructura
+• GPUs
+• Transformers
+• APIs
+• MCP
+
+🔹 Aplicaciones reales
+• Agents
+• Copilots
+• Sistemas generativos
+
+🔹 La capa que muchos ignoran
+• Ethics
+• Bias
+• Privacy
+• Regulation
+
+━━━━━━━━━━━━━━━━━━
+
+La brecha ya no es:
+
+IA vs No IA.
+
+La brecha real es:
+
+Conocimiento superficial vs comprensión sistémica.
+
+Y solo una de esas construye productos reales, carreras sólidas e impacto sostenible.
+
+Si vas en serio con IA,
+
+no memorices palabras.
+
+Entiende cómo respira el sistema.
+
+Guárdalo como tu mapa mental.
+Compártelo con alguien que esté entrando en IA este año.
+
+Y ahora la pregunta importante:
+
+¿Qué concepto de IA parecía simple al principio…
+pero terminó siendo profundamente complejo?
