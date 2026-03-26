@@ -108,6 +108,12 @@ html[data-mode=light] {
 
 /* vvvvvvvvvvvv Empieza lo mio vvvvvvvvvvvv */
 
+.card-img{
+height: 20rem;
+background: linear-gradient(0deg,rgba(255, 255, 255, .97) 30%, rgba(255, 255, 255, 0) 30%);  
+border-radius: 8px;
+}
+
 .container-about {
   display: flex;
   justify-content: space-between;
