@@ -2,7 +2,7 @@
 title: "Cómo resolver conflictos en Git paso a paso (sin romper tu proyecto)"
 description: "Aprende qué son los conflictos en Git, por qué ocurren al trabajar en varios ordenadores y cómo resolverlos paso a paso sin errores. Guía práctica con ejemplos reales."
 date: 2026-03-26
-image: "https://github.com/user-attachments/assets/89825f68-3b98-4021-8a7a-a6505caf32a5"
+image: "https://github.com/user-attachments/assets/1db217d0-cb75-40c8-a932-e7612c6e5daf"
 categories: [git, github, desarrollo-web]
 tags: [git, github, conflictos, control-de-versiones, desarrollo, programacion, jekyll]
 faq:
