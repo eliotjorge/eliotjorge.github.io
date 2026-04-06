@@ -1,6 +1,9 @@
 ---
-layout: post
+layout: page
+noindex: true
+sitemap: false
 ---
+
 # 🔧 Ajuste carburador SU HS4 (Mini clásico)
 
 ## ⚙️ Conceptos básicos
