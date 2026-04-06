@@ -8,7 +8,7 @@ sitemap: false
 - [Mini](https://jorgerosa.dev/taller/mini.html)
 - [Mini 2](https://jorgerosa.dev/taller/mini2.html)
 
-- [Ajustar carburador mini](https://jorgerosa.dev/taller/ajsutar-carburador-mini)
+- [Ajustar carburador mini](https://jorgerosa.dev/taller/ajustar-carburador-mini)
 
 
 ### Vitara
