@@ -41,8 +41,9 @@ order: 6
 
 [**nosubscription.org** - Professional software and services without monthly fees. Explore 547+ one-time purchase, free, or open source tools.](https://nosubscription.org/){:target="_blank"}
 
-
 [**ByteByteGo** - Ace Every Stage of Your Next Technical Interview](https://bytebytego.com/){:target="_blank"}
+
+[**ESPWEBTOOL** - Flash your ESP32 or ESP8266 through your browser. Open-Source, free, and easy to use.](https://esptool.spacehuhn.com/){:target="_blank"}
 
 
 ### Como no todo es trabajar...
