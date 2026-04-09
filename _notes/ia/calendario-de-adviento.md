@@ -242,3 +242,18 @@ ag-ui:
 ```
 
 [Link Youtube](https://www.youtube.com/watch?v=u1txECrXj6k)
+
+## Día 8
+
+- ES importante organizar los comandos y las instrucciones en varias capas, ya sea para no saturar el modelo o para facilitar el mantenimiento.
+
+- También es importante para facilitar la escalabilidad, a lo mejor sólo queremos mejorar un aspecto y si tenemos todo con un "spaghetti context" va a ser dificil desenmarañarlo y el modelo se puede liar.
+
+[Link Youtube](https://www.youtube.com/watch?v=DdTtiWoMa3E)
+
+
+## Día 9
+
+- Cuando vamos aplicando cambios al modelo a lo mejor hay un punto en el que necesitamos volver hacia atrás y no es tan sencillo como en Github
+
+[Link Youtube](https://www.youtube.com/watch?v=9FQh-Pw2sfE)
