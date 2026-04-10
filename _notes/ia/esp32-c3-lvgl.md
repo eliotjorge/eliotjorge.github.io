@@ -17,7 +17,8 @@ toc: true
 
 - Cuando conectamos la placa a la web (pide que selecciones la placa en un pop-up) aparecen 4 espacios de memoria.
 
-![alt text](image.png)
+<img width="701" height="851" alt="Captura de pantalla 2026-04-09 221626" src="https://github.com/user-attachments/assets/73a6fe73-5121-4d25-ac16-d8f219297ce6" />
+
 
 - El que nos interesa es el "0x10000"
 
@@ -46,7 +47,7 @@ toc: true
 
 - Cuando esté instalado en la parte de abajo de VSCode aparecerán unos iconos que son shortcuts a los comandos de PlatforIO
 
-![alt text](image-2.png)
+<img width="677" height="27" alt="image-2" src="https://github.com/user-attachments/assets/7e4c60bd-a55e-41e7-8985-cab82a26073b" />
 
 - El que nos interesa es el check que compila el firmware.bin en la carpeta '.pio/buil/lolin_c3_mini' que tenemos que descargar.
 
@@ -58,4 +59,4 @@ toc: true
 
 - Comentar con `;` y descomentar `default_envs = lolin_c3_mini ; ESP32-C3 LVGL 1.28 240x240` La primera vez que hagamos una compilación tardará mucho (8min apox) porque configura el entorno para la buena placa.
 
-![alt text](image-3.png)
+<img width="723" height="572" alt="Captura de pantalla 2026-04-10 143845" src="https://github.com/user-attachments/assets/30806fb4-dde0-47c7-a31a-95ead5e400fa" />
