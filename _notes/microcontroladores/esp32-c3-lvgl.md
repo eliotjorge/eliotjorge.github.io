@@ -2,7 +2,7 @@
 title: ESP32 C3 LVGL
 date: 2026-04-10
 layout: post
-notebook: Micro controladores
+notebook: Microcontroladores
 resumen: "Módulo de desarollo ESP32 con pantalla redonda de 1.28'"
 toc: true
 ---
