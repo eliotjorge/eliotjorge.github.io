@@ -22,6 +22,34 @@ pio run
 - conectas ESP32
 - subes `.bin`
 
+---
+
+## Compilar **Firmware.bin** en codespace de Github
+
+- Hacemos fork del [repo de Github del proyecto](https://github.com/fbiego/esp32-c3-mini/){:target="_blank"} y creamos un Codespace como siempre.
+
+- Tenemos que tenre instalado la Extensión **PlatformIO** (Si lo tenemos en nuestra config de VSCode con sincronizar el archivo ya aparecerá)
+ 
+- Cuando le demos la primera vez instalará el IDE en VSCode.
+
+- Cuando esté instalado en la parte de abajo de VSCode aparecerán unos iconos que son shortcuts a los comandos de PlatforIO
+
+<img width="677" height="27" alt="image-2" src="https://github.com/user-attachments/assets/7e4c60bd-a55e-41e7-8985-cab82a26073b" />
+
+- El que nos interesa es el check que compila el firmware.bin en la carpeta '.pio/buil/lolin_c3_mini' que tenemos que descargar.
+
+- Tenemos que configurar el entorno de PlatformIO para que haga la build para nuestra placa si no no encenderá o los pines del backlight no estarán configurados.
+
+- ⚠️ Para cambiar el entorno abrimos el archivo `platformio.ini` y en la parte de arriba comentar todo y sólo dejar el de nuestra paca.
+
+- ⚠️ Viene por defecto `default_envs = elecrow_c3_1_28 ; ELECROW C3 LCD 1.28 240x240` y nuestra placa **NO ES ESA**
+
+- Comentar con `;` y descomentar `default_envs = lolin_c3_mini ; ESP32-C3 LVGL 1.28 240x240` La primera vez que hagamos una compilación tardará mucho (8min apox.) porque configura el entorno para la nueva placa.
+
+<img width="723" height="572" alt="Captura de pantalla 2026-04-10 143845" src="https://github.com/user-attachments/assets/30806fb4-dde0-47c7-a31a-95ead5e400fa" />
+
+---
+
 ## Flasear ESP32 Online
 
 - Al conectar la placa al ordenador para progamarla, hay que mantener pulsado el botón Boot.
@@ -52,30 +80,6 @@ pio run
 
 ---
 
-## Compilar **Firmware.bin** en codespace de Github
-
-- Hacemos fork del [repo de Github del proyecto](https://github.com/fbiego/esp32-c3-mini/){:target="_blank"} y creamos un Codespace como siempre.
-
-- Tenemos que tenre instalado la Extensión **PlatformIO** (Si lo tenemos en nuestra config de VSCode con sincronizar el archivo ya aparecerá)
- 
-- Cuando le demos la primera vez instalará el IDE en VSCode.
-
-- Cuando esté instalado en la parte de abajo de VSCode aparecerán unos iconos que son shortcuts a los comandos de PlatforIO
-
-<img width="677" height="27" alt="image-2" src="https://github.com/user-attachments/assets/7e4c60bd-a55e-41e7-8985-cab82a26073b" />
-
-- El que nos interesa es el check que compila el firmware.bin en la carpeta '.pio/buil/lolin_c3_mini' que tenemos que descargar.
-
-- Tenemos que configurar el entorno de PlatformIO para que haga la build para nuestra placa si no no encenderá o los pines del backlight no estarán configurados.
-
-- ⚠️ Para cambiar el entorno abrimos el archivo `platformio.ini` y en la parte de arriba comentar todo y sólo dejar el de nuestra paca.
-
-- ⚠️ Viene por defecto `default_envs = elecrow_c3_1_28 ; ELECROW C3 LCD 1.28 240x240` y nuestra placa **NO ES ESA**
-
-- Comentar con `;` y descomentar `default_envs = lolin_c3_mini ; ESP32-C3 LVGL 1.28 240x240` La primera vez que hagamos una compilación tardará mucho (8min apox.) porque configura el entorno para la nueva placa.
-
-<img width="723" height="572" alt="Captura de pantalla 2026-04-10 143845" src="https://github.com/user-attachments/assets/30806fb4-dde0-47c7-a31a-95ead5e400fa" />
-
 ## Archivos importantes
 
 - Antes de descubrir que la placa que se usaba en el entorno era la incorrecta iba a cambiar los pines del backlight.
@@ -92,6 +96,39 @@ pio run
 - Otro archivo que nos interesa **src/ui/ui.c** aqui
 
 -------
+
+## Directorio **hal/esp32/**
+
+<img width="215" height="285" alt="image" src="https://github.com/user-attachments/assets/8a082408-8913-4eec-ac8c-3445e0a2b9a8" />
+
+### Archivo **app_hal.cpp**
+
+- En este archivo tenemos las definiciones de las funciones del ESP32 y la pantalla. Tenemos algunas funciones para cada placa, pero otras que se ejecutan por defecto (si no es ninguna de las placas/pantallas que hemos definido).
+
+- Por ejemplo tenemos `M5_STACK_DIAL` este stack de pantalla y ESP32 además tiene un dial giratorio en el exterior.
+Otro de los stacks tiene un botón físico de home, así que hay que controlar esa función.
+Otro tiene la opción de vibración, otro no tiene control de brillo de pantalla y esta siempre fixed...
+
+- Dentro de este archivo se llama a "loadSplash();" que supongo que es la pantalla de inicio.
+  
+```
+void loadSplash()
+{
+  int w = 122;
+  int h = 130;
+  int x = (SCREEN_WIDTH - w) / 2;
+  int y = (SCREEN_HEIGHT - h) / 2;
+  tft.fillScreen(TFT_BLACK);
+  screenBrightness(200);
+  tft.pushImage(x, y, w, h, (uint16_t *)splash);
+  delay(2000);
+}
+```
+
+Que como vemos tiene un delay de 2 segundos y se llama a `splash` que es un archivo que se encuentra en `include/splash.h` y es una imagen convertida en imagenes de Arduino (**investigar esto**).
+
+
+---
 
 ## Directorio **src/ui/**
 
