@@ -43,6 +43,8 @@ order: 6
 
 [**ByteByteGo** - Ace Every Stage of Your Next Technical Interview](https://bytebytego.com/){:target="_blank"}
 
+[**ESP TERMINATOR** - Web Flasher for ESP32, Flipper Zero, and Meshtastic](https://espterminator.com/){:target="_blank"}
+
 [**ESPWEBTOOL** - Flash your ESP32 or ESP8266 through your browser. Open-Source, free, and easy to use.](https://esptool.spacehuhn.com/){:target="_blank"}
 
 
