@@ -1,7 +1,8 @@
 ---
 title: "Laravel: qué es, cómo instalarlo y diferencias con WordPress (temas, plugins y desarrollo)"
 description: "Guía completa sobre Laravel: cómo instalarlo paso a paso, si es gratis, diferencias con WordPress, temas, plugins y cómo desarrollar extensiones en PHP."
-date: 2026-04-14
+date: 2026-04-15
+image: "https://github.com/user-attachments/assets/4b1e5159-ce7a-487a-8439-8d4c0817025a"
 categories: [desarrollo-web, backend, laravel]
 tags: [laravel, php, wordpress, backend, framework, desarrollo]
 faq:
@@ -17,15 +18,6 @@ faq:
     answer: "Depende de tu nivel en PHP, pero Laravel está diseñado para facilitar el desarrollo modular mediante paquetes reutilizables."
 ---
 
-# Laravel: primeras impresiones, instalación y cómo se diferencia de WordPress 🧩
-
-Llevo tiempo viendo **Laravel** por todas partes. Ofertas de trabajo, proyectos serios, frameworks backend modernos... y claro, viniendo del mundo WordPress, la duda era inevitable:
-👉 ¿merece la pena aprenderlo?
-
-Aquí dejo mis primeras conclusiones después de investigar e instalarlo por primera vez.
-
----
-
 ## ¿Qué es Laravel exactamente?
 
 Laravel es un **framework de PHP** pensado para desarrollar aplicaciones web modernas.
@@ -36,6 +28,8 @@ Eso implica dos cosas importantes:
 
 * ✔️ Mucha más flexibilidad
 * ❗ Mucho más código por tu parte
+
+[Página oficial de Laravel](https://laravel.com/){:target="_blank"}
 
 ---
 
@@ -138,6 +132,7 @@ En Laravel:
 * No hay “temas” como tal
 * Tú construyes la interfaz
 
+
 Pero puedes usar:
 
 * Plantillas HTML (ThemeForest, Bootstrap, etc.)
@@ -149,7 +144,10 @@ Ejemplo básico en Blade:
 <h1>{{ $titulo }}</h1>
 ```
 
+Aunque hay plantillas que pudes descargar de páginas como [Laravel Themes & Templates](https://www.laraveltemplates.com/){:target="_blank"}
+
 Laravel mezcla lógica y vista de forma bastante limpia.
+
 
 ---
 
