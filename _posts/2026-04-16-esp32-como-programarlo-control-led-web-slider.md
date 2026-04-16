@@ -1,7 +1,7 @@
 ---
 title: "ESP32: cómo programarlo y controlar un LED desde una web con slider"
 description: "Guía completa para programar el ESP32, opciones online y ejemplo práctico creando una web en el propio microcontrolador para controlar el brillo de un LED con slider y botón."
-date: 2026-04-15
+date: 2026-04-16
 image: "https://github.com/user-attachments/assets/ed4e2c35-8f26-45c1-a5d7-b4f9ef46aa44"
 categories: [electronica,iot,programacion]
 tags: [esp32,arduino,iot,microcontroladores,webserver,pwm]
@@ -86,6 +86,16 @@ Herramienta online que permite flashear el ESP32 directamente desde el navegador
 * No necesitas instalar nada
 * Funciona vía Web Serial
 * Ideal para demos o distribución de firmware
+
+#### 👑 Y la joya de la corona ESP Terminator
+
+Un flasheador online no sólo de nuestros propios binarios, sino de herramientas como Marauder, M5launcher, Honeypot o Meshtastic entre otros.
+
+**Conectar → Seleciconar firmware → Flashear  → Disfrutar**
+
+👉 [**ESP Terminator**](https://espterminator.com/)
+
+<img width="1899" height="870" style="display: block; margin: auto;" alt="image" src="https://github.com/user-attachments/assets/c260bee7-f588-4e2a-aa2b-b9d2e26692f1" />
 
 ---
 
