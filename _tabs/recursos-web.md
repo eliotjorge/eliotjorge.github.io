@@ -1,6 +1,6 @@
 ---
 # the default layout is 'page'
-title: Recursos
+title: Recursos web
 icon: fas fa-folder
 order: 6
 ---
