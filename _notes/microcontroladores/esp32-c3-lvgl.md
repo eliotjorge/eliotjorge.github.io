@@ -489,3 +489,21 @@ Cuando lo tengas:
 ```cpp
 lv_label_set_text_fmt(speedLabel, "%d km/h", velocidad);
 ```
+## OpenCode
+
+El código está guardado **localmente** en tu PC:
+
+**Archivos modificados:**
+- `C:\esp32-c3-mini\hal\esp32\app_hal.cpp` (84KB) - lógica principal
+- `C:\esp32-c3-mini\src\ui\ui.c` - panel de configuración UI
+- `C:\esp32-c3-mini\src\ui\ui.h` - declaraciones
+- `C:\esp32-c3-mini\src\ui\ui_events.h` - eventos
+
+**Para compilar**, ejecuta en tu máquina donde tengas PlatformIO:
+
+```bash
+cd C:\esp32-c3-mini
+pio run
+```
+
+El .bin se generará en `.pio/build/lolin_c3_mini/firmware.bin` (u otro entorno que uses).
