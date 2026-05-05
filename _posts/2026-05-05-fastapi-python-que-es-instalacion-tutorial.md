@@ -23,18 +23,33 @@ Llevo un tiempo trasteando con Python más allá de scripts sueltos, y tarde o t
 Ahí es donde aparece **FastAPI**, un framework que últimamente no deja de salir en conversaciones, comparativas y ofertas de empleo.
 
 👉 Documentación oficial: [https://fastapi.tiangolo.com/](https://fastapi.tiangolo.com/)
+
 👉 Web del proyecto: [https://fastapi.tiangolo.com/](https://fastapi.tiangolo.com/)
 
 ---
 
 ## ¿Qué es FastAPI? 🤔
 
-FastAPI es un framework moderno para construir APIs con Python basado en estándares como **ASGI** y aprovechando al máximo los **type hints**.
+FastAPI es un framework moderno para construir APIs con Python basado en estándares como **ASGI**<sup>1</sup> y aprovechando al máximo los **type hints**.
 
 Su objetivo es bastante claro:
 👉 hacer APIs rápidas, fáciles de escribir y bien documentadas desde el minuto uno.
 
 Y lo curioso es que cumple las tres cosas.
+
+> <sup>1</sup>**Asynchronous Server Gateway Interface.**
+>
+> Es una especificación (una especie de “contrato”) que define cómo se comunican un servidor web y una aplicación Python, especialmente cuando hay procesos asíncronos de por medio.
+>
+>La idea rápida 🧠
+>WSGI → modelo antiguo (sincrónico)
+>ASGI → modelo moderno (asíncrono)
+>
+>ASGI es, básicamente, la evolución necesaria para poder manejar:
+>
+> - múltiples peticiones al mismo tiempo ⚡
+> - websockets (tiempo real)
+> - tareas no bloqueantes
 
 ---
 
