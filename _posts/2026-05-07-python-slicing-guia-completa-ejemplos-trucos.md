@@ -209,12 +209,3 @@ Y dos reglas rápidas:
 
 * el `fin` nunca se incluye
 * los índices negativos empiezan desde el final
-
----
-
-## Un último apunte práctico
-
-Cuando empiezas, slicing parece un atajo.
-Cuando llevas un tiempo, te das cuenta de que en realidad es una forma de pensar el código de manera más directa.
-
-Y ahí es cuando empiezas a usarlo sin darte cuen
