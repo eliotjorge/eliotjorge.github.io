@@ -199,6 +199,61 @@ Esto ya es de los que hacen que alguien mire tu código con más atención 👀
 
 ---
 
+## Qué hacen [:1], [:2] o [:3]
+
+Aquí ya no estás usando el `paso`, sino el valor de `fin`.
+
+Por ejemplo:
+
+```python
+nums = [0, 1, 2, 3, 4, 5]
+
+print(nums[:1])  # [0]
+print(nums[:2])  # [0, 1]
+print(nums[:3])  # [0, 1, 2]
+```
+
+Lo que significa realmente es:
+
+```python
+[inicio:fin]
+```
+
+Como no indicas `inicio`, Python empieza automáticamente desde el principio.
+
+Y hay un detalle importante:
+
+> el índice final nunca se incluye
+
+Por eso:
+
+* `[:1]` → coge solo el índice `0`
+* `[:2]` → coge `0` y `1`
+* `[:3]` → coge `0`, `1` y `2`
+
+---
+
+<div style="text-align: center;">
+  <img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" alt="explicacion visual de slicing en python" width="300" />
+</div>
+
+---
+
+También puedes combinarlo con `paso`:
+
+```python
+nums[:5:2]
+# [0, 2, 4]
+```
+
+Aquí haces:
+
+* desde el principio
+* hasta el índice 5 (sin incluirlo)
+* saltando de 2 en 2
+
+---
+
 ## Idea mental que me funciona
 
 Cada vez que veo slicing, lo reduzco a esto:
@@ -209,3 +264,6 @@ Y dos reglas rápidas:
 
 * el `fin` nunca se incluye
 * los índices negativos empiezan desde el final
+* si falta `inicio` → empieza desde el principio
+* si falta `fin` → llega hasta el final
+* si falta `paso` → avanza de 1 en 1
