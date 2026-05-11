@@ -1,5 +1,5 @@
 ---
-title: "🐍 Python: Bucle FOR"
+title: "Python: Bucle FOR"
 image: https://github.com/user-attachments/assets/2ebf3ff1-2dd0-4b0c-9142-69bd6d5b91c0
 description: "Aprende a usar el bucle for en Python con ejemplos prácticos, incluyendo bucles anidados, uso de range(), y cómo controlar la ejecución con break y continue para optimizar tus programas."
 date: 2025-02-25
@@ -53,6 +53,13 @@ H
 o
 l
 a
+```
+
+Sería lo mismo que hacer:
+
+```python
+for i in range(len(mensaje)):
+    print(mensaje[i])
 ```
 
 ### 3. **Recorrer un rango de números (`range`)**
