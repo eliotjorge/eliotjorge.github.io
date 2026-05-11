@@ -1,5 +1,5 @@
 ---
-title: "🐍 Python cheatsheet"
+title: "Python cheatsheet"
 image: https://github.com/user-attachments/assets/b98d2abb-0ce1-4ffc-8524-a1190acc75cb
 description: "Cheatsheet de Python con las principales sintaxis, estructuras, funciones y ejemplos prácticos para programadores que quieren dominar el lenguaje de forma rápida y sencilla."
 date: 2025-02-24
