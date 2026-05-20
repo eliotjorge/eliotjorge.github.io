@@ -2,6 +2,7 @@
 layout: post
 title: "La Command Palette de WordPress: cómo añadir comandos personalizados a tus plugins"
 description: "Descubre cómo funciona la Command Palette de WordPress y cómo añadir comandos personalizados a tus plugins con registerCommand en Gutenberg. Ejemplos, código y usos prácticos para desarrolladores."
+image: "https://github.com/user-attachments/assets/b192ead0-3e38-43a3-8f71-15310f0ea896"
 date: 2026-05-20
 categories: [wordpress, gutenberg, desarrollo-web, javascript]
 tags: [wordpress, gutenberg, command-palette, plugins, javascript, desarrollo-wordpress, gutenberg-api, wp-admin, bloques, frontend]
