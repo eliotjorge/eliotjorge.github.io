@@ -1,8 +1,8 @@
 ---
 title: "Cómo transferir un dominio .es entre registradores: pasos, tiempos y consejos"
 description: "Guía práctica para transferir un dominio .es entre registradores: pasos con Authcode, correo de Red.es, tiempos, errores frecuentes, consejos para agilizar y checklist final."
-date: 2025-09-18
-image: "https://github.com/user-attachments/assets/865443ea-b4ba-4847-8f33-9ecd6e6ee2a5"
+date: 2026-05-25
+image: "https://github.com/user-attachments/assets/38a32a23-2722-45aa-8f1e-af6a4bace0da"
 categories: [Dominios, Hosting, SEO]
 tags: [transferencia dominio .es, authcode .es, red.es, transferir dominio, registrar, SEO]
 faq:
@@ -62,6 +62,21 @@ Sí ✅.
 * Lo más rápido es **aceptar el correo de Red.es al momento**.
 * Algunos registradores permiten confirmar la transferencia desde su **panel de administración**. Si tienes acceso tanto al registrador de origen como al nuevo, puede completarse en **menos de 24h**.
 
+---
+
+## ¿Cómo cambiar el registrante/titular del dominio?
+
+A veces al trasladar un dominio de un proveedor a otro, es que ese proveedor haya puesto la titularidad del dominio a su nombre (no al del cliente) y sea necesario cambiarlo. Para ello dentro del panel de administración de dominios nos dejará comprobar cuál es el actual dueño y en caso de querere cambiarlo, los pasos que debemos seguir.
+
+Para cambiar el registrante de un dominio .es hay que hacer una solicitud a __RED.es__ a la cual hay que adjuntar:
+
+* En caso de cambio a empresa:
+  - Copia del CIF.
+  - Copia de la hoja de las escrituras donde aparezca el nombre de la empresa, así como el de la persona administradora(as).
+  - Copia del DNI de la persona administradora(as) de la empresa.
+    
+* En caso de cambio a particular:
+  - Copia del DNI.
 ---
 
 ## 🚨 Errores frecuentes al transferir un .es
