@@ -1,8 +1,8 @@
 ---
 title: "Cómo transferir un dominio .com entre registradores: pasos, tiempos y consejos"
 description: "Guía completa para transferir un dominio .com entre registradores. Pasos con Authcode, correo de confirmación, tiempos de espera, errores frecuentes, consejos y checklist."
-date: 2025-09-19
-image: "https://github.com/user-attachments/assets/eafb8ca7-ed69-45a9-8d05-16126b7c9ddd"
+date: 2026-05-28
+image: "https://github.com/user-attachments/assets/e37099eb-21db-4156-9be9-26881793bf8e"
 categories: [Dominios, Hosting, SEO]
 tags: [transferencia dominio .com, authcode .com, transferir dominio, registrar, SEO]
 faq:
