@@ -66,9 +66,9 @@ Sí ✅.
 
 ## ¿Cómo cambiar el registrante/titular del dominio?
 
-A veces al trasladar un dominio de un proveedor a otro, es que ese proveedor haya puesto la titularidad del dominio a su nombre (no al del cliente) y sea necesario cambiarlo. Para ello dentro del panel de administración de dominios nos dejará comprobar cuál es el actual dueño y en caso de querere cambiarlo, los pasos que debemos seguir.
+A veces al trasladar un dominio de un proveedor a otro, es que ese proveedor haya puesto la titularidad del dominio a su nombre (no al del cliente) y sea necesario cambiarlo. Para ello dentro del panel de administración de dominios nos dejará comprobar cuál es el actual dueño y en caso de querer cambiarlo, los pasos que debemos seguir.
 
-Para cambiar el registrante de un dominio .es hay que hacer una solicitud a __RED.es__ a la cual hay que adjuntar:
+Por lo general nuestro proveedor de dominio nos ofreccerá de manera gratuita realizar el trámite con __RED.es__, para lo cual hay que enviarles la documentación siguiente, así como una autorización firmada del actual dueño aprobando el cambio de nombre.
 
 * En caso de cambio a empresa:
   - Copia del CIF.
@@ -77,6 +77,7 @@ Para cambiar el registrante de un dominio .es hay que hacer una solicitud a __RE
     
 * En caso de cambio a particular:
   - Copia del DNI.
+    
 ---
 
 ## 🚨 Errores frecuentes al transferir un .es
