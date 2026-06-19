@@ -229,3 +229,31 @@ La página se organiza con Grid.
 Cada card se alinea con Flexbox.
 
 CSS moderno, limpio y mantenible 🛠️
+
+{% capture flex_html %}
+<div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</div>
+{% endcapture %}
+
+{% capture flex_css %}
+.container{
+    display:flex;
+    gap:10px;
+}
+
+.item{
+    background:#3498db;
+    color:white;
+    padding:20px;
+}
+{% endcapture %}
+
+{% include demo.html
+    id="flex01"
+    html=flex_html
+    css=flex_css
+    height="150"
+%}

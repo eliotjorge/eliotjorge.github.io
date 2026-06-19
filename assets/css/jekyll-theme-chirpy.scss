@@ -276,3 +276,49 @@ padding: 10px 16px;
   padding: 10px;
   cursor: pointer;
 }
+
+/*Playground*/
+
+.demo-container{
+    border:1px solid #ddd;
+    border-radius:8px;
+    overflow:hidden;
+    margin:2rem 0;
+}
+
+.demo-tabs{
+    display:flex;
+    background:#f5f5f5;
+    border-bottom:1px solid #ddd;
+}
+
+.demo-tab{
+    padding:10px 16px;
+    border:none;
+    background:none;
+    cursor:pointer;
+}
+
+.demo-tab.active{
+    background:white;
+    font-weight:bold;
+}
+
+.demo-content{
+    display:none;
+}
+
+.demo-content.active{
+    display:block;
+}
+
+.demo-preview{
+    width:100%;
+    border:none;
+}
+
+.demo-content pre{
+    margin:0;
+    padding:1rem;
+    overflow:auto;
+}
