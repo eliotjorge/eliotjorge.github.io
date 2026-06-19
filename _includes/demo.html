@@ -1,34 +1,34 @@
 <div class="demo-container">
 
     <div class="demo-tabs">
-        <button class="demo-tab active"
-                onclick="showDemoTab(this,'result-{{ include.id }}')">
+        <button class="demo-tab active" onclick="showDemoTab(this,'result-{{ include.id }}')">
             Result
         </button>
 
-        <button class="demo-tab"
-                onclick="showDemoTab(this,'html-{{ include.id }}')">
+        <button class="demo-tab" onclick="showDemoTab(this,'html-{{ include.id }}')">
             HTML
         </button>
 
-        <button class="demo-tab"
-                onclick="showDemoTab(this,'css-{{ include.id }}')">
+        <button class="demo-tab" onclick="showDemoTab(this,'css-{{ include.id }}')">
             CSS
         </button>
     </div>
 
     <div id="result-{{ include.id }}" class="demo-content active">
 
-        <iframe
-            class="demo-preview"
-            height="{{ include.height | default: '250' }}"
-            srcdoc="
-<style>
-{{ include.css }}
-</style>
+        {% capture preview %}
+        <style>
+            {
+                    {
+                    include.css
+                }
+            }
+        </style>
 
-{{ include.html }}
-">
+        {{ include.html }}
+        {% endcapture %}
+
+        <iframe class="demo-preview" height="{{ include.height | default: 250 }}" srcdoc="{{ preview | escape }}">
         </iframe>
 
     </div>

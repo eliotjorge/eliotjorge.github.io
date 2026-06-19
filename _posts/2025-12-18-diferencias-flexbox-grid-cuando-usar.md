@@ -231,7 +231,7 @@ Cada card se alinea con Flexbox.
 CSS moderno, limpio y mantenible 🛠️
 
 {% capture flex_html %}
-<div class="container">
+<div class="container-demo">
     <div class="item">1</div>
     <div class="item">2</div>
     <div class="item">3</div>
@@ -239,7 +239,7 @@ CSS moderno, limpio y mantenible 🛠️
 {% endcapture %}
 
 {% capture flex_css %}
-.container{
+.container-demo{
     display:flex;
     gap:10px;
 }
