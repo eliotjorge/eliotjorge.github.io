@@ -230,6 +230,8 @@ Cada card se alinea con Flexbox.
 
 CSS moderno, limpio y mantenible 🛠️
 
+
+
 {% capture flex_html %}
 <div class="container-demo">
     <div class="item">1</div>
@@ -251,9 +253,16 @@ CSS moderno, limpio y mantenible 🛠️
 }
 {% endcapture %}
 
+{% capture flex_js %}
+<script>
+console.log("Hola Jorge");
+</script>
+{% endcapture %}
+
 {% include demo.html
     id="flex01"
     html=flex_html
     css=flex_css
+    javascript=flex_js
     height="150"
 %}
