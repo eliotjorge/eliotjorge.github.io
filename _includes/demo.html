@@ -1,15 +1,18 @@
 <div class="demo-container">
 
     <div class="demo-tabs">
-        <button class="demo-tab active" onclick="showDemoTab(this,'result-{{ include.id }}')">
+        <button class="demo-tab active"
+                onclick="showDemoTab(this,'result-{{ include.id }}')">
             Result
         </button>
 
-        <button class="demo-tab" onclick="showDemoTab(this,'html-{{ include.id }}')">
+        <button class="demo-tab"
+                onclick="showDemoTab(this,'html-{{ include.id }}')">
             HTML
         </button>
 
-        <button class="demo-tab" onclick="showDemoTab(this,'css-{{ include.id }}')">
+        <button class="demo-tab"
+                onclick="showDemoTab(this,'css-{{ include.id }}')">
             CSS
         </button>
     </div>
@@ -17,32 +20,27 @@
     <div id="result-{{ include.id }}" class="demo-content active">
 
         {% capture preview %}
-        <style>
-            {
-                    {
-                    include.css
-                }
-            }
-        </style>
+<style>
+{{ include.css }}
+</style>
 
-        {{ include.html }}
-        {% endcapture %}
+{{ include.html }}
+{% endcapture %}
 
-        <iframe class="demo-preview" height="{{ include.height | default: 250 }}" srcdoc="{{ preview | escape }}">
+        <iframe
+            class="demo-preview"
+            height="{{ include.height | default: 250 }}"
+            srcdoc="{{ preview | xml_escape }}">
         </iframe>
 
     </div>
 
     <div id="html-{{ include.id }}" class="demo-content">
-
         <pre><code>{{ include.html | escape }}</code></pre>
-
     </div>
 
     <div id="css-{{ include.id }}" class="demo-content">
-
         <pre><code>{{ include.css | escape }}</code></pre>
-
     </div>
 
 </div>
