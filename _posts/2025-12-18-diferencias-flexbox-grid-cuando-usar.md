@@ -261,7 +261,7 @@ function myFunction(element, color) {
 }
 {% endcapture %}
 
-{% include demo.html
+{% include bloque-demo.html
     id="flex01"
     html=flex_html
     css=flex_css
