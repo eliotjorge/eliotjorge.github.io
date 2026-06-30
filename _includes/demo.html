@@ -16,10 +16,15 @@
             CSS
         </button>
 
+        {% if include.javascript %}
         <button class="demo-tab"
                 onclick="showDemoTab(this,'javascript-{{ include.id }}')">
             JavaScript
         </button>
+        {% endif %}
+
+
+
     </div>
 
     <div id="result-{{ include.id }}" class="demo-content active">
@@ -31,9 +36,12 @@
 
 {{ include.html }}
 
-<script>
-{{ include.js }}
-</script>
+{% if include.javascript %}
+    <script>
+    {{ include.javascript }}
+    </script>
+{% endif %}
+
 {% endcapture %}
 
         <iframe
@@ -52,8 +60,10 @@
         <pre><code>{{ include.css | escape }}</code></pre>
     </div>
 
+    {% if include.javascript %}
     <div id="javascript-{{ include.id }}" class="demo-content">
-        <pre><code>{{ include.js | escape }}</code></pre>
+        <pre><code>{{ include.javascript | escape }}</code></pre>
     </div>
+    {% endif %}
 
 </div>

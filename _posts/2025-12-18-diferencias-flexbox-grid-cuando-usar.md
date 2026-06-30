@@ -255,6 +255,7 @@ CSS moderno, limpio y mantenible 🛠️
 
 {% capture flex_js %}
 console.log("Hola Jorge");
+
 {% endcapture %}
 
 {% include demo.html
