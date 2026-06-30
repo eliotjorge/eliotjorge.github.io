@@ -238,6 +238,8 @@ CSS moderno, limpio y mantenible 🛠️
     <div class="item">2</div>
     <div class="item">3</div>
 </div>
+
+<h3 onclick="myFunction(this, 'red')">Click me to change my color.</h3>
 {% endcapture %}
 
 {% capture flex_css %}
@@ -254,11 +256,9 @@ CSS moderno, limpio y mantenible 🛠️
 {% endcapture %}
 
 {% capture flex_js %}
-
-console.log("Hola Jorge");
-
-document.querySelector(".container-demo").innerHTML("Hola Jorge");
-
+function myFunction(element, color) {
+  element.style.color = color;
+}
 {% endcapture %}
 
 {% include demo.html
