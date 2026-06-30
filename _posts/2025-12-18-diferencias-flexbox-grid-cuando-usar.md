@@ -250,11 +250,10 @@ CSS moderno, limpio y mantenible 🛠️
     padding:20px;
 }
 {% endcapture %}
-{% comment %}
+
 {% include demo.html
     id="flex01"
     html=flex_html
     css=flex_css
     height="150"
 %}
-{% endcomment %}
