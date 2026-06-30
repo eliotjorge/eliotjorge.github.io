@@ -15,6 +15,11 @@
                 onclick="showDemoTab(this,'css-{{ include.id }}')">
             CSS
         </button>
+
+        <button class="demo-tab"
+                onclick="showDemoTab(this,'javascript-{{ include.id }}')">
+            JavaScript
+        </button>
     </div>
 
     <div id="result-{{ include.id }}" class="demo-content active">
@@ -41,6 +46,10 @@
 
     <div id="css-{{ include.id }}" class="demo-content">
         <pre><code>{{ include.css | escape }}</code></pre>
+    </div>
+
+    <div id="javascript-{{ include.id }}" class="demo-content">
+        <pre><code>{{ include.js | escape }}</code></pre>
     </div>
 
 </div>
