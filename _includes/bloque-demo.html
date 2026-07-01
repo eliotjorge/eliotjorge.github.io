@@ -6,15 +6,19 @@
             Result
         </button>
 
+        {% if include.html %}
         <button class="demo-tab"
                 onclick="showDemoTab(this,'html-{{ include.id }}')">
             HTML
         </button>
+        {% endif %}
 
+        {% if include.css %}
         <button class="demo-tab"
                 onclick="showDemoTab(this,'css-{{ include.id }}')">
             CSS
         </button>
+        {% endif %}
 
         {% if include.javascript %}
         <button class="demo-tab"
@@ -23,26 +27,29 @@
         </button>
         {% endif %}
 
-
-
     </div>
 
     <div id="result-{{ include.id }}" class="demo-content active">
 
         {% capture preview %}
-<style>
-{{ include.css }}
-</style>
 
-{{ include.html }}
+            {% if include.css %}
+                <style>
+                    {{ include.css }}
+                </style>
+            {% endif %}
 
-{% if include.javascript %}
-    <script>
-    {{ include.javascript }}
-    </script>
-{% endif %}
+            {% if include.html %}
+                {{ include.html }}
+            {% endif %}
 
-{% endcapture %}
+            {% if include.javascript %}
+                <script>
+                    {{ include.javascript }}
+                </script>
+            {% endif %}
+
+        {% endcapture %}
 
         <iframe
             class="demo-preview"
@@ -52,18 +59,22 @@
 
     </div>
 
-    <div id="html-{{ include.id }}" class="demo-content">
-        <pre><code>{{ include.html | escape }}</code></pre>
-    </div>
+    {% if include.html %}
+        <div id="html-{{ include.id }}" class="demo-content">
+            <pre><code>{{ include.html | escape }}</code></pre>
+        </div>
+    {% endif %}
 
-    <div id="css-{{ include.id }}" class="demo-content">
-        <pre><code>{{ include.css | escape }}</code></pre>
-    </div>
+    {% if include.css %}
+        <div id="css-{{ include.id }}" class="demo-content">
+            <pre><code>{{ include.css | escape }}</code></pre>
+        </div>
+    {% endif %}
 
     {% if include.javascript %}
-    <div id="javascript-{{ include.id }}" class="demo-content">
-        <pre><code>{{ include.javascript | escape }}</code></pre>
-    </div>
+        <div id="javascript-{{ include.id }}" class="demo-content">
+            <pre><code>{{ include.javascript | escape }}</code></pre>
+        </div>
     {% endif %}
 
 </div>
