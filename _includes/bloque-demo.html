@@ -58,7 +58,7 @@
         </iframe>
 
     </div>
-
+{% comment %}
     {% if include.html %}
         <div id="html-{{ include.id }}" class="demo-content">
             <pre><code>{{ include.html | escape }}</code></pre>
@@ -76,5 +76,35 @@
             <pre><code>{{ include.javascript | escape }}</code></pre>
         </div>
     {% endif %}
+
+    {% endcomment %}
+
+
+<div id="html-{{ include.id }}" class="demo-content">
+
+{% highlight html %}
+{{ include.html }}
+{% endhighlight %}
+
+</div>
+
+<div id="css-{{ include.id }}" class="demo-content">
+
+{% highlight css %}
+{{ include.css }}
+{% endhighlight %}
+
+</div>
+
+{% if include.javascript %}
+<div id="javascript-{{ include.id }}" class="demo-content">
+
+{% highlight javascript %}
+{{ include.javascript }}
+{% endhighlight %}
+
+</div>
+{% endif %}
+
 
 </div>
