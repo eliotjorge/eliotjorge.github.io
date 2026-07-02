@@ -268,3 +268,12 @@ function myFunction(element, color) {
     javascript=flex_js
     height="150"
 %}
+
+
+{% include playground.html
+id="flex01"
+html=flex_html
+css=flex_css
+javascript=flex_js
+height="180"
+%}

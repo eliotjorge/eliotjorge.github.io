@@ -1,0 +1,131 @@
+{% capture preview %}
+<style>
+{{ include.css }}
+</style>
+
+{{ include.html }}
+
+{% if include.javascript %}
+<script>
+{{ include.javascript }}
+</script>
+{% endif %}
+{% endcapture %}
+
+<div class="playground" id="playground-{{ include.id }}">
+
+    <div class="playground-header">
+
+        <div class="playground-title">
+
+            💡 Ejemplo interactivo
+
+        </div>
+
+        <div class="playground-toolbar">
+
+            <button
+                class="playground-btn active"
+                data-target="result">
+
+                Resultado
+
+            </button>
+
+            <button
+                class="playground-btn"
+                data-target="html">
+
+                HTML
+
+            </button>
+
+            <button
+                class="playground-btn"
+                data-target="css">
+
+                CSS
+
+            </button>
+
+            {% if include.javascript %}
+
+            <button
+                class="playground-btn"
+                data-target="javascript">
+
+                JavaScript
+
+            </button>
+
+            {% endif %}
+
+        </div>
+
+        <div class="playground-actions">
+
+            <button
+                class="playground-copy"
+                title="Copiar">
+
+                📋
+
+            </button>
+
+            <button
+                class="playground-open"
+                title="Abrir en otra pestaña">
+
+                ⛶
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <div
+        class="playground-panel active"
+        data-panel="result"
+        data-copy="{{ preview | escape }}">
+
+        <iframe
+            class="playground-preview"
+            height="{{ include.height | default: 300 }}"
+            srcdoc="{{ preview | xml_escape }}">
+        </iframe>
+
+    </div>
+
+    <div
+        class="playground-panel"
+        data-panel="html"
+        data-copy="{{ include.html | escape }}">
+
+<pre><code>{{ include.html | escape }}</code></pre>
+
+    </div>
+
+    <div
+        class="playground-panel"
+        data-panel="css"
+        data-copy="{{ include.css | escape }}">
+
+<pre><code>{{ include.css | escape }}</code></pre>
+
+    </div>
+
+    {% if include.javascript %}
+
+    <div
+        class="playground-panel"
+        data-panel="javascript"
+        data-copy="{{ include.javascript | escape }}">
+
+<pre><code>{{ include.javascript | escape }}</code></pre>
+
+    </div>
+
+    {% endif %}
+
+</div>
