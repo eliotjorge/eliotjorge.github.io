@@ -64,7 +64,8 @@ function initPlayground(playground){
         setTimeout(()=>{
 
             //copyButton.textContent=old;
-            copyButton.innerHTML = "<i class="fa-fw fas fa-copy"></i>";
+            copyButton.innerHTML = "";
+            copyButton.insertAdjacentHTML('<i class="fa-fw fas fa-copy"></i>');
 
             copyButton.disabled=false;
 
