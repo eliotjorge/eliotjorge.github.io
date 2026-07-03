@@ -65,7 +65,7 @@ function initPlayground(playground){
 
             //copyButton.textContent=old;
             copyButton.innerHTML = "";
-            copyButton.insertAdjacentHTML('<i class="fa-fw fas fa-copy"></i>');
+            copyButton.insertAdjacentHTML("beforeend", '<i class="fa-fw fas fa-copy"></i>');
 
             copyButton.disabled=false;
 
