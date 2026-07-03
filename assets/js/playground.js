@@ -56,7 +56,7 @@ function initPlayground(playground){
         navigator.clipboard.writeText(active.dataset.copy);
 
         //const old = copyButton.textContent;
-        const old = `<i class="fa-fw fas fa-copy"></i>`;
+        const old = `<i class="fa-fw fas fa-copy">::before</i>`;
 
         copyButton.textContent="✔ Copiado";
 
