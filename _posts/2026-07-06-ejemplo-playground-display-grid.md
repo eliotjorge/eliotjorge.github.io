@@ -29,7 +29,7 @@ tags: []
     "main nav"
     "foot  foot";
   grid-template-rows: 50px 1fr 30px;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 1fr 150px;
 }
 
 #page > header {
@@ -58,5 +58,5 @@ tags: []
 id="grid01"
 html=grid_html
 css=grid_css
-height="500"
+height="250"
 %}
