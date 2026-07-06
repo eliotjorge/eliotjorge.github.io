@@ -1,8 +1,6 @@
 ---
 title: "Ejemplo playground diaplay grid"
-description: ""
 date: 2026-07-06
-image: ""
 categories: []
 tags: []
 ---
@@ -28,7 +26,7 @@ tags: []
   height: 250px;
   grid-template-areas:
     "head head"
-    "nav  main"
+    "main nav"
     "foot  foot";
   grid-template-rows: 50px 1fr 30px;
   grid-template-columns: 150px 1fr;
@@ -60,5 +58,5 @@ tags: []
 id="grid01"
 html=grid_html
 css=grid_css
-height="180"
+height="500"
 %}
