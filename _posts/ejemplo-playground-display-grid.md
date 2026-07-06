@@ -1,6 +1,6 @@
 ---
 title: "Ejemplo playground diaplay grid"
-date: 2026-07-06
+date:
 categories: []
 tags: []
 ---
