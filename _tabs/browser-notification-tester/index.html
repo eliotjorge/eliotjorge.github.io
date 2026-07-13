@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Browser Notification Tester | JorgeRosa.dev</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>🔔 Browser Notification Tester</h1>
+
+        <p>
+            Test your browser desktop notifications and diagnose common Notification API issues.
+        </p>
+
+    </header>
+
+
+    <!-- Browser Status -->
+
+    <section class="card">
+
+        <h2>Browser Status</h2>
+
+        <div id="statusGrid" class="status-grid">
+
+            <div class="status-item">
+                <span>Notification API</span>
+                <strong id="statusNotification">Checking...</strong>
+            </div>
+
+            <div class="status-item">
+                <span>Permission</span>
+                <strong id="statusPermission">Checking...</strong>
+            </div>
+
+            <div class="status-item">
+                <span>Secure Context</span>
+                <strong id="statusSecure">Checking...</strong>
+            </div>
+
+            <div class="status-item">
+                <span>Page Visibility</span>
+                <strong id="statusVisibility">Checking...</strong>
+            </div>
+
+            <div class="status-item">
+                <span>Browser</span>
+                <strong id="statusBrowser">Checking...</strong>
+            </div>
+
+            <div class="status-item">
+                <span>Operating System</span>
+                <strong id="statusOS">Checking...</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Permission -->
+
+    <section class="card">
+
+        <h2>Permission</h2>
+
+        <button id="requestPermission">
+            Request Permission
+        </button>
+
+    </section>
+
+
+
+    <!-- Notification -->
+
+    <section class="card">
+
+        <h2>Create Notification</h2>
+
+        <label>
+
+            Title
+
+            <input
+                id="title"
+                type="text"
+                value="Browser Notification Tester">
+
+        </label>
+
+        <label>
+
+            Message
+
+            <textarea
+                id="message">If you can read this, notifications are working correctly.</textarea>
+
+        </label>
+
+        <label>
+
+            Icon URL
+
+            <input
+                id="icon"
+                type="text"
+                placeholder="https://example.com/icon.png">
+
+        </label>
+
+        <label>
+
+            Auto close (seconds)
+
+            <input
+                id="closeTime"
+                type="number"
+                min="1"
+                value="5">
+
+        </label>
+
+        <button id="showNotification">
+            Show Notification
+        </button>
+
+    </section>
+
+
+
+    <!-- Event Log -->
+
+    <section class="card">
+
+        <div class="log-header">
+
+            <h2>Event Log</h2>
+
+            <button id="clearLog">
+                Clear
+            </button>
+
+        </div>
+
+        <div id="log" class="log">
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
