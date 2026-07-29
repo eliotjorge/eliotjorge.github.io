@@ -1,0 +1,445 @@
+/* ==========================================================
+   JR Tools UI
+   Componentes comunes para las utilidades de JorgeRosa.dev
+========================================================== */
+
+:root{
+
+    --jr-bg:#f5f7fb;
+    --jr-card:#ffffff;
+
+    --jr-text:#1d2939;
+    --jr-text-light:#667085;
+
+    --jr-border:#d0d5dd;
+
+    --jr-primary:#2563eb;
+    --jr-primary-hover:#1d4ed8;
+
+    --jr-success:#16a34a;
+    --jr-warning:#d97706;
+    --jr-danger:#dc2626;
+
+    --jr-radius:14px;
+
+    --jr-shadow:
+        0 12px 30px rgba(0,0,0,.08);
+
+}
+
+@media(prefers-color-scheme:dark){
+
+:root{
+
+    --jr-bg:#0f172a;
+    --jr-card:#1e293b;
+
+    --jr-text:#f8fafc;
+    --jr-text-light:#cbd5e1;
+
+    --jr-border:#334155;
+
+    --jr-shadow:
+        0 10px 25px rgba(0,0,0,.45);
+
+}
+
+}
+
+/* ==========================================================
+   Reset
+========================================================== */
+
+*{
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* ==========================================================
+   Página
+========================================================== */
+
+.jr-page{
+
+    background:var(--jr-bg);
+
+    color:var(--jr-text);
+
+    font-family:
+
+        Inter,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+    line-height:1.5;
+
+    min-height:100vh;
+
+    padding:40px 20px;
+
+}
+
+/* ==========================================================
+   Contenedor
+========================================================== */
+
+.jr-container{
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.jr-header{
+
+    margin-bottom:40px;
+
+}
+
+.jr-header h1{
+
+    font-size:2.4rem;
+
+    margin-bottom:10px;
+
+}
+
+.jr-header p{
+
+    color:var(--jr-text-light);
+
+    max-width:750px;
+
+}
+
+/* ==========================================================
+   Cards
+========================================================== */
+
+.jr-card{
+
+    background:var(--jr-card);
+
+    border:1px solid var(--jr-border);
+
+    border-radius:var(--jr-radius);
+
+    padding:30px;
+
+    margin-bottom:30px;
+
+    box-shadow:var(--jr-shadow);
+
+}
+
+.jr-card h2{
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================================================
+   Formularios
+========================================================== */
+
+.jr-label{
+
+    display:block;
+
+    margin-bottom:20px;
+
+    font-weight:600;
+
+}
+
+.jr-input,
+.jr-textarea,
+.jr-select{
+
+    width:100%;
+
+    margin-top:8px;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    border:1px solid var(--jr-border);
+
+    background:transparent;
+
+    color:var(--jr-text);
+
+    font-size:15px;
+
+    transition:.2s;
+
+}
+
+.jr-textarea{
+
+    resize:vertical;
+
+    min-height:160px;
+
+    font-family:
+
+        Consolas,
+        Monaco,
+        monospace;
+
+}
+
+.jr-input:focus,
+.jr-textarea:focus,
+.jr-select:focus{
+
+    outline:none;
+
+    border-color:var(--jr-primary);
+
+    box-shadow:
+        0 0 0 4px rgba(37,99,235,.15);
+
+}
+
+/* ==========================================================
+   Botones
+========================================================== */
+
+.jr-buttons{
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+}
+
+.jr-btn{
+
+    cursor:pointer;
+
+    border:none;
+
+    border-radius:8px;
+
+    padding:12px 22px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.2s;
+
+    background:var(--jr-primary);
+
+    color:white;
+
+}
+
+.jr-btn:hover{
+
+    background:var(--jr-primary-hover);
+
+    transform:translateY(-2px);
+
+}
+
+.jr-btn:active{
+
+    transform:none;
+
+}
+
+.jr-btn-secondary{
+
+    background:#e5e7eb;
+
+    color:#374151;
+
+}
+
+.jr-btn-secondary:hover{
+
+    background:#d1d5db;
+
+}
+
+/* ==========================================================
+   Código
+========================================================== */
+
+.jr-code{
+
+    margin-top:25px;
+
+    background:#1e1e1e;
+
+    color:#d4d4d4;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    overflow:auto;
+
+    white-space:pre-wrap;
+
+    font-family:
+
+        "Cascadia Code",
+        "JetBrains Mono",
+        Consolas,
+        monospace;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+}
+
+/* ==========================================================
+   Badges
+========================================================== */
+
+.jr-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    padding:5px 12px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.jr-badge-success{
+
+    background:rgba(22,163,74,.15);
+
+    color:var(--jr-success);
+
+}
+
+.jr-badge-warning{
+
+    background:rgba(217,119,6,.15);
+
+    color:var(--jr-warning);
+
+}
+
+.jr-badge-danger{
+
+    background:rgba(220,38,38,.15);
+
+    color:var(--jr-danger);
+
+}
+
+/* ==========================================================
+   Utilidades
+========================================================== */
+
+.jr-mt{
+
+    margin-top:20px;
+
+}
+
+.jr-mb{
+
+    margin-bottom:20px;
+
+}
+
+.jr-hidden{
+
+    display:none!important;
+
+}
+
+.jr-flex{
+
+    display:flex;
+
+}
+
+.jr-flex-between{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.jr-grid{
+
+    display:grid;
+
+    gap:20px;
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:768px){
+
+    .jr-page{
+
+        padding:20px;
+
+    }
+
+    .jr-header h1{
+
+        font-size:2rem;
+
+    }
+
+    .jr-card{
+
+        padding:20px;
+
+    }
+
+    .jr-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .jr-btn{
+
+        width:100%;
+
+    }
+
+}
