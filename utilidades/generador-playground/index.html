@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Generador Playground Jekyll</title>
 <link rel="stylesheet" href="/assets/css/jr-tools.css">
-<style>
+<!--<style>
 
 body{
     font-family:Arial,Helvetica,sans-serif;
@@ -92,42 +92,42 @@ pre{
 
 }
 
-</style>
+</style>-->
 
 </head>
 
-<body>
+<body class="jr-page">
 
-<h1>Generador Playground Jekyll</h1>
+<h1 class="jr-header">Generador Playground Jekyll</h1>
 
 <label>ID del ejemplo</label>
-<input id="id" placeholder="grid01">
+<input class="jr-input" id="id" placeholder="grid01">
 
 <label>Altura</label>
 <input id="height" value="250">
 
 <label>HTML *</label>
-<textarea id="html"></textarea>
+<textarea id="html" class="jr-texarea"></textarea>
 
 <label>CSS</label>
-<textarea id="css"></textarea>
+<textarea id="css" class="jr-texarea"></textarea>
 
 <label>JavaScript</label>
-<textarea id="js"></textarea>
+<textarea id="js" class="jr-texarea"></textarea>
 
 <div class="acciones">
 
-    <button id="generar">
+    <button id="generar" class="jr-btn">
         📋 Generar y copiar
     </button>
 
-    <button id="limpiar">
+    <button id="limpiar" class="jr-btn>
         🗑 Limpiar
     </button>
 
 </div>
 
-<pre id="resultado"></pre>
+<pre id="resultado" class="jr-code"></pre>
 
 <script>
 document
