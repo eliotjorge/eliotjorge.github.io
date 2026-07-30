@@ -12,6 +12,7 @@ const statusOS = document.getElementById("statusOS");
 
 const btnPermission = document.getElementById("requestPermission");
 const btnShow = document.getElementById("showNotification");
+const btnShowDelay = document.getElementById("showNotificationDelay");
 const btnClear = document.getElementById("clearLog");
 
 const inputTitle = document.getElementById("title");
