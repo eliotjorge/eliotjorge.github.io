@@ -44,7 +44,7 @@ Botón secundario
 </button>
 
 </div>
-
+<div class="jr-component-header">HTML <button class="jr-btn">📋 Copiar</button></div>
 <pre class="jr-code"><code>&lt;div class="jr-buttons"&gt;
 
     &lt;button class="jr-btn"&gt;
@@ -355,7 +355,17 @@ style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));"&gt;
 </section>
 
 </div>
-
+<script>
+document.querySelectorAll('.jr-copy').forEach(btn=>{
+ btn.addEventListener('click',()=>{
+  const code=btn.closest('.jr-component').querySelector('code').textContent;
+  navigator.clipboard.writeText(code);
+  const t=btn.textContent;
+  btn.textContent='✔ Copiado';
+  setTimeout(()=>btn.textContent=t,1500);
+ });
+});
+</script>
 </body>
 
 </html>
