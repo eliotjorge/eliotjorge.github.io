@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JR Tools UI</title>
+<link rel="stylesheet" href="/assets/css/jr-tools.css">
+<style>
+.jr-component{margin-top:20px;border:1px solid var(--jr-border);border-radius:10px;overflow:hidden}
+.jr-preview{padding:24px;background:var(--jr-card)}
+.jr-component-header{display:flex;justify-content:space-between;align-items:center;padding:10px 16px;background:#eef2f7;border-top:1px solid var(--jr-border);font-weight:600}
+.jr-copy{cursor:pointer;border:none;background:var(--jr-primary);color:#fff;padding:6px 12px;border-radius:6px}
+.jr-component pre{margin:0;border-radius:0}
+</style>
+</head>
+<body class="jr-page">
+<div class="jr-container">
+<header class="jr-header">
+<h1>JR Tools UI</h1>
+<p>Catálogo de componentes reutilizables.</p>
+</header>
+
+<section class="jr-card">
+<h2>Botones</h2>
+<div class="jr-component">
+<div class="jr-preview">
+<div class="jr-buttons">
+<button class="jr-btn">Principal</button>
+<button class="jr-btn jr-btn-secondary">Secundario</button>
+</div>
+</div>
+<div class="jr-component-header">HTML <button class="jr-copy">📋 Copiar</button></div>
+<pre class="jr-code"><code>&lt;div class="jr-buttons"&gt;
+    &lt;button class="jr-btn"&gt;Principal&lt;/button&gt;
+    &lt;button class="jr-btn jr-btn-secondary"&gt;Secundario&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="jr-card">
+<h2>Input</h2>
+<div class="jr-component">
+<div class="jr-preview">
+<label class="jr-label">Texto
+<input class="jr-input" placeholder="Introduce un texto">
+</label>
+</div>
+<div class="jr-component-header">HTML <button class="jr-copy">📋 Copiar</button></div>
+<pre class="jr-code"><code>&lt;label class="jr-label"&gt;
+Texto
+&lt;input class="jr-input" placeholder="Introduce un texto"&gt;
+&lt;/label&gt;</code></pre>
+</div>
+</section>
+
+<section class="jr-card">
+<h2>Textarea</h2>
+<div class="jr-component">
+<div class="jr-preview">
+<label class="jr-label">Mensaje
+<textarea class="jr-textarea" placeholder="Escribe..."></textarea>
+</label>
+</div>
+<div class="jr-component-header">HTML <button class="jr-copy">📋 Copiar</button></div>
+<pre class="jr-code"><code>&lt;textarea class="jr-textarea"&gt;&lt;/textarea&gt;</code></pre>
+</div>
+</section>
+
+<section class="jr-card">
+<h2>Select</h2>
+<div class="jr-component">
+<div class="jr-preview">
+<select class="jr-select">
+<option>Opción 1</option>
+<option>Opción 2</option>
+</select>
+</div>
+<div class="jr-component-header">HTML <button class="jr-copy">📋 Copiar</button></div>
+<pre class="jr-code"><code>&lt;select class="jr-select"&gt;
+    &lt;option&gt;Opción 1&lt;/option&gt;
+    &lt;option&gt;Opción 2&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+</div>
+</section>
+
+<section class="jr-card">
+<h2>Badges</h2>
+<div class="jr-component">
+<div class="jr-preview">
+<span class="jr-badge jr-badge-success">Éxito</span>
+<span class="jr-badge jr-badge-warning">Aviso</span>
+<span class="jr-badge jr-badge-danger">Error</span>
+</div>
+<div class="jr-component-header">HTML <button class="jr-copy">📋 Copiar</button></div>
+<pre class="jr-code"><code>&lt;span class="jr-badge jr-badge-success"&gt;Éxito&lt;/span&gt;</code></pre>
+</div>
+</section>
+
+<section class="jr-card">
+<h2>Flex Between</h2>
+<div class="jr-component">
+<div class="jr-preview">
+<div class="jr-flex-between">
+<div>Izquierda</div><div>Derecha</div>
+</div>
+</div>
+<div class="jr-component-header">HTML <button class="jr-copy">📋 Copiar</button></div>
+<pre class="jr-code"><code>&lt;div class="jr-flex-between"&gt;...&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="jr-card">
+<h2>Grid</h2>
+<div class="jr-component">
+<div class="jr-preview">
+<div class="jr-grid" style="grid-template-columns:repeat(3,1fr)">
+<div class="jr-card">1</div><div class="jr-card">2</div><div class="jr-card">3</div>
+</div>
+</div>
+<div class="jr-component-header">HTML <button class="jr-copy">📋 Copiar</button></div>
+<pre class="jr-code"><code>&lt;div class="jr-grid"&gt;...&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+</div>
+<script>
+document.querySelectorAll('.jr-copy').forEach(btn=>{
+ btn.addEventListener('click',()=>{
+  const code=btn.closest('.jr-component').querySelector('code').textContent;
+  navigator.clipboard.writeText(code);
+  const t=btn.textContent;
+  btn.textContent='✔ Copiado';
+  setTimeout(()=>btn.textContent=t,1500);
+ });
+});
+</script>
+</body>
+</html>
