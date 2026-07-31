@@ -27,7 +27,7 @@ Catálogo de componentes reutilizables para las utilidades de JorgeRosa.dev.
 
 </header>
 
-<!-- ========================================= -->
+<!-- ====================================================== -->
 
 <section class="jr-card">
 
@@ -45,13 +45,25 @@ Botón secundario
 
 </div>
 
+<pre class="jr-code"><code>&lt;div class="jr-buttons"&gt;
+
+    &lt;button class="jr-btn"&gt;
+        Botón principal
+    &lt;/button&gt;
+
+    &lt;button class="jr-btn jr-btn-secondary"&gt;
+        Botón secundario
+    &lt;/button&gt;
+
+&lt;/div&gt;</code></pre>
+
 </section>
 
-<!-- ========================================= -->
+<!-- ====================================================== -->
 
 <section class="jr-card">
 
-<h2>Inputs</h2>
+<h2>Input</h2>
 
 <label class="jr-label">
 
@@ -63,32 +75,85 @@ placeholder="Introduce un texto">
 
 </label>
 
+<pre class="jr-code"><code>&lt;label class="jr-label"&gt;
+
+Texto
+
+&lt;input
+class="jr-input"
+placeholder="Introduce un texto"&gt;
+
+&lt;/label&gt;</code></pre>
+
+</section>
+
+<!-- ====================================================== -->
+
+<section class="jr-card">
+
+<h2>Select</h2>
+
 <label class="jr-label">
 
-Select
+Opciones
 
 <select class="jr-select">
 
 <option>Opción 1</option>
+
 <option>Opción 2</option>
+
 <option>Opción 3</option>
 
 </select>
 
 </label>
 
+<pre class="jr-code"><code>&lt;label class="jr-label"&gt;
+
+Opciones
+
+&lt;select class="jr-select"&gt;
+
+    &lt;option&gt;Opción 1&lt;/option&gt;
+    &lt;option&gt;Opción 2&lt;/option&gt;
+    &lt;option&gt;Opción 3&lt;/option&gt;
+
+&lt;/select&gt;
+
+&lt;/label&gt;</code></pre>
+
+</section>
+
+<!-- ====================================================== -->
+
+<section class="jr-card">
+
+<h2>Textarea</h2>
+
 <label class="jr-label">
 
-Textarea
+Mensaje
 
-<textarea class="jr-textarea"
+<textarea
+class="jr-textarea"
 placeholder="Escribe aquí..."></textarea>
 
 </label>
 
+<pre class="jr-code"><code>&lt;label class="jr-label"&gt;
+
+Mensaje
+
+&lt;textarea
+class="jr-textarea"
+placeholder="Escribe aquí..."&gt;&lt;/textarea&gt;
+
+&lt;/label&gt;</code></pre>
+
 </section>
 
-<!-- ========================================= -->
+<!-- ====================================================== -->
 
 <section class="jr-card">
 
@@ -128,25 +193,55 @@ placeholder="Escribe aquí..."></textarea>
 
 </p>
 
+<pre class="jr-code"><code>&lt;span class="jr-badge jr-badge-success"&gt;
+
+✔ Correcto
+
+&lt;/span&gt;
+
+&lt;span class="jr-badge jr-badge-warning"&gt;
+
+⚠ Advertencia
+
+&lt;/span&gt;
+
+&lt;span class="jr-badge jr-badge-danger"&gt;
+
+✖ Error
+
+&lt;/span&gt;</code></pre>
+
 </section>
 
-<!-- ========================================= -->
+<!-- ====================================================== -->
 
 <section class="jr-card">
 
 <h2>Bloque de código</h2>
 
-<pre class="jr-code">const nombre = "Jorge";
+<pre class="jr-code"><code>const nombre = "Jorge";
 
-console.log(nombre);</pre>
+console.log(nombre);</code></pre>
+
+<pre class="jr-code"><code>&lt;pre class="jr-code"&gt;
+
+&lt;code&gt;
+
+const nombre = "Jorge";
+
+console.log(nombre);
+
+&lt;/code&gt;
+
+&lt;/pre&gt;</code></pre>
 
 </section>
 
-<!-- ========================================= -->
+<!-- ====================================================== -->
 
 <section class="jr-card">
 
-<h2>Flex</h2>
+<h2>Flex Between</h2>
 
 <div class="jr-flex-between">
 
@@ -164,9 +259,25 @@ Derecha
 
 </div>
 
+<pre class="jr-code"><code>&lt;div class="jr-flex-between"&gt;
+
+    &lt;div class="jr-badge jr-badge-success"&gt;
+
+        Izquierda
+
+    &lt;/div&gt;
+
+    &lt;div class="jr-badge"&gt;
+
+        Derecha
+
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+
 </section>
 
-<!-- ========================================= -->
+<!-- ====================================================== -->
 
 <section class="jr-card">
 
@@ -196,64 +307,50 @@ Tarjeta 3
 
 </div>
 
-</section>
+<pre class="jr-code"><code>&lt;div
+class="jr-grid"
+style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));"&gt;
 
-<!-- ========================================= -->
+    &lt;div class="jr-card"&gt;
 
-<section class="jr-card">
+        Tarjeta 1
 
-<h2>Estados</h2>
+    &lt;/div&gt;
 
-<p style="color:var(--jr-success);">
+    &lt;div class="jr-card"&gt;
 
-✔ Operación completada
+        Tarjeta 2
 
-</p>
+    &lt;/div&gt;
 
-<p style="color:var(--jr-warning);">
+    &lt;div class="jr-card"&gt;
 
-⚠ Atención
+        Tarjeta 3
 
-</p>
+    &lt;/div&gt;
 
-<p style="color:var(--jr-danger);">
-
-✖ Error
-
-</p>
+&lt;/div&gt;</code></pre>
 
 </section>
 
-<!-- ========================================= -->
+<!-- ====================================================== -->
 
 <section class="jr-card">
 
 <h2>Variables CSS</h2>
 
-<div class="jr-code">--jr-bg
-
+<pre class="jr-code"><code>--jr-bg
 --jr-card
-
 --jr-text
-
 --jr-text-light
-
 --jr-border
-
 --jr-primary
-
 --jr-primary-hover
-
 --jr-success
-
 --jr-warning
-
 --jr-danger
-
 --jr-radius
-
---jr-shadow
-</div>
+--jr-shadow</code></pre>
 
 </section>
 
