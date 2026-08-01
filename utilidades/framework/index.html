@@ -1,54 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta charset="UTF-8">
+    <title>JR Tools UI</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/jr-tools.css" />
+  </head>
 
-<title>JR Tools UI</title>
+  <body class="jr-page">
+    <div class="jr-container">
+      <header class="jr-header">
+        <h1>JR Tools UI</h1>
 
-<link rel="stylesheet" href="/assets/css/jr-tools.css">
+        <p>
+          Catálogo de componentes reutilizables para las utilidades de
+          JorgeRosa.dev.
+        </p>
+      </header>
 
-</head>
+      <!-- ====================================================== -->
 
-<body class="jr-page">
+      <section class="jr-card">
+        <h2>Botones</h2>
+        <div class="jr-component">
+          <div
+            class="jr-grid"
+            style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))"
+          >
+            <div class="jr-card">
+              <button class="jr-btn">Botón principal</button>
+              <div class="jr-flex-between">
+            <div>HTML</div>
+            <div><button class="jr-btn jr-copy">📋 Copiar</button></div>
+          </div>
+              <pre class="jr-code">
+                    <code>
+                            &lt;button class="jr-btn"&gt;
+                            Botón principal
+                            &lt;/button&gt;
+                        
+                    </code>
+                </pre>
+            </div>
 
-<div class="jr-container">
+            <div class="jr-card">
+              <button class="jr-btn jr-btn-secondary">Botón secundario</button>
+              <div class="jr-flex-between">
+            <div>HTML</div>
+            <div><button class="jr-btn jr-copy">📋 Copiar</button></div>
+          </div>
+              <pre class="jr-code">
+                    <code>
+                            &lt;button class="jr-btn jr-btn-secondary"&gt;
+                            Botón secundario
+                            &lt;/button&gt;
+                        
+                    </code>
+                </pre>
+            </div>
+          </div>
 
-<header class="jr-header">
+          <div class="jr-buttons">
+            <button class="jr-btn">Botón principal</button>
 
-<h1>JR Tools UI</h1>
-
-<p>
-Catálogo de componentes reutilizables para las utilidades de JorgeRosa.dev.
-</p>
-
-</header>
-
-<!-- ====================================================== -->
-
-<section class="jr-card">
-
-<h2>Botones</h2>
-<div class="jr-component">
-<div class="jr-buttons">
-
-<button class="jr-btn">
-Botón principal
-</button>
-
-<button class="jr-btn jr-btn-secondary">
-Botón secundario
-</button>
-
-</div>
-<div class="jr-flex-between">
-    <div>HTML</div>
-    <div> <button class="jr-btn jr-copy">📋 Copiar</button></div>
-</div>
-<pre class="jr-code"><code>&lt;div class="jr-buttons"&gt;
+            <button class="jr-btn jr-btn-secondary">Botón secundario</button>
+          </div>
+          <div class="jr-flex-between">
+            <div>HTML</div>
+            <div><button class="jr-btn jr-copy">📋 Copiar</button></div>
+          </div>
+          <pre class="jr-code"><code>&lt;div class="jr-buttons"&gt;
 
     &lt;button class="jr-btn"&gt;
         Botón principal
@@ -59,26 +83,21 @@ Botón secundario
     &lt;/button&gt;
 
 &lt;/div&gt;</code></pre>
-</div>
-</section>
+        </div>
+      </section>
 
-<!-- ====================================================== -->
+      <!-- ====================================================== -->
 
-<section class="jr-card">
+      <section class="jr-card">
+        <h2>Input</h2>
 
-<h2>Input</h2>
+        <label class="jr-label">
+          Texto
 
-<label class="jr-label">
+          <input class="jr-input" placeholder="Introduce un texto" />
+        </label>
 
-Texto
-
-<input
-class="jr-input"
-placeholder="Introduce un texto">
-
-</label>
-
-<pre class="jr-code"><code>&lt;label class="jr-label"&gt;
+        <pre class="jr-code"><code>&lt;label class="jr-label"&gt;
 
 Texto
 
@@ -87,32 +106,26 @@ class="jr-input"
 placeholder="Introduce un texto"&gt;
 
 &lt;/label&gt;</code></pre>
+      </section>
 
-</section>
+      <!-- ====================================================== -->
 
-<!-- ====================================================== -->
+      <section class="jr-card">
+        <h2>Select</h2>
 
-<section class="jr-card">
+        <label class="jr-label">
+          Opciones
 
-<h2>Select</h2>
+          <select class="jr-select">
+            <option>Opción 1</option>
 
-<label class="jr-label">
+            <option>Opción 2</option>
 
-Opciones
+            <option>Opción 3</option>
+          </select>
+        </label>
 
-<select class="jr-select">
-
-<option>Opción 1</option>
-
-<option>Opción 2</option>
-
-<option>Opción 3</option>
-
-</select>
-
-</label>
-
-<pre class="jr-code"><code>&lt;label class="jr-label"&gt;
+        <pre class="jr-code"><code>&lt;label class="jr-label"&gt;
 
 Opciones
 
@@ -125,26 +138,23 @@ Opciones
 &lt;/select&gt;
 
 &lt;/label&gt;</code></pre>
+      </section>
 
-</section>
+      <!-- ====================================================== -->
 
-<!-- ====================================================== -->
+      <section class="jr-card">
+        <h2>Textarea</h2>
 
-<section class="jr-card">
+        <label class="jr-label">
+          Mensaje
 
-<h2>Textarea</h2>
+          <textarea
+            class="jr-textarea"
+            placeholder="Escribe aquí..."
+          ></textarea>
+        </label>
 
-<label class="jr-label">
-
-Mensaje
-
-<textarea
-class="jr-textarea"
-placeholder="Escribe aquí..."></textarea>
-
-</label>
-
-<pre class="jr-code"><code>&lt;label class="jr-label"&gt;
+        <pre class="jr-code"><code>&lt;label class="jr-label"&gt;
 
 Mensaje
 
@@ -153,50 +163,32 @@ class="jr-textarea"
 placeholder="Escribe aquí..."&gt;&lt;/textarea&gt;
 
 &lt;/label&gt;</code></pre>
+      </section>
 
-</section>
+      <!-- ====================================================== -->
 
-<!-- ====================================================== -->
+      <section class="jr-card">
+        <h2>Badges</h2>
 
-<section class="jr-card">
+        <p>
+          <span class="jr-badge jr-badge-success"> ✔ Correcto </span>
+        </p>
 
-<h2>Badges</h2>
+        <br />
 
-<p>
+        <p>
+          <span class="jr-badge jr-badge-warning"> ⚠ Advertencia </span>
+        </p>
 
-<span class="jr-badge jr-badge-success">
+        <br />
 
-✔ Correcto
+        <p>
+          <span class="jr-badge jr-badge-danger"> ✖ Error </span>
+        </p>
 
-</span>
-
-</p>
-
-<br>
-
-<p>
-
-<span class="jr-badge jr-badge-warning">
-
-⚠ Advertencia
-
-</span>
-
-</p>
-
-<br>
-
-<p>
-
-<span class="jr-badge jr-badge-danger">
-
-✖ Error
-
-</span>
-
-</p>
-
-<pre class="jr-code"><code>&lt;span class="jr-badge jr-badge-success"&gt;
+        <pre
+          class="jr-code"
+        ><code>&lt;span class="jr-badge jr-badge-success"&gt;
 
 ✔ Correcto
 
@@ -213,20 +205,18 @@ placeholder="Escribe aquí..."&gt;&lt;/textarea&gt;
 ✖ Error
 
 &lt;/span&gt;</code></pre>
+      </section>
 
-</section>
+      <!-- ====================================================== -->
 
-<!-- ====================================================== -->
+      <section class="jr-card">
+        <h2>Bloque de código</h2>
 
-<section class="jr-card">
-
-<h2>Bloque de código</h2>
-
-<pre class="jr-code"><code>const nombre = "Jorge";
+        <pre class="jr-code"><code>const nombre = "Jorge";
 
 console.log(nombre);</code></pre>
 
-<pre class="jr-code"><code>&lt;pre class="jr-code"&gt;
+        <pre class="jr-code"><code>&lt;pre class="jr-code"&gt;
 
 &lt;code&gt;
 
@@ -237,32 +227,20 @@ console.log(nombre);
 &lt;/code&gt;
 
 &lt;/pre&gt;</code></pre>
+      </section>
 
-</section>
+      <!-- ====================================================== -->
 
-<!-- ====================================================== -->
+      <section class="jr-card">
+        <h2>Flex Between</h2>
 
-<section class="jr-card">
+        <div class="jr-flex-between">
+          <div class="jr-badge jr-badge-success">Izquierda</div>
 
-<h2>Flex Between</h2>
+          <div class="jr-badge">Derecha</div>
+        </div>
 
-<div class="jr-flex-between">
-
-<div class="jr-badge jr-badge-success">
-
-Izquierda
-
-</div>
-
-<div class="jr-badge">
-
-Derecha
-
-</div>
-
-</div>
-
-<pre class="jr-code"><code>&lt;div class="jr-flex-between"&gt;
+        <pre class="jr-code"><code>&lt;div class="jr-flex-between"&gt;
 
     &lt;div class="jr-badge jr-badge-success"&gt;
 
@@ -277,40 +255,25 @@ Derecha
     &lt;/div&gt;
 
 &lt;/div&gt;</code></pre>
+      </section>
 
-</section>
+      <!-- ====================================================== -->
 
-<!-- ====================================================== -->
+      <section class="jr-card">
+        <h2>Grid</h2>
 
-<section class="jr-card">
+        <div
+          class="jr-grid"
+          style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))"
+        >
+          <div class="jr-card">Tarjeta 1</div>
 
-<h2>Grid</h2>
+          <div class="jr-card">Tarjeta 2</div>
 
-<div
-class="jr-grid"
-style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));">
+          <div class="jr-card">Tarjeta 3</div>
+        </div>
 
-<div class="jr-card">
-
-Tarjeta 1
-
-</div>
-
-<div class="jr-card">
-
-Tarjeta 2
-
-</div>
-
-<div class="jr-card">
-
-Tarjeta 3
-
-</div>
-
-</div>
-
-<pre class="jr-code"><code>&lt;div
+        <pre class="jr-code"><code>&lt;div
 class="jr-grid"
 style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));"&gt;
 
@@ -333,16 +296,14 @@ style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));"&gt;
     &lt;/div&gt;
 
 &lt;/div&gt;</code></pre>
+      </section>
 
-</section>
+      <!-- ====================================================== -->
 
-<!-- ====================================================== -->
+      <section class="jr-card">
+        <h2>Variables CSS</h2>
 
-<section class="jr-card">
-
-<h2>Variables CSS</h2>
-
-<pre class="jr-code"><code>--jr-bg
+        <pre class="jr-code"><code>--jr-bg
 --jr-card
 --jr-text
 --jr-text-light
@@ -354,21 +315,20 @@ style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));"&gt;
 --jr-danger
 --jr-radius
 --jr-shadow</code></pre>
-
-</section>
-
-</div>
-<script>
-document.querySelectorAll('.jr-copy').forEach(btn=>{
- btn.addEventListener('click',()=>{
-  const code=btn.closest('.jr-component').querySelector('code').textContent;
-  navigator.clipboard.writeText(code);
-  const t=btn.textContent;
-  btn.textContent='✔ Copiado';
-  setTimeout(()=>btn.textContent=t,1500);
- });
-});
-</script>
-</body>
-
+      </section>
+    </div>
+    <script>
+      document.querySelectorAll(".jr-copy").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const code = btn
+            .closest(".jr-component")
+            .querySelector("code").textContent;
+          navigator.clipboard.writeText(code);
+          const t = btn.textContent;
+          btn.textContent = "✔ Copiado";
+          setTimeout(() => (btn.textContent = t), 1500);
+        });
+      });
+    </script>
+  </body>
 </html>
