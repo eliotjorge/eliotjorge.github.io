@@ -284,6 +284,82 @@ btnShow.addEventListener("click", () => {
 });
 
 //=======================================================
+// SHOW NOTIFICATION DELAY
+//=======================================================
+
+btnShowDelay.addEventListener("click", () => {
+
+    if (!("Notification" in window)) {
+
+        writeLog("Notifications are not supported.", "error");
+
+        return;
+
+    }
+
+    if (Notification.permission !== "granted") {
+
+        writeLog("Permission not granted.", "warning");
+
+        return;
+
+    }
+
+
+    setTimeout(() => {
+        const notification = new Notification(inputTitle.value, {
+
+            body: inputMessage.value,
+
+            icon: inputIcon.value || undefined
+
+        });
+
+        writeLog("Notification created.");
+    
+    }, seconds * 5000);
+
+
+    notification.onshow = () => {
+
+        writeLog("onshow", "success");
+
+    };
+
+
+    notification.onclick = () => {
+
+        writeLog("onclick", "success");
+
+    };
+
+    notification.onclose = () => {
+
+        writeLog("onclose");
+
+    };
+
+    notification.onerror = () => {
+
+        writeLog("onerror", "error");
+
+    };
+
+    const seconds = Number(inputClose.value);
+
+    if (seconds > 0) {
+
+        setTimeout(() => {
+
+            notification.close();
+
+        }, seconds * 1000);
+
+    }
+
+});
+
+//=======================================================
 // CLEAR LOG
 //=======================================================
 
