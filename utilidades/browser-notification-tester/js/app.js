@@ -305,6 +305,7 @@ btnShowDelay.addEventListener("click", () => {
 
     }
 
+    writeLog("Notification will be shown after 5 seconds from now.");
 
     setTimeout(() => {
         const notification = new Notification(inputTitle.value, {
