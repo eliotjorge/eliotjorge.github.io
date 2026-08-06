@@ -317,7 +317,7 @@ btnShowDelay.addEventListener("click", () => {
 
         writeLog("Notification created.");
     
-    }, seconds * 5000);
+    }, 5000);
 
 
     notification.onshow = () => {
