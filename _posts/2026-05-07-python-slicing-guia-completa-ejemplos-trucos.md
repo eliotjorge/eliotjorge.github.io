@@ -22,7 +22,7 @@ Hay un momento cuando estás aprendiendo Python en el que ves algo como esto:
 
 ```python
 texto[::-1]
-````
+```
 
 Y piensas: *vale… esto hace algo… pero ¿qué está pasando aquí?* 🤔
 
