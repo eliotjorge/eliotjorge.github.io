@@ -10,86 +10,115 @@ toc: true
 ## Funcionalidades de la v1
 
 ### Rastreo
-✅ Analizar una única página.
-✅ Analizar sitio completo (crawler).
-✅ Barra de progreso.
-✅ Cancelar análisis.
-✅ Cola de URLs pendientes.
-✅ Evitar analizar la misma URL dos veces.
-✅ Solo enlaces internos.
-✅ Respetar robots.txt (opcional, lo podemos añadir después).
+-  Analizar una única página.
+-  Analizar sitio completo (crawler).
+-  Barra de progreso.
+-  Cancelar análisis.
+-  Cola de URLs pendientes.
+-  Evitar analizar la misma URL dos veces.
+-  Solo enlaces internos.
+-  Respetar robots.txt (opcional, lo podemos añadir después).
 
 ### Extracción
-✅ Title
-✅ H1-H6
-✅ P
-✅ LI
-✅ A
-✅ BUTTON
-✅ LABEL
-✅ SPAN
-✅ BLOCKQUOTE
-✅ CAPTION
-✅ TD
-✅ TH
+-  Title
+-  H1-H6
+-  P
+-  LI
+-  A
+-  BUTTON
+-  LABEL
+-  SPAN
+-  BLOCKQUOTE
+-  CAPTION
+-  TD
+-  TH
 
 Configurable mediante checkboxes.
 
 ### Filtros
-✅ Longitud mínima.
-✅ Ignorar duplicados.
-✅ Ignorar texto vacío.
-✅ Ignorar elementos ocultos.
-✅ Agrupar por página.
-✅ Buscar en tiempo real.
-✅ Filtrar por etiqueta.
-✅ Regex.
+-  Longitud mínima.
+-  Ignorar duplicados.
+-  Ignorar texto vacío.
+-  Ignorar elementos ocultos.
+-  Agrupar por página.
+-  Buscar en tiempo real.
+-  Filtrar por etiqueta.
+-  Regex.
 
 ### Resultados
-✅ Texto.
-✅ Etiqueta.
-✅ URL.
-✅ Selector CSS.
-✅ XPath.
-✅ Copiar cualquiera de ellos.
+-  Texto.
+-  Etiqueta.
+-  URL.
+-  Selector CSS.
+-  XPath.
+-  Copiar cualquiera de ellos.
 
 ### Exportar
-✅ JSON.
-✅ CSV.
-✅ Copiar JSON.
+-  JSON.
+-  CSV.
+-  Copiar JSON.
 
 ### Resumen
-✅ Nº páginas.
-✅ Nº elementos.
-✅ Nº caracteres.
-✅ Nº palabras.
-✅ Nº duplicados.
-✅ Tiempo empleado.
+-  Nº páginas.
+-  Nº elementos.
+-  Nº caracteres.
+-  Nº palabras.
+-  Nº duplicados.
+-  Tiempo empleado.
 
 ### SEO
-✅ H1 duplicados.
-✅ Páginas sin H1.
-✅ Más de un H1.
-✅ Titles duplicados.
-✅ Title >60 caracteres.
-✅ Title <20 caracteres.
-✅ H1 demasiado largo.
-✅ H1 vacío.
-✅ Botones sin texto.
-✅ Enlaces sin texto.
+-  H1 duplicados.
+-  Páginas sin H1.
+-  Más de un H1.
+-  Titles duplicados.
+-  Title >60 caracteres.
+-  Title <20 caracteres.
+-  H1 demasiado largo.
+-  H1 vacío.
+-  Botones sin texto.
+-  Enlaces sin texto.
 
 ### Interfaz
-✅ Tema JR Tools.
-✅ Cards plegables por página.
-✅ Barra de progreso.
-✅ Spinner.
-✅ Contadores.
-✅ Toast de "Copiado".
+-  Tema JR Tools.
+-  Cards plegables por página.
+-  Barra de progreso.
+-  Spinner.
+-  Contadores.
+-  Toast de "Copiado".
+
+------
+
+Tenemos ya el proxy bastante sólido:
+
+🔐 API Key
+
+🌐 Restricción a jorgerosa.dev
+
+↪️ Redirecciones
+
+⏱️ Timeout de 10 s
+
+📦 Límite de 10 MB
+
+🧾 Solo HTML
+
+🗜️ Compresión gestionada por fetch
+
+📍 URL final
+
+📊 Metadatos
+
+🗂️ Hash de opciones
+
+⚡ Caché de Cloudflare
+
+🔎 Traces/Observability para depuración
 
 ------
 
 ## Pasos de exrtacción
 
+```
 https://content-explorer.jorgerosa.dev
             │
             │ fetch()
@@ -103,16 +132,18 @@ Cloudflare Worker
             │
             ▼
  Devuelve el HTML con CORS habilitado
+```
 
 ------
 
 ## Creamos el Worker en Cloudflare
 
 - Dentro de Cloudflare en Build > Compute > Workers and Pages.
-- Aquí es donde esta la web y los workers pueden estar ambas cosas, no es excluyente que se tenga la web y el worker.
+- Aquí es donde esta la web y los workers, pueden estar ambas cosas, no es excluyente que se tenga la web y el worker.
 
 
-```javascriptconst MAX_SIZE = 10 * 1024 * 1024; // 10 MB
+```javascript
+const MAX_SIZE = 10 * 1024 * 1024; // 10 MB
 const TIMEOUT = 10000; // 10 segundos
 const CACHE_SECONDS = 3600; // 1 hora
 const VERSION = "1.2.0";
@@ -569,7 +600,7 @@ function json(
 
 ## ¿Y para que no use cualquiera tu worker?
 
-Para que no cualqueira emplee el workers desde su web y empiecen a generear tráfico que no sobrecargue el sistema y se sobrepase el límite de gratuito hay que generar una API_KEY para que solo acepte peticiones de quien tiene la api, osea yo.
+Para que no cualqueira emplee el worker desde su web y empiecen a generear tráfico que no sobrecargue el sistema y se sobrepase el límite gratuito hay que generar una API_KEY para que solo acepte peticiones de quien tiene la api, osea yo.
  
 Para crearlo hay que ir a `Workers & Pages → tu Worker → Settings → Variables and Secrets → API_KEY`
 
@@ -577,16 +608,19 @@ Importante guardarlo bien porque una vez se haga el deploy del API KEY no se pod
 
 -----
 
-## Cómo probarlo?
+## ¿Cómo probarlo?
 
 Desde la consola del navegador (F12) hay que poner este comando. Pero **IMPORTANTE** como hemos configurado en el código que sólo acepte peticiones desde la URL https://jorgerosa.dev hay que abrir la consola para probarlo desde esta URL.
 
-Si por ejemplo abrimos la consola desde https://google.com devolverá esto:
+Si por ejemplo abrimos la consola desde _https://google.com_ devolverá esto:
 
+<img width="815" height="190" alt="Captura de pantalla consola" src="https://github.com/user-attachments/assets/6f297b8f-2295-4327-9a4e-4aa9cd33c49b" />
 
+Como vemos la petición ha sido rechazada y no devuelve nada.
 
+### El comando para probarlo es:
 
-```
+```bash
 
 fetch("https://proxy.jorgerosa.dev/?url=https://jorgerosa.dev/", {
   headers: {
@@ -605,3 +639,51 @@ fetch("https://proxy.jorgerosa.dev/?url=https://jorgerosa.dev/", {
 });
 
 ```
+
+## ¿Cómo ver qué hace Cloudflare?
+
+Cloudflare dispone de **Traces** dentro de **Workers → Observability → Traces**, que permiten inspeccionar cómo se ha ejecutado una petición dentro de nuestro Worker.
+
+Podemos ver, entre otras cosas:
+
+- La petición que ha recibido el Worker.
+- Las operaciones que ha realizado el Worker.
+- Las peticiones (`fetch`) que el Worker ha realizado a otros servidores.
+- El tiempo que ha tardado cada operación.
+- El código de estado de las respuestas.
+- Los diferentes *spans* que forman la ejecución.
+
+Por ejemplo, en nuestro caso podemos ver:
+
+```text
+GET https://proxy.jorgerosa.dev/
+└── fetch → https://jorgerosa.dev/
+````
+
+<img width="1641" height="940" alt="image" src="https://github.com/user-attachments/assets/b63337ea-c651-4f1a-88cc-ce4fd6952970" />
+
+
+Esto nos permite comprobar que el Worker ha recibido la petición y posteriormente ha realizado el `fetch` de la URL solicitada.
+
+### ¿Se ha servido desde la caché?
+
+Los **Traces no son la mejor forma de comprobar si una subpetición ha sido servida desde la caché**. Para esto podemos ir a:
+
+**Workers → Metrics → Subrequests**
+
+Ahí Cloudflare muestra las peticiones realizadas por el Worker y su **Cache Rate**.
+
+Por ejemplo:
+
+<img width="793" height="485" alt="image" src="https://github.com/user-attachments/assets/a1ca3731-6bf6-42c5-87a7-d3a03b131d6f" />
+
+
+Un **Cache Rate del 40 %** significa que, de las 5 peticiones realizadas a ese host, aproximadamente 2 fueron servidas desde la caché y las otras 3 tuvieron que obtenerse de nuevo.
+
+Por tanto:
+
+* **Traces →** nos permite ver cómo se ha ejecutado la petición y qué operaciones ha realizado el Worker.
+* **Metrics → Subrequests → Cache Rate →** nos permite comprobar qué porcentaje de las subpeticiones se han servido desde la caché.
+
+
+> **Nota:** La cabecera `CF-Cache-Status` que podamos consultar desde el navegador no tiene por qué indicar el estado de caché de la subpetición realizada por el Worker. En nuestro caso, la respuesta que recibe el navegador es una nueva `Response` creada por el Worker. Para comprobar la caché de las subpeticiones utilizaremos **Metrics → Subrequests → Cache Rate**.
