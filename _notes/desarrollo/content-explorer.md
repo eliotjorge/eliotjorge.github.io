@@ -7,84 +7,135 @@ resumen: "Creación de una API de explorador de HTML de web"
 toc: true
 ---
 
+## ¿Por qué hemos creado un Cloudflare Worker?
+
+El **Content Explorer** necesita descargar el HTML de cualquier web a partir de una URL para poder analizar su contenido.
+
+El problema es que el navegador no puede hacer directamente peticiones a cualquier dominio debido a las restricciones de **CORS**.
+
+Por eso hemos creado un **Cloudflare Worker** que actúa como intermediario:
+
+```text
+Content Explorer
+      ↓
+Cloudflare Worker
+      ↓
+Web que queremos analizar
+      ↓
+HTML
+      ↓
+Content Explorer
+````
+
+El Worker recibe la URL que queremos analizar, realiza la petición desde el servidor y devuelve el HTML al Content Explorer.
+
+Además, aprovechamos el Worker para añadir medidas de seguridad y optimizaciones:
+
+* 🔐 API Key para impedir el uso no autorizado.
+* 🌐 CORS limitado a `jorgerosa.dev`.
+* 🔗 Validación de URLs (`http` / `https`).
+* ↪️ Seguimiento de redirecciones.
+* ⏱️ Timeout para evitar peticiones bloqueadas.
+* 📦 Límite de 10 MB por página.
+* 🧾 Comprobación de que el recurso sea HTML.
+* 📍 Devolución de la URL final después de las redirecciones.
+* ⚡ Caché de Cloudflare para evitar descargar repetidamente las mismas páginas.
+* 📊 Información y métricas para poder supervisar las peticiones.
+
+En resumen:
+
+> **El Worker es el proxy seguro entre Content Explorer y las webs que queremos analizar, permitiendo obtener su HTML sin que el navegador tenga que realizar directamente la petición al dominio externo.**
+
+### En resumen
+
+Hemos creado el Cloudflare Worker porque el navegador no puede descargar directamente el HTML de cualquier web debido a **CORS**.
+
+El Worker actúa como un **proxy**:
+
+`Content Explorer → Worker → Web externa → HTML`
+
+Además, nos permite controlar la seguridad, validar las URLs, limitar recursos, seguir redirecciones y utilizar la caché de Cloudflare.
+
+----
+
 ## Funcionalidades de la v1
 
 ### Rastreo
--  Analizar una única página.
--  Analizar sitio completo (crawler).
--  Barra de progreso.
--  Cancelar análisis.
--  Cola de URLs pendientes.
--  Evitar analizar la misma URL dos veces.
--  Solo enlaces internos.
--  Respetar robots.txt (opcional, lo podemos añadir después).
+* ✅Analizar una única página.
+* ✅Analizar sitio completo (crawler).
+* ✅Barra de progreso.
+* ✅Cancelar análisis.
+* ✅Cola de URLs pendientes.
+* ✅Evitar analizar la misma URL dos veces.
+* ✅Solo enlaces internos.
+* ✅Respetar robots.txt (opcional, lo podemos añadir después).
 
 ### Extracción
--  Title
--  H1-H6
--  P
--  LI
--  A
--  BUTTON
--  LABEL
--  SPAN
--  BLOCKQUOTE
--  CAPTION
--  TD
--  TH
+* ✅Title
+* ✅H1-H6
+* ✅P
+* ✅LI
+* ✅A
+* ✅BUTTON
+* ✅LABEL
+* ✅SPAN
+* ✅BLOCKQUOTE
+* ✅CAPTION
+* ✅TD
+* ✅TH
 
 Configurable mediante checkboxes.
 
 ### Filtros
--  Longitud mínima.
--  Ignorar duplicados.
--  Ignorar texto vacío.
--  Ignorar elementos ocultos.
--  Agrupar por página.
--  Buscar en tiempo real.
--  Filtrar por etiqueta.
--  Regex.
+* ✅Longitud mínima.
+* ✅Ignorar duplicados.
+* ✅Ignorar texto vacío.
+* ✅Ignorar elementos ocultos.
+* ✅Agrupar por página.
+* ✅Buscar en tiempo real.
+* ✅Filtrar por etiqueta.
+* ✅Regex.
 
 ### Resultados
--  Texto.
--  Etiqueta.
--  URL.
--  Selector CSS.
--  XPath.
--  Copiar cualquiera de ellos.
+* ✅Texto.
+* ✅Etiqueta.
+* ✅URL.
+* ✅Selector CSS.
+* ✅XPath.
+* ✅Copiar cualquiera de ellos.
 
 ### Exportar
--  JSON.
--  CSV.
--  Copiar JSON.
+* ✅JSON.
+* ✅CSV.
+* ✅Copiar JSON.
 
 ### Resumen
--  Nº páginas.
--  Nº elementos.
--  Nº caracteres.
--  Nº palabras.
--  Nº duplicados.
--  Tiempo empleado.
+* ✅Nº páginas.
+* ✅Nº elementos.
+* ✅Nº caracteres.
+* ✅Nº palabras.
+* ✅Nº duplicados.
+* ✅Tiempo empleado.
 
 ### SEO
--  H1 duplicados.
--  Páginas sin H1.
--  Más de un H1.
--  Titles duplicados.
--  Title >60 caracteres.
--  Title <20 caracteres.
--  H1 demasiado largo.
--  H1 vacío.
--  Botones sin texto.
--  Enlaces sin texto.
+* ✅H1 duplicados.
+* ✅Páginas sin H1.
+* ✅Más de un H1.
+* ✅Titles duplicados.
+* ✅Title >60 caracteres.
+* ✅Title <20 caracteres.
+* ✅H1 demasiado largo.
+* ✅H1 vacío.
+* ✅Botones sin texto.
+* ✅Enlaces sin texto.
 
 ### Interfaz
--  Tema JR Tools.
--  Cards plegables por página.
--  Barra de progreso.
--  Spinner.
--  Contadores.
--  Toast de "Copiado".
+* ✅Tema JR Tools.
+* ✅Cards plegables por página.
+* ✅Barra de progreso.
+* ✅Spinner.
+* ✅Contadores.
+* ✅Toast de "Copiado".
 
 ------
 
