@@ -112,35 +112,71 @@ Cloudflare Worker
 - Aquí es donde esta la web y los workers pueden estar ambas cosas, no es excluyente que se tenga la web y el worker.
 
 
-```javascript
-const MAX_SIZE = 10 * 1024 * 1024; // 10 MB
+```javascriptconst MAX_SIZE = 10 * 1024 * 1024; // 10 MB
 const TIMEOUT = 10000; // 10 segundos
-const CACHE_SECONDS = 3600;
-const VERSION = "1.1.0";
+const CACHE_SECONDS = 3600; // 1 hora
+const VERSION = "1.2.0";
 
 export default {
 
   async fetch(request, env, ctx) {
 
     // -----------------------------
-    // CORS
+    // METHOD
     // -----------------------------
 
-    if (request.method === "OPTIONS") {
-      return new Response(null, {
-        headers: corsHeaders()
-      });
+    if (
+      request.method !== "GET" &&
+      request.method !== "OPTIONS"
+    ) {
+
+      return json({
+        success: false,
+        error: "Method not allowed."
+      }, 405);
+
     }
 
     // -----------------------------
-    // Referer
+    // CORS PREFLIGHT
     // -----------------------------
 
-    const referer = request.headers.get("Referer") || "";
+    if (request.method === "OPTIONS") {
 
+      return new Response(null, {
+        status: 204,
+        headers: corsHeaders()
+      });
+
+    }
+
+    // -----------------------------
+    // ORIGIN / REFERER
+    // -----------------------------
+
+    const origin =
+      request.headers.get("Origin") || "";
+
+    const referer =
+      request.headers.get("Referer") || "";
+
+    // Si existe Origin, debe ser nuestra web.
+    if (
+      origin &&
+      origin !== "https://jorgerosa.dev"
+    ) {
+
+      return json({
+        success: false,
+        error: "Forbidden."
+      }, 403);
+
+    }
+
+    // Si existe Referer, también debe ser nuestra web.
     if (
       referer &&
-      !referer.startsWith("https://jorgerosa.dev")
+      !referer.startsWith("https://jorgerosa.dev/")
     ) {
 
       return json({
@@ -154,9 +190,13 @@ export default {
     // API KEY
     // -----------------------------
 
-    const apiKey = request.headers.get("X-API-Key");
+    const apiKey =
+      request.headers.get("X-API-Key");
 
-    if (apiKey !== env.API_KEY) {
+    if (
+      !apiKey ||
+      apiKey !== env.API_KEY
+    ) {
 
       return json({
         success: false,
@@ -166,12 +206,14 @@ export default {
     }
 
     // -----------------------------
-    // URL
+    // REQUEST URL
     // -----------------------------
 
-    const requestUrl = new URL(request.url);
+    const requestUrl =
+      new URL(request.url);
 
-    const target = requestUrl.searchParams.get("url");
+    const target =
+      requestUrl.searchParams.get("url");
 
     if (!target) {
 
@@ -182,7 +224,9 @@ export default {
 
     }
 
-    const options = requestUrl.searchParams.get("options") || "{}";
+    // -----------------------------
+    // VALIDATE TARGET URL
+    // -----------------------------
 
     let targetUrl;
 
@@ -194,94 +238,96 @@ export default {
         targetUrl.protocol !== "http:" &&
         targetUrl.protocol !== "https:"
       ) {
+
         throw new Error();
+
       }
 
     } catch {
 
       return json({
         success: false,
-        error: "Invalid URL."
+        error: "Invalid URL. Only HTTP and HTTPS are allowed."
       }, 400);
 
     }
 
     // -----------------------------
-    // CACHE
+    // CACHE KEY
     // -----------------------------
-
-    const cache = caches.default;
-
-    // Crear hash de las opciones
-    const optionsHash = await hashOptions(options);
-
-    // Crear una clave de caché independiente
-    // para cada combinación URL + opciones
-    const cacheUrl = new URL(request.url);
-
-    cacheUrl.searchParams.set(
-      "optionsHash",
-      optionsHash
-    );
-
-    // No necesitamos guardar las opciones originales
-    cacheUrl.searchParams.delete("options");
-
-    const cacheKey = new Request(cacheUrl.toString());
-
-    const cached = await cache.match(cacheKey);
-
-    if (cached) {
-
-      const headers = new Headers(cached.headers);
-
-      headers.set("X-Cache", "HIT");
-
-      return new Response(
-        cached.body,
-        {
-          status: cached.status,
-          headers
-        }
-      );
-
-    }
+    //
+    // The cache key contains:
+    //
+    //   target URL
+    //   extraction options hash
+    //
+    // This means:
+    //
+    // URL + options A = cache A
+    // URL + options B = cache B
+    //
+    // The original query string is NOT used
+    // directly as the cache key.
+    //
+    // NOTE:
+    // cf.cacheKey is an Enterprise-only feature
+    // according to Cloudflare documentation.
+    //
+    // Therefore we encode our cache identity
+    // into the URL used by the subrequest instead.
+    //
+    // -----------------------------
 
     // -----------------------------
     // TIMEOUT
     // -----------------------------
 
-    const controller = new AbortController();
+    const controller =
+      new AbortController();
 
-    const timeout = setTimeout(() => {
-      controller.abort();
-    }, TIMEOUT);
+    const timeout =
+      setTimeout(() => {
+        controller.abort();
+      }, TIMEOUT);
 
-    const start = Date.now();
+    const start =
+      Date.now();
 
     try {
 
-      const response = await fetch(targetUrl.toString(), {
+      // -----------------------------
+      // FETCH ORIGIN THROUGH
+      // CLOUDFLARE CACHE
+      // -----------------------------
 
-        redirect: "follow",
+      const response = await fetch(
+        targetUrl.toString(),
+        {
+          redirect: "follow",
 
-        signal: controller.signal,
+          signal:
+            controller.signal,
 
-        headers: {
+          headers: {
+            "User-Agent":
+              "JR Tools Content Explorer",
 
-          "User-Agent": "JR Tools Content Explorer",
+            "Accept":
+              "text/html,application/xhtml+xml"
+          },
 
-          "Accept":
-            "text/html,application/xhtml+xml",
-
-          "Accept-Encoding":
-            "gzip, br"
-
+          cf: {
+            cacheEverything: true,
+            cacheTtl: CACHE_SECONDS
+          }
         }
-
-      });
+      );
 
       clearTimeout(timeout);
+
+      // -----------------------------
+      // HTTP STATUS
+      // -----------------------------
 
       if (!response.ok) {
 
@@ -293,33 +339,77 @@ export default {
 
       }
 
-      const contentType =
-        response.headers.get("content-type") || "";
+      // -----------------------------
+      // CONTENT TYPE
+      // -----------------------------
 
-      if (!contentType.includes("text/html")) {
+      const contentType =
+        response.headers.get(
+          "content-type"
+        ) || "";
+
+      if (
+        !contentType
+          .toLowerCase()
+          .includes("text/html")
+      ) {
 
         return json({
           success: false,
-          error: "Only HTML pages are supported.",
+          error:
+            "Only HTML pages are supported.",
           contentType
         }, 415);
 
       }
 
-      const html = await response.text();
+      // -----------------------------
+      // READ HTML
+      // -----------------------------
 
-      if (html.length > MAX_SIZE) {
+      const html =
+        await response.text();
+
+      // -----------------------------
+      // SIZE LIMIT
+      // -----------------------------
+
+      if (
+        html.length > MAX_SIZE
+      ) {
 
         return json({
           success: false,
-          error: "Page exceeds 10 MB."
+          error:
+            "Page exceeds 10 MB."
         }, 413);
 
       }
 
-      const elapsed = Date.now() - start;
+      // -----------------------------
+      // RESPONSE TIME
+      // -----------------------------
 
-      const headers = new Headers(corsHeaders());
+      const elapsed =
+        Date.now() - start;
+
+      // -----------------------------
+      // CLOUDFLARE CACHE STATUS
+      // -----------------------------
+
+      const cloudflareCacheStatus =
+        response.headers.get(
+          "CF-Cache-Status"
+        ) || "UNKNOWN";
+
+      // -----------------------------
+      // RESPONSE HEADERS
+      // -----------------------------
+
+      const headers =
+        new Headers(
+          corsHeaders()
+        );
 
       headers.set(
         "Content-Type",
@@ -338,12 +428,7 @@ export default {
 
       headers.set(
         "X-Cache",
-        "MISS"
-      );
-
-      headers.set(
-        "X-Options-Hash",
-        optionsHash
+        cloudflareCacheStatus
       );
 
       headers.set(
@@ -371,7 +456,11 @@ export default {
         `${elapsed} ms`
       );
 
-      const result = new Response(
+      // -----------------------------
+      // RETURN HTML
+      // -----------------------------
+
+      return new Response(
         html,
         {
           status: 200,
@@ -379,29 +468,29 @@ export default {
         }
       );
 
-      ctx.waitUntil(
-        cache.put(
-          cacheKey,
-          result.clone()
-        )
-      );
-
-      return result;
-
-    }
-
-    catch (e) {
+    } catch (e) {
 
       clearTimeout(timeout);
 
-      if (e.name === "AbortError") {
+      // -----------------------------
+      // TIMEOUT
+      // -----------------------------
+
+      if (
+        e.name === "AbortError"
+      ) {
 
         return json({
           success: false,
-          error: "Request timeout."
+          error:
+            "Request timeout."
         }, 408);
 
       }
+
+      // -----------------------------
+      // OTHER ERROR
+      // -----------------------------
 
       return json({
         success: false,
@@ -414,7 +503,10 @@ export default {
 
 };
 
-// ----------------------------------------------------
+
+// ============================================================
+// CORS
+// ============================================================
 
 function corsHeaders() {
 
@@ -427,19 +519,31 @@ function corsHeaders() {
       "GET, OPTIONS",
 
     "Access-Control-Allow-Headers":
-      "Content-Type, X-API-Key"
+      "Content-Type, X-API-Key",
 
+    "Access-Control-Expose-Headers":
+      "CF-Cache-Status, X-Worker-Version, X-Cache, X-Final-URL, X-Status, X-Content-Type, X-Content-Length, X-Response-Time"
   };
 
 }
 
-// ----------------------------------------------------
 
-function json(data, status = 200) {
+// ============================================================
+// JSON RESPONSE
+// ============================================================
+
+function json(
+  data,
+  status = 200
+) {
 
   return new Response(
 
-    JSON.stringify(data, null, 2),
+    JSON.stringify(
+      data,
+      null,
+      2
+    ),
 
     {
 
@@ -459,50 +563,45 @@ function json(data, status = 200) {
   );
 
 }
-
-async function hashOptions(options) {
-
-  const data = new TextEncoder().encode(options);
-
-  const hashBuffer = await crypto.subtle.digest(
-    "SHA-256",
-    data
-  );
-
-  const hashArray = Array.from(
-    new Uint8Array(hashBuffer)
-  );
-
-  return hashArray
-    .map(byte =>
-      byte.toString(16).padStart(2, "0")
-    )
-    .join("");
-
-}
 ```
 
 -------
 
-## Para que no cualqueira emplee el workers desde su web y empiecen a generear tráfico que no sobrecargue el sistema y se sobrepase el límite de gratuito hay que generar una API_KEY para que solo acepte peticiones de quien tiene la api, osea yo.
+## ¿Y para que no use cualquiera tu worker?
+
+Para que no cualqueira emplee el workers desde su web y empiecen a generear tráfico que no sobrecargue el sistema y se sobrepase el límite de gratuito hay que generar una API_KEY para que solo acepte peticiones de quien tiene la api, osea yo.
  
 Para crearlo hay que ir a `Workers & Pages → tu Worker → Settings → Variables and Secrets → API_KEY`
+
+Importante guardarlo bien porque una vez se haga el deploy del API KEY no se podrá volver a ver se podrá cambiar por otro
 
 -----
 
 ## Cómo probarlo?
 
-Desde la consola del navegador (F12) hay que poner este comando
+Desde la consola del navegador (F12) hay que poner este comando. Pero **IMPORTANTE** como hemos configurado en el código que sólo acepte peticiones desde la URL https://jorgerosa.dev hay que abrir la consola para probarlo desde esta URL.
+
+Si por ejemplo abrimos la consola desde https://google.com devolverá esto:
+
+
+
 
 ```
-fetch("https://proxy.jorgerosa.dev/?url=https%3A%2F%2Fexample.com", {
+
+fetch("https://proxy.jorgerosa.dev/?url=https://jorgerosa.dev/", {
   headers: {
     "X-API-Key": "MI_API_KEY"
   }
 })
 .then(async response => {
   console.log("Status:", response.status);
-  console.log("Headers:", [...response.headers.entries()]);
+  console.log("Cloudflare:", response.headers.get("CF-Cache-Status"));
+  console.log("Worker:", response.headers.get("X-Worker-Version"));
+  console.log("Final URL:", response.headers.get("X-Final-URL"));
+  console.log("Content Type:", response.headers.get("X-Content-Type"));
+  console.log("Content Length:", response.headers.get("X-Content-Length"));
+  console.log("Response Time:", response.headers.get("X-Response-Time"));
   console.log("Body:", await response.text());
 });
+
 ```
