@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Content Explorer</title>
+
+    <meta
+        name="description"
+        content="Analiza y explora el contenido textual de cualquier página web."
+    >
+
+    <!-- JR Tools -->
+    <link
+        rel="stylesheet"
+        href="https://jorgerosa.dev/assets/css/jr-tools.css"
+    >
+
+</head>
+
+<body>
+
+<main class="container">
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="tool-header">
+
+        <h1>Content Explorer</h1>
+
+        <p>
+            Extrae y explora el contenido textual de una página web.
+        </p>
+
+    </header>
+
+
+    <!-- =====================================================
+         ANALYSIS FORM
+    ====================================================== -->
+
+    <section class="tool-card">
+
+        <form id="explorer-form">
+
+            <div class="form-group">
+
+                <label for="url">
+                    URL de la página
+                </label>
+
+                <input
+                    type="url"
+                    id="url"
+                    name="url"
+                    placeholder="https://ejemplo.com/"
+                    required
+                    autocomplete="url"
+                >
+
+            </div>
+
+
+            <div class="form-actions">
+
+                <button
+                    type="submit"
+                    id="analyze-button"
+                >
+                    Analizar página
+                </button>
+
+            </div>
+
+        </form>
+
+
+        <!-- =================================================
+             PROGRESS
+        ================================================== -->
+
+        <div
+            id="progress-container"
+            class="progress-container"
+            hidden
+        >
+
+            <div class="progress-header">
+
+                <span id="progress-text">
+                    Analizando página...
+                </span>
+
+                <span id="progress-percent">
+                    0%
+                </span>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div
+                    id="progress-fill"
+                    class="progress-fill"
+                    style="width: 0%;"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             ERROR
+        ================================================== -->
+
+        <div
+            id="error"
+            class="alert alert-error"
+            hidden
+        ></div>
+
+    </section>
+
+
+    <!-- =====================================================
+         RESULTS
+    ====================================================== -->
+
+    <section
+        id="results"
+        hidden
+    >
+
+        <!-- ================================================
+             PAGE INFORMATION
+        ================================================= -->
+
+        <div class="tool-card">
+
+            <div class="results-header">
+
+                <div>
+
+                    <h2>Resultado</h2>
+
+                    <p id="final-url"></p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ============================================
+                 STATISTICS
+            ============================================= -->
+
+            <div
+                id="statistics"
+                class="statistics"
+            >
+
+                <div class="stat-card">
+
+                    <span
+                        id="stat-total"
+                        class="stat-value"
+                    >
+                        0
+                    </span>
+
+                    <span class="stat-label">
+                        Elementos
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span
+                        id="stat-words"
+                        class="stat-value"
+                    >
+                        0
+                    </span>
+
+                    <span class="stat-label">
+                        Palabras
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span
+                        id="stat-characters"
+                        class="stat-value"
+                    >
+                        0
+                    </span>
+
+                    <span class="stat-label">
+                        Caracteres
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span
+                        id="stat-headings"
+                        class="stat-value"
+                    >
+                        0
+                    </span>
+
+                    <span class="stat-label">
+                        Headings
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================================================
+             PAGE TITLE
+        ================================================= -->
+
+        <div class="tool-card">
+
+            <h2>Title</h2>
+
+            <div
+                id="page-title"
+                class="content-result title-result"
+            ></div>
+
+        </div>
+
+
+        <!-- ================================================
+             CONTENT
+        ================================================= -->
+
+        <div class="tool-card">
+
+            <div class="results-header">
+
+                <h2>Contenido</h2>
+
+                <span
+                    id="result-count"
+                    class="result-count"
+                >
+                    0 elementos
+                </span>
+
+            </div>
+
+
+            <div id="content-results"></div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="./content-explorer.js"></script>
+
+</body>
+</html>
