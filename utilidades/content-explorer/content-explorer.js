@@ -670,7 +670,7 @@ function renderResults(data) {
 
         contentResults.innerHTML =
             `
-            <div class="empty-state">
+            <div class="ce-empty">
                 No se ha encontrado contenido textual.
             </div>
             `;
@@ -789,7 +789,7 @@ function createTagGroup(
         );
 
     wrapper.className =
-        "content-group";
+        "ce-content-group";
 
 
     /*
@@ -801,7 +801,7 @@ function createTagGroup(
         );
 
     header.className =
-        "content-group-header";
+        "ce-content-group-header";
 
 
     const heading =
@@ -819,10 +819,10 @@ function createTagGroup(
         );
 
     count.className =
-        "content-group-count";
+        "ce-content-group-count";
 
     count.textContent =
-        `${elements.length}`;
+        elements.length;
 
 
     header.appendChild(
@@ -842,15 +842,6 @@ function createTagGroup(
     /*
      * Elementos.
      */
-    const list =
-        document.createElement(
-            "div"
-        );
-
-    list.className =
-        "content-group-list";
-
-
     elements.forEach(
         (element, index) => {
 
@@ -860,11 +851,11 @@ function createTagGroup(
                 );
 
             item.className =
-                "content-item";
+                "ce-content-item";
 
 
             /*
-             * Índice.
+             * Número.
              */
             const number =
                 document.createElement(
@@ -872,7 +863,7 @@ function createTagGroup(
                 );
 
             number.className =
-                "content-item-number";
+                "ce-content-item-number";
 
             number.textContent =
                 index + 1;
@@ -887,7 +878,7 @@ function createTagGroup(
                 );
 
             text.className =
-                "content-item-text";
+                "ce-content-item-text";
 
             text.textContent =
                 element.text;
@@ -902,16 +893,11 @@ function createTagGroup(
             );
 
 
-            list.appendChild(
+            wrapper.appendChild(
                 item
             );
 
         }
-    );
-
-
-    wrapper.appendChild(
-        list
     );
 
 

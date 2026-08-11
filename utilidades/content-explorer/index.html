@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
     <meta charset="UTF-8">
@@ -13,7 +14,7 @@
 
     <meta
         name="description"
-        content="Analiza y explora el contenido textual de cualquier página web."
+        content="Extrae, busca y explora el contenido textual de cualquier página web."
     >
 
     <!-- JR Tools -->
@@ -22,137 +23,109 @@
         href="https://jorgerosa.dev/assets/css/jr-tools.css"
     >
 
+    <!-- Content Explorer -->
+    <link
+        rel="stylesheet"
+        href="./content-explorer.css"
+    >
+
 </head>
+
 
 <body>
 
-<main class="container">
+<div class="jr-page">
 
-    <!-- =====================================================
-         HEADER
-    ====================================================== -->
-
-    <header class="tool-header">
-
-        <h1>Content Explorer</h1>
-
-        <p>
-            Extrae y explora el contenido textual de una página web.
-        </p>
-
-    </header>
+    <main class="jr-container">
 
 
-    <!-- =====================================================
-         ANALYSIS FORM
-    ====================================================== -->
+        <!-- ==================================================
+             HEADER
+        =================================================== -->
 
-    <section class="tool-card">
+        <header class="jr-header">
 
-        <form id="explorer-form">
+            <h1>
+                Content Explorer
+            </h1>
 
-            <div class="form-group">
+            <p>
+                Extrae y explora el contenido textual de una página web.
+            </p>
 
-                <label for="url">
+        </header>
+
+
+        <!-- ==================================================
+             ANALYSIS
+        =================================================== -->
+
+        <section class="jr-card">
+
+            <form id="explorer-form">
+
+                <label
+                    for="url"
+                    class="jr-label"
+                >
                     URL de la página
+
+                    <input
+                        type="url"
+                        id="url"
+                        name="url"
+                        class="jr-input"
+                        placeholder="https://ejemplo.com/"
+                        required
+                        autocomplete="url"
+                    >
+
                 </label>
 
-                <input
-                    type="url"
-                    id="url"
-                    name="url"
-                    placeholder="https://ejemplo.com/"
-                    required
-                    autocomplete="url"
-                >
 
-            </div>
+                <div class="jr-buttons">
 
+                    <button
+                        type="submit"
+                        id="analyze-button"
+                        class="jr-btn"
+                    >
+                        Analizar página
+                    </button>
 
-            <div class="form-actions">
+                </div>
 
-                <button
-                    type="submit"
-                    id="analyze-button"
-                >
-                    Analizar página
-                </button>
-
-            </div>
-
-        </form>
+            </form>
 
 
-        <!-- =================================================
-             PROGRESS
-        ================================================== -->
+            <!-- ============================================
+                 PROGRESS
+            ============================================= -->
 
-        <div
-            id="progress-container"
-            class="progress-container"
-            hidden
-        >
+            <div
+                id="progress-container"
+                class="ce-progress"
+                hidden
+            >
 
-            <div class="progress-header">
+                <div class="jr-flex-between">
 
-                <span id="progress-text">
-                    Analizando página...
-                </span>
+                    <span id="progress-text">
+                        Analizando página...
+                    </span>
 
-                <span id="progress-percent">
-                    0%
-                </span>
+                    <span id="progress-percent">
+                        0%
+                    </span>
 
-            </div>
+                </div>
 
-            <div class="progress-bar">
+                <div class="ce-progress-track">
 
-                <div
-                    id="progress-fill"
-                    class="progress-fill"
-                    style="width: 0%;"
-                ></div>
-
-            </div>
-
-        </div>
-
-
-        <!-- =================================================
-             ERROR
-        ================================================== -->
-
-        <div
-            id="error"
-            class="alert alert-error"
-            hidden
-        ></div>
-
-    </section>
-
-
-    <!-- =====================================================
-         RESULTS
-    ====================================================== -->
-
-    <section
-        id="results"
-        hidden
-    >
-
-        <!-- ================================================
-             PAGE INFORMATION
-        ================================================= -->
-
-        <div class="tool-card">
-
-            <div class="results-header">
-
-                <div>
-
-                    <h2>Resultado</h2>
-
-                    <p id="final-url"></p>
+                    <div
+                        id="progress-fill"
+                        class="ce-progress-fill"
+                    ></div>
 
                 </div>
 
@@ -160,128 +133,183 @@
 
 
             <!-- ============================================
-                 STATISTICS
+                 ERROR
             ============================================= -->
 
             <div
-                id="statistics"
-                class="statistics"
-            >
-
-                <div class="stat-card">
-
-                    <span
-                        id="stat-total"
-                        class="stat-value"
-                    >
-                        0
-                    </span>
-
-                    <span class="stat-label">
-                        Elementos
-                    </span>
-
-                </div>
-
-
-                <div class="stat-card">
-
-                    <span
-                        id="stat-words"
-                        class="stat-value"
-                    >
-                        0
-                    </span>
-
-                    <span class="stat-label">
-                        Palabras
-                    </span>
-
-                </div>
-
-
-                <div class="stat-card">
-
-                    <span
-                        id="stat-characters"
-                        class="stat-value"
-                    >
-                        0
-                    </span>
-
-                    <span class="stat-label">
-                        Caracteres
-                    </span>
-
-                </div>
-
-
-                <div class="stat-card">
-
-                    <span
-                        id="stat-headings"
-                        class="stat-value"
-                    >
-                        0
-                    </span>
-
-                    <span class="stat-label">
-                        Headings
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- ================================================
-             PAGE TITLE
-        ================================================= -->
-
-        <div class="tool-card">
-
-            <h2>Title</h2>
-
-            <div
-                id="page-title"
-                class="content-result title-result"
+                id="error"
+                class="ce-alert ce-alert-error"
+                hidden
             ></div>
 
-        </div>
+        </section>
 
 
-        <!-- ================================================
-             CONTENT
-        ================================================= -->
+        <!-- ==================================================
+             RESULTS
+        =================================================== -->
 
-        <div class="tool-card">
-
-            <div class="results-header">
-
-                <h2>Contenido</h2>
-
-                <span
-                    id="result-count"
-                    class="result-count"
-                >
-                    0 elementos
-                </span>
-
-            </div>
+        <section
+            id="results"
+            hidden
+        >
 
 
-            <div id="content-results"></div>
+            <!-- ============================================
+                 PAGE INFORMATION
+            ============================================= -->
 
-        </div>
+            <section class="jr-card">
 
-    </section>
+                <div class="jr-flex-between ce-results-title">
 
-</main>
+                    <div>
+
+                        <h2>
+                            Resultado
+                        </h2>
+
+                        <div
+                            id="final-url"
+                            class="ce-final-url"
+                        ></div>
+
+                    </div>
+
+                    <span
+                        id="result-count"
+                        class="jr-badge jr-badge-success"
+                    >
+                        0 elementos
+                    </span>
+
+                </div>
+
+
+                <!-- ========================================
+                     STATISTICS
+                ========================================= -->
+
+                <div class="ce-statistics">
+
+
+                    <div class="ce-stat">
+
+                        <span
+                            id="stat-total"
+                            class="ce-stat-value"
+                        >
+                            0
+                        </span>
+
+                        <span class="ce-stat-label">
+                            Elementos
+                        </span>
+
+                    </div>
+
+
+                    <div class="ce-stat">
+
+                        <span
+                            id="stat-words"
+                            class="ce-stat-value"
+                        >
+                            0
+                        </span>
+
+                        <span class="ce-stat-label">
+                            Palabras
+                        </span>
+
+                    </div>
+
+
+                    <div class="ce-stat">
+
+                        <span
+                            id="stat-characters"
+                            class="ce-stat-value"
+                        >
+                            0
+                        </span>
+
+                        <span class="ce-stat-label">
+                            Caracteres
+                        </span>
+
+                    </div>
+
+
+                    <div class="ce-stat">
+
+                        <span
+                            id="stat-headings"
+                            class="ce-stat-value"
+                        >
+                            0
+                        </span>
+
+                        <span class="ce-stat-label">
+                            Headings
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- ============================================
+                 TITLE
+            ============================================= -->
+
+            <section class="jr-card">
+
+                <h2>
+                    Title
+                </h2>
+
+                <div
+                    id="page-title"
+                    class="ce-title-result"
+                ></div>
+
+            </section>
+
+
+            <!-- ============================================
+                 CONTENT
+            ============================================= -->
+
+            <section class="jr-card">
+
+                <div class="jr-flex-between ce-content-header">
+
+                    <h2>
+                        Contenido
+                    </h2>
+
+                </div>
+
+
+                <div id="content-results"></div>
+
+            </section>
+
+
+        </section>
+
+
+    </main>
+
+</div>
 
 
 <script src="./content-explorer.js"></script>
 
 </body>
+
 </html>
