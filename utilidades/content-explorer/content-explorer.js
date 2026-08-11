@@ -116,7 +116,7 @@ const statHeadings =
  * - aria-label
  * - data-*
  */
-const EXTRACTION_TAGS = [
+/*const EXTRACTION_TAGS = [
 
     "h1",
     "h2",
@@ -138,7 +138,9 @@ const EXTRACTION_TAGS = [
 
     "summary"
 
-];
+];*/
+
+
 
 
 /* ============================================================
@@ -206,12 +208,20 @@ async function analyzePage(url) {
         /*
          * Petición al Cloudflare Worker.
          */
+
+        const options =
+            getExtractionOptions();
+
+
+        const optionsParam =
+            encodeURIComponent(
+                JSON.stringify(options)
+            );
+            
         const response =
             await fetch(
-                workerUrl.toString(),
+                 `${WORKER_URL}?url=${encodeURIComponent(url)}&options=${optionsParam}`,
                 {
-                    method: "GET",
-
                     headers: {
                         "X-API-Key": API_KEY
                     }
@@ -409,10 +419,6 @@ function extractContent(
     /*
      * Eliminamos elementos que no queremos
      * procesar.
-     *
-     * Aunque nuestro selector posterior
-     * ya evita la mayoría, esto hace que el
-     * DOM sea más limpio.
      */
     document
         .querySelectorAll(
@@ -425,9 +431,6 @@ function extractContent(
 
     /*
      * TITLE
-     *
-     * document.title utiliza el contenido
-     * del elemento <title>, no un atributo.
      */
     const title =
         cleanText(
@@ -440,13 +443,68 @@ function extractContent(
      */
     const elements = [];
 
+    const seenTexts =
+        new Set();
+
+
+    /*
+     * Obtenemos las opciones seleccionadas
+     * por el usuario.
+     */
+    const options =
+        getExtractionOptions();
+
+
+    /*
+     * Construimos los selectores
+     * según las opciones.
+     */
+    const selectors = [];
+
+
+    if (options.tags.includes("h1")) {
+        selectors.push("h1");
+    }
+
+    if (options.tags.includes("h2")) {
+        selectors.push("h2");
+    }
+
+    if (options.tags.includes("h3")) {
+        selectors.push("h3");
+    }
+
+    if (options.tags.includes("h4")) {
+        selectors.push("h4");
+    }
+
+    if (options.tags.includes("h5")) {
+        selectors.push("h5");
+    }
+
+    if (options.tags.includes("h6")) {
+        selectors.push("h6");
+    }
+
+    if (options.tags.includes("p")) {
+        selectors.push("p");
+    }
+
+    if (options.tags.includes("lists")) {
+        selectors.push("li");
+    }
+
+    if (options.tags.includes("blockquote")) {
+        selectors.push("blockquote");
+    }
+
 
     /*
      * Recorremos únicamente los tags
-     * definidos en EXTRACTION_TAGS.
+     * seleccionados.
      */
     for (
-        const tag of EXTRACTION_TAGS
+        const tag of selectors
     ) {
 
         const nodes =
@@ -470,6 +528,30 @@ function extractContent(
                 if (!text) {
                     return;
                 }
+
+
+                /*
+                 * Ignorar textos cortos.
+                 */
+                if (
+                    options.ignoreShort &&
+                    text.length < options.minLength
+                ) {
+                    return;
+                }
+
+
+                /*
+                 * Eliminar duplicados.
+                 */
+                if (
+                    options.removeDuplicates &&
+                    seenTexts.has(text)
+                ) {
+                    return;
+                }
+
+                seenTexts.add(text);
 
 
                 /*
@@ -984,3 +1066,80 @@ function resetInterface() {
         "0%";
 
 }
+
+/* ============================================================
+   EXTRACT OPTIONS
+============================================================ */
+
+
+function getExtractionOptions() {
+
+    const tags = Array.from(
+        document.querySelectorAll(
+            'input[name="tag"]:checked'
+        )
+    ).map(
+        input => input.value
+    );
+
+
+    const ignoreShort =
+        document.getElementById(
+            "ignore-short"
+        ).checked;
+
+
+    const minLength =
+        parseInt(
+            document.getElementById(
+                "min-length"
+            ).value,
+            10
+        ) || 0;
+
+
+    const removeDuplicates =
+        document.getElementById(
+            "remove-duplicates"
+        ).checked;
+
+
+    return {
+
+        tags,
+
+        ignoreShort,
+
+        minLength,
+
+        removeDuplicates
+
+    };
+
+}
+
+
+/* ============================================================
+   IGNORAR TEXTOS DE MENOS DE 20 CARACTERES
+============================================================ */
+
+const ignoreShortCheckbox =
+    document.getElementById(
+        "ignore-short"
+    );
+
+const minLengthInput =
+    document.getElementById(
+        "min-length"
+    );
+
+
+ignoreShortCheckbox.addEventListener(
+    "change",
+    () => {
+
+        minLengthInput.disabled =
+            !ignoreShortCheckbox.checked;
+
+    }
+);

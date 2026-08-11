@@ -139,34 +139,6 @@ Configurable mediante checkboxes.
 
 ------
 
-Tenemos ya el proxy bastante sólido:
-
-🔐 API Key
-
-🌐 Restricción a jorgerosa.dev
-
-↪️ Redirecciones
-
-⏱️ Timeout de 10 s
-
-📦 Límite de 10 MB
-
-🧾 Solo HTML
-
-🗜️ Compresión gestionada por fetch
-
-📍 URL final
-
-📊 Metadatos
-
-🗂️ Hash de opciones
-
-⚡ Caché de Cloudflare
-
-🔎 Traces/Observability para depuración
-
-------
-
 ## Pasos de exrtacción
 
 ```
@@ -738,3 +710,62 @@ Por tanto:
 
 
 > **Nota:** La cabecera `CF-Cache-Status` que podamos consultar desde el navegador no tiene por qué indicar el estado de caché de la subpetición realizada por el Worker. En nuestro caso, la respuesta que recibe el navegador es una nueva `Response` creada por el Worker. Para comprobar la caché de las subpeticiones utilizaremos **Metrics → Subrequests → Cache Rate**.
+
+
+------
+
+La idea será que las opciones se envíen al Worker mediante options, de forma que:
+
+```
+URL + opciones
+      ↓
+Worker
+      ↓
+optionsHash
+      ↓
+caché independiente
+
+```
+
+Por ejemplo, analizar:
+
+https://jorgerosa.dev/
+
+con:
+
+H1 + H2 + P
+
+generará una caché diferente que:
+
+H1 + H2 + H3 + P + listas
+
+Para hacer esto y que el worker admita variables en la URL tenemos que configurarlas en el Worker de Cloudflare.
+
+Tenemos que poner esto:
+
+``` javascript
+const options =
+    getExtractionOptions();
+
+
+const optionsParam =
+    encodeURIComponent(
+        JSON.stringify(options)
+    );
+
+
+const response = await fetch(
+    `${WORKER_URL}?url=${encodeURIComponent(url)}&options=${optionsParam}`,
+    {
+        headers: {
+            "X-API-Key": API_KEY
+        }
+    }
+);
+```
+
+Ahora una petición podría terminar siendo conceptualmente:
+
+`?url=https://jorgerosa.dev/&options={"tags":["h1","h2","p"],"ignoreShort":true,"minLength":20,"removeDuplicates":false}`
+
+No tienes que construir esa URL manualmente; encodeURIComponent() lo hace correctamente.

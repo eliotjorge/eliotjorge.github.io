@@ -439,3 +439,136 @@
     }
 
 }
+
+/* ==========================================================
+   EXTRACTION OPTIONS
+========================================================== */
+
+.ce-options {
+
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top:
+        1px solid var(--jr-border);
+
+}
+
+
+.ce-options h3 {
+
+    margin-bottom: 18px;
+
+    font-size: 1.1rem;
+
+}
+
+
+/* ==========================================================
+   TAG OPTIONS
+========================================================== */
+
+.ce-options-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 10px;
+
+}
+
+
+.ce-checkbox {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+}
+
+
+.ce-checkbox input[type="checkbox"] {
+
+    width: 17px;
+
+    height: 17px;
+
+    accent-color:
+        var(--jr-primary);
+
+    cursor: pointer;
+
+}
+
+
+/* ==========================================================
+   EXTRA OPTIONS
+========================================================== */
+
+.ce-options-extra {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+    margin-top: 22px;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid var(--jr-border);
+
+}
+
+
+.ce-number-input {
+
+    width: 80px;
+
+    margin-top: 0;
+
+    padding: 7px 9px;
+
+}
+
+
+.ce-number-input:disabled {
+
+    opacity: .5;
+
+    cursor: not-allowed;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 600px) {
+
+    .ce-options-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+    .ce-options-extra .ce-checkbox {
+
+        flex-wrap: wrap;
+
+    }
+
+}
