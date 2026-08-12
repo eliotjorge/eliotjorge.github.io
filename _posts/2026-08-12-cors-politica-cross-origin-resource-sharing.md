@@ -1,6 +1,7 @@
 ---
 title: "CORS: qué es la política Cross-Origin Resource Sharing y cómo funciona"
-date: 2026-08-11
+date: 2026-08-12
+image: "https://github.com/user-attachments/assets/6aef69b5-3673-4c59-844e-229260aeaecf"
 categories: [web,seguridad,backend]
 tags: [cors,cross-origin-resource-sharing,javascript,api,fetch,http,seguridad-web]
 description: "Qué es CORS, cómo funciona la política Cross-Origin Resource Sharing, cuándo aparece un error CORS y cómo solucionarlo en APIs y aplicaciones web."
