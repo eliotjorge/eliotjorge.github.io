@@ -1,6 +1,7 @@
 ---
 title: "AWS desde cero: qué son EC2, S3, RDS, EBS y cómo elegir el servicio adecuado"
 date: 2026-08-18
+image: "https://github.com/user-attachments/assets/0d3b6ae2-6773-4b27-9313-65f32a218ddd"
 categories: [aws, cloud, desarrollo-web]
 tags: [amazon-web-services, aws, cloud-computing, ec2, s3, rds, ebs, cloudfront, wordpress, linux, servidores]
 description: "Guía práctica de AWS para entender qué son EC2, S3, RDS, EBS y otros servicios, cuándo usar cada uno y cómo combinarlos para alojar webs estáticas, WordPress, bases de datos y servidores Linux."
