@@ -1,6 +1,6 @@
 ---
 title: "Ejemplo playground diaplay grid"
-date:
+date: 2026-09-17
 categories: []
 tags: []
 ---
@@ -71,4 +71,15 @@ css=grid_css
 php=grid_php
 image="https://github.com/user-attachments/assets/ae571822-199b-408b-b597-bcad4f69ab6d"
 height="250"
+%}
+
+# Playground 2
+
+{% include playground.html
+    id="ejemplo-php"
+    html='<div class="card">Contenido HTML</div>'
+    css='.card { padding: 20px; background: #eee; }'
+    javascript='console.log("JavaScript ejecutado");'
+    php='<?php echo "Este código solo se muestra"; ?>'
+    image="https://github.com/user-attachments/assets/ae571822-199b-408b-b597-bcad4f69ab6d"
 %}
