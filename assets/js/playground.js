@@ -1,112 +1,258 @@
 /*==================================================
-=               PLAYGROUND v1.0                    =
+=               PLAYGROUND v1.2                    =
 ==================================================*/
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    document.querySelectorAll(".playground").forEach(initPlayground);
+    document
+        .querySelectorAll(".playground")
+        .forEach(initPlayground);
 
 });
 
-function initPlayground(playground){
+
+function initPlayground(playground) {
 
     const buttons = playground.querySelectorAll(".playground-btn");
     const panels = playground.querySelectorAll(".playground-panel");
 
-    /*=============================
-    =            TABS             =
-    =============================*/
+    const copyButton = playground.querySelector(".playground-copy");
+    const openButton = playground.querySelector(".playground-open");
 
-    buttons.forEach(button=>{
 
-        button.addEventListener("click",()=>{
+    /*==================================================
+    =                    HELPERS                       =
+    ==================================================*/
 
-            buttons.forEach(btn=>btn.classList.remove("active"));
+    function getPanel(target) {
 
-            panels.forEach(panel=>panel.classList.remove("active"));
+        return playground.querySelector(
+            `.playground-panel[data-panel="${target}"]`
+        );
 
-            button.classList.add("active");
+    }
 
-            const panel = playground.querySelector(
-                `.playground-panel[data-panel="${button.dataset.target}"]`
-            );
 
-            if(panel){
+    function getPanelCopy(panel) {
 
-                panel.classList.add("active");
+        if (!panel) {
+            return "";
+        }
 
-            }
+        /*
+         * data-copy se utiliza para HTML, CSS, JavaScript,
+         * PHP y el resultado completo.
+         */
+        if (panel.dataset.copy !== undefined) {
+
+            return panel.dataset.copy;
+
+        }
+
+        /*
+         * Las imágenes no tienen código copiable.
+         */
+        return "";
+
+    }
+
+
+    function setActiveTab(button) {
+
+        if (!button) {
+            return;
+        }
+
+        const target = button.dataset.target;
+        const panel = getPanel(target);
+
+        if (!panel) {
+            return;
+        }
+
+        buttons.forEach(btn => {
+
+            btn.classList.remove("active");
+
+        });
+
+        panels.forEach(currentPanel => {
+
+            currentPanel.classList.remove("active");
+
+        });
+
+        button.classList.add("active");
+        panel.classList.add("active");
+
+        updateActions(target, panel);
+
+    }
+
+
+    function updateActions(target, panel) {
+
+        /*
+         * El botón de abrir solo tiene sentido para el resultado.
+         */
+        if (openButton) {
+
+            openButton.hidden = target !== "result";
+
+        }
+
+        /*
+         * La captura no tiene contenido copiable.
+         */
+        if (copyButton) {
+
+            const copyContent = getPanelCopy(panel);
+            const canCopy = copyContent.trim() !== "";
+
+            copyButton.hidden = !canCopy;
+            copyButton.disabled = !canCopy;
+
+        }
+
+    }
+
+
+    function restoreCopyButton() {
+
+        if (!copyButton) {
+            return;
+        }
+
+        copyButton.innerHTML =
+            '<i class="fa-fw fas fa-copy"></i>';
+
+        copyButton.disabled = false;
+
+    }
+
+
+    /*==================================================
+    =                     TABS                         =
+    ==================================================*/
+
+    buttons.forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            setActiveTab(button);
 
         });
 
     });
 
-    /*=============================
-    =            COPIAR           =
-    =============================*/
 
-    const copyButton = playground.querySelector(".playground-copy");
+    /*
+     * Si no existe una pestaña activa, se activa la primera.
+     */
+    let activeButton = playground.querySelector(
+        ".playground-btn.active"
+    );
 
-    copyButton.addEventListener("click",()=>{
+    if (!activeButton || !getPanel(activeButton.dataset.target)) {
 
-        const active = playground.querySelector(".playground-panel.active");
+        activeButton = buttons[0];
 
-        if(!active) return;
+    }
 
-        navigator.clipboard.writeText(active.dataset.copy);
+    if (activeButton) {
 
-        //const old = copyButton.textContent;
+        setActiveTab(activeButton);
 
-        copyButton.textContent="✔ Copiado";
+    }
 
-        copyButton.disabled=true;
 
-        setTimeout(()=>{
+    /*==================================================
+    =                    COPIAR                         =
+    ==================================================*/
 
-            //copyButton.textContent=old;
-            copyButton.innerHTML = "";
-            copyButton.insertAdjacentHTML("beforeend", '<i class="fa-fw fas fa-copy"></i>');
+    if (copyButton) {
 
-            copyButton.disabled=false;
+        copyButton.addEventListener("click", async () => {
 
-        },2000);
+            const activePanel = playground.querySelector(
+                ".playground-panel.active"
+            );
 
-    });
+            const content = getPanelCopy(activePanel);
 
-    /*=============================
-    =      ABRIR NUEVA PESTAÑA    =
-    =============================*/
+            if (!content.trim()) {
+                return;
+            }
 
-    const openButton = playground.querySelector(".playground-open");
+            try {
 
-    openButton.addEventListener("click",()=>{
+                await navigator.clipboard.writeText(content);
 
-        const result = playground.querySelector(
-            '.playground-panel[data-panel="result"]'
-        );
+                copyButton.textContent = "✔ Copiado";
+                copyButton.disabled = true;
 
-        if(!result) return;
+                setTimeout(() => {
 
-        const html = result.dataset.copy;
+                    restoreCopyButton();
 
-        const blob = new Blob(
+                }, 2000);
 
-            [html],
+            } catch (error) {
 
-            {type:"text/html"}
+                console.error(
+                    "No se pudo copiar el contenido:",
+                    error
+                );
 
-        );
+            }
 
-        const url = URL.createObjectURL(blob);
+        });
 
-        window.open(url,"_blank");
+    }
 
-        setTimeout(()=>{
 
-            URL.revokeObjectURL(url);
+    /*==================================================
+    =               ABRIR RESULTADO                    =
+    ==================================================*/
 
-        },5000);
+    if (openButton) {
 
-    });
+        openButton.addEventListener("click", () => {
 
-};
+            const resultPanel = getPanel("result");
+
+            if (!resultPanel) {
+                return;
+            }
+
+            const html = getPanelCopy(resultPanel);
+
+            if (!html.trim()) {
+                return;
+            }
+
+            const blob = new Blob(
+
+                [html],
+
+                {
+                    type: "text/html"
+                }
+
+            );
+
+            const url = URL.createObjectURL(blob);
+
+            window.open(url, "_blank");
+
+            setTimeout(() => {
+
+                URL.revokeObjectURL(url);
+
+            }, 5000);
+
+        });
+
+    }
+
+}

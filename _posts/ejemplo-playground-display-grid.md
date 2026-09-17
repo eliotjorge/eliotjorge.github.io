@@ -54,9 +54,20 @@ tags: []
 
 {% endcapture %}
 
+{% capture grid_php %}
+
+<?php
+
+echo "Este código PHP solo se muestra como ejemplo.";
+
+?>
+
+{% endcapture %}
+
 {% include playground.html
 id="grid01"
 html=grid_html
 css=grid_css
+php=grid_php
 height="250"
 %}

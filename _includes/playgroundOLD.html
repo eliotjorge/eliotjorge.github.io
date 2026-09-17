@@ -16,10 +16,15 @@
 
     <div class="playground-header">
 
+        <!-- <div class="playground-title">
+
+            💡 Ejemplo interactivo
+
+        </div>--->
+
         <div class="playground-toolbar">
 
             <button
-                type="button"
                 class="playground-btn active"
                 data-target="result">
 
@@ -27,10 +32,7 @@
 
             </button>
 
-            {% if include.html %}
-
             <button
-                type="button"
                 class="playground-btn"
                 data-target="html">
 
@@ -38,12 +40,7 @@
 
             </button>
 
-            {% endif %}
-
-            {% if include.css %}
-
             <button
-                type="button"
                 class="playground-btn"
                 data-target="css">
 
@@ -51,42 +48,13 @@
 
             </button>
 
-            {% endif %}
-
             {% if include.javascript %}
 
             <button
-                type="button"
                 class="playground-btn"
                 data-target="javascript">
 
                 JavaScript
-
-            </button>
-
-            {% endif %}
-
-            {% if include.php %}
-
-            <button
-                type="button"
-                class="playground-btn"
-                data-target="php">
-
-                PHP
-
-            </button>
-
-            {% endif %}
-
-            {% if include.image %}
-
-            <button
-                type="button"
-                class="playground-btn"
-                data-target="image">
-
-                Captura
 
             </button>
 
@@ -97,19 +65,16 @@
         <div class="playground-actions">
 
             <button
-                type="button"
                 class="playground-copy"
                 title="Copiar">
-
+            
                 <i class="fa-fw fas fa-copy"></i>
 
             </button>
 
             <button
-                type="button"
                 class="playground-open"
-                title="Abrir resultado en otra pestaña">
-
+                title="Abrir en otra pestaña">
                 <i class="fa-fw fas fa-expand"></i>
 
             </button>
@@ -117,8 +82,6 @@
         </div>
 
     </div>
-
-    <!-- RESULTADO -->
 
     <div
         class="playground-panel active"
@@ -133,37 +96,23 @@
 
     </div>
 
-    <!-- HTML -->
-
-    {% if include.html %}
-
     <div
         class="playground-panel"
         data-panel="html"
         data-copy="{{ include.html | escape }}">
 
-        <pre><code>{{ include.html | escape }}</code></pre>
+<pre><code>{{ include.html | escape }}</code></pre>
 
     </div>
-
-    {% endif %}
-
-    <!-- CSS -->
-
-    {% if include.css %}
 
     <div
         class="playground-panel"
         data-panel="css"
         data-copy="{{ include.css | escape }}">
 
-        <pre><code>{{ include.css | escape }}</code></pre>
+<pre><code>{{ include.css | escape }}</code></pre>
 
     </div>
-
-    {% endif %}
-
-    <!-- JAVASCRIPT -->
 
     {% if include.javascript %}
 
@@ -172,40 +121,7 @@
         data-panel="javascript"
         data-copy="{{ include.javascript | escape }}">
 
-        <pre><code>{{ include.javascript | escape }}</code></pre>
-
-    </div>
-
-    {% endif %}
-
-    <!-- PHP -->
-
-    {% if include.php %}
-
-    <div
-        class="playground-panel"
-        data-panel="php"
-        data-copy="{{ include.php | escape }}">
-
-        <pre><code>{{ include.php | escape }}</code></pre>
-
-    </div>
-
-    {% endif %}
-
-    <!-- IMAGE -->
-
-    {% if include.image %}
-
-    <div
-        class="playground-panel"
-        data-panel="image">
-
-        <img
-            class="playground-image"
-            src="{{ include.image | relative_url }}"
-            alt="Captura del resultado"
-            loading="lazy">
+<pre><code>{{ include.javascript | escape }}</code></pre>
 
     </div>
 
