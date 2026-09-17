@@ -1,6 +1,6 @@
 ---
 title: "Ejemplo playground diaplay grid"
-date:
+date:2026-09-17
 categories: []
 tags: []
 ---
@@ -69,5 +69,6 @@ id="grid01"
 html=grid_html
 css=grid_css
 php=grid_php
+image="https://github.com/user-attachments/assets/ae571822-199b-408b-b597-bcad4f69ab6d"
 height="250"
 %}
