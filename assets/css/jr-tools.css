@@ -218,6 +218,128 @@ html{
 }
 
 /* ==========================================================
+   Checkbox
+========================================================== */
+
+.jr-checkbox{
+
+    appearance:none;
+    -webkit-appearance:none;
+
+    width:20px;
+    height:20px;
+
+    margin:0;
+
+    display:inline-grid;
+    place-content:center;
+
+    flex-shrink:0;
+
+    border:1px solid var(--jr-border);
+    border-radius:6px;
+
+    background:var(--jr-card);
+
+    cursor:pointer;
+
+    transition:
+
+        background .2s,
+        border-color .2s,
+        box-shadow .2s,
+        transform .15s;
+
+}
+
+
+/* Icono de check */
+
+.jr-checkbox::before{
+
+    content:"";
+
+    width:10px;
+    height:6px;
+
+    border-left:2px solid white;
+    border-bottom:2px solid white;
+
+    transform:rotate(-45deg) scale(0);
+
+    transition:transform .15s ease-in-out;
+
+}
+
+
+/* Estado marcado */
+
+.jr-checkbox:checked{
+
+    background:var(--jr-primary);
+    border-color:var(--jr-primary);
+
+}
+
+
+.jr-checkbox:checked::before{
+
+    transform:rotate(-45deg) scale(1);
+
+}
+
+
+/* Hover */
+
+.jr-checkbox:hover{
+
+    border-color:var(--jr-primary);
+
+}
+
+
+/* Focus accesible */
+
+.jr-checkbox:focus-visible{
+
+    outline:none;
+
+    box-shadow:
+        0 0 0 4px rgba(37,99,235,.15);
+
+}
+
+
+/* Pulsación */
+
+.jr-checkbox:active{
+
+    transform:scale(.94);
+
+}
+
+
+/* Desactivado */
+
+.jr-checkbox:disabled{
+
+    opacity:.5;
+
+    cursor:not-allowed;
+
+}
+
+
+/* Checkbox desactivado y marcado */
+
+.jr-checkbox:disabled:checked{
+
+    background:var(--jr-text-light);
+    border-color:var(--jr-text-light);
+
+}
+
+/* ==========================================================
    Botones
 ========================================================== */
 
