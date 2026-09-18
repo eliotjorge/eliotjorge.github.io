@@ -100,7 +100,7 @@ limpiar{
 
 <h1 class="jr-header">Generador Playground Jekyll</h1>
 
-<label>ID del ejemplo</label>
+<label>ID del ejemplo *</label>
 <input id="id" placeholder="grid01" class="jr-input">
 
 <label>Altura</label>
@@ -119,7 +119,7 @@ limpiar{
 <textarea id="php" class="jr-input"></textarea>
 
 <label>¿Imagen?</label>
-<input type="checkbox" id="imagen" class=""></input>
+<input type="checkbox" id="imagen" class="jr-checkbox"></input>
 
 <div class="acciones">
 
@@ -249,7 +249,7 @@ php=${id}_php`;
     if(imagen!==""){
 
         salida+=`
-imagen=`;
+image=`;
 
     }
 
@@ -284,7 +284,7 @@ function limpiar(){
     document.getElementById("css").value="";
     document.getElementById("js").value="";
     document.getElementById("php").value="";
-    document.getElementById("imagen").checked="false";
+    document.getElementById("imagen").checked=false;
 
     document.getElementById("resultado").textContent="";
 
