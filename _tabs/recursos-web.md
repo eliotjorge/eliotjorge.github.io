@@ -49,6 +49,7 @@ order: 6
 
 [**ESPWEBTOOL** - Flash your ESP32 or ESP8266 through your browser. Open-Source, free, and easy to use.](https://esptool.spacehuhn.com/){:target="_blank"}
 
+[**Osirisai** - The open-source Palantir alternative. Track live aircraft, satellites, and worldwide CCTV cameras on a 3D globe. Run Nmap scans, DNS lookups, WHOIS queries...](https://osirisai.live/){:target="_blank"}
 
 ### Como no todo es trabajar...
 
@@ -69,3 +70,5 @@ order: 6
 [🛩️ **Globe**](https://globe.adsbexchange.com/){:target="_blank"}
 
 [🛩️ **Flightsim.to** - Mods para MSFS, aviones, aeropuertos...](https://flightsim.to/){:target="_blank"}
+
+[🔭 **Satellites online** - Ver satélites sin necesidad de telescopio](https://james.darpinian.com/satellites/){:target="_blank"}
