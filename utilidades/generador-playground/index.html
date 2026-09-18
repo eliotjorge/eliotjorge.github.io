@@ -115,6 +115,12 @@ limpiar{
 <label>JavaScript</label>
 <textarea id="js" class="jr-input"></textarea>
 
+<label>PHP</label>
+<textarea id="php" class="jr-input"></textarea>
+
+<label>¿Imagen?</label>
+<input type="checkbox" id="imagen" class=""></input>
+
 <div class="acciones">
 
     <button id="generar" class="jr-btn">
@@ -146,7 +152,12 @@ function generar(){
     const html=document.getElementById("html").value.trim();
     const css=document.getElementById("css").value.trim();
     const js=document.getElementById("js").value.trim();
+    const php=document.getElementById("php").value.trim();
+    const imagen=document.getElementById('imagen').checked;
     const height=document.getElementById("height").value.trim() || "250";
+
+  console.log(imagen.value);
+  console.log(imagen.checked);
 
     if(id===""){
 
@@ -198,6 +209,18 @@ ${js}
 
     }
 
+    if(php!==""){
+
+        salida+=`{% capture ${id}_php %}
+
+${php}
+
+{% endcapture %}
+
+`;
+
+    }
+
     salida+=`{% include playground.html
 id="${id}"
 html=${id}_html`;
@@ -213,6 +236,20 @@ css=${id}_css`;
 
         salida+=`
 javascript=${id}_javascript`;
+
+    }
+
+    if(php!==""){
+
+        salida+=`
+php=${id}_php`;
+
+    }
+
+    if(imagen!==""){
+
+        salida+=`
+imagen=`;
 
     }
 
@@ -246,6 +283,8 @@ function limpiar(){
     document.getElementById("html").value="";
     document.getElementById("css").value="";
     document.getElementById("js").value="";
+    document.getElementById("php").value="";
+    document.getElementById("imagen").checked="false";
 
     document.getElementById("resultado").textContent="";
 
