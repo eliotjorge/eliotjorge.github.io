@@ -71,7 +71,7 @@ La desventaja es bastante evidente:
 
 ---
 
-# 🖥️ EC2: necesito una máquina
+## 🖥️ EC2: necesito una máquina
 
 Si hay un servicio de AWS que conviene entender primero, probablemente sea **Amazon EC2**.
 
@@ -133,7 +133,7 @@ Y esto nos lleva al siguiente servicio.
 
 ---
 
-# 💾 EBS: el disco de mi servidor
+## 💾 EBS: el disco de mi servidor
 
 **Amazon EBS (Elastic Block Store)** es almacenamiento de bloques.
 
@@ -182,7 +182,7 @@ es muy habitual que ese sistema esté almacenado en un volumen EBS.
 
 ---
 
-# 🗄️ S3: guardar archivos no es lo mismo que tener un disco
+## 🗄️ S3: guardar archivos no es lo mismo que tener un disco
 
 Aquí es donde personalmente creo que AWS empieza a resultar un poco menos intuitivo.
 
@@ -232,7 +232,7 @@ Puedo simplemente crear un **bucket** y almacenar objetos dentro.
 
 ---
 
-# 🌐 ¿Y para qué puedo utilizar S3?
+## 🌐 ¿Y para qué puedo utilizar S3?
 
 Aquí empieza a ser realmente interesante.
 
@@ -305,7 +305,7 @@ es un candidato perfecto para un hosting de archivos estáticos.
 
 ---
 
-# 🚀 S3 + CloudFront: una combinación muy interesante
+## 🚀 S3 + CloudFront: una combinación muy interesante
 
 Aquí aparece una de las ideas más importantes de AWS:
 
@@ -353,7 +353,7 @@ No tiene demasiado sentido montar una máquina virtual completa simplemente para
 
 ---
 
-# 🗃️ RDS: necesito una base de datos
+## 🗃️ RDS: necesito una base de datos
 
 Ahora imaginemos algo diferente.
 
@@ -405,7 +405,7 @@ AWS se ocupa de buena parte de la infraestructura que hay detrás del servicio a
 
 ---
 
-# 🧩 Entonces... ¿qué pasa con WordPress?
+## 🧩 Entonces... ¿qué pasa con WordPress?
 
 Aquí ya podemos juntar varias piezas.
 
@@ -470,11 +470,11 @@ Cada uno resuelve una parte diferente del problema.
 
 ---
 
-# 🐧 ¿Y si simplemente quiero una máquina Linux?
+## 🐧 ¿Y si simplemente quiero una máquina Linux?
 
 Entonces la respuesta es bastante más sencilla:
 
-## EC2
+### EC2
 
 Si quiero algo parecido a:
 
@@ -516,7 +516,7 @@ No necesito aprender veinte servicios de AWS para crear una máquina Linux.
 
 ---
 
-# 🧠 EC2, EBS, S3 y RDS en una misma imagen mental
+## 🧠 EC2, EBS, S3 y RDS en una misma imagen mental
 
 Esta es la asociación que me está resultando más útil para no perderme:
 
@@ -542,7 +542,7 @@ Y a partir de ahí puedo añadir más servicios según las necesidades.
 
 ---
 
-# 🚦 ¿Cómo elegir servicio según lo que quiero hacer?
+## 🚦 ¿Cómo elegir servicio según lo que quiero hacer?
 
 Esta es probablemente la tabla que más me habría gustado encontrar cuando empecé a mirar AWS.
 
@@ -569,7 +569,7 @@ Lo importante es entender **qué problema resuelve cada servicio**.
 
 ---
 
-# 🔥 Lambda: ¿y si no quiero tener un servidor encendido?
+## 🔥 Lambda: ¿y si no quiero tener un servidor encendido?
 
 Otro concepto que aparece mucho en AWS es **Lambda**.
 
@@ -610,7 +610,7 @@ Esto puede ser útil para APIs, automatizaciones, procesamiento de archivos, tar
 
 ---
 
-# 🌍 CloudFront: no es almacenamiento ni servidor
+## 🌍 CloudFront: no es almacenamiento ni servidor
 
 CloudFront puede resultar confuso al principio porque también aparece mucho cuando hablamos de webs.
 
@@ -650,7 +650,7 @@ No sustituye a S3 ni a EC2.
 
 ---
 
-# 🌐 Route 53: ¿y el dominio?
+## 🌐 Route 53: ¿y el dominio?
 
 Supongamos que tengo:
 
@@ -682,7 +682,7 @@ Simplemente ayuda a resolver nombres de dominio y proporciona otras funciones re
 
 ---
 
-# 🔐 IAM: ¿quién puede hacer qué?
+## 🔐 IAM: ¿quién puede hacer qué?
 
 Otro servicio fundamental es **IAM (Identity and Access Management)**.
 
@@ -710,7 +710,7 @@ Esto puede parecer algo secundario cuando estamos empezando, pero en AWS los per
 
 ---
 
-# 🧱 Entonces, ¿cómo quedaría una web sencilla?
+## 🧱 Entonces, ¿cómo quedaría una web sencilla?
 
 Si mi web solamente contiene:
 
@@ -761,7 +761,7 @@ Una arquitectura sencilla sería:
 
 ---
 
-# 📝 ¿Y un blog estático?
+## 📝 ¿Y un blog estático?
 
 Este caso es todavía más interesante.
 
@@ -798,7 +798,7 @@ Esto es precisamente una de las ventajas de los sitios estáticos.
 
 ---
 
-# 🏗️ ¿Y una aplicación web dinámica?
+## 🏗️ ¿Y una aplicación web dinámica?
 
 Aquí la arquitectura empieza a crecer.
 
@@ -851,7 +851,7 @@ Estamos construyendo una arquitectura.
 
 ---
 
-# 🧩 La clave: los servicios de AWS se combinan
+## 🧩 La clave: los servicios de AWS se combinan
 
 Esta era una de las dudas que tenía al principio:
 
@@ -905,7 +905,7 @@ Y pueden trabajar juntos.
 
 ---
 
-# 🤯 ¿Por qué AWS parece tan complicado entonces?
+## 🤯 ¿Por qué AWS parece tan complicado entonces?
 
 Porque AWS no intenta venderme «un servidor».
 
@@ -947,9 +947,9 @@ Por eso no tiene sentido utilizar EC2 para absolutamente todo.
 
 ---
 
-# 💡 Tres ejemplos para quedarme con la idea
+## 💡 Tres ejemplos para quedarme con la idea
 
-## 1. «Quiero una web HTML + CSS»
+### 1. «Quiero una web HTML + CSS»
 
 Pienso:
 
@@ -969,7 +969,7 @@ Pienso:
 
 ---
 
-## 2. «Quiero WordPress»
+### 2. «Quiero WordPress»
 
 Pienso:
 
@@ -996,7 +996,7 @@ y dependiendo de las necesidades:
 
 ---
 
-## 3. «Quiero una máquina Linux»
+### 3. «Quiero una máquina Linux»
 
 Pienso:
 
@@ -1021,7 +1021,7 @@ sudo apt install nginx
 
 ---
 
-# 🗺️ Mi mapa mental de AWS
+## 🗺️ Mi mapa mental de AWS
 
 Después de darle unas cuantas vueltas, creo que una buena manera de empezar a estudiar AWS es no intentar memorizar sus servicios.
 
@@ -1073,7 +1073,7 @@ A partir de ahí, los demás servicios empiezan a encajar mucho mejor.
 
 ---
 
-# 🧭 Una forma práctica de seguir aprendiendo AWS
+## 🧭 Una forma práctica de seguir aprendiendo AWS
 
 En mi caso, creo que tiene más sentido aprender AWS **por arquitecturas y problemas reales**, no servicio por servicio.
 
