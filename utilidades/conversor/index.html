@@ -17,16 +17,16 @@
     <script src="js/Controller.js"></script>
 </head>
 
-<body>
+<body class="jr-page">
 
-    <main id="base" class="jr-page">
+    <main id="base">
 
         <div class="jr-container converter-layout">
 
-            <!-- SIDEBAR / AJUSTES -->
-            <aside id="header" class="converter-sidebar">
+            <!-- Información y ajustes -->
+            <aside id="header">
 
-                <section id="description">
+                <header class="jr-header" id="description">
 
                     <h1>Conversor de datos</h1>
 
@@ -35,7 +35,7 @@
                         amigables con la web como HTML, JSON y XML.
                     </p>
 
-                </section>
+                </header>
 
 
                 <section id="settings" class="jr-card">
@@ -48,43 +48,39 @@
 
                             <legend>Delimitador de campos</legend>
 
-                            <div class="settings-options">
+                            <label>
+                                <input
+                                    class="settingsElement"
+                                    type="radio"
+                                    name="delimiter"
+                                    id="delimiterAuto"
+                                    value="auto"
+                                    checked
+                                >
+                                Auto
+                            </label>
 
-                                <label>
-                                    <input
-                                        class="settingsElement"
-                                        type="radio"
-                                        name="delimiter"
-                                        id="delimiterAuto"
-                                        value="auto"
-                                        checked
-                                    >
-                                    Auto
-                                </label>
+                            <label>
+                                <input
+                                    class="settingsElement"
+                                    type="radio"
+                                    name="delimiter"
+                                    id="delimiterComma"
+                                    value="comma"
+                                >
+                                Coma
+                            </label>
 
-                                <label>
-                                    <input
-                                        class="settingsElement"
-                                        type="radio"
-                                        name="delimiter"
-                                        id="delimiterComma"
-                                        value="comma"
-                                    >
-                                    Coma
-                                </label>
-
-                                <label>
-                                    <input
-                                        class="settingsElement"
-                                        type="radio"
-                                        name="delimiter"
-                                        id="delimiterTab"
-                                        value="tab"
-                                    >
-                                    Tabulador
-                                </label>
-
-                            </div>
+                            <label>
+                                <input
+                                    class="settingsElement"
+                                    type="radio"
+                                    name="delimiter"
+                                    id="delimiterTab"
+                                    value="tab"
+                                >
+                                Tabulador
+                            </label>
 
                         </fieldset>
 
@@ -93,44 +89,43 @@
 
                             <legend>Signo decimal</legend>
 
-                            <div class="settings-options">
+                            <label>
+                                <input
+                                    class="settingsElement"
+                                    type="radio"
+                                    name="decimal"
+                                    id="decimalDot"
+                                    value="dot"
+                                    checked
+                                >
+                                Punto
+                            </label>
 
-                                <label>
-                                    <input
-                                        class="settingsElement"
-                                        type="radio"
-                                        name="decimal"
-                                        id="decimalDot"
-                                        value="dot"
-                                        checked
-                                    >
-                                    Punto
-                                </label>
-
-                                <label>
-                                    <input
-                                        class="settingsElement"
-                                        type="radio"
-                                        name="decimal"
-                                        id="decimalComma"
-                                        value="comma"
-                                    >
-                                    Coma
-                                </label>
-
-                            </div>
+                            <label>
+                                <input
+                                    class="settingsElement"
+                                    type="radio"
+                                    name="decimal"
+                                    id="decimalComma"
+                                    value="comma"
+                                >
+                                Coma
+                            </label>
 
                         </fieldset>
 
 
-                        <label class="jr-checkbox settings-check">
+                        <label class="settings-check">
+
                             <input
-                                class="settingsElement"
+                                class="jr-checkbox settingsElement"
                                 type="checkbox"
                                 id="headersProvidedCB"
                                 checked
                             >
+
                             <span>Primera fila en la cabecera</span>
+
                         </label>
 
 
@@ -138,56 +133,55 @@
 
                             <legend>Transformar cabeceras</legend>
 
-                            <div class="settings-options">
+                            <label>
+                                <input
+                                    class="settingsElement"
+                                    type="radio"
+                                    name="headerModifications"
+                                    value="downcase"
+                                    id="headersDowncase"
+                                >
+                                minúsculas
+                            </label>
 
-                                <label>
-                                    <input
-                                        class="settingsElement"
-                                        type="radio"
-                                        name="headerModifications"
-                                        value="downcase"
-                                        id="headersDowncase"
-                                    >
-                                    minúsculas
-                                </label>
+                            <label>
+                                <input
+                                    class="settingsElement"
+                                    type="radio"
+                                    name="headerModifications"
+                                    id="headersUpcase"
+                                    value="upcase"
+                                >
+                                mayúsculas
+                            </label>
 
-                                <label>
-                                    <input
-                                        class="settingsElement"
-                                        type="radio"
-                                        name="headerModifications"
-                                        id="headersUpcase"
-                                        value="upcase"
-                                    >
-                                    mayúsculas
-                                </label>
-
-                                <label>
-                                    <input
-                                        class="settingsElement"
-                                        type="radio"
-                                        name="headerModifications"
-                                        id="headersNoTransform"
-                                        value="none"
-                                        checked
-                                    >
-                                    ninguno
-                                </label>
-
-                            </div>
+                            <label>
+                                <input
+                                    class="settingsElement"
+                                    type="radio"
+                                    name="headerModifications"
+                                    id="headersNoTransform"
+                                    value="none"
+                                    checked
+                                >
+                                ninguno
+                            </label>
 
                         </fieldset>
 
 
-                        <label class="jr-checkbox settings-check">
+                        <label class="settings-check">
+
                             <input
-                                class="settingsElement"
+                                class="jr-checkbox settingsElement"
                                 type="checkbox"
                                 name="some_name"
                                 id="includeWhiteSpaceCB"
                                 checked
                             >
+
                             <span>Incluir espacio en blanco a la salida</span>
+
                         </label>
 
 
@@ -195,32 +189,28 @@
 
                             <legend>Indentar con</legend>
 
-                            <div class="settings-options">
+                            <label>
+                                <input
+                                    class="settingsElement"
+                                    type="radio"
+                                    name="indentType"
+                                    value="tabs"
+                                    id="includeWhiteSpaceTabs"
+                                >
+                                tabuladores
+                            </label>
 
-                                <label>
-                                    <input
-                                        class="settingsElement"
-                                        type="radio"
-                                        name="indentType"
-                                        value="tabs"
-                                        id="includeWhiteSpaceTabs"
-                                    >
-                                    tabuladores
-                                </label>
-
-                                <label>
-                                    <input
-                                        class="settingsElement"
-                                        type="radio"
-                                        name="indentType"
-                                        value="spaces"
-                                        id="includeWhiteSpaceSpaces"
-                                        checked
-                                    >
-                                    espacios
-                                </label>
-
-                            </div>
+                            <label>
+                                <input
+                                    class="settingsElement"
+                                    type="radio"
+                                    name="indentType"
+                                    value="spaces"
+                                    id="includeWhiteSpaceSpaces"
+                                    checked
+                                >
+                                espacios
+                            </label>
 
                         </fieldset>
 
@@ -228,12 +218,14 @@
 
 
                     <div class="converter-logo">
+
                         <img
                             id="logo"
                             src="https://www.jorgerosa.dev/img/logo.png"
                             alt="JorgeRosa.dev"
                             width="100"
                         >
+
                     </div>
 
                 </section>
@@ -241,13 +233,10 @@
             </aside>
 
 
-            <!-- CONVERSOR -->
-            <section id="converter" class="converter-workspace">
+            <!-- Conversor -->
+            <section id="converter">
 
-                <!--
-                    El contenido de esta sección lo genera
-                    DataGridRenderer.js / converter.js
-                -->
+                <!-- El contenido lo generan los JS -->
 
             </section>
 
