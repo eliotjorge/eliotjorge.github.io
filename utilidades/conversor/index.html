@@ -1,71 +1,259 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
-
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Conversor de datos</title>
-  <meta name="author" content="Shan Carter">
-  <!-- Date: 2010-08-26 -->
-  <link rel="stylesheet" href="css/converter.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/CSVParser.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/DataGridRenderer.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/converter.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/Controller.js" type="text/javascript" charset="utf-8"></script>
+    <title>Conversor de datos</title>
 
+    <link rel="stylesheet" href="https://jorgerosa.dev/assets/css/jr-tools.css">
+    <link rel="stylesheet" href="css/converter.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/CSVParser.js"></script>
+    <script src="js/DataGridRenderer.js"></script>
+    <script src="js/converter.js"></script>
+    <script src="js/Controller.js"></script>
 </head>
+
 <body>
-  <div id='base'>
-    <div id='header'>
-      <div id="description">
-        <h1>Conversor de datos</h1>
-        <p>Convertirá los datos de Excel en alguno de los formatos amigables con la web como HTML, JSON y XML.</p>
-      </div>
-      <div id='settings'>
-        <h3>Ajustes</h3>
-        <form id='settingsForm'>
-           <p>Delimitador de campos: <br/>
 
-             <label><input class="settingsElement" type="radio" name="delimiter" id='delimiterAuto'   value="auto" checked/> Auto</label>
-             <label><input class="settingsElement" type="radio" name="delimiter" id='delimiterComma'  value="comma" /> Coma</label>
-             <label><input class="settingsElement" type="radio" name="delimiter" id='delimiterTab'    value="tab" /> Tabulador</label>
-            </p></br>
-          <p>Signo decimal:
+    <main id="base" class="jr-page">
 
-             <label><input class="settingsElement" type="radio" name="decimal" id='decimalDot'   value="dot" checked/> Punto</label>
-             <label><input class="settingsElement" type="radio" name="decimal" id='decimalComma'  value="comma" /> Coma</label>
-            </p> <br/>
-          <p><label><input class="settingsElement" type="checkbox" name="" value="" id="headersProvidedCB" checked /> Primera fila en la cabecera</label></p>
-          <div class="settingsGroup">
-            <p>Transformar: <br/><label><input class="settingsElement" type="radio" name="headerModifications" value="downcase" id='headersDowncase' /> minúsculas</label>
-            <label><input class="settingsElement" type="radio" name="headerModifications" id='headersUpcase' value="upcase" /> mayúsculas</label>
-            <label><input class="settingsElement" type="radio" name="headerModifications" id='headersNoTransform' value="none" checked /> ninguno</label></p>
-          </div>
-          <br/>
+        <div class="jr-container converter-layout">
 
-          <p><label><input class="settingsElement" type="checkbox" name="some_name" value="" id="includeWhiteSpaceCB" checked /> Incluir espacio en blanco a la salida</label></p>
-          <div class="settingsGroup">
-            <p>Indentar con: <label><input class="settingsElement" type="radio" name="indentType" value="tabs" id='includeWhiteSpaceTabs'/> tabuladores</label> <label><input class="settingsElement" type="radio" name="indentType" value="spaces" id='includeWhiteSpaceSpaces' checked/> espacios</label></p>
-          </div>
+            <!-- SIDEBAR / AJUSTES -->
+            <aside id="header" class="converter-sidebar">
+
+                <section id="description">
+
+                    <h1>Conversor de datos</h1>
+
+                    <p>
+                        Convierte los datos de Excel en formatos
+                        amigables con la web como HTML, JSON y XML.
+                    </p>
+
+                </section>
 
 
-        </form>
-<center><img id="logo" src="https://www.jorgerosa.dev/img/logo.png" alt="logo" width="100"/></center>
+                <section id="settings" class="jr-card">
 
-      </div>
+                    <h2>Ajustes</h2>
 
-    </div>
+                    <form id="settingsForm">
+
+                        <fieldset class="settings-section">
+
+                            <legend>Delimitador de campos</legend>
+
+                            <div class="settings-options">
+
+                                <label>
+                                    <input
+                                        class="settingsElement"
+                                        type="radio"
+                                        name="delimiter"
+                                        id="delimiterAuto"
+                                        value="auto"
+                                        checked
+                                    >
+                                    Auto
+                                </label>
+
+                                <label>
+                                    <input
+                                        class="settingsElement"
+                                        type="radio"
+                                        name="delimiter"
+                                        id="delimiterComma"
+                                        value="comma"
+                                    >
+                                    Coma
+                                </label>
+
+                                <label>
+                                    <input
+                                        class="settingsElement"
+                                        type="radio"
+                                        name="delimiter"
+                                        id="delimiterTab"
+                                        value="tab"
+                                    >
+                                    Tabulador
+                                </label>
+
+                            </div>
+
+                        </fieldset>
 
 
+                        <fieldset class="settings-section">
 
-    <div id='converter' class=''>
+                            <legend>Signo decimal</legend>
 
-    </div>
+                            <div class="settings-options">
 
-  </div>
+                                <label>
+                                    <input
+                                        class="settingsElement"
+                                        type="radio"
+                                        name="decimal"
+                                        id="decimalDot"
+                                        value="dot"
+                                        checked
+                                    >
+                                    Punto
+                                </label>
 
+                                <label>
+                                    <input
+                                        class="settingsElement"
+                                        type="radio"
+                                        name="decimal"
+                                        id="decimalComma"
+                                        value="comma"
+                                    >
+                                    Coma
+                                </label>
+
+                            </div>
+
+                        </fieldset>
+
+
+                        <label class="jr-checkbox settings-check">
+                            <input
+                                class="settingsElement"
+                                type="checkbox"
+                                id="headersProvidedCB"
+                                checked
+                            >
+                            <span>Primera fila en la cabecera</span>
+                        </label>
+
+
+                        <fieldset class="settings-section settingsGroup">
+
+                            <legend>Transformar cabeceras</legend>
+
+                            <div class="settings-options">
+
+                                <label>
+                                    <input
+                                        class="settingsElement"
+                                        type="radio"
+                                        name="headerModifications"
+                                        value="downcase"
+                                        id="headersDowncase"
+                                    >
+                                    minúsculas
+                                </label>
+
+                                <label>
+                                    <input
+                                        class="settingsElement"
+                                        type="radio"
+                                        name="headerModifications"
+                                        id="headersUpcase"
+                                        value="upcase"
+                                    >
+                                    mayúsculas
+                                </label>
+
+                                <label>
+                                    <input
+                                        class="settingsElement"
+                                        type="radio"
+                                        name="headerModifications"
+                                        id="headersNoTransform"
+                                        value="none"
+                                        checked
+                                    >
+                                    ninguno
+                                </label>
+
+                            </div>
+
+                        </fieldset>
+
+
+                        <label class="jr-checkbox settings-check">
+                            <input
+                                class="settingsElement"
+                                type="checkbox"
+                                name="some_name"
+                                id="includeWhiteSpaceCB"
+                                checked
+                            >
+                            <span>Incluir espacio en blanco a la salida</span>
+                        </label>
+
+
+                        <fieldset class="settings-section settingsGroup">
+
+                            <legend>Indentar con</legend>
+
+                            <div class="settings-options">
+
+                                <label>
+                                    <input
+                                        class="settingsElement"
+                                        type="radio"
+                                        name="indentType"
+                                        value="tabs"
+                                        id="includeWhiteSpaceTabs"
+                                    >
+                                    tabuladores
+                                </label>
+
+                                <label>
+                                    <input
+                                        class="settingsElement"
+                                        type="radio"
+                                        name="indentType"
+                                        value="spaces"
+                                        id="includeWhiteSpaceSpaces"
+                                        checked
+                                    >
+                                    espacios
+                                </label>
+
+                            </div>
+
+                        </fieldset>
+
+                    </form>
+
+
+                    <div class="converter-logo">
+                        <img
+                            id="logo"
+                            src="https://www.jorgerosa.dev/img/logo.png"
+                            alt="JorgeRosa.dev"
+                            width="100"
+                        >
+                    </div>
+
+                </section>
+
+            </aside>
+
+
+            <!-- CONVERSOR -->
+            <section id="converter" class="converter-workspace">
+
+                <!--
+                    El contenido de esta sección lo genera
+                    DataGridRenderer.js / converter.js
+                -->
+
+            </section>
+
+        </div>
+
+    </main>
 
 </body>
 </html>
