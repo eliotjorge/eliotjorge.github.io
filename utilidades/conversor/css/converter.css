@@ -1,7 +1,7 @@
 /* ==========================================================
    Data Converter
    Estilos específicos de la herramienta
-   JR Tools se encarga de la base visual
+   JR Tools UI
 ========================================================== */
 
 
@@ -9,21 +9,26 @@
    LAYOUT
 ========================================================== */
 
+#base {
+    width: 100%;
+}
+
 .converter-layout {
     display: grid;
-    grid-template-columns: 320px minmax(0, 1fr);
+    grid-template-columns: 300px minmax(0, 1fr);
     gap: 24px;
-    align-items: start;
+
+    /*
+     * El conversor necesita más espacio que las herramientas
+     * normales de JR Tools.
+     */
+    max-width: 1400px;
 }
 
 
 /* ==========================================================
-   SIDEBAR
+   DESCRIPCIÓN
 ========================================================== */
-
-.converter-sidebar {
-    min-width: 0;
-}
 
 #description {
     margin-bottom: 20px;
@@ -34,72 +39,90 @@
 }
 
 #description p {
+    color: var(--jr-text-light);
     margin: 0;
 }
 
 
 /* ==========================================================
-   SETTINGS
+   AJUSTES
 ========================================================== */
 
 #settings {
-    text-align: left;
+    margin-bottom: 0;
 }
 
 #settings h2 {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 
-/* Grupos de opciones */
+/* Grupos */
 
 .settings-section {
     border: 0;
-    border-top: 1px solid var(--jr-border, #e2e8f0);
-    margin: 0 0 18px;
-    padding: 16px 0 0;
+    border-top: 1px solid var(--jr-border);
+
+    margin: 0 0 20px;
+    padding: 18px 0 0;
 }
 
 .settings-section legend {
     padding: 0;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+
+    color: var(--jr-text-light);
+
     font-size: 13px;
     font-weight: 600;
-    color: var(--jr-text-secondary, #64748b);
 }
 
 
-/* Opciones */
+/* Radios */
 
-.settings-options {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.settings-options label {
+.settings-section label {
     display: flex;
     align-items: center;
     gap: 8px;
-    cursor: pointer;
+
+    margin-bottom: 9px;
+
     font-size: 14px;
+    cursor: pointer;
 }
 
-
-/* Checkbox */
-
-.settings-check {
-    margin: 18px 0;
+.settings-section label:last-child {
+    margin-bottom: 0;
 }
 
 
 /* ==========================================================
-   RADIO / CHECKBOX
+   CHECKBOXES
 ========================================================== */
 
-.settingsElement {
-    accent-color: var(--jr-primary, #2563eb);
+.settings-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+
+    width: 100%;
+
+    margin: 20px 0;
+
+    font-size: 14px;
+    line-height: 1.45;
+
+    cursor: pointer;
+}
+
+.settings-check .jr-checkbox {
+    margin-top: 2px;
+}
+
+.settings-check span {
+    flex: 1;
+    min-width: 0;
 }
 
 
@@ -110,48 +133,54 @@
 .converter-logo {
     display: flex;
     justify-content: center;
-    margin-top: 24px;
+
+    margin-top: 25px;
 }
 
 #logo {
     display: block;
-    width: 100px;
     height: auto;
 }
 
 
 /* ==========================================================
-   WORKSPACE
+   CONVERSOR
 ========================================================== */
 
-.converter-workspace {
+#converter {
+    width: 100%;
     min-width: 0;
-    min-height: 500px;
 }
 
 
 /* ==========================================================
-   ELEMENTOS GENERADOS POR EL CONVERSOR
+   ELEMENTOS GENERADOS POR EL JS
 ========================================================== */
+
+/*
+ * Cabecera azul que genera DataGridRenderer/converter.js
+ */
 
 .groupHeader {
     width: 100%;
+
     min-height: 45px;
 
     display: flex;
     align-items: center;
 
-    box-sizing: border-box;
-
-    background: var(--jr-primary, #2563eb);
+    background: var(--jr-primary);
     color: #fff;
 
-    border-radius: 8px 8px 0 0;
+    border-radius: var(--jr-radius) var(--jr-radius) 0 0;
 }
 
 p.groupHeadline {
     margin: 0;
-    padding: 10px 14px;
+    padding: 12px 14px;
+
+    font-size: 14px;
+    line-height: 1.4;
 }
 
 .groupHeader span.subhead {
@@ -164,59 +193,94 @@ p.groupHeadline {
 }
 
 
-/* Inputs de datos */
+/* ==========================================================
+   TEXTAREAS / DATOS
+========================================================== */
 
 .textInputs {
-    box-sizing: border-box;
 
     width: 100%;
     min-height: 300px;
 
-    padding: 12px;
+    display: block;
 
-    background: #1e293b;
-    color: #e2e8f0;
+    box-sizing: border-box;
 
-    border: 1px solid #334155;
-    border-radius: 0 0 8px 8px;
+    padding: 14px;
 
-    font-family: monospace;
+    background: var(--jr-card);
+    color: var(--jr-text);
+
+    border: 1px solid var(--jr-border);
+
+    border-radius: 0 0 var(--jr-radius) var(--jr-radius);
+
+    font-family:
+        Consolas,
+        Monaco,
+        monospace;
+
     font-size: 13px;
     line-height: 1.5;
 
     resize: vertical;
 }
 
+.textInputs:focus {
 
-/* Selector */
+    outline: none;
 
-#dataSelector {
-    width: 100%;
-    box-sizing: border-box;
+    border-color: var(--jr-primary);
 
-    padding: 8px 10px;
-
-    font-size: 14px;
-
-    border: 1px solid var(--jr-border, #cbd5e1);
-    border-radius: 6px;
-
-    background: #fff;
+    box-shadow:
+        0 0 0 4px rgba(37, 99, 235, .15);
 }
 
 
-/* Cabecera de datos */
+/* ==========================================================
+   SELECTOR
+========================================================== */
+
+#dataSelector {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    border: 1px solid var(--jr-border);
+
+    background: var(--jr-card);
+    color: var(--jr-text);
+
+    font-size: 15px;
+}
+
+#dataSelector:focus {
+
+    outline: none;
+
+    border-color: var(--jr-primary);
+
+    box-shadow:
+        0 0 0 4px rgba(37, 99, 235, .15);
+}
+
+
+/* ==========================================================
+   CABECERAS DE DATOS
+========================================================== */
 
 p.dataHeaders {
-    box-sizing: border-box;
 
-    height: auto;
     margin: 0;
 
     padding: 14px 16px;
 
+    min-height: 30px;
+
     font-size: 14px;
-    font-weight: 600;
 }
 
 
@@ -224,18 +288,25 @@ p.dataHeaders {
    RESPONSIVE
 ========================================================== */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
     .converter-layout {
+
         grid-template-columns: 1fr;
+
+        max-width: 700px;
+
     }
 
-    .converter-sidebar {
-        width: 100%;
-    }
+}
 
-    .converter-workspace {
-        min-height: 400px;
+
+@media (max-width: 768px) {
+
+    .converter-layout {
+
+        gap: 20px;
+
     }
 
 }
@@ -243,13 +314,10 @@ p.dataHeaders {
 
 @media (max-width: 500px) {
 
-    .jr-container {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
+    .converter-layout {
 
-    #settings {
-        padding: 16px;
+        width: 100%;
+
     }
 
 }
