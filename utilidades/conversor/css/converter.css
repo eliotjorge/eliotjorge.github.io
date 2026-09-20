@@ -19,10 +19,12 @@
     gap: 24px;
 
     /*
-     * El conversor necesita más espacio que las herramientas
-     * normales de JR Tools.
+     * Esta herramienta necesita ocupar todo el ancho disponible.
+     * Sobrescribe el max-width de .jr-container.
      */
-    max-width: 1400px;
+    max-width: none;
+    width: 100%;
+    margin: 0;
 }
 
 
