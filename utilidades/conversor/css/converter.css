@@ -150,7 +150,7 @@
 ========================================================== */
 
 #converter {
-    width: 100%;
+    width: 100% !important;
     min-width: 0;
 }
 
@@ -201,7 +201,7 @@ p.groupHeadline {
 
 .textInputs {
 
-    width: 100%;
+    width: 100% !important;
     min-height: 300px;
 
     display: block;
