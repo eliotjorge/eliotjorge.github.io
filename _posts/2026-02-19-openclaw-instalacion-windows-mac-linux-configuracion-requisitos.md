@@ -90,29 +90,29 @@ La instalación puede variar según versión, pero el esquema general es bastant
 
 ## 🪟 Instalación en Windows
 
-1. Instalar Python 3.9 o superior.
-2. Instalar Git.
-3. Clonar el repositorio:
+1- Instalar Python 3.9 o superior.
+2- Instalar Git.
+3- Clonar el repositorio:
 
 ```bash
 git clone https://github.com/openclaw/openclaw.git
 cd openclaw
 ```
 
-4. Crear entorno virtual:
+4- Crear entorno virtual:
 
 ```bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
-5. Instalar dependencias:
+5- Instalar dependencias:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-6. Iniciar el servicio:
+6- Iniciar el servicio:
 
 ```bash
 python app.py
