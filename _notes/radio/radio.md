@@ -17,39 +17,41 @@ toc: true
 
 ---
 
-
 ## Cómo conectar tu Quansheng UV-K5 para control remoto
 La aplicación de la imagen inicial (PocketHam shack) no es compatible directamente con el Quansheng UV-K5, ya que está diseñada para transceptores de base de alta gama (Icom, Yaesu, Kenwood).
 Sin embargo, puedes lograr una experiencia de control remoto o programación similar utilizando dos métodos diferentes:
-------------------------------
-## Opción 1: Control inalámbrico por Bluetooth (Desde el móvil)
+
+---
+
+### Opción 1: Control inalámbrico por Bluetooth (Desde el móvil)
 Ideal si buscas comodidad para gestionar tu "walkie-talkie" desde el smartphone sin usar cables.
 
-* 
 * El Hardware: Necesitas un programador inalámbrico con conector de dos pines tipo Kenwood (como el TIDRADIO Wireless Programmer o el módulo Odmaster).
 * La Aplicación: Descarga en tu móvil la app gratuita Odmaster.
 * El Proceso:
 1. Conecta el módulo Bluetooth al puerto de micro/altavoz del Quansheng.
-   2. Enciende la radio.
-   3. Abre la app Odmaster en tu smartphone y emparéjala por Bluetooth.
-   4. Desde ahí podrás leer la radio, modificar frecuencias, cambiar configuraciones y guardar canales en tiempo real.
-* 
+2. Enciende la radio.
+3. Abre la app Odmaster en tu smartphone y emparéjala por Bluetooth.
+4. Desde ahí podrás leer la radio, modificar frecuencias, cambiar configuraciones y guardar canales en tiempo real.
 
-------------------------------
-## Opción 2: Control remoto total por Cable (Desde la PC)
+---
+
+### Opción 2: Control remoto total por Cable (Desde el PC)
 Ideal si quieres replicar la experiencia de la imagen original: controlar la radio desde una pantalla con botones virtuales, clonación de pantalla en tiempo real y analizador de espectro.
 
-* 
 * El Hardware: Requiere el clásico cable de programación USB a dos pines K (el mismo que usan los equipos Baofeng).
 * El Firmware (Paso Clave): El software original de fábrica no permite el control remoto interactivo. Debes instalar un firmware modificado en tu Quansheng (como el de Egzumer o IJV) que tenga activada la función UART_RC (Remote Control). Puedes flashearlo en 2 minutos desde el navegador de tu PC usando herramientas web como [uv-k5-firmware-rx](https://github.com/egzumer/uv-k5-firmware-custom).
 * El Software: Instala en tu ordenador el programa gratuito Quansheng Dock o utiliza herramientas web de control serial.
 * El Proceso: Al conectar el cable USB al PC y abrir el programa, verás un clon digital de la pantalla del Quansheng en tu monitor. Podrás cambiar de frecuencia con el teclado de la computadora, ajustar el volumen y operar la radio de forma remota.
 * 
 
-------------------------------
+---
 
-Para flasheando desde la web, configurar el control remoto total desde el PC necesitas instalar un binario específico que habilite la comunicación bidireccional en tiempo real (comandos CAT) y usar el software adecuado. Sigue estos pasos para dejarlo listo: [1] 
+
+Para flashearlo desde la web, configurar el control remoto total desde el PC necesitas instalar un binario específico que habilite la comunicación bidireccional en tiempo real (comandos CAT) y usar el software adecuado. Sigue estos pasos para dejarlo listo: [1] 
+
 ## Paso 1: Flashear el firmware con soporte de control remoto
+
 Aunque el firmware popular de Egzumer es excelente, para usar el panel de control remoto virtual necesitas el firmware específico desarrollado por Nic Shaw, el cual incluye el protocolo UART interactivo necesario para comunicarse con la computadora. [1, 2] 
 
    1. Apaga tu Quansheng UV-K5. [3] 
@@ -73,8 +75,7 @@ Una vez que tu radio tiene el firmware adecuado instalado, necesitas la interfaz
    2. Entra en la carpeta que descomprimiste y ejecuta el archivo QuanshengDock.exe.
    3. Dentro del programa, selecciona el puerto COM asignado a tu cable y haz clic en Connect. [2, 8, 11, 13] 
 
-¡Listo! Verás cómo aparece una réplica exacta de la pantalla de tu Quansheng en el monitor de tu PC. Podrás usar el ratón y el teclado para cambiar de frecuencias, abrir el analizador de espectro integrado y gestionar el VFO de manera idéntica a la aplicación que viste originalmente. [9] 
-Dime si lograste abrir el instalador web o si te surge alguna duda al identificar tu puerto COM en el Administrador de dispositivos de Windows. [14] 
+¡Listo! Verás cómo aparece una réplica exacta de la pantalla de tu Quansheng en el monitor de tu PC. Podrás usar el ratón y el teclado para cambiar de frecuencias, abrir el analizador de espectro integrado y gestionar el VFO de manera idéntica a la aplicación que viste originalmente. [9]  
 
 [1] [https://www.youtube.com](https://www.youtube.com/watch?v=KbEFBB1haY4&t=45)
 [2] [https://github.com](https://github.com/nicsure/QuanshengDock)
