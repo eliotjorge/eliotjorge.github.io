@@ -47,10 +47,13 @@ Ideal si quieres replicar la experiencia de la imagen original: controlar la rad
 
 ---
 
+## Flashear desde la web
 
-Para flashearlo desde la web, configurar el control remoto total desde el PC necesitas instalar un binario específico que habilite la comunicación bidireccional en tiempo real (comandos CAT) y usar el software adecuado. Sigue estos pasos para dejarlo listo: [1] 
+Para flashearlo desde la web, configurar el control remoto total desde el PC necesitas instalar un binario específico que habilite la comunicación bidireccional en tiempo real (comandos CAT) y usar el software adecuado. 
 
-## Paso 1: Flashear el firmware con soporte de control remoto
+Sigue estos pasos para dejarlo listo: [1] 
+
+### Paso 1: Flashear el firmware con soporte de control remoto
 
 Aunque el firmware popular de Egzumer es excelente, para usar el panel de control remoto virtual necesitas el firmware específico desarrollado por Nic Shaw, el cual incluye el protocolo UART interactivo necesario para comunicarse con la computadora. [1, 2] 
 
@@ -61,7 +64,7 @@ Aunque el firmware popular de Egzumer es excelente, para usar el panel de contro
    5. Haz clic en el botón interactivo ⚡ FLASH WITH A BROWSER ⚡. [4] 
    6. En la ventana emergente, pulsa Connect, selecciona el puerto COM correspondiente a tu cable USB y presiona Flash. Espera a que la barra llegue al 100%. [7, 11] 
 
-## Paso 2: Descargar el programa de control para la PC
+### Paso 2: Descargar el programa de control para la PC
 Una vez que tu radio tiene el firmware adecuado instalado, necesitas la interfaz virtual para operarla: [12] 
 
    1. Ve a la sección de descargas del software en las Releases de QuanshengDock en GitHub.
@@ -69,7 +72,7 @@ Una vez que tu radio tiene el firmware adecuado instalado, necesitas la interfaz
    3. Descomprime la carpeta en cualquier lugar de tu computadora (es un programa portátil, no requiere instalación compleja).
    4. Nota de sistema: Asegúrate de tener instalado .NET 6 Runtime de Microsoft en tu PC, ya que el programa lo requiere para ejecutarse correctamente. [2, 3] 
 
-## Paso 3: Conexión y ejecución
+### Paso 3: Conexión y ejecución
 
    1. Apaga y vuelve a encender la radio de manera normal (para salir del modo flasheo) y déjala conectada por cable al ordenador.
    2. Entra en la carpeta que descomprimiste y ejecuta el archivo QuanshengDock.exe.
