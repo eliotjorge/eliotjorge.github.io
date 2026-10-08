@@ -12,47 +12,27 @@ toc: true
 
 NO cambiar las DNS en el proveedor del dominio (si no hemso comprado el dominio en Shopify) hasta que la tienda esté montada, se puede hacer antes de lanzarla públicamnte.
 
+Lo más lógico es montar prácticamente toda la tienda en el dominio temporal de Shopify y conectar Dinahosting cuando la tienda esté bastante avanzada.
+
 Es mejor así poqrue:
  - no tienes una tienda a medio hacer accesible públicamente
  - puedes romper cosas, cambiar el tema y probar Liquid sin afectar al dominio
  - cuando llegue el momento de lanzar, haces la conexión DNS
 
-2 fases:
+**No necesitas que el dominio real esté conectado para construir la tienda.** Shopify permite previsualizar el tema y trabajar con productos, colecciones, páginas, menús, etc. desde el propio panel.
+
+Aquí está la documentación sobre la customización [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes)
+
+Es recomendable separar el proceso en 2 fases [**construcción**](#construccion) y **puesta en producción**.
 
 ## Construcción
 
-Sí. Y en tu caso **yo no tocaría el DNS todavía**. Lo más lógico es montar prácticamente toda la tienda en el dominio temporal de Shopify y conectar Dinahosting cuando la tienda esté bastante avanzada.
 
-Además, como eres desarrollador y quieres usar **Craft + Liquid/CSS**, te recomiendo separar el proceso en dos fases: **construcción** y **puesta en producción**.
-
-
-
-## El orden que yo seguiría
-
-### 1. No hagas nada con el dominio todavía
-
-Ahora mismo tendrás una URL tipo:
-
-`tu-tienda.myshopify.com`
-
-Trabaja ahí tranquilamente.
-
-**No necesitas que el dominio real esté conectado para construir la tienda.** Shopify permite previsualizar el tema y trabajar con productos, colecciones, páginas, menús, etc. desde el propio panel. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes?utm_source=chatgpt.com)
-
-De hecho, es mejor así porque mientras estás desarrollando:
-
-- el dominio real sigue donde esté actualmente;
-- no tienes una tienda a medio hacer accesible públicamente;
-- puedes romper cosas, cambiar el tema y probar Liquid sin afectar al dominio;
-- cuando llegue el momento de lanzar, haces la conexión DNS.
-
----
-
-# FASE 1 — Configurar la tienda
+### FASE 1 — Configurar la tienda
 
 Yo haría esto en este orden:
 
-### 2. Configuración básica de Shopify
+#### 1. Configuración básica de Shopify
 
 Antes incluso de ponerte con el diseño:
 
@@ -79,7 +59,7 @@ Simplemente comprueba que tienes el dominio `myshopify.com` que te ha asignado S
 
 ---
 
-# 3. Instalar Craft
+#### 2. Instalar Craft
 
 Aquí sí puedes empezar ya con el diseño.
 
@@ -115,9 +95,7 @@ Puedes modificar:
 - colecciones
 - etc.
 
-Shopify permite hacer una buena parte de la personalización desde este editor sin tocar Liquid. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes?utm_source=chatgpt.com)
-
-### Y aquí hay algo importante para ti
+Shopify permite hacer una buena parte de la personalización desde este editor sin tocar Liquid. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes)
 
 **Antes de tocar código, duplica Craft.**
 
@@ -131,11 +109,11 @@ Craft
 
 Y trabajas sobre la copia.
 
-Shopify recomienda precisamente duplicar el tema antes de hacer modificaciones de código para tener una copia de seguridad. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes?utm_source=chatgpt.com)
+Shopify recomienda precisamente duplicar el tema antes de hacer modificaciones de código para tener una copia de seguridad. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes)
 
 ---
 
-# 4. Primero estructura, después CSS/Liquid
+#### 3. Primero estructura, después CSS/Liquid
 
 Yo no haría:
 
@@ -171,7 +149,7 @@ Los nombres concretos dependerán de la tienda, evidentemente.
 
 ---
 
-# 5. Crear productos
+#### 4. Crear productos
 
 Después crearía los productos reales.
 
@@ -204,7 +182,7 @@ De hecho, te recomiendo crearlos relativamente pronto porque cuando empieces a e
 
 ---
 
-# 6. Crear colecciones
+#### 5. Crear colecciones
 
 Después:
 
@@ -222,11 +200,11 @@ Novedades
 Destacados
 ```
 
-Las colecciones son especialmente importantes porque después puedes utilizarlas directamente en la navegación y en secciones del tema. [Shopify Help Center](https://help.shopify.com/es/manual/products/collections/make-collections-findable?utm_source=chatgpt.com)
+Las colecciones son especialmente importantes porque después puedes utilizarlas directamente en la navegación y en secciones del tema. [Shopify Help Center](https://help.shopify.com/es/manual/products/collections/make-collections-findable)
 
 ---
 
-# 7. Crear las páginas
+#### 6. Crear las páginas
 
 Después crearía las páginas estáticas.
 
@@ -243,11 +221,11 @@ Ahí puedes crear páginas como:
 - Devoluciones
 - etc.
 
-Shopify las gestiona como recursos independientes y posteriormente las puedes añadir a los menús. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/add-edit-pages?utm_source=chatgpt.com)
+Shopify las gestiona como recursos independientes y posteriormente las puedes añadir a los menús. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/add-edit-pages)
 
 Y aquí hay una diferencia importante respecto a WordPress que te vendrá bien tener clara:
 
-### En Shopify no pienses tanto en:
+**En Shopify no pienses tanto en:**
 
 > "Voy a crear una página y después decidiré cómo diseñarla"
 
@@ -259,7 +237,7 @@ El tema determina cómo se representa ese contenido.
 
 ---
 
-# 8. Crear la navegación
+#### 7. Crear la navegación
 
 Cuando ya tengas productos, colecciones y páginas:
 
@@ -267,7 +245,7 @@ Cuando ya tengas productos, colecciones y páginas:
 
 Ahí construyes:
 
-### Menú principal
+**Menú principal**
 
 Por ejemplo:
 
@@ -281,7 +259,7 @@ Sobre nosotros
 Contacto
 ```
 
-### Footer
+**Footer**
 
 ```text
 Ayuda
@@ -297,11 +275,11 @@ Legal
 Contacto
 ```
 
-Shopify permite utilizar productos, colecciones, páginas y artículos del blog como elementos de los menús. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/menus-and-links?utm_source=chatgpt.com)
+Shopify permite utilizar productos, colecciones, páginas y artículos del blog como elementos de los menús. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/menus-and-links)
 
 ---
 
-# 9. Ahora sí: diseño de Craft
+#### 8. Ahora sí: diseño de Craft
 
 Aquí es donde yo empezaría a trabajar contigo como si fuera un proyecto web normal.
 
@@ -317,7 +295,7 @@ Primero:
 - botones
 - estilos generales
 
-Craft permite establecer estas configuraciones globales desde el editor. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes/theme-editor/theme-settings?utm_source=chatgpt.com)
+Craft permite establecer estas configuraciones globales desde el editor. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes/theme-editor/theme-settings)
 
 Después vas página por página:
 
@@ -341,7 +319,7 @@ Y compruebas cómo está construido cada template.
 
 ---
 
-# 10. Y después entra tu parte de desarrollador
+#### 9. Y después entra tu parte de desarrollador
 
 Aquí Shopify te va a resultar bastante familiar si ya trabajas con WordPress/Divi, aunque el concepto es diferente.
 
@@ -357,7 +335,7 @@ JSON
 
 Shopify permite acceder a:
 
-**Tienda online → Temas → ... → Editar código** [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes/edit-code?utm_source=chatgpt.com)
+**Tienda online → Temas → ... → Editar código** [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes/edit-code)
 
 
 Y ahí ya puedes hacer cosas como:
@@ -387,7 +365,7 @@ Para ti esta parte probablemente será bastante más cómoda que para un usuario
 
 ---
 
-# 11. No empezaría metiendo todo el CSS en el código
+#### 10. No empezaría metiendo todo el CSS en el código
 
 Una cosa que te recomiendo especialmente.
 
@@ -395,7 +373,7 @@ Craft ya tiene:
 
 **Configuración del tema → CSS personalizado**
 
-para CSS global. Shopify indica que ese CSS afecta a las páginas de la tienda salvo el checkout. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes/theme-editor/theme-settings?utm_source=chatgpt.com)
+para CSS global. Shopify indica que ese CSS afecta a las páginas de la tienda salvo el checkout. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes/theme-editor/theme-settings)
 
 Puedes utilizarlo para pequeñas modificaciones.
 
@@ -448,7 +426,7 @@ Es decir:
 
 Shopify simplemente recibe las visitas.
 
-Shopify confirma que al conectar un dominio externo sigues gestionando el dominio, su pago y renovación desde el proveedor externo. [Shopify Help Center](https://help.shopify.com/es/manual/domains/add-a-domain/connecting-domains?utm_source=chatgpt.com)
+Shopify confirma que al conectar un dominio externo sigues gestionando el dominio, su pago y renovación desde el proveedor externo. [Shopify Help Center](https://help.shopify.com/es/manual/domains/add-a-domain/connecting-domains)
 
 ---
 
@@ -480,7 +458,7 @@ AAAA
 2620:0127:f00f:5::
 ```
 
-y especifica que debe eliminarse cualquier otro A/AAAA que entre en conflicto. [Shopify Help Center](https://help.shopify.com/es/manual/domains/add-a-domain/connecting-domains/connect-domain-manual?utm_source=chatgpt.com)
+y especifica que debe eliminarse cualquier otro A/AAAA que entre en conflicto. [Shopify Help Center](https://help.shopify.com/es/manual/domains/add-a-domain/connecting-domains/connect-domain-manual)
 
 **Pero ojo:** antes de tocar nada en Dinahosting, yo miraría contigo exactamente qué registros tienes ahora.
 
@@ -581,7 +559,7 @@ Carrito
 Checkout
 ```
 
-Shopify señala que los cambios DNS suelen hacerse efectivos en unas dos horas, aunque en algunos casos pueden tardar hasta 48 horas. [Shopify Help Center](https://help.shopify.com/es/manual/domains/add-a-domain/connecting-domains?utm_source=chatgpt.com)
+Shopify señala que los cambios DNS suelen hacerse efectivos en unas dos horas, aunque en algunos casos pueden tardar hasta 48 horas. [Shopify Help Center](https://help.shopify.com/es/manual/domains/add-a-domain/connecting-domains)
 
 #### 95–100 %
 
