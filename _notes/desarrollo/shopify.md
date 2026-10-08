@@ -25,14 +25,9 @@ Aquí está la documentación sobre la customización [Shopify Help Center](http
 
 Es recomendable separar el proceso en 2 fases [**construcción**](#construccion) y **puesta en producción**.
 
-## Construcción
+## FASE 1 — Construcción
 
-
-### FASE 1 — Configurar la tienda
-
-Yo haría esto en este orden:
-
-#### 1. Configuración básica de Shopify
+### 1. Configuración básica de Shopify
 
 Antes incluso de ponerte con el diseño:
 
@@ -59,7 +54,7 @@ Simplemente comprueba que tienes el dominio `myshopify.com` que te ha asignado S
 
 ---
 
-#### 2. Instalar Craft
+### 2. Instalar Craft
 
 Aquí sí puedes empezar ya con el diseño.
 
@@ -113,7 +108,7 @@ Shopify recomienda precisamente duplicar el tema antes de hacer modificaciones d
 
 ---
 
-#### 3. Primero estructura, después CSS/Liquid
+### 3. Primero estructura, después CSS/Liquid
 
 Yo no haría:
 
@@ -149,7 +144,7 @@ Los nombres concretos dependerán de la tienda, evidentemente.
 
 ---
 
-#### 4. Crear productos
+### 4. Crear productos
 
 Después crearía los productos reales.
 
@@ -182,7 +177,7 @@ De hecho, te recomiendo crearlos relativamente pronto porque cuando empieces a e
 
 ---
 
-#### 5. Crear colecciones
+### 5. Crear colecciones
 
 Después:
 
@@ -204,7 +199,7 @@ Las colecciones son especialmente importantes porque después puedes utilizarlas
 
 ---
 
-#### 6. Crear las páginas
+### 6. Crear las páginas
 
 Después crearía las páginas estáticas.
 
@@ -237,7 +232,7 @@ El tema determina cómo se representa ese contenido.
 
 ---
 
-#### 7. Crear la navegación
+### 7. Crear la navegación
 
 Cuando ya tengas productos, colecciones y páginas:
 
@@ -279,7 +274,7 @@ Shopify permite utilizar productos, colecciones, páginas y artículos del blog 
 
 ---
 
-#### 8. Ahora sí: diseño de Craft
+### 8. Ahora sí: diseño de Craft
 
 Aquí es donde yo empezaría a trabajar contigo como si fuera un proyecto web normal.
 
@@ -319,7 +314,7 @@ Y compruebas cómo está construido cada template.
 
 ---
 
-#### 9. Y después entra tu parte de desarrollador
+### 9. Y después entra tu parte de desarrollador
 
 Aquí Shopify te va a resultar bastante familiar si ya trabajas con WordPress/Divi, aunque el concepto es diferente.
 
@@ -365,7 +360,7 @@ Para ti esta parte probablemente será bastante más cómoda que para un usuario
 
 ---
 
-#### 10. No empezaría metiendo todo el CSS en el código
+### 10. No empezaría metiendo todo el CSS en el código
 
 Una cosa que te recomiendo especialmente.
 
@@ -393,7 +388,7 @@ Así no acabas con 1.500 líneas de CSS metidas en un campo del editor.
 
 ---
 
-## Puesta en producción
+## FASE 2 — Puesta en producción
 
 ### 1. Cuando esté aproximadamente al 90% → conectar Dinahosting
 
