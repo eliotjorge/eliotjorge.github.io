@@ -23,7 +23,7 @@ Es mejor así poqrue:
 
 Aquí está la documentación sobre la customización [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes)
 
-Es recomendable separar el proceso en 2 fases [**construcción**](#construccion) y **puesta en producción**.
+Es recomendable separar el proceso en 2 fases [**construcción**](#fase-1--construcción) y [**puesta en producción**](#fase-2--puesta-en-producción).
 
 ## FASE 1 — Construcción
 
