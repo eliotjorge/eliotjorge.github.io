@@ -72,3 +72,5 @@ order: 6
 [🛩️ **Flightsim.to** - Mods para MSFS, aviones, aeropuertos...](https://flightsim.to/){:target="_blank"}
 
 [🔭 **Satellites online** - Ver satélites sin necesidad de telescopio](https://james.darpinian.com/satellites/){:target="_blank"}
+
+[⛽ **Mapa de precios de gasolina en España**](https://especiales.datadista.com/interactivos/mapa-gasolineras-baratas-espana/){:target="_blank"}
