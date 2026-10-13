@@ -14,3 +14,18 @@ panel_includes:
 <div class="content">
   {{ content }}
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (typeof tocbot !== 'undefined') {
+      tocbot.init({
+        tocSelector: '#toc',
+        contentSelector: '.content',
+        ignoreSelector: '[data-toc-skip]',
+        headingSelector: 'h2, h3, h4',
+        orderedList: false,
+        scrollSmooth: false
+      });
+    }
+  });
+</script>
