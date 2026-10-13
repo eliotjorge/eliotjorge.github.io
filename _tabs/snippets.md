@@ -1,5 +1,5 @@
 ---
-layout: snippet
+layout: post
 title: Snippets
 icon: fas fa-code
 toc: true
