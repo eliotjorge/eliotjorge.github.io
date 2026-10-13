@@ -2,6 +2,7 @@
 layout: snippet
 title: Snippets
 icon: fas fa-code
+toc: true
 order: 6
 ---
 
