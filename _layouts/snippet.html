@@ -13,16 +13,10 @@ panel_includes:
 
 <div class="content">
   {{ content }}
-  {% include faq.html %}
 </div>
 
 <div class="post-tail-wrapper text-muted">
-  <div
-    class="
-      post-tail-bottom
-      d-flex justify-content-between align-items-center mt-5 pb-2
-    "
-  >
+  <div class="post-tail-bottom d-flex justify-content-between align-items-center mt-5 pb-2">
     <div class="license-wrapper">
       {% if site.data.locales[lang].copyright.license.template %}
         {% capture _replacement %}
