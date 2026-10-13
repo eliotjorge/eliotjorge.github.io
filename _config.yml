@@ -185,6 +185,12 @@ defaults:
       type: notes
     values:
       toc: true
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: snippet
+      toc: true
 
 sass:
   style: compressed
