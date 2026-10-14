@@ -73,7 +73,7 @@ image="https://github.com/user-attachments/assets/ae571822-199b-408b-b597-bcad4f
 height="250"
 %}
 
-# Playground 2
+## Playground 2
 
 {% include playground.html
     id="ejemplo-php"
