@@ -22,19 +22,19 @@ Para poner negritas en bloques que no lo permiten por defecto.
 
 {% capture playground-bold_javascript %}
 
-jQuery(function($) {
 
-    $('.toggle_item .title').each(function() {
+document.addEventListener('DOMContentLoaded', function () {
 
-        var $title = $(this);
-        var html = $title.html();
+    document.querySelectorAll('.toggle_item .title').forEach(function (title) {
+
+        let html = title.innerHTML;
 
         html = html.replace(
             /\[bold\](.*?)\[\/bold\]/g,
             '<strong style="margin-right:10px;">$1</strong>'
         );
 
-        $title.html(html);
+        title.innerHTML = html;
 
     });
 
