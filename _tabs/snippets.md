@@ -14,7 +14,7 @@ Para poner negritas en bloques que no lo permiten por defecto.
 
 <div class="toggle_item">
 <div class="title">
-<h1>[bold]Esto es bold[/bold]</h1>
+<h1>[bold]Esto es bold[/bold] Esto no lo es</h1>
 </div>
 </div>
 
