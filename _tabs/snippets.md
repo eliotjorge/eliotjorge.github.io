@@ -11,18 +11,14 @@ order: 6
 Para poner negritas en bloques que no lo permiten por defecto.
 
 {% capture playground-bold_html %}
-
 <div class="toggle_item">
 <div class="title">
-<h1>[bold]Esto es bold[/bold] Esto no lo es</h1>
+<p>[bold]Esto es bold[/bold] Esto no lo es</p>
 </div>
 </div>
-
 {% endcapture %}
 
 {% capture playground-bold_javascript %}
-
-
 document.addEventListener('DOMContentLoaded', function () {
 
     document.querySelectorAll('.toggle_item .title').forEach(function (title) {
@@ -39,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
-
 {% endcapture %}
 
 {% include playground.html
