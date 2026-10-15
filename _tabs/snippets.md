@@ -6,6 +6,51 @@ toc: true
 order: 6
 ---
 
+
+## Shortcode [bold]
+Para poner negritas en bloques que no lo permiten por defecto.
+
+{% capture playground-bold_html %}
+
+<div class="toggle_item">
+<div class="title">
+<h1>[bold]Esto es bold[/bold]</h1>
+</div>
+</div>
+
+{% endcapture %}
+
+{% capture playground-bold_javascript %}
+
+jQuery(function($) {
+
+    $('.toggle_item .title').each(function() {
+
+        var $title = $(this);
+        var html = $title.html();
+
+        html = html.replace(
+            /\[bold\](.*?)\[\/bold\]/g,
+            '<strong style="margin-right:10px;">$1</strong>'
+        );
+
+        $title.html(html);
+
+    });
+
+});
+
+{% endcapture %}
+
+{% include playground.html
+id="playground-bold"
+html=playground-bold_html
+javascript=playground-bold_javascript
+height="250"
+%}
+
+---
+
 ## 1
 {% capture grid_html %}
 
