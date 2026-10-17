@@ -54,7 +54,7 @@ Simplemente comprueba que tienes el dominio `myshopify.com` que te ha asignado S
 
 ---
 
-### 2. Instalar Craft
+### 2. Instalar Dwell
 
 Aquí sí puedes empezar ya con el diseño.
 
@@ -62,15 +62,15 @@ Ve a:
 
 **Tienda online → Temas**
 
-Y añade **Craft**, que es gratuito.
+Y añade **Dwell**, que es gratuito.
 
 No empezaría modificando código inmediatamente.
 
-Primero pondría Craft y entendería qué trae de serie.
+Primero pondría Dwell y entendería qué trae de serie.
 
 Después:
 
-**Craft → Editar**
+**Dwell → Editar**
 
 Ahí tienes el editor visual de Shopify.
 
@@ -92,14 +92,14 @@ Puedes modificar:
 
 Shopify permite hacer una buena parte de la personalización desde este editor sin tocar Liquid. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes)
 
-**Antes de tocar código, duplica Craft.**
+**Antes de tocar código, duplica Dwell.**
 
 Tendrás algo parecido a:
 
 ```text
-Craft
+Dwell
 ├── Publicado
-└── Craft - desarrollo
+└── Dwell - desarrollo
 ```
 
 Y trabajas sobre la copia.
@@ -112,7 +112,7 @@ Shopify recomienda precisamente duplicar el tema antes de hacer modificaciones d
 
 Yo no haría:
 
-> Instalar Craft → empezar a modificar CSS → empezar a crear productos → cambiar cosas → volver al CSS...
+> Instalar Dwell → empezar a modificar CSS → empezar a crear productos → cambiar cosas → volver al CSS...
 
 Es mejor establecer primero la estructura.
 
@@ -173,7 +173,7 @@ Aquí configurarías:
 
 **No necesitas tener el diseño terminado para crear productos.**
 
-De hecho, te recomiendo crearlos relativamente pronto porque cuando empieces a editar Craft necesitarás contenido real para ver cómo queda.
+De hecho, te recomiendo crearlos relativamente pronto porque cuando empieces a editar Dwell necesitarás contenido real para ver cómo queda.
 
 ---
 
@@ -274,7 +274,7 @@ Shopify permite utilizar productos, colecciones, páginas y artículos del blog 
 
 ---
 
-### 8. Ahora sí: diseño de Craft
+### 8. Ahora sí: diseño de Dwell
 
 Aquí es donde yo empezaría a trabajar contigo como si fuera un proyecto web normal.
 
@@ -290,7 +290,7 @@ Primero:
 - botones
 - estilos generales
 
-Craft permite establecer estas configuraciones globales desde el editor. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes/theme-editor/theme-settings)
+Dwell permite establecer estas configuraciones globales desde el editor. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes/theme-editor/theme-settings)
 
 Después vas página por página:
 
@@ -364,7 +364,7 @@ Para ti esta parte probablemente será bastante más cómoda que para un usuario
 
 Una cosa que te recomiendo especialmente.
 
-Craft ya tiene:
+Dwell ya tiene:
 
 **Configuración del tema → CSS personalizado**
 
@@ -492,7 +492,7 @@ Yo lo plantearía así:
 
 ```text
 ✓ Shopify configurado
-✓ Craft instalado
+✓ Dwell instalado
 ✓ Tema duplicado
 ✓ Estructura decidida
 ```
@@ -510,7 +510,7 @@ Yo lo plantearía así:
 #### 50–80 %
 
 ```text
-✓ Diseño Craft
+✓ Diseño Dwell
 ✓ Home
 ✓ Colecciones
 ✓ Producto
@@ -593,7 +593,7 @@ Puedes tener:
                       │
                 ┌─────┴─────┐
                 │           │
-             Shopify      Craft
+             Shopify      Dwell
                 │           │
              productos   Liquid/CSS
                 │
@@ -621,13 +621,13 @@ Y cuando esté lista:
 
 ### Y yo lo haría contigo en este orden
 
-Como además quieres **Craft y modificar código**, creo que lo más práctico es que no intentemos aprender todo Shopify de golpe.
+Como además quieres **Dwell y modificar código**, creo que lo más práctico es que no intentemos aprender todo Shopify de golpe.
 
 Podemos ir construyéndola en este orden:
 
 **1.** Configuración inicial de Shopify  
-**2.** Instalar Craft y duplicarlo  
-**3.** Entender la estructura de Craft/Liquid  
+**2.** Instalar Dwell y duplicarlo  
+**3.** Entender la estructura de Dwell/Liquid  
 **4.** Crear productos  
 **5.** Crear colecciones  
 **6.** Crear páginas  
@@ -642,3 +642,87 @@ Podemos ir construyéndola en este orden:
 **15.** Lanzamiento
 
 Y **SEO, identidad visual y contenidos los podemos dejar fuera**, como dices, porque ya tienes ese trabajo preparado.
+
+---
+
+## Hacer copia de seguridad del tema empleado
+
+Antes de tocar nada de código es recomendable (el propio Shopify lo dice en su documentación) hacer una copia de seguridad el tema.
+
+Para hacer una copia de seguridad de un tema de Shopify, puedes usar tres métodos principales: descarga manual, duplicación interna o apps automatizadas.
+
+- **Descargar el archivo del tema:** En tu panel de Shopify, ve a Tienda online > Temas, haz clic en los tres puntos junto a tu tema y selecciona Descargar archivo del tema. Shopify te enviará un archivo .zip con todo el código y los recursos para guardarlo offline.
+
+- **Duplicar el tema:** En la misma sección de Temas, selecciona Duplicar para crear una copia interna. Así puedes probar cambios sin riesgo y restaurar el original publicando el duplicado si hace falta, aunque estás limitado a 20 temas en tu biblioteca.
+
+  <img width="454" height="354" alt="image" src="https://github.com/user-attachments/assets/1cc3ba26-c679-43b8-8b1f-977de4a8fbfc" />
+  
+- **Apps automatizadas:** Instala apps como Rewind Backups o ThemeWatch desde la Shopify App Store para programar copias de seguridad automáticas y restaurar temas y otros datos de la tienda con un solo clic.
+Shopify no ofrece copias de seguridad automáticas de temas por defecto, por lo que las descargas manuales o las apps de terceros son necesarias para una protección completa.
+
+## Cambiar tamaño del logo
+
+Para cambiar el tamaño del logo no basta con añadir un CSS en el archivo 'base.css', hay un problema y es que si sólo se pone en tamaño en CSS el tema carga una imagen de 100px así que por mucho que le dé tamaño se pondrá de 150px una foto de 100px por lo que se verá pixelada:
+
+<img width="260" height="152" alt="image" src="https://github.com/user-attachments/assets/13e50b96-09cf-4c39-902d-0c24570b52c3" />
+
+```css
+/* Jorge */
+ .header-logo__image { /*Cambio tamaño logo de la cabecera*/
+    max-width: none !important;
+    width: 150px !important; /* Cambia este valor al que quieras */
+    height: auto !important;
+  }
+```
+
+Además del CSS hay que cambiar el tamaño de la foto que renderiza. Para hacerlo hay que cambiar 'blocks/_header-logo.liquid' que en este tema es el encargado de los ajustes del logo del tema.
+
+En la línea 60 tenemos esto:
+```
+{% render 'image',
+  image: settings.logo,
+  class: 'header-logo__image',
+  height: settings.logo_height,
+  alt_text_fallback: alt_text_fallback,
+  text_fallback: shop.name,
+  style: logo_style
+%}
+```
+
+Cambiar por (poner altura a 300 o lo que quiera):
+
+```
+{% render 'image',
+  image: settings.logo,
+  class: 'header-logo__image',
+  height: 300,
+  alt_text_fallback: alt_text_fallback,
+  text_fallback: shop.name,
+  style: logo_style
+%}
+```
+
+<img width="236" height="154" alt="image" src="https://github.com/user-attachments/assets/11d13ead-0383-47eb-97cf-367a8184b2e8" />
+
+
+## Ancho del contenido de la página con plantilla legales
+
+Cree una plantilla para los textos legales que solo llevan título de la página y los textos debajo, pero se quedaba por defecto muy estrecho el contenido:
+
+<img width="1919" height="885" alt="image" src="https://github.com/user-attachments/assets/ec73e6c2-dd75-4a57-954f-805f87c42954" />
+
+Así que hay que añadir en 'base.css' esta regla:
+
+```css
+  body:has(main[data-template="page.legales"]) { /*Ancho páginas con plantilla legales*/
+  --normal-content-width: 70rem;
+}
+```
+
+Lo que hace esta regla es al 'body' que tenga como 'data-template = page.legales' cambia la variable '--normal-content-width' al valor que queramos.
+
+<img width="248" height="84" alt="image" src="https://github.com/user-attachments/assets/51f04a6c-116a-4ec0-b737-72d088b9770e" />
+
+Y se queda de esta manera:
+
+<img width="1919" height="886" alt="image" src="https://github.com/user-attachments/assets/eca34303-40f2-43cb-815e-98a693c99560" />
