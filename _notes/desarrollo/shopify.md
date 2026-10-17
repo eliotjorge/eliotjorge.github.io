@@ -667,7 +667,6 @@ Para cambiar el tamaño del logo no basta con añadir un CSS en el archivo 'base
 <img width="260" height="152" alt="image" src="https://github.com/user-attachments/assets/13e50b96-09cf-4c39-902d-0c24570b52c3" />
 
 ```css
-/* Jorge */
  .header-logo__image { /*Cambio tamaño logo de la cabecera*/
     max-width: none !important;
     width: 150px !important; /* Cambia este valor al que quieras */
@@ -678,6 +677,7 @@ Para cambiar el tamaño del logo no basta con añadir un CSS en el archivo 'base
 Además del CSS hay que cambiar el tamaño de la foto que renderiza. Para hacerlo hay que cambiar 'blocks/_header-logo.liquid' que en este tema es el encargado de los ajustes del logo del tema.
 
 En la línea 60 tenemos esto:
+
 ```
 {% render 'image',
   image: settings.logo,
