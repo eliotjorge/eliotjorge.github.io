@@ -666,10 +666,10 @@ Para cambiar el tamaño del logo no basta con añadir un CSS en el archivo 'base
 
 <img width="260" height="152" alt="image" src="https://github.com/user-attachments/assets/13e50b96-09cf-4c39-902d-0c24570b52c3" />
 
-```css
+```
  .header-logo__image { /*Cambio tamaño logo de la cabecera*/
     max-width: none !important;
-    width: 150px !important; /* Cambia este valor al que quieras */
+    width: 150px !important;
     height: auto !important;
   }
 ```
@@ -703,7 +703,6 @@ Cambiar por (poner altura a 300 o lo que quiera):
 ```
 
 <img width="236" height="154" alt="image" src="https://github.com/user-attachments/assets/11d13ead-0383-47eb-97cf-367a8184b2e8" />
-
 
 ## Ancho del contenido de la página con plantilla legales
 
