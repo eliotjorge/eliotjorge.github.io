@@ -660,14 +660,15 @@ Para hacer una copia de seguridad de un tema de Shopify, puedes usar tres métod
 - **Apps automatizadas:** Instala apps como Rewind Backups o ThemeWatch desde la Shopify App Store para programar copias de seguridad automáticas y restaurar temas y otros datos de la tienda con un solo clic.
 Shopify no ofrece copias de seguridad automáticas de temas por defecto, por lo que las descargas manuales o las apps de terceros son necesarias para una protección completa.
 
+
 ## Cambiar tamaño del logo
 
 Para cambiar el tamaño del logo no basta con añadir un CSS en el archivo 'base.css', hay un problema y es que si sólo se pone en tamaño en CSS el tema carga una imagen de 100px así que por mucho que le dé tamaño se pondrá de 150px una foto de 100px por lo que se verá pixelada:
 
 <img width="260" height="152" alt="image" src="https://github.com/user-attachments/assets/13e50b96-09cf-4c39-902d-0c24570b52c3" />
 
-```
- .header-logo__image { /*Cambio tamaño logo de la cabecera*/
+```css
+ .header-logo__image {
     max-width: none !important;
     width: 150px !important;
     height: auto !important;
@@ -713,7 +714,7 @@ Cree una plantilla para los textos legales que solo llevan título de la página
 Así que hay que añadir en 'base.css' esta regla:
 
 ```css
-  body:has(main[data-template="page.legales"]) { /*Ancho páginas con plantilla legales*/
+  body:has(main[data-template="page.legales"]) {
   --normal-content-width: 70rem;
 }
 ```
