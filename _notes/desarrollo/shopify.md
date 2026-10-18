@@ -679,7 +679,8 @@ Además del CSS hay que cambiar el tamaño de la foto que renderiza. Para hacerl
 
 En la línea 60 tenemos esto:
 
-```
+{% raw %}
+```liquid
 {% render 'image',
   image: settings.logo,
   class: 'header-logo__image',
@@ -689,10 +690,12 @@ En la línea 60 tenemos esto:
   style: logo_style
 %}
 ```
+{% endraw %}
 
 Cambiar por (poner altura a 300 o lo que quiera):
 
-```
+{% raw %}
+```liquid
 {% render 'image',
   image: settings.logo,
   class: 'header-logo__image',
@@ -702,6 +705,7 @@ Cambiar por (poner altura a 300 o lo que quiera):
   style: logo_style
 %}
 ```
+{% endraw %}
 
 <img width="236" height="154" alt="image" src="https://github.com/user-attachments/assets/11d13ead-0383-47eb-97cf-367a8184b2e8" />
 
