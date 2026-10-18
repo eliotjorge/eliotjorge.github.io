@@ -19,6 +19,8 @@ order: 6
 
 [**Hosting Checker**](https://hosting-checker.net/){:target="_blank"}
 
+[**Build with** - *WEb que metiendo una URL te dice con que esta cosntruida la página web*](https://builtwith.com/){:target="_blank"}
+
 [**viewdns** - *Herramientas gratuitas para DNS e IP incluyendo Reverse IP Lookup, WHOIS, DNS Records, Subdomain Finder, Port Scanner, IP Location, DNS Propagation Checker y 20+ mas*](https://viewdns.info/){:target="_blank"}
 
 [**XML Sitemaps**](https://www.xml-sitemaps.com/){:target="_blank"}
@@ -50,6 +52,10 @@ order: 6
 [**ESPWEBTOOL** - Flash your ESP32 or ESP8266 through your browser. Open-Source, free, and easy to use.](https://esptool.spacehuhn.com/){:target="_blank"}
 
 [**Osirisai** - The open-source Palantir alternative. Track live aircraft, satellites, and worldwide CCTV cameras on a 3D globe. Run Nmap scans, DNS lookups, WHOIS queries...](https://osirisai.live/){:target="_blank"}
+
+[**Artcraft** - *Herramientas de Adobe de código abierto y gratuitas Photoshop, Ilustrator, Lightroom, Premier, Figma...*](https://getartcraft.com/apps){:target="_blank"}
+
+---
 
 ### Como no todo es trabajar...
 
