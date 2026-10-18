@@ -660,6 +660,7 @@ Para hacer una copia de seguridad de un tema de Shopify, puedes usar tres métod
 - **Apps automatizadas:** Instala apps como Rewind Backups o ThemeWatch desde la Shopify App Store para programar copias de seguridad automáticas y restaurar temas y otros datos de la tienda con un solo clic.
 Shopify no ofrece copias de seguridad automáticas de temas por defecto, por lo que las descargas manuales o las apps de terceros son necesarias para una protección completa.
 
+---
 
 ## Cambiar tamaño del logo
 
@@ -730,3 +731,21 @@ Lo que hace esta regla es al 'body' que tenga como 'data-template = page.legales
 Y se queda de esta manera:
 
 <img width="1919" height="886" alt="image" src="https://github.com/user-attachments/assets/eca34303-40f2-43cb-815e-98a693c99560" />
+
+---
+
+## Cambiar políticas de la tienda
+
+Para cambiar las páginas de:
+
+- Política de devoluciones y reembolsos
+- Política de privacidad
+- Términos del Servicio
+- Política de envío
+- Información de contacto
+- Aviso legal
+
+Shopify nos da las páginas y en algún caso con el contenido creado (revisar porque no se hacen responsables) y se encuentran en **Configuración/Políticas**
+
+<img width="809" height="375" alt="image" src="https://github.com/user-attachments/assets/4803f66d-1243-4295-aeb2-8c45b4071237" />
+
