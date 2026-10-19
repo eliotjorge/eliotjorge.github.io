@@ -1,9 +1,10 @@
 ---
 title: Road to IA
 date: 2026-03-25
-layout: post
+layout: note
 notebook: IA
 resumen: "Notas del camino para crear IAs propias"
+coloir: "#00595d"
 toc: true
 ---
 
