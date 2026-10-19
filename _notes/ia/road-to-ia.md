@@ -14,6 +14,7 @@ Cuando especifiqué que el modelo de IA de Gemini que quería que usara mi API e
 ```
 RESPONSE: {"error":"[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."}
 ```
+
 Lo importante toda esa línea es este cachito `models/gemini-1.5-flash is not found for API version v1beta` que significa:
 > "Estás usando un modelo que ya no existe o no está disponible con ese endpoint"
 
@@ -28,7 +29,7 @@ Si pinchas en alguna de las tarjetas Gemini 3 Flash por ejemplo, hay que fijarse
 <img width="875" height="299" alt="image" src="https://github.com/user-attachments/assets/a7bf8be0-7da0-4416-855f-6bc9d6f2e990" />
 
 
-Lo defines aquí en ´model: ´:
+Lo defines aquí en ´model:´:
 
 ```
 const model = genAI.getGenerativeModel({
