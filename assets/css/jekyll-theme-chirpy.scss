@@ -152,117 +152,90 @@ border-radius: 8px;
 }
 
 
-/* Nuevo diseño: cuadernos */
+
+/* Cuadernos: estilo de portada editorial */
 
 .carta-nota {
-  --color-portada: #d7c6a5;
-  --color-texto: #30291f;
+  --color-portada: #285477;
+  --color-texto: #f7f3eb;
+  --color-linea: rgb(255 255 255 / 35%);
 
-  position: relative;
   min-width: 0;
-  perspective: 900px;
 }
 
-/* La portada completa es un único enlace */
+/* La tarjeta completa es la portada */
 .carta-nota > a {
-  position: relative;
-  isolation: isolate;
   box-sizing: border-box;
+  position: relative;
 
   display: flex;
   flex-direction: column;
 
-  min-height: 270px;
-  height: 100%;
+  width: 100%;
+  aspect-ratio: 1.05 / 1;
+  min-height: 250px;
+  height: auto;
+
   overflow: hidden;
+  padding: 22px 20px 18px 28px;
 
-  padding: 26px 20px 18px 28px;
-
+  background: var(--color-portada);
   color: var(--color-texto);
   text-decoration: none;
 
-  font-family: Georgia, "Times New Roman", serif;
+  border: 1px solid rgb(0 0 0 / 35%);
+  border-radius: 8px;
 
-  background:
-    linear-gradient(
-      90deg,
-      rgb(0 0 0 / 18%) 0,
-      rgb(255 255 255 / 8%) 3%,
-      transparent 10%
-    ),
-    linear-gradient(
-      145deg,
-      var(--color-portada),
-      color-mix(in srgb, var(--color-portada), #000 12%)
-    );
-
-  border: 1px solid rgb(0 0 0 / 12%);
-  border-radius: 3px 7px 7px 3px;
-
-  box-shadow:
-    inset 4px 0 4px rgb(0 0 0 / 12%),
-    inset -1px 0 1px rgb(255 255 255 / 35%),
-    2px 3px 2px rgb(0 0 0 / 8%),
-    5px 7px 12px rgb(0 0 0 / 12%);
+  box-shadow: 0 3px 7px rgb(0 0 0 / 12%);
 
   transition:
-    transform 200ms ease,
-    box-shadow 200ms ease;
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
-/* Lomo del cuaderno */
+/* Lomo sutil en el lado izquierdo */
 .carta-nota > a::before {
   content: "";
   position: absolute;
-  z-index: -1;
+  inset: 0 auto 0 8px;
 
-  top: 0;
-  bottom: 0;
-  left: 9px;
+  width: 1px;
+  background: rgb(255 255 255 / 15%);
+  box-shadow: 1px 0 rgb(0 0 0 / 12%);
 
-  width: 2px;
-
-  background: rgb(0 0 0 / 13%);
-  box-shadow: 2px 0 2px rgb(255 255 255 / 15%);
+  pointer-events: none;
 }
 
-/* Borde de las hojas */
-.carta-nota > a::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-
-  top: 5px;
-  right: -1px;
-  bottom: 5px;
-
-  width: 4px;
-
-  background: repeating-linear-gradient(
-    to bottom,
-    #eee9dd 0,
-    #eee9dd 2px,
-    #c9c0b0 3px,
-    #c9c0b0 4px
-  );
-}
-
-/* Título de la portada */
+/* Cabecera del cuaderno */
 .carta-nota .titulo-nota {
-  padding: 10px 0 18px;
-  margin: 0;
+  padding: 0 0 14px;
+  margin: 0 0 16px;
 
   background: none;
   border: 0;
+  border-bottom: 1px solid var(--color-linea);
 
+  color: var(--color-texto);
   text-align: left;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.2rem, 1.5vw, 1.65rem);
+
+  font-family: var(--bs-font-monospace);
+  font-size: clamp(1.1rem, 1.4vw, 1.55rem);
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.035em;
 
   overflow-wrap: anywhere;
+}
+
+/* Título real: tipografía de portada */
+.carta-nota .titulo-nota span {
+  display: block;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.4rem, 1.8vw, 2rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.045em;
 }
 
 /* Descripción */
@@ -273,55 +246,52 @@ border-radius: 8px;
   background: none;
   border: 0;
 
-  font-family: inherit;
+  color: var(--color-texto);
+  font-family: Arial, sans-serif;
   font-size: 0.9rem;
-  line-height: 1.55;
-  opacity: 0.85;
+  line-height: 1.5;
 
+  opacity: 0.9;
   overflow-wrap: anywhere;
 }
 
-/* Fecha al pie de la portada */
+/* Fecha al pie */
 .carta-nota .fecha-nota {
   padding: 0;
   margin-top: auto;
-  padding-top: 24px;
+  padding-top: 18px;
 
   background: none;
   border: 0;
 
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 0.75rem;
-  letter-spacing: 0.06em;
-  opacity: 0.75;
+  color: var(--color-texto);
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  opacity: 0.85;
 }
 
-/* Interacción */
+/* Efecto hover discreto */
 @media (hover: hover) {
   .carta-nota:hover > a {
-    transform: translateY(-4px) rotateY(-2deg);
-
-    box-shadow:
-      inset 4px 0 4px rgb(0 0 0 / 12%),
-      3px 7px 4px rgb(0 0 0 / 7%),
-      9px 14px 20px rgb(0 0 0 / 16%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgb(0 0 0 / 18%);
   }
 }
 
-/* Accesibilidad con teclado */
 .carta-nota > a:focus-visible {
-  outline: 3px solid currentColor;
+  outline: 3px solid var(--color-portada);
   outline-offset: 4px;
 }
 
-/* Reducir animaciones si el usuario lo solicita */
 @media (prefers-reduced-motion: reduce) {
   .carta-nota > a {
     transition: none;
   }
 }
 
-/* FIN nuevo diseño: cuadernos */
+/* FIN cuadernos */
+
 
 /* breadcrumb */
 .breadcrumbs {
