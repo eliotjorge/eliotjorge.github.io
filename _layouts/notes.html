@@ -33,7 +33,7 @@ layout: full-width
         
         <!-- Nuevo diseño -->
          
-          <div class="carta-nota cuaderno">
+          <div class="carta-nota cuaderno" style="--color-portada: {{ note.color | default: '#285477' }};">
             <a href="{{ note.url }}">
           
               <div class="cuaderno-cabecera">
