@@ -1,9 +1,10 @@
 ---
 title: Calendario de Adviento
 date: 2026-03-20
-layout: post
+layout: note
 notebook: IA
 resumen: "Calendario de adviento de Navidad de Google"
+volor: "#265173"
 toc: true
 ---
 
