@@ -1,32 +1,12 @@
 ---
 title: Content Explorer
 date: 2026-08-06
-layout: page
+layout: snippet
 notebook: Desarrollo
 resumen: "Creación de una API de explorador de HTML de web"
 color: "#00595d"
 toc: true
 ---
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    if (typeof tocbot !== 'undefined') {
-      tocbot.init({
-        tocSelector: '#toc',
-        contentSelector: '.content',
-        ignoreSelector: '[data-toc-skip]',
-        headingSelector: 'h2, h3, h4',
-        orderedList: false,
-        scrollSmooth: false
-      });
-    }
-  });
-</script>
-<style>
-  aside .access{
-    display:none;  
-  }
-</style>
 
 ## ¿Por qué hemos creado un Cloudflare Worker?
 
