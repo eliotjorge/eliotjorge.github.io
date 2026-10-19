@@ -14,9 +14,25 @@ layout: full-width
       <div class="notes-subgrid">
         {% for note in site.notes %}
           {% if note.notebook == nb %}
+
+      <!-- Logica colores -->
+
+      {% assign cover_color = "#d7c6a5" %}
+
+{% case nb %}
+  {% when "Inteligencia Artificial" %}
+    {% assign cover_color = "#c8d5c0" %}
+  {% when "Programación" %}
+    {% assign cover_color = "#c8d3e5" %}
+  {% when "Diseño" %}
+    {% assign cover_color = "#e5c5c1" %}
+{% endcase %}
+
+      <!-- FIN logica cuaderno -->
+
         
         <!-- Nuevo diseño -->
-          <div class="carta-nota cuaderno">
+          <div class="carta-nota cuaderno" style="--color-portada: {{ cover_color }};">
             <a href="{{ note.url }}">
              <div class="titulo-nota">
                   <span>
