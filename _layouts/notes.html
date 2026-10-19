@@ -19,42 +19,47 @@ layout: full-width
 
       {% assign cover_color = "#d7c6a5" %}
 
-{% case nb %}
-  {% when "Inteligencia Artificial" %}
-    {% assign cover_color = "#c8d5c0" %}
-  {% when "Programación" %}
-    {% assign cover_color = "#c8d3e5" %}
-  {% when "Diseño" %}
-    {% assign cover_color = "#e5c5c1" %}
-{% endcase %}
+      {% case nb %}
+        {% when "Inteligencia Artificial" %}
+          {% assign cover_color = "#c8d5c0" %}
+        {% when "Programación" %}
+          {% assign cover_color = "#c8d3e5" %}
+        {% when "Diseño" %}
+          {% assign cover_color = "#e5c5c1" %}
+      {% endcase %}
 
       <!-- FIN logica cuaderno -->
 
         
         <!-- Nuevo diseño -->
-          <div class="carta-nota cuaderno" style="--color-portada: {{ cover_color }};">
+         
+          <div class="carta-nota cuaderno">
             <a href="{{ note.url }}">
-             <div class="titulo-nota">
-                  <span>
-                    {{ note.title }}
-                  </span>
-             </div>
-             <div class="resumen-nota">
+          
+              <div class="cuaderno-cabecera">
+                {{ nb }}
+              </div>
+          
+              <div class="titulo-nota">
+                <span>{{ note.title }}</span>
+              </div>
+          
+              <div class="resumen-nota">
                 <span>
                   {% if note.resumen %}
                     {{ note.resumen }}
                   {% endif %}
                 </span>
-             </div>
-             <div class="fecha-nota">
+              </div>
+          
+              <div class="fecha-nota">
                 <span>
-                {% include datetime.html date=note.date tooltip=true lang=lang %}  
+                  {% include datetime.html date=note.date tooltip=true lang=lang %}
                 </span>
-             </div>
+              </div>
+          
             </a>
           </div>
-
-
         
         <!-- FIN nuevo diseño-->
           {% endif %}
