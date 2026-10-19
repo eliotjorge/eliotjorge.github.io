@@ -4,7 +4,7 @@ date: 2026-03-25
 layout: note
 notebook: IA
 resumen: "Notas del camino para crear IAs propias"
-coloir: "#00595d"
+color: "#00595d"
 toc: true
 ---
 
