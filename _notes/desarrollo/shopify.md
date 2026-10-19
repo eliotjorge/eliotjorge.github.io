@@ -4,6 +4,7 @@ date: 2026-10-07
 layout: post
 notebook: Desarrollo
 resumen: "Creación de una tienda online con Shopify"
+color: "#703c36"
 toc: true
 ---
 
