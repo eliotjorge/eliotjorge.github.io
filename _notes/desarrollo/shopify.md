@@ -1,7 +1,7 @@
 ---
 title: Shopify
 date: 2026-10-07
-layout: note
+layout: page
 notebook: Desarrollo
 resumen: "Creación de una tienda online con Shopify"
 color: "--cuaderno-rojo"
