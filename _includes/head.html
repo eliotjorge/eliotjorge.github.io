@@ -95,7 +95,7 @@
       <link rel="stylesheet" href="{{ site.data.origin[type].toc.css | relative_url }}">
     {% endif %}
   
-    {% if page.layout == 'page' or page.layout == 'post' %}
+    {% if page.layout == 'page' or page.layout == 'post' or page.layout == 'note' %}
       <!-- Manific Popup -->
       <link rel="stylesheet" href="{{ site.data.origin[type].magnific-popup.css | relative_url }}">
     {% endif %}
@@ -110,16 +110,16 @@
 
     <script src="https://consent.cookiefirst.com/sites/jorgerosa.dev-c32cfb04-ab1f-4623-99c2-4413d83931fd/consent.js"></script>
 
-    <!-- Nuevo -->
+    <!-- Lightbox -->
     <script type="text/javascript" src="/assets/js/lightbox.min.js"></script>
     <link rel="stylesheet" href="/assets/css/lightbox.min.css">
+
+    <!-- Manifest -->
     <link rel="manifest" href="/assets/manifest.json">
 
     <!-- Playground -->
-
     <link rel="stylesheet" href="{{ '/assets/css/playground.css' | relative_url }}">
     <script src="{{ '/assets/js/playground.js' | relative_url }}"></script>
-
     <!-- Plyaground -->
 
     <!-- Nuevo --> 
