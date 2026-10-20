@@ -4,7 +4,7 @@ date: 2026-08-08
 layout: note
 notebook: Radio
 resumen: "Notas de todo lo necesario para un radioaficionado"
-color: "#21593f"
+color: "--cuaderno-verde-militar"
 toc: true
 ---
 
