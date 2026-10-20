@@ -447,6 +447,7 @@ border-radius: 8px;
     overflow:auto;
 }
 
+
 /* Para imprimir */
 
 /* Botón para generar PDF */
@@ -467,6 +468,7 @@ border-radius: 8px;
 }
 
 /* Estilos exclusivos de impresión */
+
 @media print {
   /* Ocultar elementos de navegación y controles */
   .no-print,
@@ -504,10 +506,15 @@ border-radius: 8px;
 
   /* Evitar que las imágenes se salgan de la página */
   img,
-  svg,
-  video {
-    max-width: 100% !important;
+  .content img,
+  article img {
+    display: block !important;
+    width: auto !important;
     height: auto !important;
+    max-width: 100% !important;
+    max-height: 24cm !important;
+    object-fit: contain !important;
+    margin: 1em auto !important;
   }
 
   /* Evitar cortes incómodos en los bloques de código */
