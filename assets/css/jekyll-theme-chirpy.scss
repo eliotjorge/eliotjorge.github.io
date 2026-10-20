@@ -446,3 +446,90 @@ border-radius: 8px;
     padding:1rem;
     overflow:auto;
 }
+
+/* Para imprimir */
+
+/* Botón para generar PDF */
+.btn-pdf {
+  display: inline-block;
+  margin: 0 0 1.5rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid #285477;
+  border-radius: 6px;
+  background: #285477;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+}
+
+.btn-pdf:hover {
+  background: #1d405b;
+}
+
+/* Estilos exclusivos de impresión */
+@media print {
+  /* Ocultar elementos de navegación y controles */
+  .no-print,
+  nav,
+  .sidebar,
+  .navbar,
+  .btn-pdf {
+    display: none !important;
+  }
+
+  /* Aprovechar el espacio de la página */
+  html,
+  body {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Evitar que el contenido quede limitado por el diseño web */
+  main,
+  article,
+  .content {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* Evitar que las imágenes se salgan de la página */
+  img,
+  svg,
+  video {
+    max-width: 100% !important;
+  }
+
+  /* Evitar cortes incómodos en los bloques de código */
+  pre {
+    white-space: pre-wrap !important;
+    overflow-wrap: anywhere;
+    max-width: 100%;
+  }
+
+  pre,
+  blockquote,
+  img,
+  table {
+    break-inside: avoid;
+  }
+
+  /* Mantener los títulos junto al contenido siguiente */
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+
+  /* Mostrar las URL de los enlaces al imprimir */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    overflow-wrap: anywhere;
+  }
+}
