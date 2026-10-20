@@ -483,6 +483,27 @@ border-radius: 8px;
     display: none !important;
   }
 
+  /*popup imagenes*/
+a.popup.img-link {
+    display: inline !important;
+    position: static !important;
+  }
+
+  a.popup.img-link img {
+    display: block !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 24cm !important;
+    object-fit: contain !important;
+    margin: 1em auto !important;
+  }
+
+  /*fin popup imagenes*/
+  .code-header{
+    justify-content: center !important;
+  }
+
   /* Aprovechar el espacio de la página */
   html,
   body {
