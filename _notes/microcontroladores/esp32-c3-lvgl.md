@@ -4,7 +4,7 @@ date: 2026-04-10
 layout: note
 notebook: Microcontroladores
 resumen: "Módulo de desarollo ESP32 con pantalla redonda de 1.28'"
-color: "#445423"
+color: "--cuaderno-azul-verdoso"
 toc: true
 ---
 
