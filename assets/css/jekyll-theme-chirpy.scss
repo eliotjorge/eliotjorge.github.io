@@ -473,6 +473,10 @@ border-radius: 8px;
   nav,
   .sidebar,
   .navbar,
+  #topbar-wrapper,
+  #tail-wrapper,
+  .code-header::before,
+  div.code-header > button,
   .btn-pdf {
     display: none !important;
   }
@@ -503,6 +507,7 @@ border-radius: 8px;
   svg,
   video {
     max-width: 100% !important;
+    height: auto !important;
   }
 
   /* Evitar cortes incómodos en los bloques de código */
