@@ -4,7 +4,6 @@ date: 2026-03-20
 layout: note
 notebook: IA
 resumen: "Calendario de adviento de Navidad de Google"
-color: "#265173"
 toc: true
 ---
 
