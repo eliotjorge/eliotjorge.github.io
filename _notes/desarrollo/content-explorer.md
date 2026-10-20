@@ -4,7 +4,7 @@ date: 2026-08-06
 layout: note
 notebook: Desarrollo
 resumen: "Creación de una API de explorador de HTML de web"
-color: "#00595d"
+color: "--cuaderno-azul-verdoso"
 toc: true
 ---
 
