@@ -1,21 +1,37 @@
 ---
-layout: page
-refactor: true
-panel_includes:
-  - toc
+layout: default
 ---
 
 {% include lang.html %}
 
+{% capture _content %}
+  {% if layout.refactor or page.layout == 'page' %}
+    {% include refactor-content.html content=content lang=lang %}
+  {% else %}
+    {{ content }}
+  {% endif %}
+{% endcapture %}
 
-<button type="button" class="btn-pdf no-print"
+<article class="px-1">
+  {% if page.layout == 'page' or page.collection == 'tabs' %}
+    {% assign tab_key = page.title | downcase %}
+    {% assign title = site.data.locales[lang].tabs[tab_key] | default: page.title %}
+    <div style="display:flex;">
+      <h1 class="dynamic-title">
+      {{ title }}
+    </h1>
+      <button type="button" class="btn-pdf no-print"
         onclick="window.print()">
-  ↓ Generar PDF
-</button>
-
-<div class="content">
-  {{ content }}
-</div>
+        ↓ Generar PDF
+      </button>
+    </div>
+    <div class="content">
+      {{ _content }}
+    </div>
+  {% else %}
+    {{ _content }}
+  {% endif %}
+</article>
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
