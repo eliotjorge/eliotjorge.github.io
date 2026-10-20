@@ -4,7 +4,7 @@ date: 2026-10-07
 layout: note
 notebook: Desarrollo
 resumen: "Creación de una tienda online con Shopify"
-color: "#703c36"
+color: "--cuaderno-rojo"
 toc: true
 ---
 
