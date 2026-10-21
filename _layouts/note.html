@@ -19,13 +19,13 @@ panel_includes:
   {% if page.layout == 'note' %}
     {% assign tab_key = page.title | downcase %}
     {% assign title = site.data.locales[lang].tabs[tab_key] | default: page.title %}
-    <div style="display:flex;">
+    <div style="display:flex; justify-content: space-between;">
       <h1 class="dynamic-title">
       {{ title }}
     </h1>
-      <button type="button" class="btn-pdf no-print"
+      <button type="button" class=""
         onclick="window.print()">
-        ↓ Generar PDF
+        <i class="fa fa-print" aria-hidden="true"></i>
       </button>
     </div>
     <div class="content">
