@@ -22,7 +22,7 @@ Es mejor así poqrue:
 
 **No necesitas que el dominio real esté conectado para construir la tienda.** Shopify permite previsualizar el tema y trabajar con productos, colecciones, páginas, menús, etc. desde el propio panel.
 
-Aquí está la documentación sobre la customización [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes)
+Aquí está la documentación sobre la customización [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes){:target="_blank"}
 
 Es recomendable separar el proceso en 2 fases [**construcción**](#fase-1--construcción) y [**puesta en producción**](#fase-2--puesta-en-producción).
 
@@ -91,7 +91,7 @@ Puedes modificar:
 - colecciones
 - etc.
 
-Shopify permite hacer una buena parte de la personalización desde este editor sin tocar Liquid. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes)
+Shopify permite hacer una buena parte de la personalización desde este editor sin tocar Liquid. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes){:target="_blank"}
 
 **Antes de tocar código, duplica Dwell.**
 
@@ -105,7 +105,7 @@ Dwell
 
 Y trabajas sobre la copia.
 
-Shopify recomienda precisamente duplicar el tema antes de hacer modificaciones de código para tener una copia de seguridad. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes)
+Shopify recomienda precisamente duplicar el tema antes de hacer modificaciones de código para tener una copia de seguridad. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes){:target="_blank"}
 
 ---
 
@@ -196,7 +196,7 @@ Novedades
 Destacados
 ```
 
-Las colecciones son especialmente importantes porque después puedes utilizarlas directamente en la navegación y en secciones del tema. [Shopify Help Center](https://help.shopify.com/es/manual/products/collections/make-collections-findable)
+Las colecciones son especialmente importantes porque después puedes utilizarlas directamente en la navegación y en secciones del tema. [Shopify Help Center](https://help.shopify.com/es/manual/products/collections/make-collections-findable){:target="_blank"}
 
 ---
 
@@ -217,7 +217,7 @@ Ahí puedes crear páginas como:
 - Devoluciones
 - etc.
 
-Shopify las gestiona como recursos independientes y posteriormente las puedes añadir a los menús. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/add-edit-pages)
+Shopify las gestiona como recursos independientes y posteriormente las puedes añadir a los menús. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/add-edit-pages){:target="_blank"}
 
 Y aquí hay una diferencia importante respecto a WordPress que te vendrá bien tener clara:
 
@@ -271,7 +271,7 @@ Legal
 Contacto
 ```
 
-Shopify permite utilizar productos, colecciones, páginas y artículos del blog como elementos de los menús. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/menus-and-links)
+Shopify permite utilizar productos, colecciones, páginas y artículos del blog como elementos de los menús. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/menus-and-links){:target="_blank"}
 
 ---
 
@@ -291,7 +291,7 @@ Primero:
 - botones
 - estilos generales
 
-Dwell permite establecer estas configuraciones globales desde el editor. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes/theme-editor/theme-settings)
+Dwell permite establecer estas configuraciones globales desde el editor. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes/theme-editor/theme-settings){:target="_blank"}
 
 Después vas página por página:
 
@@ -331,7 +331,7 @@ JSON
 
 Shopify permite acceder a:
 
-**Tienda online → Temas → ... → Editar código** [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes/edit-code)
+**Tienda online → Temas → ... → Editar código** [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes/edit-code){:target="_blank"}
 
 
 Y ahí ya puedes hacer cosas como:
@@ -369,7 +369,7 @@ Dwell ya tiene:
 
 **Configuración del tema → CSS personalizado**
 
-para CSS global. Shopify indica que ese CSS afecta a las páginas de la tienda salvo el checkout. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes/theme-editor/theme-settings)
+para CSS global. Shopify indica que ese CSS afecta a las páginas de la tienda salvo el checkout. [Shopify Help Center](https://help.shopify.com/es/manual/online-store/themes/customizing-themes/theme-editor/theme-settings){:target="_blank"}
 
 Puedes utilizarlo para pequeñas modificaciones.
 
@@ -422,7 +422,7 @@ Es decir:
 
 Shopify simplemente recibe las visitas.
 
-Shopify confirma que al conectar un dominio externo sigues gestionando el dominio, su pago y renovación desde el proveedor externo. [Shopify Help Center](https://help.shopify.com/es/manual/domains/add-a-domain/connecting-domains)
+Shopify confirma que al conectar un dominio externo sigues gestionando el dominio, su pago y renovación desde el proveedor externo. [Shopify Help Center](https://help.shopify.com/es/manual/domains/add-a-domain/connecting-domains){:target="_blank"}
 
 ---
 
@@ -454,7 +454,7 @@ AAAA
 2620:0127:f00f:5::
 ```
 
-y especifica que debe eliminarse cualquier otro A/AAAA que entre en conflicto. [Shopify Help Center](https://help.shopify.com/es/manual/domains/add-a-domain/connecting-domains/connect-domain-manual)
+y especifica que debe eliminarse cualquier otro A/AAAA que entre en conflicto. [Shopify Help Center](https://help.shopify.com/es/manual/domains/add-a-domain/connecting-domains/connect-domain-manual){:target="_blank"}
 
 **Pero ojo:** antes de tocar nada en Dinahosting, yo miraría contigo exactamente qué registros tienes ahora.
 
@@ -750,3 +750,81 @@ Shopify nos da las páginas y en algún caso con el contenido creado (revisar po
 
 <img width="809" height="375" alt="image" src="https://github.com/user-attachments/assets/4803f66d-1243-4295-aeb2-8c45b4071237" />
 
+---
+
+## Conectar Google Analytics con Shopify
+
+Para una tienda Shopify, aunque Shopify ya incluye sus propias estadísticas es recomendable asociar tambien un Google Anaitycs. No necesitas elegir entre uno y otro: lo ideal es utilizar ambos porque se complementan.
+
+### 1. ¿Qué estadísticas ofrece cada uno?
+
+**Shopify Analytics**
+
+Las estadísticas integradas de tu tienda.
+
+- Ventas, pedidos e ingresos.
+- Productos más vendidos.
+- Sesiones y tasa de conversión.
+- Valor medio del pedido.
+- Informes de clientes y marketing.
+
+<img width="1008" height="759" alt="estadisticas venta" src="https://github.com/user-attachments/assets/4db2fc79-b6f7-43d2-8c6b-0a27e29bbfd5" />
+
+
+**Google Analytics 4**
+
+Para analizar con más detalle cómo llegan y se comportan los usuarios.
+
+- Tráfico por fuente, medio y campaña.
+- Campañas con parámetros UTM.
+- Eventos como ver productos, añadir al carrito y comprar.
+- Recorridos de los usuarios.
+- Informes personalizados y exploraciones.
+
+<img width="1892" height="860" alt="estadisticas analytics" src="https://github.com/user-attachments/assets/22a39872-d028-4cf8-b0e4-d29200a28301" />
+
+Recomendación: configurar ambos. Shopify servirá para el seguimiento comercial del día a día y GA4 para analizar las visitas, las campañas y el comportamiento de los usuarios.
+
+### 2. Cómo dar de alta la tienda en Google Analytics 4
+
+Vamos a configurarlo desde cero. No necesitas tener conectado todavía el dominio de Dinahosting: puedes preparar Analytics durante el desarrollo y empezar a recoger datos cuando la tienda esté accesible y el seguimiento funcione.
+
+- **1 Crear la propiedad de GA4**
+
+Entra en [Google Analytics](https://analytics.google.com/?utm_source=chatgpt.com){:target="_blank"} con la cuenta de Google que vaya a gestionar las estadísticas.
+
+1. Abre Administrar.
+2. Crea una cuenta de Analytics si aún no tienes una.
+3. Crea una propiedad con el nombre de la tienda.
+4. Selecciona la zona horaria de España y la moneda que utilizará la tienda.
+5. Crea un flujo de datos de tipo Web.
+
+En la URL del sitio puedes utilizar el dominio definitivo que vas a conectar a Shopify. No necesitas cambiar sus DNS todavía.
+
+Al terminar, tendrás un identificador de medición parecido a `G-XXXXXXXXXX`. Guárdalo.
+
+- **2 Conectar GA4 con Shopify**
+
+En el administrador de Shopify:
+
+1. Entra en Configuración → Aplicaciones y canales de ventas.
+2. Busca el canal oficial Google & YouTube e instálalo si no está instalado.
+3. Sigue el proceso de configuración de la etiqueta de Google y vincula la propiedad de Analytics.
+
+No necesitas configurar Google Merchant Center para completar la instalación de Analytics.
+
+- **3 Comprobar que funciona**
+
+Una vez conectado, abre la tienda y visita varias páginas. En GA4, entra en Informes → Tiempo real para comprobar si aparece tu actividad.
+
+Cuando esté correctamente configurado, Shopify puede enviar automáticamente eventos de comercio electrónico como visualizaciones de productos, añadidos al carrito y compras.
+
+### 3. Dos detalles importantes antes del lanzamiento
+
+- Privacidad y cookies: al vender en España, revisa la configuración de privacidad de Shopify y el consentimiento de cookies. La recogida de datos de Analytics debe respetar las preferencias de consentimiento aplicables.
+
+- No instales dos veces la etiqueta: si conectas GA4 mediante Google & YouTube, evita añadir además el mismo identificador manualmente al código de Craft, porque podrías duplicar eventos y visitas.
+
+Y recuerda que, mientras la tienda esté protegida con contraseña, el seguimiento de Analytics no funcionará como en una tienda pública.
+
+Consejo: empieza creando la propiedad de GA4 y el flujo web. Cuando llegues al paso de conectar Google & YouTube, dime qué opciones te aparecen y seguimos desde ahí, sin tocar todavía el código de Dawn.
