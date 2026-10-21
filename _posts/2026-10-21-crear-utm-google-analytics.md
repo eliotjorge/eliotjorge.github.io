@@ -45,7 +45,7 @@ Si utilizamos el mismo enlace en los tres canales, nos resultará más difícil 
 En cambio, podemos etiquetar cada enlace con parámetros UTM diferentes. Así, aunque todos lleven a la misma página, GA4 podrá distinguir las campañas que hemos configurado.
 
 <div style="text-align: center;">
-  <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" alt="Persona trabajando frente al ordenador mientras analiza datos de una campaña digital" width="300" loading="lazy" />
+  <img src="https://media.giphy.com/media/S7u66urzxc2J2/giphy.gif" alt="Persona trabajando frente al ordenador mientras analiza datos de una campaña digital" width="300" loading="lazy" />
 </div>
 
 Lo interesante es que no necesitamos modificar nuestra web, instalar un complemento adicional ni crear una página diferente para cada canal. Basta con preparar correctamente las URLs y comprobar que Google Analytics está funcionando.
@@ -283,7 +283,7 @@ utm_content=post_enlace_perfil
 Esto resulta útil cuando reutilizamos una misma URL en varias ubicaciones.
 
 <div style="text-align: center;">
-  <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" alt="Persona utilizando un ordenador para gestionar publicaciones y contenidos digitales" width="300" loading="lazy" />
+  <img src="https://media.giphy.com/media/PvvSfSDFoAL5e/giphy.gif" alt="Persona utilizando un ordenador para gestionar publicaciones y contenidos digitales" width="300" loading="lazy" />
 </div>
 
 ### ¿Debemos etiquetar todos los enlaces de nuestra web?
