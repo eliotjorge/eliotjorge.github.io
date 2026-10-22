@@ -51,14 +51,14 @@ height="250"
 {% capture grid-6-columnas_html %}
 
 <div class="contenedor">
-<div class="1">1<div>
-<div class="2">2<div>
-<div class="3">3<div>
-<div class="4">4<div>
-<div class="5">5<div>
-<div class="6">6<div>
-<div class="7">7<div>
-<div class="8">8<div>
+<div class="1">1</div>
+<div class="2">2</div>
+<div class="3">3</div>
+<div class="4">4</div>
+<div class="5">5</div>
+<div class="6">6</div>
+<div class="7">7</div>
+<div class="8">8</div>
 </div>
 
 {% endcapture %}
