@@ -555,3 +555,6 @@ Turn-by-turn navigation on an ESP32-S3 with a 1.75″ round AMOLED. Maps and rou
 [Firmware navegación offline](https://github.com/0015/map_tiles_projects/blob/main/v2/README.md){:target="_blank"}
 
 
+### Tutorial LVGL 9
+
+[[Ep. 01], From Scratch to Benchmark, For newbie/beginner/starter](https://www.youtube.com/watch?v=s4_fUwhw-dI){:target="_blank"}
