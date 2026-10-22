@@ -51,14 +51,14 @@ height="250"
 {% capture grid-6-columnas_html %}
 
 <div class="contenedor">
-<div class="1">1</div>
-<div class="2">2</div>
-<div class="3">3</div>
-<div class="4">4</div>
-<div class="5">5</div>
-<div class="6">6</div>
-<div class="7">7</div>
-<div class="8">8</div>
+<div class="1"><p>1</p></div>
+<div class="2"><p>2</p></div>
+<div class="3"><p>3</p></div>
+<div class="4"><p>4</p></div>
+<div class="5"><p>5</p></div>
+<div class="6"><p>6</p></div>
+<div class="7"><p>7</p></div>
+<div class="8"><p>8</p></div>
 </div>
 
 {% endcapture %}
@@ -70,6 +70,11 @@ height="250"
   grid-template-columns: repeat(8, 1fr);
   gap: 20px;
   align-items: center;
+}
+
+p{
+text-align:center;
+font-family: Lato, "Microsoft Yahei", sans-serif;
 }
 
 .contenedor div{
