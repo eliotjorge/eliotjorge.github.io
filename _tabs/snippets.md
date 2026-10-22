@@ -45,6 +45,47 @@ height="250"
 %}
 
 ---
+## 8 columnas display grid
+
+{% capture Grid 6 columnas_html %}
+
+<div class="contenedor">
+<div class="1">1<div>
+<div class="2">2<div>
+<div class="3">3<div>
+<div class="4">4<div>
+<div class="5">5<div>
+<div class="6">6<div>
+<div class="7">7<div>
+<div class="8">8<div>
+</div>
+
+{% endcapture %}
+
+{% capture Grid 6 columnas_css %}
+
+.contenedor{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.contenedor div{
+border: 2px solid grey;
+}
+
+{% endcapture %}
+
+{% include playground.html
+id="Grid 6 columnas"
+html=Grid 6 columnas_html
+css=Grid 6 columnas_css
+height="250"
+%}
+
+
+---
 
 ## 1
 {% capture grid_html %}
