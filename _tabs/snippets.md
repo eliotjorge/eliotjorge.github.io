@@ -45,6 +45,7 @@ height="250"
 %}
 
 ---
+
 ## 8 columnas display grid
 
 {% capture grid-6-columnas_html %}
