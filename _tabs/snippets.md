@@ -47,7 +47,7 @@ height="250"
 ---
 ## 8 columnas display grid
 
-{% capture Grid 6 columnas_html %}
+{% capture grid-6-columnas_html %}
 
 <div class="contenedor">
 <div class="1">1<div>
@@ -62,7 +62,7 @@ height="250"
 
 {% endcapture %}
 
-{% capture Grid 6 columnas_css %}
+{% capture grid-6-columnas_css %}
 
 .contenedor{
   display: grid;
@@ -78,9 +78,9 @@ border: 2px solid grey;
 {% endcapture %}
 
 {% include playground.html
-id="Grid 6 columnas"
-html=Grid 6 columnas_html
-css=Grid 6 columnas_css
+id="grid-6-columnas"
+html=grid-6-columnas_html
+css=grid-6-columnas_css
 height="250"
 %}
 
