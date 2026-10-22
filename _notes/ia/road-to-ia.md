@@ -43,9 +43,6 @@ Por supuesto en hay que importar la librería de Gemini en el archivo al princip
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-.
-.
-.
 
 ```
 
@@ -82,7 +79,10 @@ fetch("https://project-c4tfr43.vercel.app/api/chat", {
 ```
 
 Si lo ejecutamos nos devolverá, dependiendo de si encuentra la IA respuesta o no, un
- - **'STATUS'**: 200 si ok, 400 si no se encuentra, 500 si hay fallo del servidor...
+ - **'STATUS'**:
+     - 200 si ok
+     - 400 si no se encuentra
+     - 500 si hay fallo del servidor
  - **'RESPONSE'**: la respuesta de la IA ´{"answer":"**sessionStorage** es una interfaz de JavaScript que permite almacenar datos...´ o si no ha podido generar
 la respuesta porque no hay datos en la web sacará ´{"answer":"No tengo información sobre eso en el blog."}´
 
