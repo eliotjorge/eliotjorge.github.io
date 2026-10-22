@@ -11,7 +11,7 @@ toc: true
 <img width="500" height="500" alt="imagen de la placa ESP32 C3" src="https://github.com/user-attachments/assets/7e104f5b-8255-44d0-9238-9756dca29d07" />
 
 
-## 💡 Flujo ideal
+## Flujo para compilar y subir
 1. Codespaces:
 ```bash
 pio run
@@ -23,6 +23,7 @@ pio run
 - conectas ESP32
 - subes `.bin`
 
+---
 ---
 
 ## Compilar **Firmware.bin** en codespace de Github
@@ -508,3 +509,49 @@ pio run
 ```
 
 El .bin se generará en `.pio/build/lolin_c3_mini/firmware.bin` (u otro entorno que uses).
+
+---
+
+---
+
+## Canal de Youtube @ThatProject con proyectos de ESP-32
+
+[**Canal @ThatProject**](https://www.youtube.com/@ThatProject){:target="_blank"}
+
+Tiene vídeos muy interesantes y una herramienta para generar tiles de mapas y poder meter mapas offline en el ESP-32 y consultarlos como un GPS.
+
+<img width="320" height="180" alt="captura video de youtube" src="https://github.com/user-attachments/assets/ad6c16f1-e228-46b3-aa0d-1b15d652fdd6" />
+
+[**Vídeo** Offline Map Viewer with ESP32 and Round Display](https://www.youtube.com/watch?v=Kyjf24e-Poo){:target="_blank"}
+
+### Enlaces herramientas (descripción del vídeo)
+
+[Offline Map Downloader](https://github.com/0015/OfflineMapDownloader){:target="_blank"}
+
+[LVGL Map Tile Converter](https://github.com/0015/map_tiles/tree/main/script){:target="_blank"}
+
+[Map Tiles Component for LVGL 9.x](https://components.espressif.com/components/0015/map_tiles/versions/2.0.0/readme){:target="_blank"}
+
+---
+
+### Short mostrando una pantalla redonda con ESP-32
+
+<img width="480" height="360" alt="jcGIl11Qf3Y-HQ" src="https://github.com/user-attachments/assets/415fc686-6a18-4297-9fe0-b3359530a90b" />
+
+[Short enseñando la navegación en ESP-32 con pantalla](https://www.youtube.com/shorts/jcGIl11Qf3Y){:target="_blank"}
+
+En resumen genera la ruta en el ordenador con los programas de su Github y los exporta para guardarlos en la micro SD que mete en el ESP-32. De esta manera no hace falta conexión a internet ni tener un móvil que le mande las indicaciones al ESP-32.
+
+#### Enlaces descripción del short
+
+Turn-by-turn navigation on an ESP32-S3 with a 1.75″ round AMOLED. Maps and routes load from a microSD card, so it works with no phone, no internet and no subscription.
+
+[map_tiles, the ESP-IDF component](https://github.com/0015/map_tiles){:target="_blank"}
+
+[Navigation firmware](https://github.com/0015/map_tiles_projects/tree/main/v2/01.Navigation_ESP32-S3-Touch-AMOLED-1.75){:target="_blank"}
+
+[Map & route packager](https://github.com/0015/OfflineMapDownloader){:target="_blank"}
+
+[Firmware navegación offline](https://github.com/0015/map_tiles_projects/blob/main/v2/README.md){:target="_blank"}
+
+
