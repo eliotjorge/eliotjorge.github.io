@@ -3,7 +3,7 @@ title: Road to IA propia
 date: 2026-03-25
 layout: note
 notebook: IA
-resumen: "Notas del camino para crear IAs propias"
+resumen: "Notas del camino para crear IAs propias y que se nutran del contenido del blog"
 color: "--cuaderno-verde"
 toc: true
 ---
