@@ -4,7 +4,7 @@ layout: full-width
 
 <h1>Mis cuadernos</h1>
 
-<div class="notes-grid">
+<div class="notes-grid" style="margin-bottom: 80px;">
   {% assign notebooks = site.notes | map: "notebook" | uniq %}
 
   {% for nb in notebooks %}
