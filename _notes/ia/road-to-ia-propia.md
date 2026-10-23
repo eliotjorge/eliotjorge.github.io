@@ -1,5 +1,5 @@
 ---
-title: Road to IA
+title: Road to IA propia
 date: 2026-03-25
 layout: note
 notebook: IA
@@ -83,8 +83,10 @@ Si lo ejecutamos nos devolverá, dependiendo de si encuentra la IA respuesta o n
      - 200 si ok
      - 400 si no se encuentra
      - 500 si hay fallo del servidor
- - **'RESPONSE'**: la respuesta de la IA ´{"answer":"**sessionStorage** es una interfaz de JavaScript que permite almacenar datos...´ o si no ha podido generar
-la respuesta porque no hay datos en la web sacará ´{"answer":"No tengo información sobre eso en el blog."}´
+ - **'RESPONSE'**:
+     la respuesta de la IA - ´{"answer":"**sessionStorage** es una interfaz de JavaScript que permite almacenar datos...´
+   
+     o si no ha podido generar la respuesta porque no hay datos en la web sacará - ´{"answer":"No tengo información sobre eso en el blog."}´
 
 
 ## Errores de petición por bloqueo de Cloudflare, pero si pegas la url del JSON sí se ve.
