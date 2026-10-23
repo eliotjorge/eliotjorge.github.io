@@ -828,3 +828,23 @@ Cuando esté correctamente configurado, Shopify puede enviar automáticamente ev
 Y recuerda que, mientras la tienda esté protegida con contraseña, el seguimiento de Analytics no funcionará como en una tienda pública.
 
 Consejo: empieza creando la propiedad de GA4 y el flujo web. Cuando llegues al paso de conectar Google & YouTube, dime qué opciones te aparecen y seguimos desde ahí, sin tocar todavía el código de Dawn.
+
+
+## Conectar la tienda a Analytics
+
+Para recibir estadísticas de los visitantes de la web a parte de hacer que los productos salgan en las búsquedas de Google con Merchant center hay que instalar la App en Shopify de [Google & YouTube](https://apps.shopify.com/google?locale=es){:target="_blank"} según la página de la App:
+
+> Conecta tu tienda a Google y YouTube, y convierte a más compradores en clientes
+Accede a lo mejor de Google y YouTube desde Shopify: Sincroniza tus productos, ofertas y envíos con Google Merchant Center, y convierte a más compradores en clientes. Aumenta las ventas con anuncios Máximo rendimiento en la Búsqueda, YouTube y Display, y accede a valiosas estadísticas con Google Analytics. Aprovecha las herramientas basadas en IA de Google, como Product Studio, para crear y mejorar imágenes, y los descuentos automáticos de Google para optimizar tus beneficios.
+> 
+> - Conecta tu tienda a Merchant Center para que tus productos aparezcan en Google
+> - Aumenta las ventas con campañas Máximo rendimiento, creadas con la IA de Google
+> - Conecta tu tienda a YouTube y permite comprar directamente desde tus vídeos
+> - Conoce todo el recorrido de tus clientes gracias a los datos de Google Analytics
+> - Permite que la IA de Google optimice las ganancias con Descuentos Automatizados.
+
+Una vez instalada tenemos que crear la propiedad de Analytics en la plataforma de Google como siempre.
+
+<img width="1274" height="573" alt="image" src="https://github.com/user-attachments/assets/e873bd39-eb3a-4dc3-91fe-5fe13e27d0b2" />
+
+Y luego es seguir las instrucciones en Shopify para conectar la App a la nueva propiedad.
