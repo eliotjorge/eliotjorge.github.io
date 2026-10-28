@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /taller/
+
+Sitemap: https://jorgerosa.dev/sitemap.xml
