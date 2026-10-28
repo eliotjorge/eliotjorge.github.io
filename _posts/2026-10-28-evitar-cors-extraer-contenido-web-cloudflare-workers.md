@@ -21,7 +21,7 @@ faq:
     answer: "Python y curl no aplican automáticamente la política CORS de los navegadores. Por eso pueden leer una respuesta HTTP que JavaScript no puede consultar desde una página web. Sin embargo, el servidor remoto puede seguir aplicando autenticación, límites, restricciones de acceso o protecciones antibots."
 ---
 
-En la entrada anterior expliqué [qué es CORS, cómo funciona y por qué los navegadores bloquean determinadas peticiones](https://jorgerosa.dev/cors-politica-cross-origin-resource-sharing/).
+En la entrada anterior expliqué [qué es CORS, cómo funciona y por qué los navegadores bloquean determinadas peticiones](https://jorgerosa.dev/posts/cors-politica-cross-origin-resource-sharing/).
 
 Una cosa es entender la teoría y otra encontrarte con el problema mientras desarrollas una herramienta.
 
