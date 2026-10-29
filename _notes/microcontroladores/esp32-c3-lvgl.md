@@ -565,5 +565,7 @@ Turn-by-turn navigation on an ESP32-S3 with a 1.75″ round AMOLED. Maps and rou
 ## 💡 IDEAS
 
 - Usar otro microcontrolador como el ESP32 82266 para aunar todas las señales de los sensores, RPM... porque tiene 9 pines digitales y 1 analógico y pasar esos datos al ESP de la pantalla porque solo tiene un puerto de entrada (RT, TX), un IO8 y el USB.
+  
+<img width="860" height="860" alt="image" src="https://github.com/user-attachments/assets/6e42ef8a-13c6-4e20-8f97-6a69f9dd34c7" />
 
 -  A lo mejor se puede usar uncluso comunicación por USB entre los dos dispositivos.
