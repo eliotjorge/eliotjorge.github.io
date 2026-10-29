@@ -568,4 +568,4 @@ Turn-by-turn navigation on an ESP32-S3 with a 1.75″ round AMOLED. Maps and rou
   
 <img width="250" alt="image" src="https://github.com/user-attachments/assets/6e42ef8a-13c6-4e20-8f97-6a69f9dd34c7" />
 
--  A lo mejor se puede usar uncluso comunicación por USB entre los dos dispositivos.
+-  A lo mejor se puede usar incluso comunicación por USB entre los dos dispositivos.
