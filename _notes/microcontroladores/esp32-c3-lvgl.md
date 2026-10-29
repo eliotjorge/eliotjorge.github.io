@@ -558,3 +558,12 @@ Turn-by-turn navigation on an ESP32-S3 with a 1.75″ round AMOLED. Maps and rou
 ### Tutorial LVGL 9
 
 [[Ep. 01], From Scratch to Benchmark, For newbie/beginner/starter](https://www.youtube.com/watch?v=s4_fUwhw-dI){:target="_blank"}
+
+
+---
+
+## 💡 IDEAS
+
+- Usar otro microcontrolador como el ESP32 82266 para aunar todas las señales de los sensores, RPM... porque tiene 9 pines digitales y 1 analógico y pasar esos datos al ESP de la pantalla porque solo tiene un puerto de entrada (RT, TX), un IO8 y el USB.
+
+-  A lo mejor se puede usar uncluso comunicación por USB entre los dos dispositivos.
