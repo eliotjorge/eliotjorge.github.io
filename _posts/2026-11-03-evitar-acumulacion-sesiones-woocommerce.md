@@ -3,7 +3,6 @@ title: "Cómo evitar que WooCommerce acumule sesiones en wp_options"
 date: 2026-11-03
 image: "https://github.com/user-attachments/assets/77277f97-5c64-4a50-9b6f-303106616c3b"
 description: "Aprende a detectar, limpiar y evitar la acumulación de sesiones de WooCommerce en wp_options. Soluciona problemas de tamaño en la base de datos y mejora el rendimiento de WordPress."
-permalink: /evitar-acumulacion-sesiones-woocommerce/
 categories: [wordpress, woocommerce, rendimiento]
 tags: [woocommerce, wp_options, sesiones, base de datos, mysql, wp-cron, robots-txt, optimizacion]
 faq:
