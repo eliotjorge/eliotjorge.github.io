@@ -6,10 +6,11 @@ sitemap: false
 
 ### MINI
 
-- [Mini](https://jorgerosa.dev/taller/mini.html)
-- [Mini 2](https://jorgerosa.dev/taller/mini2.html)
-- [Mini 3](https://jorgerosa.dev/taller/mini3.html)
-- [Mini 4](https://jorgerosa.dev/taller/mini4.html)
+- [Mini - manual del conductor](https://jorgerosa.dev/taller/mini.html)
+- [Mini - manual de taller](https://jorgerosa.dev/taller/mini2.html)
+- [Mini - catálogo España](https://jorgerosa.dev/taller/mini3.html)
+- [Mini - catálogo de piezas de recambio (mecánica y carrocería)](https://jorgerosa.dev/taller/mini4.html)
+- [<img width="200"  alt="image" src="https://github.com/user-attachments/assets/34cbfcd0-dc08-49ca-92c7-f6698eb1fb89" />](https://jorgerosa.dev/taller/mini4.html)
 - [Mini 5](https://jorgerosa.dev/taller/mini5.html)
 - [Mini manual de reparación 92-96](https://jorgerosa.dev/taller/mini-manual-de-reparacion-92-96.html)
 - [Carburador SU (PDF)](https://jorgerosa.dev/taller/carburador-su.html)
