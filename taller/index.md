@@ -8,6 +8,9 @@ sitemap: false
 
 - [Mini](https://jorgerosa.dev/taller/mini.html)
 - [Mini 2](https://jorgerosa.dev/taller/mini2.html)
+- [Mini 3](https://jorgerosa.dev/taller/mini3.html)
+- [Mini 4](https://jorgerosa.dev/taller/mini4.html)
+- [Mini 5](https://jorgerosa.dev/taller/mini5.html)
 - [Mini manual de reparación 92-96](https://jorgerosa.dev/taller/mini-manual-de-reparacion-92-96.html)
 - [Carburador SU (PDF)](https://jorgerosa.dev/taller/carburador-su.html)
   
