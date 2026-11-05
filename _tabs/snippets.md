@@ -191,7 +191,7 @@ Para cambiar el número de columnas modificar en el CSS esta línea **column-cou
 
 {% capture galeria_mansonry_html %}
 
-[masonry_gallery ids="494,437,393,379,139,29,31,34,33,32,36"]
+<img height="380" alt="image" src="https://github.com/user-attachments/assets/a8b21e73-3611-4413-ac91-f565b2c80d00" />
 
 {% endcapture %}
 
