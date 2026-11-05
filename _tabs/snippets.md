@@ -150,6 +150,36 @@ php=grid_php
 height="250"
 %}
 
+
+## Ocultar elemento dependiendo del idioma de la web
+
+Dar clase **titulo-es**, **titulo-en**, **titulo-zh** al elemento que queremos que se oculte en función del idioma en el que aparezca la web. Útil para página que sean iguales en todos los idiomas salvo el título, por ejemplo "Patrocinadores", y que tenga cambios constantes. De esta manera sólo se hace una página para los 3 idiomas y si hay que m,odificar algo con hacerlo una vez es suficiente.
+
+El 'lang' se coge de la eqtiqueda '<html>' del principio de la web.
+ 
+```css
+
+/*PATRO IDIOMAS*/
+/* ===== ESPAÑOL ===== */
+html[lang^="es"] .titulo-en,
+html[lang^="es"] .titulo-zh {
+  display: none;
+}
+
+/* ===== INGLÉS ===== */
+html[lang^="en"] .titulo-es,
+html[lang^="en"] .titulo-zh {
+  display: none;
+}
+
+/* ===== CHINO ===== */
+html[lang^="zh"] .titulo-es,
+html[lang^="zh"] .titulo-en {
+  display: none;
+}
+
+```
+
 ## Playground 2
 
 {% include playground.html
