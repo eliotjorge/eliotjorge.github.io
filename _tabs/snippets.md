@@ -150,6 +150,7 @@ php=grid_php
 height="250"
 %}
 
+---
 
 ## Ocultar elemento dependiendo del idioma de la web
 
@@ -179,6 +180,123 @@ html[lang^="zh"] .titulo-en {
 }
 
 ```
+
+---
+
+## Galería mansonry con shortcode
+
+Pegar el shortcode **[masonry_gallery ids="1,2,3,4"]** donde queramos y cambiar los IDs de las fotos por las que queramos. Esos IDs se puede ncoger de la URL de la vista de medios ".../wp-admin/upload.php?item=**36**"
+
+Para cambiar el número de columnas modificar en el CSS esta línea **column-count:4** tanto en escritorio, como tablet o móvil.
+
+{% capture galeria_mansonry_html %}
+
+[masonry_gallery ids="494,437,393,379,139,29,31,34,33,32,36"]
+
+{% endcapture %}
+
+{% capture galeria_mansonry_css %}
+
+.jr-masonry-gallery{
+    column-count:4; /*Cambio de columnas*/
+    column-gap:20px;
+}
+
+.jr-masonry-gallery .jr-item{
+    display:inline-block;
+    width:100%;
+    margin-bottom:20px;
+    break-inside:avoid;
+    -webkit-column-break-inside:avoid;
+    page-break-inside:avoid;
+}
+
+.jr-masonry-gallery img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:6px;
+}
+
+@media (max-width:980px){
+
+    .jr-masonry-gallery{
+        column-count:2;
+    }
+
+}
+
+@media (max-width:767px){
+
+    .jr-masonry-gallery{
+        column-count:1;
+    }
+
+}
+
+{% endcapture %}
+
+{% capture galeria_mansonry_php %}
+
+/**
+ * Shortcode: [masonry_gallery ids="1,2,3,4"]
+ */
+
+function jr_masonry_gallery_shortcode($atts) {
+
+    $atts = shortcode_atts(array(
+        'ids' => '',
+    ), $atts);
+
+    if (empty($atts['ids'])) {
+        return '';
+    }
+
+    $ids = array_map('trim', explode(',', $atts['ids']));
+
+    ob_start();
+
+    ?>
+    <div class="jr-masonry-gallery">
+        <?php foreach ($ids as $id):
+
+            $img = wp_get_attachment_image_src($id, 'large');
+            $full = wp_get_attachment_image_src($id, 'full');
+
+            if (!$img || !$full) {
+                continue;
+            }
+            ?>
+
+            <a href="<?php echo esc_url($full[0]); ?>"
+  				class="jr-item"
+				data-fancybox="gallery"
+				data-caption="<?php echo esc_attr(get_the_title($id)); ?>">
+                <img
+                    src="<?php echo esc_url($img[0]); ?>"
+                    alt=""
+                    loading="lazy">
+            </a>
+
+        <?php endforeach; ?>
+    </div>
+    <?php
+
+    return ob_get_clean();
+}
+
+add_shortcode('masonry_gallery', 'jr_masonry_gallery_shortcode');
+
+{% endcapture %}
+
+{% include playground.html
+id="galeria_mansonry"
+html=galeria_mansonry_html
+css=galeria_mansonry_css
+php=galeria_mansonry_php
+image= "https://github.com/user-attachments/assets/a8b21e73-3611-4413-ac91-f565b2c80d00"
+height="400"
+%}
 
 ## Playground 2
 
