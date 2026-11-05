@@ -8,7 +8,7 @@ order: 6
 
 
 ## Shortcode [bold]
-Para poner negritas en bloques que no lo permiten por defecto. Envolver el texto que queramos en [bold]...[/bold] y se sustituirá por <strong>...</strong>
+Para poner negritas en bloques que no lo permiten por defecto. Envolver el texto que queramos en [bold]...[/bold] y se sustituirá por \<strong\>...\</strong\>
 
 {% capture playground-bold_html %}
 <div class="toggle_item">
@@ -93,7 +93,7 @@ height="100"
 
 ---
 
-## 1
+## Display Grid
 {% capture grid_html %}
 
 <section id="page">
@@ -110,7 +110,7 @@ height="100"
 #page {
   display: grid;
   width: 100%;
-  height: 250px;
+  height: 220px;
   grid-template-areas:
     "head head"
     "main nav"
@@ -141,22 +141,12 @@ height="100"
 
 {% endcapture %}
 
-{% capture grid_php %}
-
-<?php
-
-echo "Este código PHP solo se muestra como ejemplo.";
-
-?>
-
-{% endcapture %}
 
 {% include playground.html
 id="grid01"
 html=grid_html
 css=grid_css
 php=grid_php
-image="https://github.com/user-attachments/assets/ae571822-199b-408b-b597-bcad4f69ab6d"
 height="250"
 %}
 
