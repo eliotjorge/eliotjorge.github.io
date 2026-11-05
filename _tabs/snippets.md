@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 id="playground-bold"
 html=playground-bold_html
 javascript=playground-bold_javascript
-height="250"
+height="100"
 %}
 
 ---
