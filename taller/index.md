@@ -37,4 +37,23 @@ sitemap: false
 - [Vitara](https://jorgerosa.dev/taller/suzuki.html)
 - [Vitara 2](https://jorgerosa.dev/taller/suzuki2.html)
 
+### CBR
 
+|Elemento                              |N·m                |Página|FIELD4|FIELD5|
+|--------------------------------------|-------------------|------|------|------|
+|Tornillos frontales anclaje de motor  |54                 |8-13  |Max   |113   |
+|Eje frontal                           |59                 |14-21 |Min   |16    |
+|Tornillos prisioneros del eje frontal |22                 |14-21 |      |      |
+|Tornillos plato freno delantero       |20                 |14-20 |      |      |
+|Tornillos calibres delanteros         |45                 |14-21 |      |      |
+|Eje trasero                           |113                |4-24  |      |      |
+|Tornillos plato de transmisión trasero|64                 |15-13 |      |      |
+|Tronillos plato de freno trasero      |42                 |15-13 |      |      |
+|Tornillo piñón                        |54                 |8-15  |      |      |
+|Tapa piñón                            |A mano             |8-15  |      |      |
+|Tornillo sujeción cambio              |A mano             |8-15  |      |      |
+|Tapón drenaje aceite                  |30                 |4-18  |      |      |
+|Filtro de aceite                      |26                 |4-19  |      |      |
+|Bujía                                 |16                 |4-11  |      |      |
+|Tapa derecha embrague motor           |A mano en 3 pasadas|10-27 |      |      |
+|Tapa izquierda alternador             |A mano en 3 pasadas|11-7  |      |      |
