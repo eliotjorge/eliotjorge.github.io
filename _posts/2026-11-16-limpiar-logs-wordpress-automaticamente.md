@@ -1,6 +1,7 @@
 ---
 title: "Cómo limpiar automáticamente los logs de WordPress y optimizar la base de datos"
-date: 2026-11-13
+date: 2026-11-16
+image: "ttps://github.com/user-attachments/assets/0ffa48af-6cfa-4584-a266-bf7117adba84"
 description: "Aprende a limpiar automáticamente los logs de WordPress, configurar la retención de registros de AIOS y optimizar las tablas MySQL para evitar que la base de datos crezca innecesariamente."
 categories: [WordPress, Seguridad, Desarrollo web]
 tags: [WordPress, AIOS, All In One Security, MySQL, MariaDB, Base de datos, Logs, WooCommerce, Mantenimiento web, InnoDB]
