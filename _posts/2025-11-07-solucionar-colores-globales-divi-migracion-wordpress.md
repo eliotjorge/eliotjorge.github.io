@@ -40,9 +40,7 @@ Divi no almacena los colores globales en cada página.
 Los guarda en un bloque enorme dentro de la tabla `wp_options`, en un registro llamado:
 
 ```
-
 et_divi
-
 ```
 
 Ese campo contiene:
@@ -115,6 +113,13 @@ wp_options
 option_name = et_divi
 ```
 
+O Ejecutamos la sentencia SQL (Cuidado con el prefijo de nuestra tabla)
+
+```SQL
+SELECT *
+FROM wp_options
+WHERE option_name = 'et_divi';
+```
 4. Haces clic en **Editar**.  
 5. Ahí verás un bloque enorme parecido a:
 
