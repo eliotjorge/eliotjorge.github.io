@@ -115,7 +115,7 @@ option_name = et_divi
 
 O Ejecutamos la sentencia SQL (Cuidado con el prefijo de nuestra tabla)
 
-```sql
+```
 SELECT *
 FROM wp_options
 WHERE option_name = 'et_divi';
