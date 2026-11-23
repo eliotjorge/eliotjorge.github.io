@@ -27,6 +27,10 @@ sitemap: false
 - [Catálogo online con explosiones de los componentes](https://www.minispares.com/catalogues/catalogue/cat002/chapter/chap0202/page/125/)
 
 - [Tienda Guadarrama](https://www.miniparts.es/cat%C3%A1logo-mini-cl%C3%A1sico)
+
+- [Buscador de recambios con fotos de despieces](https://www.minisport.com//mini-parts-finder)
+  
+- [Buscador de recambios con fotos de despieces y por años](https://www.plminishop.com/shop.php?action=partfinder)
   
 ---
 ---
