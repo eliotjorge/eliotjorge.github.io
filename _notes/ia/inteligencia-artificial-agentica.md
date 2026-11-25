@@ -4,7 +4,7 @@ date: 2026-11-25
 layout: note
 notebook: IA
 resumen: "Que son las inteligencias artificiales basadas en agentes"
-color: "--cuaderno-azul"
+color: "--cuaderno-azul-verdoso"
 toc: true
 ---
 
