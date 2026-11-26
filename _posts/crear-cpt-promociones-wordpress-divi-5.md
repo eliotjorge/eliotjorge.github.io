@@ -421,7 +421,26 @@ En mi caso, la tarjeta de cada promoción tendría esta estructura:
 
 La idea es diseñar una única tarjeta y dejar que Divi se encargue de repetirla.
 
-### Conectar los campos dinámicos
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/10985e87-acb0-4e85-9f11-ef6eff4582c2" />
+
+### Construir una ficha y conectar los campos dinámicos
+
+Primero es recomendable introducir algunas propiedades para comprobar que cuando asignemos las variables sean las que queremos y ver que funciona, luego lo podemos eliminar.
+
+Añadimos una fila, en mi caso de 3 columnas a laque le retoco el ancho y el espacio entre una y otra.
+
+<img width="1776" height="218" alt="image" src="https://github.com/user-attachments/assets/2ba9532d-eb7a-46cb-8593-430446179ffd" />
+
+Entramos en la configuración de la fila yeliminamos las columnas 2 y 3 y editamos la primera columna.
+
+<img width="273" height="328" alt="image" src="https://github.com/user-attachments/assets/70e70535-62f7-4f85-9395-956fb4af1b70" />
+
+Buscamos el apartado de "Bucle" y habilitamos el check, lo que nos despliega unas opciones y en nuestro caso solo tenemos que decirle que el "Tipo de contenido" queremos que sea "Promociones".
+
+<img width="281" height="861" alt="image" src="https://github.com/user-attachments/assets/7f61fad1-5a34-4a17-bc4a-3f9b4eb8545a" />
+
+Luego ya podemos construir el resto de la ficha  "Bucle imagen destacada" no "Imagen destacada"
+
 
 Una vez creada la estructura visual, necesitamos conectar cada módulo con los datos almacenados en WordPress.
 
@@ -438,38 +457,6 @@ La correspondencia sería la siguiente:
 
 Para ello utilizaremos las opciones de contenido dinámico de Divi y los datos del elemento que se está mostrando en el bucle.
 
-### Personalizar el ribbon según el estado
-
-El estado de la promoción tiene una particularidad: además de cambiar el texto, me interesa que pueda cambiar su apariencia.
-
-Por ejemplo:
-
-- En comercialización: fondo verde claro.
-- Próximamente: fondo amarillo claro.
-- Finalizada: fondo gris.
-
-Podemos utilizar clases CSS asociadas al valor del campo para conseguirlo.
-
-Un ejemplo de los estilos que utilizaría:
-
-```css
-.ribbon-comercializacion {
-    background-color: #F0FFB8;
-    color: #285B53;
-}
-
-.ribbon-proximamente {
-    background-color: #FFF1B8;
-    color: #685B2B;
-}
-
-.ribbon-finalizada {
-    background-color: #E2E2E2;
-    color: #555555;
-}
-```
-
-De esta forma mantenemos el diseño de las tarjetas centralizado y evitamos tener que generar manualmente cada una.
 
 ## 5. ¿Shortcode o Loop Builder? ¿Qué opción elegir?
 
